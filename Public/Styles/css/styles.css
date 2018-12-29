@@ -1,0 +1,283 @@
+/* CSS HAUT DE PAGE */
+
+header {
+    position: fixed;
+    z-index: 10;
+    background-color: #161F26;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    top: 0;
+    border-bottom: 2px solid #EF951B;
+    border-top: 2px solid #EF951B;
+    color: white;
+}
+
+.navbar {
+    height: 80px;
+}
+
+.bg-dark {
+    background-color: #161F26 !important;
+}
+
+.icone_book {
+    width: 80px;
+    height: 50px;
+    vertical-align: bottom;
+    margin-right: 15px;
+}
+
+.prenom_title {
+    font-family:'Courgette', cursive; 
+    font-style: italic; 
+    font-size: 2.5rem;
+    color: white;
+}
+
+.navbar-brand {
+    color: burlywood !important;
+    font-size: 1.5rem;
+    height: 80px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255,255,255,.5) !important;
+}
+
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+    color: rgba(255,255,255,.75) !important;
+}
+/* CSS CORPS DE PAGE */
+html {
+    height: 100%;
+}
+body {
+    margin: 0;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+
+main {
+    position: relative;
+    padding-top: 84px;
+}
+
+/* CSS SECTION ACCUEIL */
+#home {
+    position: relative;
+    height: 100vh;
+    border-bottom: 2px solid #EF951B;
+    background-image: url("../../images/alaska.jpg");
+    background-position: center;
+    background-size: cover;
+    max-height: 882px;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.m-b-20 {
+    text-align: center;
+    font-size: 65px;
+    color: burlywood;
+}
+
+.m-b-40 {
+    text-align: center;
+    font-size: 50px;
+    color: #FC4000;
+}
+
+/* CSS SECTION A PROPOS */
+#a_propos {
+    border-bottom: 2px solid #EF951B;
+    background-color: #161F26;
+    padding-bottom: 20px;
+    color: white;
+    padding-top: 5px;
+}
+
+.description {
+    text-align: center;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+/* CSS SECTION LES CHAPITRES */
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.col-sm-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    min-height: 782px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.card-body {
+    text-align: center;
+    color: white;
+}
+
+.card {
+    background-color: #161F26;
+    height: 100%;
+    border-radius: 0;
+}
+
+.les_chapitres {
+    background-color: #161F26;
+    color: white;
+    display: block;
+    position: relative;
+}
+
+h2 {
+    line-height: 1.7;
+}
+
+.sous_titre {
+    text-align: center;
+    padding: 20px 0;
+}
+
+#addChapter {
+    font-family: 'Teko', sans-serif;
+    padding-top: 74px;
+    width: 100%;
+    background-color: #161F26;
+    color: #fff;
+    position: relative;
+    padding-bottom: 73px;
+    min-height: 782px;
+}
+
+.comments {
+    color: white;
+    background-color: #161F26;;
+    padding: 1.25rem;
+    text-align: center;
+}
+
+.addComments {
+    color: white;
+    background-color: #161F26;;
+    padding: 1.25rem;
+    text-align: center;
+}
+
+#comment_add {
+    text-align: left;
+}
+
+.btn-body-card {
+    padding: 1.25rem;
+}
+
+.btn-card {
+    margin: auto 15%;
+}
+
+/* CSS SECTION CONTACT */
+.content-header{
+    font-family: 'Oleo Script', cursive;
+    font-size: 45px;
+}
+
+.section-content{
+    text-align: left; 
+}
+
+.section-header {
+    text-align: center;
+}
+
+#contact{ 
+    font-family: 'Teko', sans-serif;
+    padding-top: 74px;
+    width: 100%;
+    background-color: #161F26;
+    color : #fff;
+    position: relative; 
+    padding-bottom: 73px;
+}
+
+p{
+    margin: auto 15%;
+    font-size: 18px;  
+    line-height: 1.6em;  
+    font-style: italic; 
+    text-align: justify;
+}
+
+a{
+	color:#26a5d3;
+}
+
+h3 {
+    text-align: center;
+}
+
+a:hover,a:focus{
+	text-decoration:none;
+	color:#26a5d3;
+}
+
+textarea.form-control{
+    height:100px;
+}
+
+hr {
+    margin-top: 4rem;
+    border-top: 1px solid rgb(255, 255, 255);
+    width: 80%;
+}
+
+.social_site {
+    text-align: center;
+}
+
+.list-inline {
+    display: flex;
+    margin: auto 15%;
+}
+
+.col-md-8 {
+    max-width: 50%;
+    margin: auto;
+}
+
+/* CSS FOOTER */
+footer {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 100px;
+    background-color: #161F26;
+    color: white;
+    font-size: 24px;
+    border-bottom: 2px solid #EF951B;
+    border-top: 2px solid #EF951B;
+    position: absolute;
+}
+
+.pt-4, .py-4 {
+    padding-top: 1rem !important;
+}
+
+.footer-info {
+    margin: 0;
+}
+
