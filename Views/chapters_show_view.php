@@ -31,9 +31,9 @@
                     <label for="exampleInputText3"><?= $comment['content'] ?></label>
                     <label for="exampleInputText3">Jean Forteroche</label>
                 </div>
-                <a href="<?= CURRENT_PATH ?>comments?action=updateComment&id=<?= $_GET['id'] ?>">modifier chapitre</a>
-                <button type="submit" name="btnDeleteComment" class="btn btn-default">supprimer commentaire</button>
-                <button type="submit" name="btnSignalComment" class="btn btn-default">signaler commentaire</button>
+                <a href="<?= CURRENT_PATH ?>comments?action=updateComment&id=<?= $_GET['id'] ?>">modifier commentaire</a>
+                <a href="<?= CURRENT_PATH ?>comments?action=deleteComment&id=<?= $_GET['id'] ?>">supprimer commentaire</a>
+                <a href="<?= CURRENT_PATH ?>comments?action=signalComment&id=<?= $_GET['id'] ?>">signaler commentaire</a>
             </div>
         </div>
     <?php } ?>

@@ -3,6 +3,7 @@
 include_once 'Models/chapters.php';
 
 function home($page) {
-    $lastChapters = Chapters::getThreeLastChapters();
+    $chapter = new Chapters();
+    $lastChapters = $chapter->getThreeLastChapters();
     include_once 'Views/'.$page.'_view.php';
 }

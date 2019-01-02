@@ -1,17 +1,12 @@
 <?php
 
 class Chapters {
-    public $id;
-    public $title;
-    public $content;
-    public $created_at;
-    public $user;
 
     /**
         * Chapters constructor.
         * @param $id
     */
-    function __construct($id) {
+    function __construct() {
         global $db;
     }
 

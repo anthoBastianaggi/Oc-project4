@@ -5,7 +5,7 @@ class Comments {
         * Comments constructor.
         * @param $id
     */
-    function __construct($id) {
+    function __construct() {
         global $db;
     }
     
@@ -47,7 +47,7 @@ class Comments {
         $id = $_GET["id"];
         //Requete SQL pour supprimer le contact dans la base
         $reqComments= $db->prepare("DELETE comment.id FROM comment WHERE id = " . $id);
-        $reqComments->execute();
+        $reqComments->execute(array('id' => $id));
     }
 
     /**
@@ -57,7 +57,7 @@ class Comments {
     public function updateComment($contentComment) {
         global $db;
 
-        $reqComments= $db->prepare('UPDATE comment SET `id`= 1, `content` = "Salut les gars", updated_at = NOW() WHERE `ticket_id` = 13');
+        $reqComments= $db->prepare('UPDATE comment SET `id`= 10, `content` = "Salut les gars", updated_at = NOW() WHERE `ticket_id` = 20');
         $reqComments->execute(array( $contentComment));
     }
 }
