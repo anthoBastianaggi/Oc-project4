@@ -36,6 +36,17 @@ class Comments {
         return $reqComments -> fetchAll();
     }
 
+    public function showComment() {
+        global $db;
+
+        $id = $_GET['id'];
+        $reqComments = $db -> prepare(
+        'SELECT *
+        FROM comment WHERE id = ?');
+        $reqComments -> execute(array($id));
+        return $reqComments -> fetch();
+    }
+
      /**
         * Suppression du commentaire
         * @return array
@@ -54,10 +65,10 @@ class Comments {
         * Modification du commentaire
         * @return array
     */
-    public function updateComment($contentComment) {
+    public function updateComment($idComment, $contentComment, $id) {
         global $db;
 
-        $reqComments= $db->prepare('UPDATE comment SET `id`= 10, `content` = "Salut les gars", updated_at = NOW() WHERE `ticket_id` = 20');
-        $reqComments->execute(array( $contentComment));
+        $reqComments= $db->prepare('UPDATE comment SET `id`= comment.id, `content` = ?, updated_at = NOW() WHERE `ticket_id` = ?');
+        $reqComments->execute(array($idComment, $contentComment, $id));
     }
 }

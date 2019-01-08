@@ -1,5 +1,7 @@
 <?php
 
+require 'Views/includes/bootstrap.php';
+
 function login($page) {
     $auth = App::getAuth();
     $db = App::getDatabase();
