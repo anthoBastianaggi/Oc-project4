@@ -22,6 +22,7 @@ $allPages = scandir('Controllers/');
 // vérification de l'existance de la page
 if(in_array($page[0].'_controller.php', $allPages)) {
     // Inclusion de la page
+   // var_dump($page[0]); die;
     include_once 'Controllers/'.$page[0].'_controller.php';
     $action($page[0]);
 } else {

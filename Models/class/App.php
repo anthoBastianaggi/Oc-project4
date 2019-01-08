@@ -4,7 +4,7 @@ class App {
 
     static function getDatabase() {
         if(!self::$db) {
-            self::$db = new Database('root', '', 'tuto');
+            self::$db = new Database('root', '', 'projet_openclassrooms');
         }
         return self::$db;
     }

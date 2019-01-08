@@ -1,5 +1,7 @@
 <?php
 
+require_once 'Views/includes/bootstrap.php'; 
+
 function register($page) {
     if(!empty($_POST)) {
         $errors = array();

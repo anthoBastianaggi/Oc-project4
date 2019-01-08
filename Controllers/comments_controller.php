@@ -3,11 +3,9 @@
 include_once 'Models/chapters.php';
 include_once 'Models/comments.php';
 
-function showChapter($page) {
-    $chapter = new Chapters();
-    $showChapter = $chapter->showChapter();
+function showComment($page) {
     $comment = new Comments();
-    $allComments = $comment->getAllComments($showChapter['id']);
+    $showComment = $comment->showComment();
     include_once 'Views/'.$page.'_show_view.php';
 }
 
@@ -19,6 +17,7 @@ function addComment($page) {
             $addComment = $comment->addComment($_GET['id'], $commentChapter);
             $chapter = new Chapters();
             $showChapter = $chapter->showChapter();
+            include_once 'Views/'.$page.'_show_view.php'; 
         }
     }
     include_once 'Views/'.$page.'_show_view.php'; 
@@ -33,7 +32,8 @@ function deleteComment($page) {
 function updateComment($page) {
     if(!empty($_POST) && isset($_POST['btnUpdateComment'])) {
         $comment = new Comments();
-        $updateComment = $comment->updateComment($_POST['contentComment']);
+        $updateComment = $comment->updateComment($_POST['idComment'], $_POST['contentComment'], $_GET['id']);
+        include_once 'Views/'.$page.'_update_view.php'; exit;
     }
     include_once 'Views/'.$page.'_update_view.php';  
 }
