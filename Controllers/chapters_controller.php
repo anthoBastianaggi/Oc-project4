@@ -39,7 +39,7 @@ function deleteChapter($page) {
 
 function updateChapter($page) {
     $chapter = new Chapters();
-    $chapter->showChapter();
+    $showChapter = $chapter->showChapter();
     if(!empty($_POST) && isset($_POST['btnUpdateChapter'])) {
         
         $updateChapter = $chapter->updateChapter($_POST['titleTicket'], $_POST['contentTicket'], $_GET['id']);

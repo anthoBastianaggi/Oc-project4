@@ -15,28 +15,31 @@
         </div> 
     </div>
 </section>
-<section class="les_chapitres">
-    <div class="description">
-        <h2>CHAPITRES</h2>
+<section class="homeChapters">
+    <div class="chaptersContainer">
+        <h2 class="section-title text-center text-uppercase">Chapitres</h2>
         <div>
-            <p class="sous_titre">Venez découvrir les derniers épisodes</p>
+            <p class="section-subheading text-muted">Venez découvrir les derniers épisodes</p>
         </div>
         
         <div class="row">
         <?php foreach ($lastChapters as $ticket) { ?>
-            <div class="col-sm-4">
+            <div class="col-md-6 col-lg-4">
                 <div class="card">
                 <div class="card-body">
                     <h5 class="card-title"><?=  $ticket['title'] ?></h5>
-                    <div class="mb-1 text-muted"><?=  $ticket['created_at'] ?></div>
-                    <p class="card-text"><?=  substr($ticket['content'], 0, 280).' '.'. . .' ?></p>
+                    <div class="mb-1 text-center"><?=  $ticket['created_at'] ?></div>
+                    <p class="card-text"><?=  substr($ticket['content'], 0, 700).' '.'. . .' ?></p>
                     <br /><a href="<?= CURRENT_PATH ?>chapters?action=showChapter&id= <?= $ticket['id'] ?>" class="btn btn-primary">Voir plus</a>
                 </div>
                 </div>
             </div>
         <?php } ?>
         </div>     
-        <br /><a class="btn btn-primary" href="<?= CURRENT_PATH ?>chapters?action=chapters" role="button">Voir plus de chapitres</a>
+        <br />
+        <div class="col-lg-12 text-center">
+            <a id="btn-getAllChapters" class="btn btn-primary" href="<?= CURRENT_PATH ?>chapters?action=chapters" role="button">Voir plus de chapitres</a>
+        </div>
     </div>
 </section>
 

@@ -85,10 +85,8 @@ class Chapters {
     public function deleteChapter() {
         global $db;
 
-        //Tu recuperes l'id du contact
-        $id = $_GET["id"];
         //Requete SQL pour supprimer le contact dans la base
-        $reqTicket= $db->prepare("DELETE FROM ticket WHERE id = " . $id);
-        $reqTicket->execute(array('id' => $id));
+        $reqTicket= $db->prepare("DELETE FROM ticket WHERE id = :id");
+        $reqTicket->execute(array(':id' => $_GET["id"]));
     }
 }

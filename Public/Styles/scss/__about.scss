@@ -1,0 +1,19 @@
+.about_me {
+    background-image: url("../../images/bg1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    .aboutContainer {
+        .section-title {
+            margin-bottom: 15px;
+        }
+
+        .section-subheading {
+            margin-bottom: 3.5rem;
+        }
+
+        .row {
+            text-align: justify;
+        }
+    }
+}

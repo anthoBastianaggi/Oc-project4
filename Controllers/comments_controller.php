@@ -17,16 +17,15 @@ function addComment($page) {
             $addComment = $comment->addComment($_GET['id'], $commentChapter);
             $chapter = new Chapters();
             $showChapter = $chapter->showChapter();
-            include_once 'Views/'.$page.'_show_view.php'; 
         }
     }
-    include_once 'Views/'.$page.'_show_view.php'; 
+    header('Location: /projet4/chapters?action=showChapter&id=' .$_GET['id']); 
 }
 
 function deleteComment($page) { 
     $comment = new Comments();
     $deleteComment = $comment->deleteComment();
-    header('Location: /sites/projet4/home'); 
+    header('Location: /projet4/home'); 
 }
 
 function updateComment($page) {

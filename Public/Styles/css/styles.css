@@ -1,283 +1,399 @@
-/* CSS HAUT DE PAGE */
-
-header {
-    position: fixed;
-    z-index: 10;
-    background-color: #161F26;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    top: 0;
-    border-bottom: 2px solid #EF951B;
-    border-top: 2px solid #EF951B;
-    color: white;
-}
-
-.navbar {
-    height: 80px;
-}
-
-.bg-dark {
-    background-color: #161F26 !important;
-}
-
-.icone_book {
-    width: 80px;
-    height: 50px;
-    vertical-align: bottom;
-    margin-right: 15px;
-}
-
-.prenom_title {
-    font-family:'Courgette', cursive; 
-    font-style: italic; 
-    font-size: 2.5rem;
-    color: white;
-}
-
-.navbar-brand {
-    color: burlywood !important;
-    font-size: 1.5rem;
-    height: 80px;
-}
-
-.navbar-dark .navbar-nav .nav-link {
-    color: rgba(255,255,255,.5) !important;
-}
-
-.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
-    color: rgba(255,255,255,.75) !important;
-}
 /* CSS CORPS DE PAGE */
 html {
-    height: 100%;
-}
-body {
-    margin: 0;
-    height: 100%;
-    position: absolute;
+  height: 100%; }
+  html body {
+    height: 100%; }
+    html body main {
+      padding-top: 8.5rem; }
+      html body main section {
+        padding: 2rem 0;
+        min-height: calc(45rem + 10px);
+        background-color: #161F26; }
+
+@media (max-width: 1160px) {
+  html body main {
+    padding-top: 5rem; }
+    html body main section {
+      min-height: calc(48rem + 11px); } }
+@media (max-width: 855px) {
+  html body main {
+    padding-top: 7.5rem; } }
+@media (max-width: 500px) {
+  html body main {
+    padding-top: 5.9rem; } }
+header #mainNav {
+  font-weight: 700;
+  font-family: 'Montserrat';
+  position: fixed;
+  z-index: 10;
+  background-color: #161F26 !important;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  top: 0;
+  border-bottom: 2px solid #EF951B;
+  border-top: 2px solid #EF951B;
+  color: white; }
+  header #mainNav .navContainer {
+    margin: auto 15px;
     width: 100%;
-}
+    vertical-align: baseline; }
+    header #mainNav .navContainer .navbar-brand {
+      color: white;
+      vertical-align: -moz-middle-with-baseline; }
+      header #mainNav .navContainer .navbar-brand .icone_book {
+        width: 80px;
+        height: 50px;
+        vertical-align: bottom;
+        margin-right: 15px; }
+      header #mainNav .navContainer .navbar-brand .name_title {
+        font-family: 'Courgette', cursive;
+        font-style: italic;
+        font-size: 1.75rem;
+        color: white;
+        vertical-align: top; }
+      header #mainNav .navContainer .navbar-brand .content_title {
+        vertical-align: super; }
+      header #mainNav .navContainer .navbar-brand br {
+        display: none; }
+    header #mainNav .navContainer .navbar-nav {
+      letter-spacing: 0.0625rem; }
+      header #mainNav .navContainer .navbar-nav li.nav-item a.nav-link {
+        color: white;
+        font-size: 1rem; }
+        header #mainNav .navContainer .navbar-nav li.nav-item a.nav-link:hover {
+          color: #18BC9C; }
+        header #mainNav .navContainer .navbar-nav li.nav-item a.nav-link:active, header #mainNav .navContainer .navbar-nav li.nav-item a.nav-link:focus {
+          color: white; }
+        header #mainNav .navContainer .navbar-nav li.nav-item a.nav-link.active {
+          color: #18BC9C; }
+    header #mainNav .navContainer .navbar-toggler {
+      font-size: 80%;
+      padding: 0.8rem;
+      position: absolute;
+      right: 30px;
+      margin: 16px auto; }
 
-main {
-    position: relative;
-    padding-top: 84px;
-}
-
-/* CSS SECTION ACCUEIL */
-#home {
-    position: relative;
-    height: 100vh;
-    border-bottom: 2px solid #EF951B;
-    background-image: url("../../images/alaska.jpg");
-    background-position: center;
-    background-size: cover;
-    max-height: 882px;
-}
-
-.container {
+@media (min-width: 1160px) {
+  header #mainNav {
+    -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
+    -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
+    transition: padding-top 0.3s, padding-bottom 0.3s;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -ms-flex-pack: start;
+    justify-content: flex-start; }
+    header #mainNav .navContainer .navbar-brand {
+      -webkit-transition: font-size 0.3s;
+      -moz-transition: font-size 0.3s;
+      transition: font-size 0.3s; }
+    header #mainNav .navContainer .navbar-nav > li.nav-item > a.nav-link.active {
+      color: white;
+      background: #18BC9C; }
+      header #mainNav .navContainer .navbar-nav > li.nav-item > a.nav-link.active:active, header #mainNav .navContainer .navbar-nav > li.nav-item > a.nav-link.active:focus, header #mainNav .navContainer .navbar-nav > li.nav-item > a.nav-link.active:hover {
+        color: white;
+        background: #18BC9C; }
+    header #mainNav .navContainer #btn-menu {
+      display: none; }
+    header #mainNav .navContainer #navbarResponsive {
+      display: -ms-flexbox !important;
+      display: flex !important;
+      -ms-flex-preferred-size: auto;
+      flex-basis: auto; }
+      header #mainNav .navContainer #navbarResponsive #navbarDeroulant {
+        -ms-flex-direction: row;
+        flex-direction: row; }
+        header #mainNav .navContainer #navbarResponsive #navbarDeroulant .nav-item .nav-link {
+          padding-right: 0.5rem;
+          padding-left: 0.5rem; } }
+@media (max-width: 855px) {
+  header #mainNav .navContainer .navbar-brand br {
+    display: block;
+    line-height: 5px; }
+  header #mainNav .navContainer #btn-menu {
+    margin: 37px auto; } }
+@media (max-width: 500px) {
+  header #mainNav .navContainer .navbar-brand .icone_book {
+    display: none; }
+  header #mainNav .navContainer .navbar-brand .name_title {
+    font-size: 1.15rem; }
+  header #mainNav .navContainer .navbar-brand .content_title {
+    font-size: 0.65rem; }
+  header #mainNav .navContainer #btn-menu {
+    margin: 23px auto; } }
+@media (max-width: 240px) {
+  header #mainNav .navContainer {
+    margin: 0; }
+    header #mainNav .navContainer .navbar-brand .icone_book {
+      display: none; }
+    header #mainNav .navContainer .navbar-brand .name_title {
+      font-size: 1rem; }
+    header #mainNav .navContainer .navbar-brand .content_title {
+      font-size: 0.55rem; }
+    header #mainNav .navContainer #btn-menu {
+      right: 15px;
+      margin: 23px auto; } }
+main #home {
+  border-bottom: 2px solid #EF951B;
+  background-image: url("../../images/alaska.jpg");
+  background-position: center;
+  background-size: cover;
+  padding-top: calc(21rem + 40px);
+  padding-bottom: calc(21rem + 40px); }
+  main #home .container {
     width: 100%;
     height: 100%;
     display: flex;
     -webkit-box-pack: center;
     justify-content: center;
     -webkit-box-align: center;
-    align-items: center;
-}
+    align-items: center; }
+main .homeChapters .chaptersContainer .section-title {
+  margin-bottom: 15px;
+  color: white; }
+main .homeChapters .chaptersContainer .section-subheading {
+  text-align: center;
+  color: white !important;
+  margin-bottom: 3.5rem; }
+main .homeChapters .chaptersContainer .row {
+  margin-right: 0;
+  margin-left: 0; }
+  main .homeChapters .chaptersContainer .row .col-md-6 {
+    padding: 15px; }
+    main .homeChapters .chaptersContainer .row .col-md-6 .card {
+      background-color: #161F26;
+      height: 100%;
+      border-radius: 0; }
+      main .homeChapters .chaptersContainer .row .col-md-6 .card .card-body {
+        text-align: justify;
+        color: white; }
+        main .homeChapters .chaptersContainer .row .col-md-6 .card .card-body .card-title {
+          text-align: center; }
+        main .homeChapters .chaptersContainer .row .col-md-6 .card .card-body .text-center {
+          color: #6c757d; }
+        main .homeChapters .chaptersContainer .row .col-md-6 .card .card-body .btn-primary {
+          margin: 0 auto;
+          width: 90px;
+          display: flex; }
 
-.m-b-20 {
+.about_me {
+  background-image: url("../../images/bg1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white; }
+  .about_me .aboutContainer .section-title {
+    margin-bottom: 15px; }
+  .about_me .aboutContainer .section-subheading {
+    margin-bottom: 3.5rem; }
+  .about_me .aboutContainer .row {
+    text-align: justify; }
+
+.homeChapters {
+  min-height: calc(35rem + 20px); }
+  .homeChapters .chaptersContainer .section-title {
+    margin-bottom: 15px;
+    color: white; }
+  .homeChapters .chaptersContainer .section-subheading {
     text-align: center;
-    font-size: 65px;
-    color: burlywood;
-}
-
-.m-b-40 {
-    text-align: center;
-    font-size: 50px;
-    color: #FC4000;
-}
-
-/* CSS SECTION A PROPOS */
-#a_propos {
-    border-bottom: 2px solid #EF951B;
-    background-color: #161F26;
-    padding-bottom: 20px;
-    color: white;
-    padding-top: 5px;
-}
-
-.description {
-    text-align: center;
-    padding-top: 24px;
-    padding-bottom: 24px;
-}
-
-/* CSS SECTION LES CHAPITRES */
-.row {
-    margin-left: 0;
-    margin-right: 0;
-}
-
-.col-sm-12 {
-    flex: 0 0 100%;
-    max-width: 100%;
-    min-height: 782px;
-    padding-left: 0px;
-    padding-right: 0px;
-}
-
-.card-body {
-    text-align: center;
-    color: white;
-}
-
-.card {
+    color: white !important;
+    margin-bottom: 3.5rem; }
+  .homeChapters .chaptersContainer .card {
     background-color: #161F26;
     height: 100%;
-    border-radius: 0;
-}
+    border-radius: 0; }
+    .homeChapters .chaptersContainer .card .card-body {
+      text-align: center;
+      color: white; }
+  .homeChapters .chaptersContainer #btn-getAllChapters {
+    margin: 0 auto; }
 
-.les_chapitres {
-    background-color: #161F26;
-    color: white;
-    display: block;
-    position: relative;
-}
+.allChapters .chaptersContainer .section-title {
+  margin-bottom: 15px;
+  color: white; }
+.allChapters .chaptersContainer .section-subheading {
+  text-align: center;
+  color: white !important;
+  margin-bottom: 3.5rem; }
+.allChapters .chaptersContainer .row {
+  margin-left: 0;
+  margin-right: 0; }
+  .allChapters .chaptersContainer .row .col-md-6 {
+    padding: 15px; }
+    .allChapters .chaptersContainer .row .col-md-6 .card {
+      background-color: #161F26;
+      height: 100%;
+      border-radius: 0; }
+      .allChapters .chaptersContainer .row .col-md-6 .card .card-body {
+        text-align: justify;
+        color: white; }
+        .allChapters .chaptersContainer .row .col-md-6 .card .card-body .card-title {
+          text-align: center; }
+        .allChapters .chaptersContainer .row .col-md-6 .card .card-body .btn-primary {
+          margin: 0 auto;
+          width: 90px;
+          display: flex; }
+.allChapters .chaptersContainer #btn-addChapters {
+  margin: 0 auto; }
 
-h2 {
-    line-height: 1.7;
-}
-
-.sous_titre {
-    text-align: center;
-    padding: 20px 0;
-}
-
-#addChapter {
-    font-family: 'Teko', sans-serif;
-    padding-top: 74px;
-    width: 100%;
-    background-color: #161F26;
-    color: #fff;
-    position: relative;
-    padding-bottom: 73px;
-    min-height: 782px;
-}
-
-.comments {
-    color: white;
-    background-color: #161F26;;
-    padding: 1.25rem;
-    text-align: center;
-}
-
-.addComments {
-    color: white;
-    background-color: #161F26;;
-    padding: 1.25rem;
-    text-align: center;
-}
-
-#comment_add {
-    text-align: left;
-}
-
-.btn-body-card {
-    padding: 1.25rem;
-}
-
-.btn-card {
-    margin: auto 15%;
-}
-
-/* CSS SECTION CONTACT */
-.content-header{
-    font-family: 'Oleo Script', cursive;
-    font-size: 45px;
-}
-
-.section-content{
-    text-align: left; 
-}
-
-.section-header {
-    text-align: center;
-}
-
-#contact{ 
-    font-family: 'Teko', sans-serif;
-    padding-top: 74px;
-    width: 100%;
-    background-color: #161F26;
-    color : #fff;
-    position: relative; 
-    padding-bottom: 73px;
-}
-
-p{
-    margin: auto 15%;
-    font-size: 18px;  
-    line-height: 1.6em;  
-    font-style: italic; 
+.showChapters .container .card {
+  background-color: #fff;
+  height: 100%;
+  border-radius: 0; }
+  .showChapters .container .card .card-body {
     text-align: justify;
-}
+    color: black; }
+    .showChapters .container .card .card-body .card-title {
+      text-align: center; }
+    .showChapters .container .card .card-body .text-center {
+      color: #6c757d; }
+.showChapters .container #btn-addChapters {
+  margin: 0 auto; }
 
-a{
-	color:#26a5d3;
-}
+.addChapters .container {
+  color: white; }
+  .addChapters .container .section-title {
+    margin-bottom: 3.5rem; }
 
-h3 {
+.updateChapters .container {
+  color: white; }
+  .updateChapters .container .section-title {
+    margin-bottom: 3.5rem; }
+
+.commentChapter .container h2 {
+  margin-bottom: 1.5rem;
+  color: white;
+  text-align: center; }
+.commentChapter .container .row .col-md-12 .panel {
+  margin-bottom: 20px;
+  background-color: #fff;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05); }
+.commentChapter .container .row .col-md-12 .panel-shadow {
+  box-shadow: rgba(255, 255, 255, 0.3) 7px 7px 7px; }
+.commentChapter .container .row .col-md-12 .panel-white {
+  border: 1px solid #dddddd; }
+  .commentChapter .container .row .col-md-12 .panel-white .panel-heading {
+    color: #333;
+    background-color: #fff;
+    border-color: #ddd; }
+.commentChapter .container .row .col-md-12 .post .post-heading {
+  height: 95px;
+  padding: 20px 15px; }
+  .commentChapter .container .row .col-md-12 .post .post-heading .pull-left {
+    float: left; }
+    .commentChapter .container .row .col-md-12 .post .post-heading .pull-left .avatar {
+      width: 60px;
+      height: 60px;
+      display: block;
+      margin-right: 15px; }
+  .commentChapter .container .row .col-md-12 .post .post-heading .meta .title {
+    margin-bottom: 0; }
+  .commentChapter .container .row .col-md-12 .post .post-heading .meta .title a {
+    color: black; }
+    .commentChapter .container .row .col-md-12 .post .post-heading .meta .title a:hover {
+      color: gainsboro; }
+  .commentChapter .container .row .col-md-12 .post .post-heading .meta .time {
+    margin-top: 8px;
+    color: #999; }
+.commentChapter .container .row .col-md-12 .post .post-description {
+  padding: 15px; }
+  .commentChapter .container .row .col-md-12 .post .post-description p {
+    font-size: 14px; }
+  .commentChapter .container .row .col-md-12 .post .post-description .stats {
+    margin-top: 20px; }
+    .commentChapter .container .row .col-md-12 .post .post-description .stats .stat-item {
+      display: inline-block;
+      margin-right: 15px; }
+    .commentChapter .container .row .col-md-12 .post .post-description .stats a {
+      text-decoration: none; }
+      .commentChapter .container .row .col-md-12 .post .post-description .stats a .icon {
+        margin-right: 8px; }
+    .commentChapter .container .row .col-md-12 .post .post-description .stats .btn-default {
+      color: #333;
+      background-color: #fff;
+      border-color: #ccc; }
+      .commentChapter .container .row .col-md-12 .post .post-description .stats .btn-default:hover {
+        background-color: gainsboro; }
+.commentChapter .container .addComments {
+  color: white;
+  background-color: #161F26;
+  padding: 1.25rem 0;
+  text-align: center; }
+  .commentChapter .container .addComments h2 {
+    margin-bottom: 1.5rem; }
+  .commentChapter .container .addComments #comment_add {
+    text-align: left; }
+    .commentChapter .container .addComments #comment_add textarea {
+      height: 150px; }
+
+#contact {
+  font-family: 'Teko', sans-serif; }
+  #contact .container .row .section-title {
+    margin-bottom: 15px;
+    color: white; }
+  #contact .container .row .section-subheading {
     text-align: center;
-}
+    color: white !important;
+    margin-bottom: 3.5rem; }
+  #contact .container .row #infobox-contact {
+    background-color: lightgrey;
+    padding: 2rem 0; }
+    #contact .container .row #infobox-contact form .label-contact {
+      font-size: 1.25rem; }
+    #contact .container .row #infobox-contact form textarea {
+      height: 200px; }
+    #contact .container .row #infobox-contact form #btn-contact {
+      margin-top: 2rem; }
+      #contact .container .row #infobox-contact form #btn-contact button {
+        font-size: 1.25rem; }
 
-a:hover,a:focus{
-	text-decoration:none;
-	color:#26a5d3;
-}
+#register .container .row .section-title {
+  margin-bottom: 15px;
+  color: white; }
+#register .container .row .section-subheading {
+  text-align: center;
+  color: white !important;
+  margin-bottom: 3.5rem; }
+#register .container .row #infobox-register {
+  background-color: lightgrey;
+  padding: 2rem 0; }
+  #register .container .row #infobox-register form .label-register {
+    font-size: 1.25rem; }
+  #register .container .row #infobox-register form #btn-register {
+    margin-top: 2rem; }
+    #register .container .row #infobox-register form #btn-register button {
+      font-size: 1.25rem; }
 
-textarea.form-control{
-    height:100px;
-}
-
-hr {
-    margin-top: 4rem;
-    border-top: 1px solid rgb(255, 255, 255);
-    width: 80%;
-}
-
-.social_site {
-    text-align: center;
-}
-
-.list-inline {
-    display: flex;
-    margin: auto 15%;
-}
-
-.col-md-8 {
-    max-width: 50%;
-    margin: auto;
-}
+#login .container .row .section-title {
+  margin-bottom: 3.6rem;
+  color: white; }
+#login .container .row #infobox-login {
+  background-color: lightgrey;
+  padding: 2rem 0; }
+  #login .container .row #infobox-login form .label-login {
+    font-size: 1.25rem; }
+  #login .container .row #infobox-login form #btn-login {
+    margin-top: 2rem; }
+    #login .container .row #infobox-login form #btn-login button {
+      font-size: 1.25rem; }
 
 /* CSS FOOTER */
-footer {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    height: 100px;
-    background-color: #161F26;
-    color: white;
-    font-size: 24px;
-    border-bottom: 2px solid #EF951B;
-    border-top: 2px solid #EF951B;
-    position: absolute;
-}
+#footer-page {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  min-height: 100px;
+  background-color: #161F26;
+  color: white;
+  font-size: 24px;
+  border-bottom: 2px solid #EF951B;
+  border-top: 2px solid #EF951B;
+  position: absolute;
+  align-items: center;
+  padding: 0 !important; }
+  #footer-page .footer-info {
+    margin: 0; }
 
-.pt-4, .py-4 {
-    padding-top: 1rem !important;
-}
-
-.footer-info {
-    margin: 0;
-}
-
+/*# sourceMappingURL=styles.css.map */

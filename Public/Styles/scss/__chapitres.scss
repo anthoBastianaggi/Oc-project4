@@ -1,0 +1,118 @@
+.homeChapters {
+    min-height: calc(35rem + 20px);
+    .chaptersContainer {
+        .section-title {
+            margin-bottom: 15px;
+            color: white;
+        }
+
+        .section-subheading {
+            text-align: center;
+            color: white !important;
+            margin-bottom: 3.5rem;
+        }
+
+        .card {
+            background-color: #161F26;
+            height: 100%;
+            border-radius: 0;
+            .card-body {
+                text-align: center;
+                color: white;
+            }
+        } 
+
+        #btn-getAllChapters {
+            margin: 0 auto;
+        }   
+    }
+}
+
+.allChapters {
+    .chaptersContainer {
+        .section-title {
+            margin-bottom: 15px;
+            color: white;
+        }
+
+        .section-subheading {
+            text-align: center;
+            color: white !important;
+            margin-bottom: 3.5rem;
+        }
+
+        .row {
+            margin-left: 0;
+            margin-right: 0;
+            .col-md-6 {
+                padding: 15px;
+                .card {
+                    background-color: #161F26;
+                    height: 100%;
+                    border-radius: 0;
+                    .card-body {
+                        text-align: justify;
+                        color: white;
+                        .card-title {
+                            text-align: center;
+                        }
+                        .btn-primary {
+                            margin: 0 auto;
+                            width: 90px;
+                            display: flex;
+                        }
+                    }
+                } 
+            }    
+        }
+
+        #btn-addChapters {
+            margin: 0 auto;
+        }   
+    }
+}
+
+
+.showChapters {
+    .container {
+        .card {
+            background-color: #fff;
+            height: 100%;
+            border-radius: 0;
+            .card-body {
+                text-align: justify;
+                color: black;
+                .card-title {
+                    text-align: center;
+                }
+                .text-center {
+                    color: #6c757d;
+                }
+            }
+        } 
+
+        #btn-addChapters {
+            margin: 0 auto;
+        }   
+    }
+}
+
+
+
+.addChapters {
+    .container {
+        color: white;
+        .section-title {
+            margin-bottom: 3.5rem;
+        }
+    }
+}
+
+.updateChapters {
+    .container {
+        color: white;
+        .section-title {
+            margin-bottom: 3.5rem;
+        }
+    }
+}

@@ -1,0 +1,107 @@
+.commentChapter {
+    .container {
+        h2 {
+            margin-bottom: 1.5rem;
+            color: white;
+            text-align: center;
+        }
+
+        .row {
+            .col-md-12 {
+                .panel {
+                    margin-bottom: 20px;
+                    background-color: #fff;
+                    border: 1px solid transparent;
+                    border-radius: 4px;
+                    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
+                    box-shadow: 0 1px 1px rgba(0,0,0,.05);
+                }
+                .panel-shadow {
+                    box-shadow: rgba(255, 255, 255, 0.3) 7px 7px 7px;
+                }
+                .panel-white {
+                    border: 1px solid #dddddd;
+                    .panel-heading {
+                        color: #333;
+                        background-color: #fff;
+                        border-color: #ddd;
+                    }
+                }
+                .post {
+                    .post-heading {
+                        height: 95px;
+                        padding: 20px 15px;
+                        .pull-left {
+                            float: left;
+                            .avatar {
+                                width: 60px;
+                                height: 60px;
+                                display: block;
+                                margin-right: 15px;
+                            }
+                        }
+                        .meta {
+                            .title {
+                                margin-bottom: 0;
+                            }
+                            .title a {
+                                color: black;
+                                &:hover {
+                                    color: gainsboro;
+                                }
+                            }
+                            .time {
+                                margin-top: 8px;
+                                color: #999;
+                            }
+                        }
+                    }
+                    .post-description {
+                        padding: 15px;
+                        p {
+                            font-size: 14px;
+                        }
+                        .stats {
+                            margin-top: 20px;
+                            .stat-item {
+                                display: inline-block;
+                                margin-right: 15px;
+                            }
+                            a {
+                                text-decoration: none;
+                                .icon {
+                                    margin-right: 8px;
+                                }
+                            }
+                            .btn-default {
+                                color: #333;
+                                background-color: #fff;
+                                border-color: #ccc;
+                                &:hover {
+                                    background-color: gainsboro;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .addComments {
+            color: white;
+            background-color: #161F26;;
+            padding: 1.25rem 0;
+            text-align: center;
+
+            h2 {
+                margin-bottom: 1.5rem;
+            }
+            #comment_add {
+                text-align: left;
+
+                textarea {
+                    height: 150px;
+                }
+            }
+        }
+    }
+}

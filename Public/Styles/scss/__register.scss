@@ -1,0 +1,33 @@
+#register {
+    .container {
+        .row {
+            .section-title {
+                margin-bottom: 15px;
+                color: white;
+            }
+
+            .section-subheading {
+                text-align: center;
+                color: white !important;
+                margin-bottom: 3.5rem;
+            }
+
+            #infobox-register {
+                background-color: lightgrey;
+                padding: 2rem 0;
+                form {
+                    .label-register {
+                        font-size: 1.25rem;
+                    }
+
+                    #btn-register {
+                        margin-top: 2rem;
+                        button {
+                            font-size: 1.25rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -28,7 +28,7 @@ class Auth {
             $token
         ]);
         $user_id = $db->lastInsertId();
-        mail($email, 'Confirmation de votre compte', "Afin de valider votre compte merci de cliquer sur ce lien\n\nhttp://localhost/compte/confirm.php?id=$user_id&token=$token");         
+        mail($email, 'Confirmation de votre compte', "Afin de valider votre compte merci de cliquer sur ce lien\n\nhttp://localhost/projet4/confirm?action=confirm&id=$user_id&token=$token");         
     }
 
     public function confirm($db, $user_id, $token) {
@@ -45,7 +45,7 @@ class Auth {
     public function restrict() {
         if(!$this->session->read('auth')) {
             $this->session->setFlash('danger', $this->options['restriction_msg']);
-            header('Location: login.php');
+            header('Location: /projet4/login?action=login');
             exit();
         }
     }
