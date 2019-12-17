@@ -9,10 +9,6 @@ class Session {
         return self::$instance;
     }
 
-    public function __construct() {
-        session_start();
-    }
-
     public function setFlash($key, $message) {
         $_SESSION['flash'][$key] = $message;
     }

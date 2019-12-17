@@ -1,0 +1,38 @@
+#contact {
+    font-family: 'Teko', sans-serif;
+    .container {
+        .row {
+            .section-title {
+                margin-bottom: 15px;
+                color: white;
+            }
+
+            .section-subheading {
+                text-align: center;
+                color: white !important;
+                margin-bottom: 3.5rem;
+            }
+
+            #infobox-contact {
+                background-color: lightgrey;
+                padding: 2rem 0;
+                form {
+                    .label-contact {
+                        font-size: 1.25rem;
+                    }
+
+                    textarea {
+                        height:200px;
+                    }
+
+                    #btn-contact {
+                        margin-top: 2rem;
+                        button {
+                            font-size: 1.25rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

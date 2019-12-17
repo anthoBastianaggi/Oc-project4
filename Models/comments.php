@@ -29,7 +29,7 @@ class Comments {
         global $db;
 
         $reqComments = $db -> prepare(
-        'SELECT content
+        'SELECT id, content, created_at
         FROM comment  
         WHERE ticket_id = ?');
         $reqComments -> execute(array($id));
@@ -54,21 +54,19 @@ class Comments {
     public function deleteComment() {
         global $db;
 
-        //Tu recuperes l'id du contact
-        $id = $_GET["id"];
-        //Requete SQL pour supprimer le contact dans la base
-        $reqComments= $db->prepare("DELETE comment.id FROM comment WHERE id = " . $id);
-        $reqComments->execute(array('id' => $id));
+        //Requete SQL pour supprimer le commentaire dans la base
+        $reqComments= $db->prepare("DELETE FROM comment WHERE id = :id");
+        $reqComments->execute(array(':id' => $_GET['id']));
     }
 
     /**
         * Modification du commentaire
         * @return array
     */
-    public function updateComment($idComment, $contentComment, $id) {
+    public function updateComment($contentComment, $id) {
         global $db;
 
-        $reqComments= $db->prepare('UPDATE comment SET `id`= comment.id, `content` = ?, updated_at = NOW() WHERE `ticket_id` = ?');
-        $reqComments->execute(array($idComment, $contentComment, $id));
+        $reqComments= $db->prepare('UPDATE comment SET `content` = ?, updated_at = NOW() WHERE id = ?');
+        $reqComments->execute(array($contentComment, $id));
     }
 }

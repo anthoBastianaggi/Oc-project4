@@ -1,8 +1,7 @@
 <?php
 
-require_once 'Views/includes/bootstrap.php'; 
-
 function register($page) {
+    require_once 'Views/includes/bootstrap.php'; 
     if(!empty($_POST)) {
         $errors = array();
         $db = App::getDatabase();
@@ -23,10 +22,10 @@ function register($page) {
         if($validator->isValid()){
             App::getAuth()->register($db, $_POST['firstname'], $_POST['lastname'],$_POST['birthdate'],$_POST['username'],$_POST['password'], $_POST['email']);
             Session::getInstance()->setFlash('success', "Un email de confirmation vous a été envoyé sur votre compte.");
-            App::redirect('login.php');
+            App::redirect('/projet4/login?action=login');
         } else {
             $errors = $validator->getErrors();
         }
     }
-    include_once 'Views/'.$page.'_view.php';
+    include_once 'Views/'.$page.'.php';
 }

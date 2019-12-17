@@ -1,13 +1,12 @@
 <?php
 
-require 'Views/includes/bootstrap.php';
-
 function login($page) {
+    require 'Views/includes/bootstrap.php';
     $auth = App::getAuth();
     $db = App::getDatabase();
     $auth->connectFromCookie($db);
     if($auth->user()){
-        App::redirect('account.php');
+        App::redirect('/projet4/account?action=account');
     }
 
     if(!empty($_POST) && !empty($_POST['username']) && !empty($_POST['password'])) {
@@ -15,10 +14,10 @@ function login($page) {
         $session = Session::getInstance();
         if($user) {
             $session->setFlash('success', "Vous êtes maintenant connecté");
-            App::redirect('account.php');
+            App::redirect('/projet4/account?action=account');
         } else {
             $session->setFlash('danger', "Identifiant ou mot de passe incorrecte");
         }
     }
-    include_once 'Views/'.$page.'_view.php';
+    include_once 'Views/'.$page.'.php';
 }

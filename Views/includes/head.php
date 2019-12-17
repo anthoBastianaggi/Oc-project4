@@ -17,7 +17,8 @@
 <meta property="og:image"             content="<?= WEBSITE_FACEBOOK_IMAGE?>" />
 
 <!-- CSS Styles -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"/>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" />
+<link rel="stylesheet" href="Public/Styles/css/bootstrap.css"/>
 <link rel="stylesheet" href="Public/Styles/css/styles.css"/>
 
 <!-- Javascript -->
