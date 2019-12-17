@@ -13,5 +13,5 @@ function forget($page) {
             $session->setFash('danger', 'Aucun compte ne correspond à cet adresse.');
         }
     }
-    include_once 'Views/'.$page.'_view.php';
+    include_once 'Views/'.$page.'.php';
 }
