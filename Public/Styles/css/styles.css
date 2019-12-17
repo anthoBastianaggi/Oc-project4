@@ -15,12 +15,15 @@ html {
     padding-top: 5rem; }
     html body main section {
       min-height: calc(48rem + 11px); } }
+
 @media (max-width: 855px) {
   html body main {
     padding-top: 7.5rem; } }
+
 @media (max-width: 500px) {
   html body main {
     padding-top: 5.9rem; } }
+
 header #mainNav {
   font-weight: 700;
   font-family: 'Montserrat';
@@ -106,12 +109,14 @@ header #mainNav {
         header #mainNav .navContainer #navbarResponsive #navbarDeroulant .nav-item .nav-link {
           padding-right: 0.5rem;
           padding-left: 0.5rem; } }
+
 @media (max-width: 855px) {
   header #mainNav .navContainer .navbar-brand br {
     display: block;
     line-height: 5px; }
   header #mainNav .navContainer #btn-menu {
     margin: 37px auto; } }
+
 @media (max-width: 500px) {
   header #mainNav .navContainer .navbar-brand .icone_book {
     display: none; }
@@ -121,6 +126,7 @@ header #mainNav {
     font-size: 0.65rem; }
   header #mainNav .navContainer #btn-menu {
     margin: 23px auto; } }
+
 @media (max-width: 240px) {
   header #mainNav .navContainer {
     margin: 0; }
@@ -133,6 +139,7 @@ header #mainNav {
     header #mainNav .navContainer #btn-menu {
       right: 15px;
       margin: 23px auto; } }
+
 main #home {
   border-bottom: 2px solid #EF951B;
   background-image: url("../../images/alaska.jpg");
@@ -148,13 +155,16 @@ main #home {
     justify-content: center;
     -webkit-box-align: center;
     align-items: center; }
+
 main .homeChapters .chaptersContainer .section-title {
   margin-bottom: 15px;
   color: white; }
+
 main .homeChapters .chaptersContainer .section-subheading {
   text-align: center;
   color: white !important;
   margin-bottom: 3.5rem; }
+
 main .homeChapters .chaptersContainer .row {
   margin-right: 0;
   margin-left: 0; }
@@ -210,10 +220,12 @@ main .homeChapters .chaptersContainer .row {
 .allChapters .chaptersContainer .section-title {
   margin-bottom: 15px;
   color: white; }
+
 .allChapters .chaptersContainer .section-subheading {
   text-align: center;
   color: white !important;
   margin-bottom: 3.5rem; }
+
 .allChapters .chaptersContainer .row {
   margin-left: 0;
   margin-right: 0; }
@@ -232,6 +244,7 @@ main .homeChapters .chaptersContainer .row {
           margin: 0 auto;
           width: 90px;
           display: flex; }
+
 .allChapters .chaptersContainer #btn-addChapters {
   margin: 0 auto; }
 
@@ -246,6 +259,7 @@ main .homeChapters .chaptersContainer .row {
       text-align: center; }
     .showChapters .container .card .card-body .text-center {
       color: #6c757d; }
+
 .showChapters .container #btn-addChapters {
   margin: 0 auto; }
 
@@ -263,6 +277,7 @@ main .homeChapters .chaptersContainer .row {
   margin-bottom: 1.5rem;
   color: white;
   text-align: center; }
+
 .commentChapter .container .row .col-md-12 .panel {
   margin-bottom: 20px;
   background-color: #fff;
@@ -270,14 +285,17 @@ main .homeChapters .chaptersContainer .row {
   border-radius: 4px;
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05); }
+
 .commentChapter .container .row .col-md-12 .panel-shadow {
   box-shadow: rgba(255, 255, 255, 0.3) 7px 7px 7px; }
+
 .commentChapter .container .row .col-md-12 .panel-white {
   border: 1px solid #dddddd; }
   .commentChapter .container .row .col-md-12 .panel-white .panel-heading {
     color: #333;
     background-color: #fff;
     border-color: #ddd; }
+
 .commentChapter .container .row .col-md-12 .post .post-heading {
   height: 95px;
   padding: 20px 15px; }
@@ -297,6 +315,7 @@ main .homeChapters .chaptersContainer .row {
   .commentChapter .container .row .col-md-12 .post .post-heading .meta .time {
     margin-top: 8px;
     color: #999; }
+
 .commentChapter .container .row .col-md-12 .post .post-description {
   padding: 15px; }
   .commentChapter .container .row .col-md-12 .post .post-description p {
@@ -316,6 +335,7 @@ main .homeChapters .chaptersContainer .row {
       border-color: #ccc; }
       .commentChapter .container .row .col-md-12 .post .post-description .stats .btn-default:hover {
         background-color: gainsboro; }
+
 .commentChapter .container .addComments {
   color: white;
   background-color: #161F26;
@@ -352,10 +372,12 @@ main .homeChapters .chaptersContainer .row {
 #register .container .row .section-title {
   margin-bottom: 15px;
   color: white; }
+
 #register .container .row .section-subheading {
   text-align: center;
   color: white !important;
   margin-bottom: 3.5rem; }
+
 #register .container .row #infobox-register {
   background-color: lightgrey;
   padding: 2rem 0; }
@@ -369,6 +391,7 @@ main .homeChapters .chaptersContainer .row {
 #login .container .row .section-title {
   margin-bottom: 3.6rem;
   color: white; }
+
 #login .container .row #infobox-login {
   background-color: lightgrey;
   padding: 2rem 0; }
@@ -379,21 +402,5 @@ main .homeChapters .chaptersContainer .row {
     #login .container .row #infobox-login form #btn-login button {
       font-size: 1.25rem; }
 
-/* CSS FOOTER */
-#footer-page {
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
-  min-height: 100px;
-  background-color: #161F26;
-  color: white;
-  font-size: 24px;
-  border-bottom: 2px solid #EF951B;
-  border-top: 2px solid #EF951B;
-  position: absolute;
-  align-items: center;
-  padding: 0 !important; }
-  #footer-page .footer-info {
-    margin: 0; }
-
-/*# sourceMappingURL=styles.css.map */
+.footer-copyright {
+  color: red; }

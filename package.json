@@ -1,0 +1,26 @@
+{
+  "name": "my-project4-app",
+  "version": "1.0.0",
+  "description": "Create blog for the writer Jean Forteroche",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch Public/styles/scss -o Public/styles/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anthoBastianaggi/Oc-project4.git"
+  },
+  "keywords": [
+    "Oc-project4"
+  ],
+  "author": "Bastianaggi Anthony",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anthoBastianaggi/Oc-project4/issues"
+  },
+  "homepage": "https://github.com/anthoBastianaggi/Oc-project4#readme",
+  "dependencies": {
+    "node-sass": "^4.13.0"
+  }
+}
