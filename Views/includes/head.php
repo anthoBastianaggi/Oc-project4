@@ -18,8 +18,8 @@
 
 <!-- CSS Styles -->
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" />
-<link rel="stylesheet" href="Public/Styles/css/bootstrap.css"/>
-<link rel="stylesheet" href="Public/Styles/css/styles.css"/>
+<link rel="stylesheet" href="Public/styles/css/bootstrap.css"/>
+<link rel="stylesheet" href="Public/styles/css/styles.css"/>
 
 <!-- Javascript -->
 <script src='https://cloud.tinymce.com/stable/tinymce.min.js'></script>
