@@ -1,3 +1,72 @@
-.footer-copyright {
-    color: red;
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+footer {
+  width: 100%;
+  bottom: 0;
+  border-bottom: 2px solid#EF951B;
+  border-top: 2px solid#EF951B;
+  background-color:#161F26;
+  padding: 1rem 0 !important;
+
+  .containerSection {
+    #footer {
+      line-height: 50px;
+      height: 50px;
+      .socialContainer {
+        margin-top: 0 !important;
+        height: 100%;
+        .social {
+          li {
+            padding: 3px 0;
+  
+            &:hover {
+              a i {
+                font-size: 30px;
+                margin-top: -10px;
+              }
+            }
+  
+            a {
+              color: #ffffff;
+              text-decoration: none !important;
+              background-color: transparent;
+              -webkit-text-decoration-skip: objects;
+  
+              &:hover {
+                color: #eeeeee;
+              }
+  
+              i {
+                margin-right: 5px;
+                font-size: 25px;
+                -webkit-transition: 0.5s all ease;
+                -moz-transition: 0.5s all ease;
+                transition: 0.5s all ease;
+  
+                .d-md-inline-flex {
+                  margin-left: 10px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  
+    .separator {
+      border: 1px solid lightgray;
+      margin: 24px auto;
+      opacity: 0.3;
+      width: 30%;
+      min-width: 150px;
+    }
+    #copyright {
+      color: white;
+      padding: 0 15px;
+      .copyrightContainer {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
 }
