@@ -8,7 +8,7 @@
     </head>
     <body>
         <header>
-            <?php include_once 'Views/includes/header.php' ?>
+            <?php include_once 'Views/includes/Header/header.php' ?>
         </header>
         <main role="main"> 
             <?php if(Session::getInstance()->hasFlashes()): ?>
