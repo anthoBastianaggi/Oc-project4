@@ -2,8 +2,10 @@ header {
   background-color: #161F26 !important;
   border-bottom: 2px solid #EF951B;
   border-top: 2px solid #EF951B;
-  height: 190px;
-  width: auto;
+  height: 150px;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
   .navigation {
     height: 100%;
     width: 100%;
@@ -18,9 +20,9 @@ header {
       .linkTitle {
         color: white;
         width: 100%;
-        max-width: 600px;
+        max-width: 435px;
         margin: 0 auto;
-        height: 110px;
+        height: 80px;
         .iconBook {
           width: auto;
           height: 100%;
@@ -31,7 +33,7 @@ header {
           .icon {
             display: block;
             max-width: 100%;
-            height: 80px;
+            height: 70px;
             width: auto;
           }
         }
@@ -41,8 +43,9 @@ header {
           display: grid;
           height: 100%;
           margin-left: 15px;
+          width: auto;
           .title {
-            font-size: 2.75rem;
+            font-size: 1.75rem;
             font-family: 'Courgette', cursive;
             font-style: italic;
             line-height: inherit;
@@ -50,7 +53,7 @@ header {
             font-weight: 700;
           }
           .description {
-            font-size: 1.45rem;
+            font-size: 0.9rem;
             line-height: inherit;
             white-space: nowrap;
             font-weight: 700;
@@ -69,7 +72,7 @@ header {
     .navigation {
       .navContainer {
         .linkTitle {
-          max-width: 385px;
+          max-width: 400px;
           height: 70px;
           margin: 0;
           .iconBook {

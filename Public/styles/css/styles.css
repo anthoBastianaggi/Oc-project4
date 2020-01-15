@@ -1,4 +1,5 @@
 /* CSS CORPS DE PAGE */
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 html {
   height: 100%; }
   html body {
@@ -24,121 +25,152 @@ html {
   html body main {
     padding-top: 5.9rem; } }
 
-header #mainNav {
-  font-weight: 700;
-  font-family: 'Montserrat';
-  position: fixed;
-  z-index: 10;
+header {
   background-color: #161F26 !important;
-  justify-content: space-around;
-  align-items: center;
-  width: 100%;
-  top: 0;
   border-bottom: 2px solid #EF951B;
   border-top: 2px solid #EF951B;
-  color: white; }
-  header #mainNav .navContainer {
-    margin: auto 15px;
+  height: 150px;
+  width: 100%;
+  position: fixed;
+  z-index: 1; }
+  header .navigation {
+    height: 100%;
     width: 100%;
-    vertical-align: baseline; }
-    header #mainNav .navContainer .navbar-brand {
-      color: white;
-      vertical-align: -moz-middle-with-baseline; }
-      header #mainNav .navContainer .navbar-brand .icone_book {
-        width: 80px;
-        height: 50px;
-        vertical-align: bottom;
-        margin-right: 15px; }
-      header #mainNav .navContainer .navbar-brand .name_title {
-        font-family: 'Courgette', cursive;
-        font-style: italic;
-        font-size: 1.75rem;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-content: center; }
+    header .navigation .navContainer {
+      width: 100%;
+      height: 100%;
+      display: flex; }
+      header .navigation .navContainer .linkTitle {
         color: white;
-        vertical-align: top; }
-      header #mainNav .navContainer .navbar-brand .content_title {
-        vertical-align: super; }
-      header #mainNav .navContainer .navbar-brand br {
-        display: none; }
-    header #mainNav .navContainer .navbar-nav {
-      letter-spacing: 0.0625rem; }
-      header #mainNav .navContainer .navbar-nav li.nav-item a.nav-link {
-        color: white;
-        font-size: 1rem; }
-        header #mainNav .navContainer .navbar-nav li.nav-item a.nav-link:hover {
-          color: #18BC9C; }
-        header #mainNav .navContainer .navbar-nav li.nav-item a.nav-link:active, header #mainNav .navContainer .navbar-nav li.nav-item a.nav-link:focus {
-          color: white; }
-        header #mainNav .navContainer .navbar-nav li.nav-item a.nav-link.active {
-          color: #18BC9C; }
-    header #mainNav .navContainer .navbar-toggler {
-      font-size: 80%;
-      padding: 0.8rem;
-      position: absolute;
-      right: 30px;
-      margin: 16px auto; }
+        width: 100%;
+        max-width: 435px;
+        margin: 0 auto;
+        height: 80px; }
+        header .navigation .navContainer .linkTitle .iconBook {
+          width: auto;
+          height: 100%;
+          display: inline-flex;
+          justify-content: inherit;
+          align-items: center;
+          align-content: inherit; }
+          header .navigation .navContainer .linkTitle .iconBook .icon {
+            display: block;
+            max-width: 100%;
+            height: 70px;
+            width: auto; }
+        header .navigation .navContainer .linkTitle .titleContainer {
+          float: right;
+          justify-content: center;
+          display: grid;
+          height: 100%;
+          margin-left: 15px;
+          width: auto; }
+          header .navigation .navContainer .linkTitle .titleContainer .title {
+            font-size: 1.75rem;
+            font-family: 'Courgette', cursive;
+            font-style: italic;
+            line-height: inherit;
+            white-space: nowrap;
+            font-weight: 700; }
+          header .navigation .navContainer .linkTitle .titleContainer .description {
+            font-size: 0.9rem;
+            line-height: inherit;
+            white-space: nowrap;
+            font-weight: 700;
+            font-family: 'Courgette', cursive;
+            font-style: italic; }
 
-@media (min-width: 1160px) {
-  header #mainNav {
-    -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
-    -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
-    transition: padding-top 0.3s, padding-bottom 0.3s;
-    -ms-flex-flow: row nowrap;
-    flex-flow: row nowrap;
-    -ms-flex-pack: start;
-    justify-content: flex-start; }
-    header #mainNav .navContainer .navbar-brand {
-      -webkit-transition: font-size 0.3s;
-      -moz-transition: font-size 0.3s;
-      transition: font-size 0.3s; }
-    header #mainNav .navContainer .navbar-nav > li.nav-item > a.nav-link.active {
-      color: white;
-      background: #18BC9C; }
-      header #mainNav .navContainer .navbar-nav > li.nav-item > a.nav-link.active:active, header #mainNav .navContainer .navbar-nav > li.nav-item > a.nav-link.active:focus, header #mainNav .navContainer .navbar-nav > li.nav-item > a.nav-link.active:hover {
-        color: white;
-        background: #18BC9C; }
-    header #mainNav .navContainer #btn-menu {
-      display: none; }
-    header #mainNav .navContainer #navbarResponsive {
-      display: -ms-flexbox !important;
-      display: flex !important;
-      -ms-flex-preferred-size: auto;
-      flex-basis: auto; }
-      header #mainNav .navContainer #navbarResponsive #navbarDeroulant {
-        -ms-flex-direction: row;
-        flex-direction: row; }
-        header #mainNav .navContainer #navbarResponsive #navbarDeroulant .nav-item .nav-link {
-          padding-right: 0.5rem;
-          padding-left: 0.5rem; } }
-
-@media (max-width: 855px) {
-  header #mainNav .navContainer .navbar-brand br {
-    display: block;
-    line-height: 5px; }
-  header #mainNav .navContainer #btn-menu {
-    margin: 37px auto; } }
+@media (max-width: 834px) {
+  header {
+    height: 100px; }
+    header .navigation .navContainer .linkTitle {
+      max-width: 400px;
+      height: 70px;
+      margin: 0; }
+      header .navigation .navContainer .linkTitle .iconBook .icon {
+        height: 50px; }
+      header .navigation .navContainer .linkTitle .titleContainer .title {
+        font-size: 1.75rem; }
+      header .navigation .navContainer .linkTitle .titleContainer .description {
+        font-size: 0.9rem; } }
 
 @media (max-width: 500px) {
-  header #mainNav .navContainer .navbar-brand .icone_book {
-    display: none; }
-  header #mainNav .navContainer .navbar-brand .name_title {
-    font-size: 1.15rem; }
-  header #mainNav .navContainer .navbar-brand .content_title {
-    font-size: 0.65rem; }
-  header #mainNav .navContainer #btn-menu {
-    margin: 23px auto; } }
-
-@media (max-width: 240px) {
-  header #mainNav .navContainer {
-    margin: 0; }
-    header #mainNav .navContainer .navbar-brand .icone_book {
+  header .navigation .navContainer .linkTitle {
+    width: auto; }
+    header .navigation .navContainer .linkTitle .iconBook {
       display: none; }
-    header #mainNav .navContainer .navbar-brand .name_title {
-      font-size: 1rem; }
-    header #mainNav .navContainer .navbar-brand .content_title {
-      font-size: 0.55rem; }
-    header #mainNav .navContainer #btn-menu {
-      right: 15px;
-      margin: 23px auto; } }
+    header .navigation .navContainer .linkTitle .titleContainer {
+      margin-left: 0; } }
+
+@media (max-width: 380px) {
+  header .navigation .navContainer .linkTitle .titleContainer .title {
+    font-size: 1.3rem; }
+  header .navigation .navContainer .linkTitle .titleContainer .description {
+    font-size: 0.65rem; } }
+
+header .navigation .navContainer .navbarLeft {
+  display: flex;
+  width: auto;
+  height: 30px;
+  position: absolute;
+  left: 0;
+  top: 100px;
+  line-height: 15px; }
+  header .navigation .navContainer .navbarLeft .navbarLeftNavigation {
+    display: flex;
+    padding-left: 15px;
+    margin: 0;
+    list-style: none;
+    width: 100%;
+    height: 100%; }
+    header .navigation .navContainer .navbarLeft .navbarLeftNavigation a {
+      color: white; }
+
+@media (max-width: 834px) {
+  header .navigation .navContainer .navbarLeft {
+    display: none; } }
+
+header .navigation .navContainer .navbarRight {
+  display: flex;
+  width: auto;
+  height: 30px;
+  position: absolute;
+  right: 0;
+  top: 100px;
+  line-height: 15px; }
+  header .navigation .navContainer .navbarRight .navbarRightNavigation {
+    display: flex;
+    padding-right: 15px;
+    padding-left: 0;
+    margin: 0;
+    list-style: none;
+    width: 100%;
+    height: 100%; }
+    header .navigation .navContainer .navbarRight .navbarRightNavigation a {
+      color: white;
+      padding: 0.5rem 1rem; }
+
+@media (max-width: 834px) {
+  header .navigation .navContainer .navbarRight {
+    display: none; } }
+
+header .navigation .navContainer .sidebarContainer {
+  display: none; }
+
+@media (max-width: 834px) {
+  header .navigation .navContainer .sidebarContainer {
+    display: inline-grid;
+    align-items: center;
+    position: absolute;
+    right: 15px;
+    height: 70px; }
+    header .navigation .navContainer .sidebarContainer button {
+      font-size: 1.75rem;
+      background-color: transparent !important; } }
 
 main #home {
   border-bottom: 2px solid #EF951B;
@@ -402,5 +434,49 @@ main .homeChapters .chaptersContainer .row {
     #login .container .row #infobox-login form #btn-login button {
       font-size: 1.25rem; }
 
-.footer-copyright {
-  color: red; }
+footer {
+  width: 100%;
+  bottom: 0;
+  border-bottom: 2px solid #EF951B;
+  border-top: 2px solid #EF951B;
+  background-color: #161F26;
+  padding: 1rem 0 !important; }
+  footer .containerSection #footer {
+    line-height: 50px;
+    height: 50px; }
+    footer .containerSection #footer .socialContainer {
+      margin-top: 0 !important;
+      height: 100%; }
+      footer .containerSection #footer .socialContainer .social li {
+        padding: 3px 0; }
+        footer .containerSection #footer .socialContainer .social li:hover a i {
+          font-size: 30px;
+          margin-top: -10px; }
+        footer .containerSection #footer .socialContainer .social li a {
+          color: #ffffff;
+          text-decoration: none !important;
+          background-color: transparent;
+          -webkit-text-decoration-skip: objects; }
+          footer .containerSection #footer .socialContainer .social li a:hover {
+            color: #eeeeee; }
+          footer .containerSection #footer .socialContainer .social li a i {
+            margin-right: 5px;
+            font-size: 25px;
+            -webkit-transition: 0.5s all ease;
+            -moz-transition: 0.5s all ease;
+            transition: 0.5s all ease; }
+            footer .containerSection #footer .socialContainer .social li a i .d-md-inline-flex {
+              margin-left: 10px; }
+  footer .containerSection .separator {
+    border: 1px solid lightgray;
+    margin: 24px auto;
+    opacity: 0.3;
+    width: 30%;
+    min-width: 150px; }
+  footer .containerSection #copyright {
+    color: white;
+    padding: 0 15px; }
+    footer .containerSection #copyright .copyrightContainer {
+      width: 100%;
+      display: flex;
+      justify-content: center; }
