@@ -18,5 +18,5 @@ function contact($page) {
             $error = "Une erreur s'est produite. Rééssayez !";
         }
     } 
-    include_once 'Views/'.$page.'.php';
+    include_once 'Views/Contact/'.$page.'.php';
 }

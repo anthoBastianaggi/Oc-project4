@@ -6,7 +6,7 @@ include_once 'Models/comments.php';
 function chapters($page) {
     $chapter = new Chapters();
     $allChapters = $chapter->getAllChapters();
-    include_once 'Views/'.$page.'.php';
+    include_once 'Views/Chapters/Sections/Chapter/'.$page.'.php';
 }
 
 function showChapter($page) {
@@ -14,7 +14,7 @@ function showChapter($page) {
     $showChapter = $chapter->showChapter();
     $comment = new Comments();
     $allComments = $comment->getAllComments($showChapter['id']);
-    include_once 'Views/'.$page.'_show_view.php';
+    include_once 'Views/Chapters/Sections/Chapter/ChapterShow/'.$page.'_show_view.php';
 }
 
 function addChapter($page) { 
@@ -28,7 +28,7 @@ function addChapter($page) {
             $addChapter = $chapter->addChapter($_POST['titleTicket'], $_POST['contentTicket']);
         }
     }
-    include_once 'Views/'.$page.'_add_view.php';   
+    include_once 'Views/Chapters/Sections/Chapter/ChapterAdd/'.$page.'_add_view.php';   
 }
 
 function deleteChapter($page) { 
@@ -43,7 +43,7 @@ function updateChapter($page) {
     if(!empty($_POST) && isset($_POST['btnUpdateChapter'])) {
         
         $updateChapter = $chapter->updateChapter($_POST['titleTicket'], $_POST['contentTicket'], $_GET['id']);
-        include_once 'Views/'.$page.'_show_view.php'; exit;
+        include_once 'Views/Chapters/Sections/Chapter/ChapterShow/'.$page.'_show_view.php'; exit;
     }
-    include_once 'Views/'.$page.'_update_view.php'; 
+    include_once 'Views/Chapters/Sections/Chapter/ChapterUpdate/'.$page.'_update_view.php'; 
 }

@@ -6,7 +6,7 @@ include_once 'Models/comments.php';
 function showComment($page) {
     $comment = new Comments();
     $showComment = $comment->showComment();
-    include_once 'Views/'.$page.'_show_view.php';
+    include_once 'Views/Chapters/Sections/Chapter/ChapterShow/'.$page.'_show_view.php';
 }
 
 function addComment($page) {
@@ -32,7 +32,7 @@ function updateComment($page) {
     if(!empty($_POST) && isset($_POST['btnUpdateComment'])) {
         $comment = new Comments();
         $updateComment = $comment->updateComment($_POST['idComment'], $_POST['contentComment'], $_GET['id']);
-        include_once 'Views/'.$page.'_update_view.php'; exit;
+        include_once 'Views/Chapters/Sections/Comment/'.$page.'_update_view.php'; exit;
     }
-    include_once 'Views/'.$page.'_update_view.php';  
+    include_once 'Views/Chapters/Sections/Comment/'.$page.'_update_view.php';  
 }

@@ -27,5 +27,5 @@ function register($page) {
             $errors = $validator->getErrors();
         }
     }
-    include_once 'Views/'.$page.'.php';
+    include_once 'Views/Account/Sections/Log/Register/'.$page.'.php';
 }
