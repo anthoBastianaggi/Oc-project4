@@ -1,4 +1,4 @@
 <?php
 function profile($page) {
-    include_once 'Views/'.$page.'.php';
+    include_once 'Views/Account/Sections/Profile/'.$page.'.php';
 }

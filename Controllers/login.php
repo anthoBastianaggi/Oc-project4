@@ -19,5 +19,5 @@ function login($page) {
             $session->setFlash('danger', "Identifiant ou mot de passe incorrecte");
         }
     }
-    include_once 'Views/'.$page.'.php';
+    include_once 'Views/Account/Sections/Log/Login/'.$page.'.php';
 }

@@ -1,0 +1,52 @@
+/* CSS CORPS DE PAGE */
+html {
+    body {
+        min-height: 100vh;
+        scroll-behavior: smooth;
+        text-rendering: optimizeSpeed;
+        line-height: 1.5;
+        margin: 0;
+        font-size: 16px;
+        font-weight: 400;
+        letter-spacing: 0;
+        background-color: #161F26;
+        .layout {
+            min-height: 100vh;
+            flex-direction: column;
+            display: flex;
+            main {
+                padding-top: 9.3rem;
+                section {
+                    padding: 2rem 0;
+                    min-height: calc(45rem + 10px);
+                    background-color: #161F26;
+                }
+            }
+        } 
+    }
+}
+@media(max-width:834px) {
+    html {
+        body {
+            .layout {
+                main {
+                    padding-top: 6.3rem;
+                }
+            }         
+        }
+    }
+}
+
+@media(max-width:1160px) {
+    html {
+        body {
+            .layout {
+                main {
+                    section {
+                        min-height: calc(48rem + 11px);
+                    }
+                }
+            }         
+        }
+    }
+}
