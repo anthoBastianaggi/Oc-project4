@@ -1,5 +1,5 @@
-#register {
-    .textHeaderRegister {       
+#forget {
+    .textHeaderForget {       
         text-align: center;        
         margin-bottom: 2rem;
         .section-title {
@@ -11,10 +11,9 @@
         }
     }  
 
-    #infobox-register {
+    #infobox-forget {
         z-index: 0;
-        .infoRegisterContainer {
-            border: 1px solid#0000004f;        
+        .infoForgetContainer {       
             margin: 0 15px 1rem 15px;
             position: relative;
             width: 100%;
@@ -59,10 +58,16 @@
 
                     .label-register {
                         font-size: 1.25rem;
-                        width: 100%;
+                        width: 20%;
+                        height: 42px;
+                        line-height: 40px;
+                        padding-left: 15px;
                     } 
                 }
             } 
+            #btn-forget {
+                padding-right: 0;
+            }
         }
     }
 }
