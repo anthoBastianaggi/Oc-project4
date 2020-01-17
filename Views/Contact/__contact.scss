@@ -1,38 +1,105 @@
-#contact {
-    font-family: 'Teko', sans-serif;
-    .container {
-        .row {
-            .section-title {
-                margin-bottom: 15px;
-                color: white;
-            }
+/*======================================
+//--//-->   CONTACT
+======================================*/ 
 
-            .section-subheading {
-                text-align: center;
-                color: white !important;
-                margin-bottom: 3.5rem;
-            }
+#sectionContact {
+    .textHeaderContact {       
+        text-align: center;        
+        margin-bottom: 2rem;
+        h2 {
+            color: white;
+        }
+        p {
+            color: white !important;
+        }
+    }  
+    .contact-mf {
+        #contact {
+            position: inherit;
+            margin-bottom: 0;
+            form {
+                border-radius: 5px;
+                max-width:700px;
+                width:100%;
+                margin: 5% auto;
+                background-color: #FFFFFF;
+                overflow: hidden;
+                #sendmessage {
+                    color: #0070FF;
+                    border: 1px solid #0078ff;
+                    display: none;
+                    text-align: center;
+                    padding: 15px;
+                    margin-bottom: 15px;
+                }
+                #errormessage {
+                    color: #FF0000;
+                    display: none;
+                    border: 1px solid red;
+                    text-align: center;
+                    padding: 15px;
+                    margin-bottom: 15px;
+                }
+                #sendmessage.show {
+                    display: block;
+                }
+                #errormessage.show {
+                    display: block;
+                }
+                .show {
+                    display: block;
+                }
 
-            #infobox-contact {
-                background-color: lightgrey;
-                padding: 2rem 0;
-                form {
-                    .label-contact {
-                        font-size: 1.25rem;
-                    }
+                .inputGroupContainer {
+                    padding-right: 0;
+                    padding-left: 0;
+                    width: 100%;
+                    .input-group {
+                        position: relative;
+                        display: flex;
+                        border-collapse: separate;
+                        width: 100%;
+                        margin-bottom: 1rem;
+                        input {
+                            height: 42px;
+                            z-index: 0;
+                        }
 
-                    textarea {
-                        height:200px;
-                    }
+                        .icon-case {
+                            width: 35px;
+                            float: left;
+                            border-radius: 5px 0px 0px 5px;
+                            background:#eeeeee;
+                            height:42px;
+                            position: relative;
+                            text-align: center;
+                            line-height:40px;
+                            border: 1px solid#ccc;
+                            border-right: 0;
+                        }
+                        
+                        .icon-case-textarea {
+                            height:134px;
+                            line-height:130px;
+                        }
 
-                    #btn-contact {
-                        margin-top: 2rem;
-                        button {
-                            font-size: 1.25rem;
+                        textarea {
+                            z-index: 0;
+                        }
+
+                        .validation {
+                            color: #FF0000;
+                            display: none;
+                            margin: 0 0 20px;
+                            font-size: 13px;
                         }
                     }
                 }
-            }
-        }
+
+                .icon-send {
+                    margin-left: 10px;
+                }
+            }               
+        }      
     }
 }

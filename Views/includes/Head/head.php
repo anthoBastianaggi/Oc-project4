@@ -17,7 +17,7 @@
 <meta property="og:image"             content="<?= WEBSITE_FACEBOOK_IMAGE?>" />
 
 <!-- CSS Styles -->
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" />
+<link href="Public/lib/font-awesome/fontawesome.min.css" rel="stylesheet">
 <link rel="stylesheet" href="Public/styles/css/bootstrap.css"/>
 <link rel="stylesheet" href="Public/styles/css/styles.css"/>
 

@@ -18,8 +18,6 @@ html {
                 padding-top: 9.3rem;
                 section {
                     padding: 2rem 0;
-                    min-height: calc(45rem + 10px);
-                    background-color: #161F26;
                 }
             }
         } 
@@ -37,16 +35,100 @@ html {
     }
 }
 
-@media(max-width:1160px) {
-    html {
-        body {
-            .layout {
-                main {
-                    section {
-                        min-height: calc(48rem + 11px);
-                    }
-                }
-            }         
-        }
-    }
+/*======================================
+//--//-->   STYLES GENERALES
+======================================*/
+
+h1, h2, h3, h4, h5, h6 {
+	color: #1e1e1e;
+}
+
+.paralax-mf {
+	box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
+	position: relative;
+	padding: 8rem 0;
+}
+
+/*--/ Sections /--*/
+.sect-mt4 {
+	margin-top: 4rem;
+}
+
+/*--/ Title Left /--*/
+.title-box-2 {
+	margin-bottom: 3rem;
+}
+.title-left {
+    font-size: 2rem;
+	position: relative;
+	&:before {
+		content: '';
+		position: absolute;
+		height: 3px;
+		background-color: #0070FF;
+		width: 100px;
+		bottom: -12px;
+	}
+}
+
+/*------/ Box /------*/
+.box-shadow-full {
+	padding: 3rem 1.25rem;
+	position: relative;
+	background-color: #fff;
+	margin-bottom: 3rem;
+	z-index: 2;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+/*------/ Ul resect /------*/
+.list-ico {
+	list-style: none;
+	padding-left: 0;
+	margin-bottom: 0;
+	span {
+		color: #0070FF;
+		margin-right: 10px;
+	}
+}
+
+/*======================================
+//--//-->   BUTTON
+======================================*/
+.button {
+	display: inline-block;
+	padding: .3rem .6rem;
+	text-align: center;
+	vertical-align: middle;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	font-size: 1rem;
+	border-radius: .3rem;
+	border: 1px solid transparent;
+	transition: all 500ms ease;
+	cursor: pointer;
+	&:focus {
+		outline: 0;
+	}
+	&:hover {
+		background-color: #0062d3;
+		color: #fff;
+		transition: all 500ms ease;
+		box-shadow: 0 0 0 4px #cde1f8;
+	}
+}
+.button-a {
+	background-color: #0070FF;
+	color: #fff;
+	border-color: #CDE1F5;
+}
+.button-big {
+	padding: .9rem 2.3rem;
+    font-size: 1.2rem;
+}
+.button-rouded {
+	border-radius: 5rem;
 }

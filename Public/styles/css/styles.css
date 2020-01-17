@@ -17,17 +17,96 @@ html body {
     html body .layout main {
       padding-top: 9.3rem; }
       html body .layout main section {
-        padding: 2rem 0;
-        min-height: calc(45rem + 10px);
-        background-color: #161F26; }
+        padding: 2rem 0; }
 
 @media (max-width: 834px) {
   html body .layout main {
     padding-top: 6.3rem; } }
 
-@media (max-width: 1160px) {
-  html body .layout main section {
-    min-height: calc(48rem + 11px); } }
+/*======================================
+//--//-->   STYLES GENERALES
+======================================*/
+h1, h2, h3, h4, h5, h6 {
+  color: #1e1e1e; }
+
+.paralax-mf {
+  box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  padding: 8rem 0; }
+
+/*--/ Sections /--*/
+.sect-mt4 {
+  margin-top: 4rem; }
+
+/*--/ Title Left /--*/
+.title-box-2 {
+  margin-bottom: 3rem; }
+
+.title-left {
+  font-size: 2rem;
+  position: relative; }
+  .title-left:before {
+    content: '';
+    position: absolute;
+    height: 3px;
+    background-color: #0070FF;
+    width: 100px;
+    bottom: -12px; }
+
+/*------/ Box /------*/
+.box-shadow-full {
+  padding: 3rem 1.25rem;
+  position: relative;
+  background-color: #fff;
+  margin-bottom: 3rem;
+  z-index: 2;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2); }
+
+/*------/ Ul resect /------*/
+.list-ico {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0; }
+  .list-ico span {
+    color: #0070FF;
+    margin-right: 10px; }
+
+/*======================================
+//--//-->   BUTTON
+======================================*/
+.button {
+  display: inline-block;
+  padding: .3rem .6rem;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-size: 1rem;
+  border-radius: .3rem;
+  border: 1px solid transparent;
+  transition: all 500ms ease;
+  cursor: pointer; }
+  .button:focus {
+    outline: 0; }
+  .button:hover {
+    background-color: #0062d3;
+    color: #fff;
+    transition: all 500ms ease;
+    box-shadow: 0 0 0 4px #cde1f8; }
+
+.button-a {
+  background-color: #0070FF;
+  color: #fff;
+  border-color: #CDE1F5; }
+
+.button-big {
+  padding: .9rem 2.3rem;
+  font-size: 1.2rem; }
+
+.button-rouded {
+  border-radius: 5rem; }
 
 header {
   background-color: #161F26 !important;
@@ -384,26 +463,83 @@ main .homeChapters .chaptersContainer .row {
     .commentChapter .container .addComments #comment_add textarea {
       height: 150px; }
 
-#contact {
-  font-family: 'Teko', sans-serif; }
-  #contact .container .row .section-title {
-    margin-bottom: 15px;
+/*======================================
+//--//-->   CONTACT
+======================================*/
+#sectionContact .textHeaderContact {
+  text-align: center;
+  margin-bottom: 2rem; }
+  #sectionContact .textHeaderContact h2 {
     color: white; }
-  #contact .container .row .section-subheading {
-    text-align: center;
-    color: white !important;
-    margin-bottom: 3.5rem; }
-  #contact .container .row #infobox-contact {
-    background-color: lightgrey;
-    padding: 2rem 0; }
-    #contact .container .row #infobox-contact form .label-contact {
-      font-size: 1.25rem; }
-    #contact .container .row #infobox-contact form textarea {
-      height: 200px; }
-    #contact .container .row #infobox-contact form #btn-contact {
-      margin-top: 2rem; }
-      #contact .container .row #infobox-contact form #btn-contact button {
-        font-size: 1.25rem; }
+  #sectionContact .textHeaderContact p {
+    color: white !important; }
+
+#sectionContact .contact-mf #contact {
+  position: inherit;
+  margin-bottom: 0; }
+  #sectionContact .contact-mf #contact form {
+    border-radius: 5px;
+    max-width: 700px;
+    width: 100%;
+    margin: 5% auto;
+    background-color: #FFFFFF;
+    overflow: hidden; }
+    #sectionContact .contact-mf #contact form #sendmessage {
+      color: #0070FF;
+      border: 1px solid #0078ff;
+      display: none;
+      text-align: center;
+      padding: 15px;
+      margin-bottom: 15px; }
+    #sectionContact .contact-mf #contact form #errormessage {
+      color: #FF0000;
+      display: none;
+      border: 1px solid red;
+      text-align: center;
+      padding: 15px;
+      margin-bottom: 15px; }
+    #sectionContact .contact-mf #contact form #sendmessage.show {
+      display: block; }
+    #sectionContact .contact-mf #contact form #errormessage.show {
+      display: block; }
+    #sectionContact .contact-mf #contact form .show {
+      display: block; }
+    #sectionContact .contact-mf #contact form .inputGroupContainer {
+      padding-right: 0;
+      padding-left: 0;
+      width: 100%; }
+      #sectionContact .contact-mf #contact form .inputGroupContainer .input-group {
+        position: relative;
+        display: flex;
+        border-collapse: separate;
+        width: 100%;
+        margin-bottom: 1rem; }
+        #sectionContact .contact-mf #contact form .inputGroupContainer .input-group input {
+          height: 42px;
+          z-index: 0; }
+        #sectionContact .contact-mf #contact form .inputGroupContainer .input-group .icon-case {
+          width: 35px;
+          float: left;
+          border-radius: 5px 0px 0px 5px;
+          background: #eeeeee;
+          height: 42px;
+          position: relative;
+          text-align: center;
+          line-height: 40px;
+          border: 1px solid #ccc;
+          border-right: 0; }
+        #sectionContact .contact-mf #contact form .inputGroupContainer .input-group .icon-case-textarea {
+          height: 134px;
+          line-height: 130px; }
+        #sectionContact .contact-mf #contact form .inputGroupContainer .input-group textarea {
+          z-index: 0; }
+        #sectionContact .contact-mf #contact form .inputGroupContainer .input-group .validation {
+          color: #FF0000;
+          display: none;
+          margin: 0 0 20px;
+          font-size: 13px; }
+    #sectionContact .contact-mf #contact form .icon-send {
+      margin-left: 10px; }
 
 #register .container .row .section-title {
   margin-bottom: 15px;
