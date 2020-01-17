@@ -71,3 +71,24 @@
         }
     }
 }
+
+@media(max-width: 990px) {
+    #forget {        
+        #infobox-forget {
+            form {
+                .inputGroupContainer {
+                    .input-group {
+                        .label-register {
+                            width: 100%;
+                            padding-left: 0;
+                        } 
+                    }
+                } 
+                #btn-forget {
+                    text-align: center !important;
+                    padding-left: 0;
+                }
+            }
+        }
+    }
+}

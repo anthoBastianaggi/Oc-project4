@@ -651,6 +651,14 @@ main .homeChapters .chaptersContainer .row {
     #forget #infobox-forget form #btn-forget {
       padding-right: 0; }
 
+@media (max-width: 990px) {
+  #forget #infobox-forget form .inputGroupContainer .input-group .label-register {
+    width: 100%;
+    padding-left: 0; }
+  #forget #infobox-forget form #btn-forget {
+    text-align: center !important;
+    padding-left: 0; } }
+
 #login .container .row .section-title {
   margin-bottom: 3.6rem;
   color: white; }
