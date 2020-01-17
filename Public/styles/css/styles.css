@@ -476,7 +476,7 @@ main .homeChapters .chaptersContainer .row {
 
 #sectionContact .contact-mf #contact {
   position: inherit;
-  margin-bottom: 0; }
+  margin-bottom: 3rem; }
   #sectionContact .contact-mf #contact form {
     border-radius: 5px;
     max-width: 700px;
@@ -541,24 +541,90 @@ main .homeChapters .chaptersContainer .row {
     #sectionContact .contact-mf #contact form .icon-send {
       margin-left: 10px; }
 
-#register .container .row .section-title {
-  margin-bottom: 15px;
-  color: white; }
-
-#register .container .row .section-subheading {
+#register .textHeaderRegister {
   text-align: center;
-  color: white !important;
-  margin-bottom: 3.5rem; }
+  margin-bottom: 2rem; }
+  #register .textHeaderRegister .section-title {
+    color: white;
+    margin-bottom: 15px; }
+  #register .textHeaderRegister .section-subheading {
+    color: white !important; }
 
-#register .container .row #infobox-register {
-  background-color: lightgrey;
-  padding: 2rem 0; }
-  #register .container .row #infobox-register form .label-register {
-    font-size: 1.25rem; }
-  #register .container .row #infobox-register form #btn-register {
-    margin-top: 2rem; }
-    #register .container .row #infobox-register form #btn-register button {
-      font-size: 1.25rem; }
+#register #infobox-register {
+  z-index: 0; }
+  #register #infobox-register .infoRegisterContainer {
+    border: 1px solid #0000004f;
+    margin: 0 15px 1rem 15px;
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px; }
+  #register #infobox-register form {
+    border-radius: 5px;
+    max-width: 100%;
+    width: 100%;
+    margin: 0;
+    background-color: #FFFFFF;
+    overflow: hidden; }
+    #register #infobox-register form .inputGroupContainer {
+      padding-right: 0;
+      padding-left: 0;
+      width: 100%; }
+      #register #infobox-register form .inputGroupContainer .input-group {
+        position: relative;
+        display: flex;
+        border-collapse: separate;
+        width: 100%;
+        margin-bottom: 1rem; }
+        #register #infobox-register form .inputGroupContainer .input-group input {
+          height: 42px;
+          z-index: 0; }
+        #register #infobox-register form .inputGroupContainer .input-group .icon-case {
+          width: 35px;
+          float: left;
+          border-radius: 5px 0px 0px 5px;
+          background: #eeeeee;
+          height: 42px;
+          position: relative;
+          text-align: center;
+          line-height: 40px;
+          border: 1px solid #ccc;
+          border-right: 0; }
+        #register #infobox-register form .inputGroupContainer .input-group .label-register {
+          font-size: 1.25rem;
+          width: 100%; }
+
+form {
+  border-radius: 5px;
+  max-width: 700px;
+  width: 100%;
+  margin: 5% auto;
+  background-color: #FFFFFF;
+  overflow: hidden; }
+  form .inputGroupContainer {
+    padding-right: 0;
+    padding-left: 0;
+    width: 100%; }
+    form .inputGroupContainer .input-group {
+      position: relative;
+      display: flex;
+      border-collapse: separate;
+      width: 100%;
+      margin-bottom: 1rem; }
+      form .inputGroupContainer .input-group input {
+        height: 42px;
+        z-index: 0; }
+      form .inputGroupContainer .input-group .icon-case {
+        width: 35px;
+        float: left;
+        border-radius: 5px 0px 0px 5px;
+        background: #eeeeee;
+        height: 42px;
+        position: relative;
+        text-align: center;
+        line-height: 40px;
+        border: 1px solid #ccc;
+        border-right: 0; }
 
 #login .container .row .section-title {
   margin-bottom: 3.6rem;
