@@ -66,3 +66,42 @@
         }
     }
 }
+
+form {
+    border-radius: 5px;
+    max-width:700px;
+    width:100%;
+    margin: 5% auto;
+    background-color: #FFFFFF;
+    overflow: hidden;
+    
+    .inputGroupContainer {
+        padding-right: 0;
+        padding-left: 0;
+        width: 100%;
+        .input-group {
+            position: relative;
+            display: flex;
+            border-collapse: separate;
+            width: 100%;
+            margin-bottom: 1rem;
+            input {
+                height: 42px;
+                z-index: 0;
+            }
+
+            .icon-case {
+                width: 35px;
+                float: left;
+                border-radius: 5px 0px 0px 5px;
+                background:#eeeeee;
+                height:42px;
+                position: relative;
+                text-align: center;
+                line-height:40px;
+                border: 1px solid#ccc;
+                border-right: 0;
+            }        
+        }
+    }    
+}      

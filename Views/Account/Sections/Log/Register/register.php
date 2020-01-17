@@ -121,7 +121,7 @@
             </div>
         </div>
     </div>
-  </section>
+</section>
 
 <?php 
     // On recupere dans une variable le contenu du tampon 

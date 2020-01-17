@@ -594,37 +594,62 @@ main .homeChapters .chaptersContainer .row {
           font-size: 1.25rem;
           width: 100%; }
 
-form {
-  border-radius: 5px;
-  max-width: 700px;
-  width: 100%;
-  margin: 5% auto;
-  background-color: #FFFFFF;
-  overflow: hidden; }
-  form .inputGroupContainer {
-    padding-right: 0;
-    padding-left: 0;
-    width: 100%; }
-    form .inputGroupContainer .input-group {
-      position: relative;
-      display: flex;
-      border-collapse: separate;
-      width: 100%;
-      margin-bottom: 1rem; }
-      form .inputGroupContainer .input-group input {
-        height: 42px;
-        z-index: 0; }
-      form .inputGroupContainer .input-group .icon-case {
-        width: 35px;
-        float: left;
-        border-radius: 5px 0px 0px 5px;
-        background: #eeeeee;
-        height: 42px;
+#forget .textHeaderForget {
+  text-align: center;
+  margin-bottom: 2rem; }
+  #forget .textHeaderForget .section-title {
+    color: white;
+    margin-bottom: 15px; }
+  #forget .textHeaderForget .section-subheading {
+    color: white !important; }
+
+#forget #infobox-forget {
+  z-index: 0; }
+  #forget #infobox-forget .infoForgetContainer {
+    margin: 0 15px 1rem 15px;
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px; }
+  #forget #infobox-forget form {
+    border-radius: 5px;
+    max-width: 100%;
+    width: 100%;
+    margin: 0;
+    background-color: #FFFFFF;
+    overflow: hidden; }
+    #forget #infobox-forget form .inputGroupContainer {
+      padding-right: 0;
+      padding-left: 0;
+      width: 100%; }
+      #forget #infobox-forget form .inputGroupContainer .input-group {
         position: relative;
-        text-align: center;
-        line-height: 40px;
-        border: 1px solid #ccc;
-        border-right: 0; }
+        display: flex;
+        border-collapse: separate;
+        width: 100%;
+        margin-bottom: 1rem; }
+        #forget #infobox-forget form .inputGroupContainer .input-group input {
+          height: 42px;
+          z-index: 0; }
+        #forget #infobox-forget form .inputGroupContainer .input-group .icon-case {
+          width: 35px;
+          float: left;
+          border-radius: 5px 0px 0px 5px;
+          background: #eeeeee;
+          height: 42px;
+          position: relative;
+          text-align: center;
+          line-height: 40px;
+          border: 1px solid #ccc;
+          border-right: 0; }
+        #forget #infobox-forget form .inputGroupContainer .input-group .label-register {
+          font-size: 1.25rem;
+          width: 20%;
+          height: 42px;
+          line-height: 40px;
+          padding-left: 15px; }
+    #forget #infobox-forget form #btn-forget {
+      padding-right: 0; }
 
 #login .container .row .section-title {
   margin-bottom: 3.6rem;
