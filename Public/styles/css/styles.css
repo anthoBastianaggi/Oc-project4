@@ -529,7 +529,7 @@ main .homeChapters .chaptersContainer .row {
           border: 1px solid #ccc;
           border-right: 0; }
         #sectionContact .contact-mf #contact form .inputGroupContainer .input-group .icon-case-textarea {
-          height: 134px;
+          height: auto;
           line-height: 130px; }
         #sectionContact .contact-mf #contact form .inputGroupContainer .input-group textarea {
           z-index: 0; }
@@ -659,19 +659,73 @@ main .homeChapters .chaptersContainer .row {
     text-align: center !important;
     padding-left: 0; } }
 
-#login .container .row .section-title {
-  margin-bottom: 3.6rem;
-  color: white; }
+#login .textHeaderLogin {
+  text-align: center;
+  margin-bottom: 2rem; }
+  #login .textHeaderLogin .section-title {
+    color: white;
+    margin-bottom: 15px; }
+  #login .textHeaderLogin .section-subheading {
+    color: white !important; }
 
-#login .container .row #infobox-login {
-  background-color: lightgrey;
-  padding: 2rem 0; }
-  #login .container .row #infobox-login form .label-login {
-    font-size: 1.25rem; }
-  #login .container .row #infobox-login form #btn-login {
-    margin-top: 2rem; }
-    #login .container .row #infobox-login form #btn-login button {
-      font-size: 1.25rem; }
+#login #infobox-login {
+  z-index: 0; }
+  #login #infobox-login .boxContainer {
+    padding: 1.25rem 1.25rem 3rem 1.25rem; }
+    #login #infobox-login .boxContainer .infoForgetContainer {
+      width: 100%;
+      text-align: center; }
+      #login #infobox-login .boxContainer .infoForgetContainer .iconContainer {
+        width: 100%;
+        font-size: 150px; }
+        #login #infobox-login .boxContainer .infoForgetContainer .iconContainer span i {
+          color: #007bff; }
+      #login #infobox-login .boxContainer .infoForgetContainer .description p {
+        font-size: 2.25rem; }
+  #login #infobox-login form {
+    border-radius: 5px;
+    max-width: 100%;
+    width: 100%;
+    margin: 0;
+    background-color: #FFFFFF;
+    overflow: hidden; }
+    #login #infobox-login form .inputGroupContainer {
+      padding-right: 0;
+      padding-left: 0;
+      width: 100%; }
+      #login #infobox-login form .inputGroupContainer .input-group {
+        position: relative;
+        display: flex;
+        border-collapse: separate;
+        width: 100%;
+        margin-bottom: 1rem; }
+        #login #infobox-login form .inputGroupContainer .input-group input {
+          height: 42px;
+          z-index: 0; }
+        #login #infobox-login form .inputGroupContainer .input-group .icon-case {
+          width: 35px;
+          float: left;
+          border-radius: 5px 0px 0px 5px;
+          background: #eeeeee;
+          height: 42px;
+          position: relative;
+          text-align: center;
+          line-height: 40px;
+          border: 1px solid #ccc;
+          border-right: 0; }
+        #login #infobox-login form .inputGroupContainer .input-group .label-login {
+          font-size: 1.25rem;
+          width: 100%;
+          height: 42px;
+          align-content: center;
+          display: flex;
+          line-height: 37px;
+          margin-top: 1rem; }
+          #login #infobox-login form .inputGroupContainer .input-group .label-login input {
+            margin-right: 10px; }
+    #login #infobox-login form #btn-login {
+      padding-right: 0;
+      padding-left: 0; }
 
 footer {
   width: 100%;
