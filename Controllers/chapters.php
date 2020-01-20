@@ -6,6 +6,7 @@ include_once 'Models/comments.php';
 function chapters($page) {
     $chapter = new Chapters();
     $allChapters = $chapter->getAllChapters();
+    $lastChapters = $chapter->getThreeLastChapters();
     include_once 'Views/Chapters/Sections/Chapter/'.$page.'.php';
 }
 

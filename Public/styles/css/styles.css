@@ -313,80 +313,79 @@ main .homeChapters .chaptersContainer .row {
   .about_me .aboutContainer .row {
     text-align: justify; }
 
-.homeChapters {
-  min-height: calc(35rem + 20px); }
-  .homeChapters .chaptersContainer .section-title {
-    margin-bottom: 15px;
-    color: white; }
-  .homeChapters .chaptersContainer .section-subheading {
-    text-align: center;
-    color: white !important;
-    margin-bottom: 3.5rem; }
-  .homeChapters .chaptersContainer .card {
-    background-color: #161F26;
-    height: 100%;
-    border-radius: 0; }
-    .homeChapters .chaptersContainer .card .card-body {
-      text-align: center;
-      color: white; }
-  .homeChapters .chaptersContainer #btn-getAllChapters {
-    margin: 0 auto; }
-
-.allChapters .chaptersContainer .section-title {
-  margin-bottom: 15px;
-  color: white; }
-
-.allChapters .chaptersContainer .section-subheading {
+#allChapters .textHeaderChapters {
   text-align: center;
-  color: white !important;
-  margin-bottom: 3.5rem; }
+  margin-bottom: 2rem; }
+  #allChapters .textHeaderChapters .section-title {
+    position: relative;
+    margin-bottom: 45px;
+    display: inline-block;
+    font-weight: 600;
+    color: white;
+    line-height: 1; }
+  #allChapters .textHeaderChapters .section-title::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    width: 60px;
+    height: 2px;
+    background: #ff5e14;
+    bottom: -25px;
+    margin-left: -30px; }
+  #allChapters .textHeaderChapters p {
+    color: white !important; }
 
-.allChapters .chaptersContainer .row {
-  margin-left: 0;
-  margin-right: 0; }
-  .allChapters .chaptersContainer .row .col-md-6 {
-    padding: 15px; }
-    .allChapters .chaptersContainer .row .col-md-6 .card {
-      background-color: #161F26;
-      height: 100%;
-      border-radius: 0; }
-      .allChapters .chaptersContainer .row .col-md-6 .card .card-body {
-        text-align: justify;
-        color: white; }
-        .allChapters .chaptersContainer .row .col-md-6 .card .card-body .card-title {
-          text-align: center; }
-        .allChapters .chaptersContainer .row .col-md-6 .card .card-body .btn-primary {
-          margin: 0 auto;
-          width: 90px;
-          display: flex; }
+#allChapters article {
+  margin-bottom: 5rem;
+  text-align: justify; }
+  #allChapters article .blog-wrapper {
+    background: #fff;
+    overflow: hidden;
+    padding: 20px; }
+    #allChapters article .blog-wrapper a:focus, #allChapters article .blog-wrapper a:hover {
+      color: #2B96CC;
+      text-decoration: none; }
+    #allChapters article .blog-wrapper .blog-thumb {
+      margin-bottom: 20px; }
+      #allChapters article .blog-wrapper .blog-thumb img {
+        width: 100%; }
+    #allChapters article .blog-wrapper .blog-content.home-blog p {
+      margin-bottom: 10px; }
+    #allChapters article .blog-wrapper .link-box.home-blog-link a {
+      font-size: 14px; }
+    #allChapters article .blog-wrapper .link-box a {
+      color: white;
+      font-weight: 600; }
+  #allChapters article .home-blog-wrapper {
+    transition: .3s; }
+  #allChapters article .blog-wrapper.home-blog-wrapper:hover {
+    box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.12); }
 
-.allChapters .chaptersContainer #btn-addChapters {
-  margin: 0 auto; }
+#allChapters aside .card-header {
+  text-align: center;
+  color: #007bff; }
+  #allChapters aside .card-header:hover {
+    color: #2B96CC;
+    transition: 0.4s; }
 
-.showChapters .container .card {
-  background-color: #fff;
-  height: 100%;
-  border-radius: 0; }
-  .showChapters .container .card .card-body {
+#allChapters aside .list-group {
+  padding: 0.75rem 1.25rem; }
+  #allChapters aside .list-group .list-group-about-container {
     text-align: justify;
-    color: black; }
-    .showChapters .container .card .card-body .card-title {
-      text-align: center; }
-    .showChapters .container .card .card-body .text-center {
-      color: #6c757d; }
-
-.showChapters .container #btn-addChapters {
-  margin: 0 auto; }
-
-.addChapters .container {
-  color: white; }
-  .addChapters .container .section-title {
-    margin-bottom: 3.5rem; }
-
-.updateChapters .container {
-  color: white; }
-  .updateChapters .container .section-title {
-    margin-bottom: 3.5rem; }
+    margin-bottom: 1rem; }
+  #allChapters aside .list-group .list-group-container {
+    text-align: justify;
+    margin-bottom: 1rem;
+    border-bottom: solid 1px #ddd; }
+    #allChapters aside .list-group .list-group-container a {
+      color: black; }
+      #allChapters aside .list-group .list-group-container a:hover {
+        text-decoration: none; }
+      #allChapters aside .list-group .list-group-container a .list-group-item-heading {
+        text-align: center; }
+        #allChapters aside .list-group .list-group-container a .list-group-item-heading:hover {
+          color: #2B96CC;
+          transition: 0.4s; }
 
 .commentChapter .container h2 {
   margin-bottom: 1.5rem;
