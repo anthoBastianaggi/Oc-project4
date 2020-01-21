@@ -4,8 +4,12 @@ main {
         background-image: url("../../images/alaska.jpg");
         background-position: center;
         background-size: cover;
-        padding-top: calc(21rem + 40px);
-        padding-bottom: calc(21rem + 40px);
+        position: relative;
+        height: 100vh;
+        max-height: 568px;
+        background-attachment: fixed;
+        color:#fff;
+        width: 100%;
         
         .container {
             width: 100%;
@@ -18,47 +22,139 @@ main {
         }
     }
 
-    .homeChapters {
-        .chaptersContainer {
+    #homeChapters {
+        .textHeaderHomeChapters {       
+            text-align: center;        
+            margin-bottom: 2rem;
             .section-title {
-                margin-bottom: 15px;
+                position: relative;
+                margin-bottom: 45px;
+                display: inline-block;
+                font-weight: 600;
                 color: white;
-            }
+                line-height: 1;
+              }
     
-            .section-subheading {
-                text-align: center;
+            .section-title::before {
+                content: "";
+                position: absolute;
+                left: 50%;
+                width: 60px;
+                height: 2px;
+                background: #007bff;
+                bottom: -25px;
+                margin-left: -30px;
+              }
+            
+            p {
                 color: white !important;
-                margin-bottom: 3.5rem;
             }
-            .row {
-                margin-right: 0;
-                margin-left: 0;
-                .col-md-6 {
-                    padding: 15px;
-                    .card {
-                        background-color: #161F26;
-                        height: 100%;
-                        border-radius: 0;
-                        .card-body {
-                            text-align: justify;
-                            color: white;
-                            .card-title {
-                                text-align: center;
-                            }
+        }  
+        article {
+            margin-bottom: 5rem;
+            text-align: justify;
+            display: inline-flex;
+            max-width: 49%;
+            min-height: 660px;
+            .card {
+                transition: .3s;
+                &:hover {
+                    box-shadow: 10px 20px 30px rgba(0,0,0,.12);
+                }
+                .headerChapter {
+                    padding: 10px 15px;
+                    text-align: center;
+                    a:focus, a:hover {
+                        color: #2B96CC;
+                        text-decoration: none;
+                    } 
+                }   
+                
+                .blog-thumb {
+                    img {
+                        width: 100%;
+                    }
+                }
 
-                            .text-center {
-                                color: #6c757d;
-                            }
-                            
-                            .btn-primary {
-                                margin: 0 auto;
-                                width: 90px;
-                                display: flex;
+                .card-block {
+                    padding: 10px 15px;
+                    text-align: justify;
+                    flex: 1;
+                    .meta-info {
+                        margin-bottom: 1.5rem;
+                    }
+
+                    .blog-content.home-blog p {
+                        margin-bottom: 10px;
+                    }
+                }
+
+                .card-footer {
+                    text-align: center;
+                    .link-box.home-blog-link a {
+                        font-size: 14px;
+                    }
+                      
+                    .link-box a {
+                        color: white;
+                        font-weight: 600;
+                    }
+                }                            
+            }
+        }
+        aside {
+            .card-header {
+                text-align: center;
+                color: #007bff;
+                &:hover {
+                    color: #2B96CC;
+                    transition: 0.4s;
+                }
+            }
+            .list-group {
+                padding: 0.75rem 1.25rem;
+                .list-group-about-container {
+                    text-align: justify;
+                    margin-bottom: 1rem; 
+                }
+    
+                .list-group-container {
+                    text-align: justify;
+                    margin-bottom: 1rem;
+                    border-bottom: solid 1px #ddd;
+                    a {
+                        color: black;
+                        &:hover {
+                            text-decoration: none;
+                        }
+                        .list-group-item-heading {
+                            text-align: center;
+                            &:hover {
+                                color: #2B96CC;
+                                transition: 0.4s;
                             }
                         }
-                    } 
-                }    
+                    }                    
+                }
+            }    
+        }
+    }    
+}
+
+@media(max-width:990px) {
+    main {
+        #homeChapters {
+            article {
+                max-width: 100%;
             }
+        }
+    }
+}
+
+@media(max-width:834px) {
+    main {
+        #home {
+            max-height: 615px;
         }
     }
 }
