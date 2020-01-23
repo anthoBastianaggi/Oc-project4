@@ -13,6 +13,7 @@ function chapters($page) {
 function showChapter($page) {
     $chapter = new Chapters();
     $showChapter = $chapter->showChapter();
+    $lastChapters = $chapter->getThreeLastChapters();
     $comment = new Comments();
     $allComments = $comment->getAllComments($showChapter['id']);
     include_once 'Views/Chapters/Sections/Chapter/ChapterShow/'.$page.'_show_view.php';
