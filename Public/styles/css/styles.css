@@ -451,80 +451,192 @@ main #homeChapters aside .list-group {
           color: #2B96CC;
           transition: 0.4s; }
 
-.commentChapter .container h2 {
-  margin-bottom: 1.5rem;
-  color: white;
-  text-align: center; }
+#showChapters .textHeaderShowChapters {
+  text-align: center;
+  margin-bottom: 2rem; }
+  #showChapters .textHeaderShowChapters .section-title {
+    position: relative;
+    margin-bottom: 45px;
+    display: inline-block;
+    font-weight: 600;
+    color: white;
+    line-height: 1; }
+  #showChapters .textHeaderShowChapters .section-title::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    width: 60px;
+    height: 2px;
+    background: #007bff;
+    bottom: -25px;
+    margin-left: -30px; }
 
-.commentChapter .container .row .col-md-12 .panel {
+#showChapters article {
+  text-align: justify; }
+  #showChapters article .card {
+    transition: .3s;
+    background-color: transparent; }
+    #showChapters article .card:hover {
+      box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.12); }
+    #showChapters article .card .blog-thumb {
+      padding: 15px;
+      background-color: white;
+      border-radius: 0.25rem 0.25rem 0 0; }
+      #showChapters article .card .blog-thumb a:hover {
+        text-decoration: none; }
+      #showChapters article .card .blog-thumb a img {
+        width: 100%; }
+      #showChapters article .card .blog-thumb a .meta-info {
+        position: relative;
+        height: 35px;
+        margin: -35px 0 0 0;
+        background: rgba(0, 0, 0, 0.8);
+        color: #ccc;
+        line-height: 35px;
+        padding: 0 15px; }
+    #showChapters article .card .card-block {
+      text-align: justify;
+      margin-top: 1rem; }
+      #showChapters article .card .card-block .card-block-container {
+        background-color: white;
+        border-radius: 0 0 0.25rem 0.25rem; }
+        #showChapters article .card .card-block .card-block-container .card-header {
+          padding: 7px 1.25rem;
+          background-color: rgba(0, 0, 0, 0.03);
+          border-bottom: 1px solidrgba(0, 0, 0, 0.125);
+          border-left: 5px solid #007bff; }
+          #showChapters article .card .card-block .card-block-container .card-header a:hover {
+            color: #2B96CC;
+            transition: 0.4s;
+            text-decoration: none; }
+      #showChapters article .card .card-block .blog-content.home-blog p {
+        padding: 0 1.5rem 1rem 1.5rem; }
+
+#showChapters aside .card-header {
+  text-align: center;
+  color: #007bff; }
+  #showChapters aside .card-header:hover {
+    color: #2B96CC;
+    transition: 0.4s; }
+
+#showChapters aside .list-group {
+  padding: 0.75rem 1.25rem; }
+  #showChapters aside .list-group .list-group-about-container {
+    text-align: justify;
+    margin-bottom: 1rem; }
+  #showChapters aside .list-group .list-group-container {
+    text-align: justify;
+    margin-bottom: 1rem;
+    border-bottom: solid 1px #ddd; }
+    #showChapters aside .list-group .list-group-container a {
+      color: black; }
+      #showChapters aside .list-group .list-group-container a:hover {
+        text-decoration: none; }
+      #showChapters aside .list-group .list-group-container a .list-group-item-heading {
+        text-align: center; }
+        #showChapters aside .list-group .list-group-container a .list-group-item-heading:hover {
+          color: #2B96CC;
+          transition: 0.4s; }
+
+@media (max-width: 480px) {
+  #showChapters article .card .blog-thumb a .meta-info {
+    height: 65px;
+    margin: -65px 0 0 0; } }
+
+#commentChapter .card-block h3 {
+  color: white; }
+
+#commentChapter .card-block .card-block-container .panel {
   margin-bottom: 20px;
   background-color: #fff;
   border: 1px solid transparent;
-  border-radius: 4px;
-  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05); }
+  border-radius: 4px; }
 
-.commentChapter .container .row .col-md-12 .panel-shadow {
-  box-shadow: rgba(255, 255, 255, 0.3) 7px 7px 7px; }
-
-.commentChapter .container .row .col-md-12 .panel-white {
+#commentChapter .card-block .card-block-container .panel-white {
   border: 1px solid #dddddd; }
-  .commentChapter .container .row .col-md-12 .panel-white .panel-heading {
-    color: #333;
-    background-color: #fff;
-    border-color: #ddd; }
 
-.commentChapter .container .row .col-md-12 .post .post-heading {
+#commentChapter .card-block .card-block-container .post .post-heading {
   height: 95px;
-  padding: 20px 15px; }
-  .commentChapter .container .row .col-md-12 .post .post-heading .pull-left {
-    float: left; }
-    .commentChapter .container .row .col-md-12 .post .post-heading .pull-left .avatar {
-      width: 60px;
-      height: 60px;
-      display: block;
-      margin-right: 15px; }
-  .commentChapter .container .row .col-md-12 .post .post-heading .meta .title {
+  padding: 20px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  #commentChapter .card-block .card-block-container .post .post-heading .pull-left {
+    height: 55px; }
+    #commentChapter .card-block .card-block-container .post .post-heading .pull-left .comment-author {
+      margin-bottom: 4px; }
+      #commentChapter .card-block .card-block-container .post .post-heading .pull-left .comment-author .avatar {
+        width: 55px;
+        height: 55px;
+        display: block;
+        margin-right: 15px;
+        float: left; }
+  #commentChapter .card-block .card-block-container .post .post-heading .meta .title {
     margin-bottom: 0; }
-  .commentChapter .container .row .col-md-12 .post .post-heading .meta .title a {
+  #commentChapter .card-block .card-block-container .post .post-heading .meta .title a {
     color: black; }
-    .commentChapter .container .row .col-md-12 .post .post-heading .meta .title a:hover {
+    #commentChapter .card-block .card-block-container .post .post-heading .meta .title a:hover {
       color: gainsboro; }
-  .commentChapter .container .row .col-md-12 .post .post-heading .meta .time {
+  #commentChapter .card-block .card-block-container .post .post-heading .meta .time {
     margin-top: 8px;
     color: #999; }
+  #commentChapter .card-block .card-block-container .post .post-heading .dropdownOptions {
+    font-size: 18px;
+    width: 18px;
+    text-align: center;
+    cursor: pointer; }
+    #commentChapter .card-block .card-block-container .post .post-heading .dropdownOptions .dropdownListOptions {
+      display: none; }
+    #commentChapter .card-block .card-block-container .post .post-heading .dropdownOptions.active .dropdownListOptions.active {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      min-width: 85px;
+      padding: 0;
+      border-radius: 3px;
+      box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.2);
+      background-color: #f0f0f0;
+      right: 35px;
+      max-width: 150px;
+      width: 100%;
+      list-style: none; }
+      #commentChapter .card-block .card-block-container .post .post-heading .dropdownOptions.active .dropdownListOptions.active .dropdownItemOptions {
+        padding: 0 10px;
+        display: flex;
+        justify-content: flex-start; }
+        #commentChapter .card-block .card-block-container .post .post-heading .dropdownOptions.active .dropdownListOptions.active .dropdownItemOptions:hover {
+          background-color: #dfdfdf; }
+        #commentChapter .card-block .card-block-container .post .post-heading .dropdownOptions.active .dropdownListOptions.active .dropdownItemOptions a span {
+          margin-left: 10px; }
 
-.commentChapter .container .row .col-md-12 .post .post-description {
+#commentChapter .card-block .card-block-container .post .post-description {
   padding: 15px; }
-  .commentChapter .container .row .col-md-12 .post .post-description p {
+  #commentChapter .card-block .card-block-container .post .post-description p {
     font-size: 14px; }
-  .commentChapter .container .row .col-md-12 .post .post-description .stats {
+  #commentChapter .card-block .card-block-container .post .post-description .stats {
     margin-top: 20px; }
-    .commentChapter .container .row .col-md-12 .post .post-description .stats .stat-item {
+    #commentChapter .card-block .card-block-container .post .post-description .stats .stat-item {
       display: inline-block;
       margin-right: 15px; }
-    .commentChapter .container .row .col-md-12 .post .post-description .stats a {
+    #commentChapter .card-block .card-block-container .post .post-description .stats a {
       text-decoration: none; }
-      .commentChapter .container .row .col-md-12 .post .post-description .stats a .icon {
+      #commentChapter .card-block .card-block-container .post .post-description .stats a .icon {
         margin-right: 8px; }
-    .commentChapter .container .row .col-md-12 .post .post-description .stats .btn-default {
+    #commentChapter .card-block .card-block-container .post .post-description .stats .btn-default {
       color: #333;
       background-color: #fff;
       border-color: #ccc; }
-      .commentChapter .container .row .col-md-12 .post .post-description .stats .btn-default:hover {
+      #commentChapter .card-block .card-block-container .post .post-description .stats .btn-default:hover {
         background-color: gainsboro; }
 
-.commentChapter .container .addComments {
-  color: white;
-  background-color: #161F26;
-  padding: 1.25rem 0;
-  text-align: center; }
-  .commentChapter .container .addComments h2 {
-    margin-bottom: 1.5rem; }
-  .commentChapter .container .addComments #comment_add {
-    text-align: left; }
-    .commentChapter .container .addComments #comment_add textarea {
-      height: 150px; }
+#addComments {
+  padding: 1.25rem 0; }
+  #addComments #comment_add h3 {
+    color: white; }
+  #addComments #comment_add .card-block-container textarea {
+    height: 150px; }
+  #addComments #comment_add .card-block-container #btnAddComment {
+    padding: 0; }
 
 /*======================================
 //--//-->   CONTACT
