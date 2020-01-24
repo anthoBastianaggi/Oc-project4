@@ -1,29 +1,293 @@
 header {
+  .navigation {
+    .navContainer {
+      .btnSidebarOpen {
+          display: none;
+      }
+
+      .sidebar {
+        display: none;
+      }
+    }
+  }
+}
+
+@media(max-width:834px) {
+  header {
     .navigation {
       .navContainer {
-        .sidebarContainer {
-            display: none;
-        }
-      }
-    }
-  }
-  
-  @media(max-width:834px) {
-    header {
-      .navigation {
-        .navContainer {
-            .sidebarContainer {
-                display: inline-grid;
-                align-items: center;
-                position: absolute;
-                right: 15px;
-                height: 70px;
-                button {
-                    font-size: 1.75rem;
-                    background-color: transparent !important;
-                }
+        .btnSidebarOpen {
+            display: inline-grid;
+            align-items: center;
+            position: absolute;
+            right: 15px;
+            height: 70px;
+            button {
+                font-size: 1.75rem;
+                background-color: transparent !important;
             }
         }
+
+        .overlay {
+          &.active {
+            width: 100%;
+            height: 100%;
+            top: 0; 
+            position: fixed;
+            left: 0;
+            opacity: 1;
+            background: -webkit-linear-gradient(top,rgba(108,118,148,.98),rgba(53,60,82,.98));
+            z-index: 2;
+            transition: opacity .5s;
+            cursor: pointer;
+          }      
+        }
+      
+        .sidebar {
+          display: block;
+          .sidebarOpen {
+            width: 400px;
+            height: 100%; 
+            top: 0;
+            right: 0;             
+            position: fixed;                     
+            z-index: 2;       
+            transition: right .3s;   
+            .sidebarMenu {
+              width: auto;
+              height: 100%;
+              background-color:white;           
+              z-index: 1;   
+              .menuBurgerClose {
+                position: absolute;
+                top: 20px;
+                right: 20px;
+                cursor: pointer;
+                padding: 0;
+                background: none;
+                border: none;
+                color: #c8cbd3;
+
+                i {
+                  font-size: 24px;
+                }
+              } 
+
+              .sidebarContainer {
+                width: 100%;
+                height: 100%;
+                .sidebarProfileContainer {
+                  padding: 40px 20px;
+                  height: 217px;
+                  background-color:#353c52;
+                  .sidebarConnected {
+                    width: auto;
+                    height: 150px;
+            
+                    .sidebarUserInfo {
+                      padding: 10px 0px;
+                      display: flex;
+            
+                      .sidebarUserCardImg {
+                        position: absolute;
+                        width: 50px;
+                        height: 50px;
+            
+                        img {
+                          border-radius: 50%;
+                          width: 100%;
+                        }       
+                      }   
+            
+                      .sidebarMenuUser {       
+                        width: 100%;
+                        height: auto;
+                        padding: 0;
+                        list-style: none;
+                        margin-left: 50px;              
+            
+                        .sidebarItemUser {
+                          left: 10px;
+                          position: relative;
+                          text-transform: none;
+            
+                          .username {
+                            font-size: 18px;
+                            color: #c8cbd3;
+                          }
+            
+                          .address {
+                            font-size: 13px;
+                            color: #5c6f84;
+                          }
+                        }
+                      }
+                    }  
+                    .btnSidebarProfileContainer {
+                      display: flex;
+                      margin-bottom: 1rem;
+                      .separator {
+                        border: 1px solid lightgrey;
+                      }
+                      .btnProfile, .btnSettings {
+                        width: 50%;
+                        background: none;
+                        border: none;
+                        color: #c8cbd3;
+                        cursor: pointer;
+                        &:hover {
+                          color: #f4f6fa;
+                        }
+                      }
+                    }
+                    .btnLogOutContainer {
+                      width: 100%;
+                      position: absolute;
+                      left: 0;
+                      background-color:#5c6f84;
+                      height: 50px;
+                      text-align: center;
+                      align-items: center;
+                      display: flex;
+                      justify-content: center;
+                      &:hover {
+                        background-color: #555D70;
+                      }
+                      .btnLogOut {
+                        border: none;
+                        background: none;
+                        color: white;
+                        cursor: pointer;
+                      }
+                    }
+                  } 
+                } 
+                .sidebarLoginContainer {
+                  background-color:#353c52;
+                  .sidebarNotConnected {
+                    padding: 60px 20px 20px;   
+                    .inputGroupContainer {
+                      text-transform: none !important;
+                      color: white;
+                    }
+                  }
+                  .btnLoginContainer {
+                    background-color:#5c6f84;
+                    height: 50px;
+                    display: flex;
+                    justify-content: center;
+                    &:hover {
+                      background-color: #555D70;
+                    }
+                    .btnLogin {
+                      border: none;
+                      background: none;
+                      color: white;
+                      cursor: pointer;
+                    }
+                  }
+
+                  .btnRegisterContainer {
+                    height: 50px;
+                    display: flex;
+                    justify-content: center;
+                    font-size: 13px;
+                    button {
+                      background: none;
+                      border: none;
+                      color: #c8cbd3;
+                      text-align: center;
+                      cursor: pointer;
+                      &:hover {
+                        color: white;
+                      }
+                    }
+                  }
+                }
+                .sidebarContent {
+                  height: 100%;
+                  .sidebarContentContainer {
+                    margin-top: 20px;  
+                    height: 100%;
+                    padding: 10px 20px;        
+                    .sidebarMenuContainer {
+                      .btnDropdownMenu {
+                        width: 100%;
+                        height: auto;
+          
+                        button {
+                          justify-content: left;
+                          width: 100%;
+                          height: auto;
+                          font-size: 18px;
+                          border-radius: 0px;  
+                          background: none;
+                          border: none; 
+                          display: flex;
+                          justify-content: space-between;
+                          align-items: center;    
+                          color: #353c52;     
+                          cursor: pointer;                                
+                        }
+                      }
+          
+                      .sidebarDropdownMenu {
+                        width: 100%;
+                        height: 100%;
+                        padding: 10px 15px 10px 33px;
+                        display: none;
+          
+                        &.active {
+                          display: block;
+                        }                
+                        
+                        .menuItem {
+                          justify-content: inherit;
+                          align-items: center;
+                          align-content: center;
+                          height: 35px;
+                          width: 100%;
+                          display: inline-flex;                  
+            
+                          .menuLink {
+                            display: flex;
+                            text-decoration: none;
+                            color: #5c6f84;
+                            &:hover {
+                              color: #353c52;
+                            }
+                      
+                            .name {
+                              font-size: 16px;
+                              line-height: 1.23;
+                              margin-left: 15px;     
+                              text-transform: none !important;              
+                            }
+                          }                   
+                        }                       
+                      }                   
+                    }       
+                  }
+                }              
+              }
+            }
+          }
+        }
       }
     }
   }
+}
+
+@media(max-width:414px) {
+  header {
+    .navigation {
+      .navContainer {
+        .sidebar {
+          .sidebarOpen {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}               
