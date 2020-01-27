@@ -112,7 +112,7 @@
                                 </div>
                             </div>   
                             <div class="col-md-12 text-center" id="btn-register">
-                                <button type="submit" class="button button-a button-big button-rouded">S'inscrire</button>
+                                <button type="submit" class="button button-a button-big">S'inscrire</button>
                             </div>                           
                         </form>
                     </div>

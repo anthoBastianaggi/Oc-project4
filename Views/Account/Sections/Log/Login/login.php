@@ -57,7 +57,7 @@
                                     </div>
                                 </div>                    
                                 <div class="col-md-12 text-center" id="btn-login">
-                                    <button type="submit" class="btn btn-primary">Connexion</button>
+                                    <button type="submit" class="button button-a button-big">Connexion</button>
                                 </div>                           
                             </form>
                         </div>

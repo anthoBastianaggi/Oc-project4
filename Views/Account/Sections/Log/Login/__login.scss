@@ -13,6 +13,8 @@
 
     #infobox-login {
         z-index: 0;
+        max-width: 75%;
+        margin: 0 auto;
         .boxContainer {
             padding: 1.25rem 1.25rem 3rem 1.25rem;
             .infoForgetContainer {
@@ -34,10 +36,10 @@
         }
        
         form {
+            width: 80%;
+            margin: 0 auto;
             border-radius: 5px;
             max-width:100%;
-            width:100%;
-            margin: 0;
             background-color: #FFFFFF;
             overflow: hidden;
             .inputGroupContainer {
@@ -85,6 +87,9 @@
             #btn-login {
                 padding-right: 0;
                 padding-left: 0;
+                button {
+                    padding: .6rem 2.3rem;
+                }
             }
         }
     }
