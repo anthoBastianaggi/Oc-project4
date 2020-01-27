@@ -1,14 +1,14 @@
 <div class="btnSidebarOpen">
-    <button id="btn-menu" class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+    <button id="menuBurgerOpen" class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <i class="fa fa-bars"></i>
     </button> 
 </div>
 <div class="sidebar">
-    <div class="overlay active"></div>
+    <div class="overlay"></div>
     <div class="sidebarOpen">
         <div class="sidebarMenu">
             <div class="sidebarContainer">
-                <button class="menuBurgerClose">
+                <button id="menuBurgerClose">
                 <i class="fa fa-times"></i>
                 </button>
                 <?php if(isset($_SESSION['auth'])): ?>
@@ -84,12 +84,12 @@
                     <div class="sidebarContentContainer">
                         <div class="sidebarMenuContainer">
                             <div class="btnDropdownMenu">
-                                <button>
+                                <button id="dropdownMenuSidebar" onclick='displayMenuSidebar(); return false'>
                                     <span>Menu</span>
-                                    <i class="fa fa-chevron-down"></i>
+                                    <i class="fa fa-chevron-down" id="iconChevron"></i>
                                 </button>
                             </div>
-                            <ul class="sidebarDropdownMenu active">
+                            <ul id="sidebarDropdownMenu">
                                 <li class="menuItem">
                                     <a href="<?= CURRENT_PATH ?>home" class="menuLink">
                                         <i class="fa fa-home"></i>

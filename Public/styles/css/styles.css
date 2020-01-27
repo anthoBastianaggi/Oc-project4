@@ -271,16 +271,18 @@ header .navigation .navContainer .sidebar {
       width: 400px;
       height: 100%;
       top: 0;
-      right: 0;
+      right: -400px;
       position: fixed;
       z-index: 2;
       transition: right .3s; }
+      header .navigation .navContainer .sidebar .sidebarOpen.active {
+        right: 0; }
       header .navigation .navContainer .sidebar .sidebarOpen .sidebarMenu {
         width: auto;
         height: 100%;
         background-color: white;
         z-index: 1; }
-        header .navigation .navContainer .sidebar .sidebarOpen .sidebarMenu .menuBurgerClose {
+        header .navigation .navContainer .sidebar .sidebarOpen .sidebarMenu #menuBurgerClose {
           position: absolute;
           top: 20px;
           right: 20px;
@@ -289,7 +291,7 @@ header .navigation .navContainer .sidebar {
           background: none;
           border: none;
           color: #c8cbd3; }
-          header .navigation .navContainer .sidebar .sidebarOpen .sidebarMenu .menuBurgerClose i {
+          header .navigation .navContainer .sidebar .sidebarOpen .sidebarMenu #menuBurgerClose i {
             font-size: 24px; }
         header .navigation .navContainer .sidebar .sidebarOpen .sidebarMenu .sidebarContainer {
           width: 100%;
@@ -411,27 +413,31 @@ header .navigation .navContainer .sidebar {
                   align-items: center;
                   color: #353c52;
                   cursor: pointer; }
-              header .navigation .navContainer .sidebar .sidebarOpen .sidebarMenu .sidebarContainer .sidebarContent .sidebarContentContainer .sidebarMenuContainer .sidebarDropdownMenu {
+                  header .navigation .navContainer .sidebar .sidebarOpen .sidebarMenu .sidebarContainer .sidebarContent .sidebarContentContainer .sidebarMenuContainer .btnDropdownMenu button #iconChevron {
+                    transform: rotate(0deg); }
+                    header .navigation .navContainer .sidebar .sidebarOpen .sidebarMenu .sidebarContainer .sidebarContent .sidebarContentContainer .sidebarMenuContainer .btnDropdownMenu button #iconChevron.active {
+                      transform: rotate(90deg); }
+              header .navigation .navContainer .sidebar .sidebarOpen .sidebarMenu .sidebarContainer .sidebarContent .sidebarContentContainer .sidebarMenuContainer #sidebarDropdownMenu {
                 width: 100%;
                 height: 100%;
                 padding: 10px 15px 10px 33px;
-                display: none; }
-                header .navigation .navContainer .sidebar .sidebarOpen .sidebarMenu .sidebarContainer .sidebarContent .sidebarContentContainer .sidebarMenuContainer .sidebarDropdownMenu.active {
-                  display: block; }
-                header .navigation .navContainer .sidebar .sidebarOpen .sidebarMenu .sidebarContainer .sidebarContent .sidebarContentContainer .sidebarMenuContainer .sidebarDropdownMenu .menuItem {
+                display: block; }
+                header .navigation .navContainer .sidebar .sidebarOpen .sidebarMenu .sidebarContainer .sidebarContent .sidebarContentContainer .sidebarMenuContainer #sidebarDropdownMenu.active {
+                  display: none; }
+                header .navigation .navContainer .sidebar .sidebarOpen .sidebarMenu .sidebarContainer .sidebarContent .sidebarContentContainer .sidebarMenuContainer #sidebarDropdownMenu .menuItem {
                   justify-content: inherit;
                   align-items: center;
                   align-content: center;
                   height: 35px;
                   width: 100%;
                   display: inline-flex; }
-                  header .navigation .navContainer .sidebar .sidebarOpen .sidebarMenu .sidebarContainer .sidebarContent .sidebarContentContainer .sidebarMenuContainer .sidebarDropdownMenu .menuItem .menuLink {
+                  header .navigation .navContainer .sidebar .sidebarOpen .sidebarMenu .sidebarContainer .sidebarContent .sidebarContentContainer .sidebarMenuContainer #sidebarDropdownMenu .menuItem .menuLink {
                     display: flex;
                     text-decoration: none;
                     color: #5c6f84; }
-                    header .navigation .navContainer .sidebar .sidebarOpen .sidebarMenu .sidebarContainer .sidebarContent .sidebarContentContainer .sidebarMenuContainer .sidebarDropdownMenu .menuItem .menuLink:hover {
+                    header .navigation .navContainer .sidebar .sidebarOpen .sidebarMenu .sidebarContainer .sidebarContent .sidebarContentContainer .sidebarMenuContainer #sidebarDropdownMenu .menuItem .menuLink:hover {
                       color: #353c52; }
-                    header .navigation .navContainer .sidebar .sidebarOpen .sidebarMenu .sidebarContainer .sidebarContent .sidebarContentContainer .sidebarMenuContainer .sidebarDropdownMenu .menuItem .menuLink .name {
+                    header .navigation .navContainer .sidebar .sidebarOpen .sidebarMenu .sidebarContainer .sidebarContent .sidebarContentContainer .sidebarMenuContainer #sidebarDropdownMenu .menuItem .menuLink .name {
                       font-size: 16px;
                       line-height: 1.23;
                       margin-left: 15px;
