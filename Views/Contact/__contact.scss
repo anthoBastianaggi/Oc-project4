@@ -6,9 +6,28 @@
     .textHeaderContact {       
         text-align: center;        
         margin-bottom: 2rem;
-        h2 {
+
+        .section-title {
+            position: relative;
+            margin-bottom: 45px;
+            display: inline-block;
+            font-weight: 600;
             color: black;
+            line-height: 1;
         }
+
+        .section-title::before {
+            content: "";
+            position: absolute;
+            left: 50%;
+            width: 60px;
+            height: 2px;
+            background: #007bff;
+            bottom: -25px;
+            margin-left: -30px;
+        
+        }
+
         p {
             color: black !important;
         }
@@ -96,9 +115,14 @@
                     }
                 }
 
-                .icon-send {
-                    margin-left: 10px;
-                }
+                #btn-contact {
+                    button {
+                        padding: .6rem 2.3rem;
+                        .icon-send {
+                            margin-left: 10px;
+                        }
+                    }
+                }          
             }               
         }      
     }

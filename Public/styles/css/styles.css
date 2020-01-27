@@ -650,15 +650,6 @@ main #homeChapters aside .list-group {
     font-weight: 600;
     color: black;
     line-height: 1; }
-  #showChapters .textHeaderShowChapters .section-title::before {
-    content: "";
-    position: absolute;
-    left: 50%;
-    width: 60px;
-    height: 2px;
-    background: #007bff;
-    bottom: -25px;
-    margin-left: -30px; }
 
 #showChapters article {
   text-align: justify; }
@@ -833,8 +824,22 @@ main #homeChapters aside .list-group {
 #sectionContact .textHeaderContact {
   text-align: center;
   margin-bottom: 2rem; }
-  #sectionContact .textHeaderContact h2 {
-    color: black; }
+  #sectionContact .textHeaderContact .section-title {
+    position: relative;
+    margin-bottom: 45px;
+    display: inline-block;
+    font-weight: 600;
+    color: black;
+    line-height: 1; }
+  #sectionContact .textHeaderContact .section-title::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    width: 60px;
+    height: 2px;
+    background: #007bff;
+    bottom: -25px;
+    margin-left: -30px; }
   #sectionContact .textHeaderContact p {
     color: black !important; }
 
@@ -902,20 +907,37 @@ main #homeChapters aside .list-group {
           display: none;
           margin: 0 0 20px;
           font-size: 13px; }
-    #sectionContact .contact-mf #contact form .icon-send {
-      margin-left: 10px; }
+    #sectionContact .contact-mf #contact form #btn-contact button {
+      padding: .6rem 2.3rem; }
+      #sectionContact .contact-mf #contact form #btn-contact button .icon-send {
+        margin-left: 10px; }
 
 #register .textHeaderRegister {
   text-align: center;
   margin-bottom: 2rem; }
   #register .textHeaderRegister .section-title {
+    position: relative;
+    margin-bottom: 45px;
+    display: inline-block;
+    font-weight: 600;
     color: black;
-    margin-bottom: 15px; }
+    line-height: 1; }
+  #register .textHeaderRegister .section-title::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    width: 60px;
+    height: 2px;
+    background: #007bff;
+    bottom: -25px;
+    margin-left: -30px; }
   #register .textHeaderRegister .section-subheading {
     color: black !important; }
 
 #register #infobox-register {
-  z-index: 0; }
+  z-index: 0;
+  max-width: 75%;
+  margin: 0 auto; }
   #register #infobox-register .infoRegisterContainer {
     border: 1px solid #0000004f;
     margin: 0 15px 1rem 15px;
@@ -926,8 +948,8 @@ main #homeChapters aside .list-group {
   #register #infobox-register form {
     border-radius: 5px;
     max-width: 100%;
-    width: 100%;
-    margin: 0;
+    width: 90%;
+    margin: 0 auto;
     background-color: #FFFFFF;
     overflow: hidden; }
     #register #infobox-register form .inputGroupContainer {
@@ -957,6 +979,8 @@ main #homeChapters aside .list-group {
         #register #infobox-register form .inputGroupContainer .input-group .label-register {
           font-size: 1.25rem;
           width: 100%; }
+    #register #infobox-register form #btn-register button {
+      padding: .6rem 2.3rem; }
 
 #forget .textHeaderForget {
   text-align: center;
@@ -1033,7 +1057,9 @@ main #homeChapters aside .list-group {
     color: black !important; }
 
 #login #infobox-login {
-  z-index: 0; }
+  z-index: 0;
+  max-width: 75%;
+  margin: 0 auto; }
   #login #infobox-login .boxContainer {
     padding: 1.25rem 1.25rem 3rem 1.25rem; }
     #login #infobox-login .boxContainer .infoForgetContainer {
@@ -1047,10 +1073,10 @@ main #homeChapters aside .list-group {
       #login #infobox-login .boxContainer .infoForgetContainer .description p {
         font-size: 2.25rem; }
   #login #infobox-login form {
+    width: 80%;
+    margin: 0 auto;
     border-radius: 5px;
     max-width: 100%;
-    width: 100%;
-    margin: 0;
     background-color: #FFFFFF;
     overflow: hidden; }
     #login #infobox-login form .inputGroupContainer {
@@ -1090,6 +1116,8 @@ main #homeChapters aside .list-group {
     #login #infobox-login form #btn-login {
       padding-right: 0;
       padding-left: 0; }
+      #login #infobox-login form #btn-login button {
+        padding: .6rem 2.3rem; }
 
 footer {
   width: 100%;
