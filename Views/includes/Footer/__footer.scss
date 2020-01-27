@@ -2,9 +2,8 @@
 footer {
   width: 100%;
   bottom: 0;
-  border-bottom: 2px solid#EF951B;
-  border-top: 2px solid#EF951B;
-  background-color:#161F26;
+  background-color:rgba(0, 0, 0, 0.03);
+  border-top: 1px solid rgba(0, 0, 0, 0.125);
   padding: 1rem 0 !important;
 
   .containerSection {
@@ -26,13 +25,13 @@ footer {
             }
   
             a {
-              color: #ffffff;
+              color: black;
               text-decoration: none !important;
               background-color: transparent;
               -webkit-text-decoration-skip: objects;
   
               &:hover {
-                color: #eeeeee;
+                color: black;
               }
   
               i {
@@ -60,7 +59,7 @@ footer {
       min-width: 150px;
     }
     #copyright {
-      color: white;
+      color: black;
       padding: 0 15px;
       .copyrightContainer {
         width: 100%;

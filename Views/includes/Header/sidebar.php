@@ -76,9 +76,7 @@
                             </button>
                         </div>  
                         <div class="btnRegisterContainer">
-                            <button class="btnRegister">
-                                <span>S'inscrire</span>
-                            </button>
+                            <a class="nav-link" href="<?= CURRENT_PATH ?>register?action=register"><span>S'inscrire</span></a>
                         </div>   
                     </div>
                 <?php endif; ?>
@@ -93,25 +91,25 @@
                             </div>
                             <ul class="sidebarDropdownMenu active">
                                 <li class="menuItem">
-                                    <a href="" class="menuLink">
+                                    <a href="<?= CURRENT_PATH ?>home" class="menuLink">
                                         <i class="fa fa-home"></i>
                                         <span class="name">Accueil</span>
                                     </a>
                                 </li>
                                 <li class="menuItem">
-                                    <a href="" class="menuLink">
+                                    <a href="<?= CURRENT_PATH ?>about?action=about" class="menuLink">
                                         <i class="fa fa-user"></i>
                                         <span class="name">A propos de l'auteur</span>
                                     </a>
                                 </li>
                                 <li class="menuItem">
-                                    <a href="" class="menuLink">
+                                    <a href="<?= CURRENT_PATH ?>chapters?action=chapters" class="menuLink">
                                         <i class="fa fa-book"></i>
                                         <span class="name">Chapitres</span>
                                     </a>
                                 </li>
                                 <li class="menuItem">
-                                    <a href="" class="menuLink">
+                                    <a href="<?= CURRENT_PATH ?>contact?action=contact" class="menuLink">
                                         <i class="fa fa-address-book"></i>
                                         <span class="name">Contact</span>
                                     </a>

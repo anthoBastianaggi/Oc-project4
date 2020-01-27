@@ -31,12 +31,10 @@
                     <article class="col-lg-6">
                         <div class="card mb-3">
                             <div class="headerChapter">
-                                <h2><a href=""><?= $ticket['title'] ?></a></h2>
+                                <h2><?= $ticket['title'] ?></h2>
                             </div>
-                            <div class="blog-thumb">
-                                <a href="https://bit.ly/2LHKl61">
-                                    <img src="https://i.ibb.co/HrtN39y/services1.jpg" alt="" />
-                                </a>
+                            <div class="blog-thumb">                             
+                                <img src="https://i.ibb.co/HrtN39y/services1.jpg" alt="" />              
                             </div>
                             <div class="card-block">
                                 <div class="meta-info">
@@ -95,7 +93,7 @@
                     <div class="list-group mb-3">
                         <?php foreach ($lastChapters as $ticket) { ?>
                             <div class="list-group-container">
-                                <a href="#" class="">
+                                <a href="<?= CURRENT_PATH ?>chapters?action=showChapter&id= <?= $ticket['id'] ?>" class="">
                                     <h4 class="list-group-item-heading"><?=  $ticket['title'] ?></h4>
                                     <p class="list-group-item-text">
                                         <?=  substr($ticket['content'], 0, 300).' '.'. . .' ?>
