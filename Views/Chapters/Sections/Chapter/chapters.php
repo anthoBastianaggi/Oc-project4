@@ -21,13 +21,11 @@
                     <article>
                         <div class="blog-wrapper home-blog-wrapper white-bg">
                             <div class="headerChapter">
-                                <h2><a href=""><?= $ticket['title'] ?></a></h2>
+                                <h2><?= $ticket['title'] ?></h2>
                             </div>
                             <div class="entry-content">
                                 <div class="blog-thumb">
-                                    <a href="https://bit.ly/2LHKl61">
-                                        <img src="https://i.ibb.co/HrtN39y/services1.jpg" alt="" />
-                                    </a>
+                                    <img src="https://i.ibb.co/HrtN39y/services1.jpg" alt="" />
                                 </div>
                                 <div class="meta-info">
                                     Written by <span class="author">Jean Forteroche</span> <span class="date"><?= $ticket['created_at'] ?></span>
@@ -83,7 +81,7 @@
                     <div class="list-group mb-3">
                         <?php foreach ($lastChapters as $ticket) { ?>
                             <div class="list-group-container">
-                                <a href="#" class="">
+                                <a href="<?= CURRENT_PATH ?>chapters?action=showChapter&id= <?= $ticket['id'] ?>" class="">
                                     <h4 class="list-group-item-heading"><?=  $ticket['title'] ?></h4>
                                     <p class="list-group-item-text">
                                         <?=  substr($ticket['content'], 0, 300).' '.'. . .' ?>

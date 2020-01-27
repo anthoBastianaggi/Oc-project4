@@ -1,12 +1,11 @@
 main {
     #home {
-        border-bottom: 2px solid #EF951B;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.125);
         background-image: url("../../images/alaska.jpg");
         background-position: center;
         background-size: cover;
         position: relative;
-        height: 100vh;
-        max-height: 568px;
+        height: 79.4vh;
         background-attachment: fixed;
         color:#fff;
         width: 100%;
@@ -31,7 +30,7 @@ main {
                 margin-bottom: 45px;
                 display: inline-block;
                 font-weight: 600;
-                color: white;
+                color: black;
                 line-height: 1;
               }
     
@@ -47,7 +46,7 @@ main {
               }
             
             p {
-                color: white !important;
+                color: black !important;
             }
         }  
         article {
@@ -64,10 +63,13 @@ main {
                 .headerChapter {
                     padding: 10px 15px;
                     text-align: center;
-                    a:focus, a:hover {
-                        color: #2B96CC;
-                        text-decoration: none;
-                    } 
+                    h2 {
+                        color: #007bff;
+                        &:focus, &:hover {
+                            color: #2B96CC;
+                            text-decoration: none;
+                        }
+                    }
                 }   
                 
                 .blog-thumb {

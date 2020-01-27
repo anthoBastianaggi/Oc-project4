@@ -9,7 +9,7 @@ html body {
   font-size: 16px;
   font-weight: 400;
   letter-spacing: 0;
-  background-color: #161F26; }
+  background-color: #f5f5f5; }
   html body .layout {
     min-height: 100vh;
     flex-direction: column;
@@ -30,7 +30,6 @@ h1, h2, h3, h4, h5, h6 {
   color: #1e1e1e; }
 
 .paralax-mf {
-  box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
   position: relative;
   padding: 8rem 0; }
 
@@ -109,9 +108,7 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 5rem; }
 
 header {
-  background-color: #161F26 !important;
-  border-bottom: 2px solid #EF951B;
-  border-top: 2px solid #EF951B;
+  background-color: #353c52 !important;
   height: 150px;
   width: 100%;
   position: fixed;
@@ -384,13 +381,13 @@ header .navigation .navContainer .sidebar {
               display: flex;
               justify-content: center;
               font-size: 13px; }
-              header .navigation .navContainer .sidebar .sidebarOpen .sidebarMenu .sidebarContainer .sidebarLoginContainer .btnRegisterContainer button {
-                background: none;
-                border: none;
+              header .navigation .navContainer .sidebar .sidebarOpen .sidebarMenu .sidebarContainer .sidebarLoginContainer .btnRegisterContainer a {
                 color: #c8cbd3;
                 text-align: center;
+                text-transform: none !important;
+                margin: auto 0;
                 cursor: pointer; }
-                header .navigation .navContainer .sidebar .sidebarOpen .sidebarMenu .sidebarContainer .sidebarLoginContainer .btnRegisterContainer button:hover {
+                header .navigation .navContainer .sidebar .sidebarOpen .sidebarMenu .sidebarContainer .sidebarLoginContainer .btnRegisterContainer a:hover {
                   color: white; }
           header .navigation .navContainer .sidebar .sidebarOpen .sidebarMenu .sidebarContainer .sidebarContent {
             height: 100%; }
@@ -445,13 +442,12 @@ header .navigation .navContainer .sidebar {
     width: 100%; } }
 
 main #home {
-  border-bottom: 2px solid #EF951B;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
   background-image: url("../../images/alaska.jpg");
   background-position: center;
   background-size: cover;
   position: relative;
-  height: 100vh;
-  max-height: 568px;
+  height: 79.4vh;
   background-attachment: fixed;
   color: #fff;
   width: 100%; }
@@ -472,7 +468,7 @@ main #homeChapters .textHeaderHomeChapters {
     margin-bottom: 45px;
     display: inline-block;
     font-weight: 600;
-    color: white;
+    color: black;
     line-height: 1; }
   main #homeChapters .textHeaderHomeChapters .section-title::before {
     content: "";
@@ -484,7 +480,7 @@ main #homeChapters .textHeaderHomeChapters {
     bottom: -25px;
     margin-left: -30px; }
   main #homeChapters .textHeaderHomeChapters p {
-    color: white !important; }
+    color: black !important; }
 
 main #homeChapters article {
   margin-bottom: 5rem;
@@ -499,9 +495,11 @@ main #homeChapters article {
     main #homeChapters article .card .headerChapter {
       padding: 10px 15px;
       text-align: center; }
-      main #homeChapters article .card .headerChapter a:focus, main #homeChapters article .card .headerChapter a:hover {
-        color: #2B96CC;
-        text-decoration: none; }
+      main #homeChapters article .card .headerChapter h2 {
+        color: #007bff; }
+        main #homeChapters article .card .headerChapter h2:focus, main #homeChapters article .card .headerChapter h2:hover {
+          color: #2B96CC;
+          text-decoration: none; }
     main #homeChapters article .card .blog-thumb img {
       width: 100%; }
     main #homeChapters article .card .card-block {
@@ -574,7 +572,7 @@ main #homeChapters aside .list-group {
     margin-bottom: 45px;
     display: inline-block;
     font-weight: 600;
-    color: white;
+    color: black;
     line-height: 1; }
   #allChapters .textHeaderChapters .section-title::before {
     content: "";
@@ -582,11 +580,11 @@ main #homeChapters aside .list-group {
     left: 50%;
     width: 60px;
     height: 2px;
-    background: #ff5e14;
+    background: #007bff;
     bottom: -25px;
     margin-left: -30px; }
   #allChapters .textHeaderChapters p {
-    color: white !important; }
+    color: black !important; }
 
 #allChapters article {
   margin-bottom: 5rem;
@@ -595,9 +593,11 @@ main #homeChapters aside .list-group {
     background: #fff;
     overflow: hidden;
     padding: 20px; }
-    #allChapters article .blog-wrapper a:focus, #allChapters article .blog-wrapper a:hover {
-      color: #2B96CC;
-      text-decoration: none; }
+    #allChapters article .blog-wrapper h2 {
+      color: #007bff; }
+      #allChapters article .blog-wrapper h2:focus, #allChapters article .blog-wrapper h2:hover {
+        color: #2B96CC;
+        text-decoration: none; }
     #allChapters article .blog-wrapper .blog-thumb {
       margin-bottom: 20px; }
       #allChapters article .blog-wrapper .blog-thumb img {
@@ -648,7 +648,7 @@ main #homeChapters aside .list-group {
     margin-bottom: 45px;
     display: inline-block;
     font-weight: 600;
-    color: white;
+    color: black;
     line-height: 1; }
   #showChapters .textHeaderShowChapters .section-title::before {
     content: "";
@@ -733,7 +733,7 @@ main #homeChapters aside .list-group {
     margin: -65px 0 0 0; } }
 
 #commentChapter .card-block h3 {
-  color: white; }
+  color: black; }
 
 #commentChapter .card-block .card-block-container .panel {
   margin-bottom: 20px;
@@ -821,7 +821,7 @@ main #homeChapters aside .list-group {
 #addComments {
   padding: 1.25rem 0; }
   #addComments #comment_add h3 {
-    color: white; }
+    color: black; }
   #addComments #comment_add .card-block-container textarea {
     height: 150px; }
   #addComments #comment_add .card-block-container #btnAddComment {
@@ -834,9 +834,9 @@ main #homeChapters aside .list-group {
   text-align: center;
   margin-bottom: 2rem; }
   #sectionContact .textHeaderContact h2 {
-    color: white; }
+    color: black; }
   #sectionContact .textHeaderContact p {
-    color: white !important; }
+    color: black !important; }
 
 #sectionContact .contact-mf #contact {
   position: inherit;
@@ -909,10 +909,10 @@ main #homeChapters aside .list-group {
   text-align: center;
   margin-bottom: 2rem; }
   #register .textHeaderRegister .section-title {
-    color: white;
+    color: black;
     margin-bottom: 15px; }
   #register .textHeaderRegister .section-subheading {
-    color: white !important; }
+    color: black !important; }
 
 #register #infobox-register {
   z-index: 0; }
@@ -962,10 +962,10 @@ main #homeChapters aside .list-group {
   text-align: center;
   margin-bottom: 2rem; }
   #forget .textHeaderForget .section-title {
-    color: white;
+    color: black;
     margin-bottom: 15px; }
   #forget .textHeaderForget .section-subheading {
-    color: white !important; }
+    color: black !important; }
 
 #forget #infobox-forget {
   z-index: 0; }
@@ -1027,10 +1027,10 @@ main #homeChapters aside .list-group {
   text-align: center;
   margin-bottom: 2rem; }
   #login .textHeaderLogin .section-title {
-    color: white;
+    color: black;
     margin-bottom: 15px; }
   #login .textHeaderLogin .section-subheading {
-    color: white !important; }
+    color: black !important; }
 
 #login #infobox-login {
   z-index: 0; }
@@ -1094,9 +1094,8 @@ main #homeChapters aside .list-group {
 footer {
   width: 100%;
   bottom: 0;
-  border-bottom: 2px solid #EF951B;
-  border-top: 2px solid #EF951B;
-  background-color: #161F26;
+  background-color: rgba(0, 0, 0, 0.03);
+  border-top: 1px solid rgba(0, 0, 0, 0.125);
   padding: 1rem 0 !important; }
   footer .containerSection #footer {
     line-height: 50px;
@@ -1110,12 +1109,12 @@ footer {
           font-size: 30px;
           margin-top: -10px; }
         footer .containerSection #footer .socialContainer .social li a {
-          color: #ffffff;
+          color: black;
           text-decoration: none !important;
           background-color: transparent;
           -webkit-text-decoration-skip: objects; }
           footer .containerSection #footer .socialContainer .social li a:hover {
-            color: #eeeeee; }
+            color: black; }
           footer .containerSection #footer .socialContainer .social li a i {
             margin-right: 5px;
             font-size: 25px;
@@ -1131,7 +1130,7 @@ footer {
     width: 30%;
     min-width: 150px; }
   footer .containerSection #copyright {
-    color: white;
+    color: black;
     padding: 0 15px; }
     footer .containerSection #copyright .copyrightContainer {
       width: 100%;

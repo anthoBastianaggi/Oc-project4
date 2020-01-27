@@ -89,7 +89,7 @@
                     <div class="list-group mb-3">
                         <?php foreach ($lastChapters as $ticket) { ?>
                             <div class="list-group-container">
-                                <a href="#" class="">
+                                <a href="<?= CURRENT_PATH ?>chapters?action=showChapter&id= <?= $ticket['id'] ?>" class="">
                                     <h4 class="list-group-item-heading"><?=  $ticket['title'] ?></h4>
                                     <p class="list-group-item-text">
                                         <?=  substr($ticket['content'], 0, 300).' '.'. . .' ?>

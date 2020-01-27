@@ -7,7 +7,7 @@
             margin-bottom: 45px;
             display: inline-block;
             font-weight: 600;
-            color: white;
+            color: black;
             line-height: 1;
           }
 
@@ -17,13 +17,13 @@
             left: 50%;
             width: 60px;
             height: 2px;
-            background: #ff5e14;
+            background: #007bff;
             bottom: -25px;
             margin-left: -30px;
           }
         
         p {
-            color: white !important;
+            color: black !important;
         }
     }  
     article {
@@ -34,9 +34,12 @@
             overflow: hidden;
             padding: 20px;
 
-            a:focus, a:hover {
-                color: #2B96CC;
-                text-decoration: none;
+            h2 {
+                color: #007bff;
+                &:focus, &:hover {
+                    color: #2B96CC;
+                    text-decoration: none;
+                }
             }
 
             .blog-thumb {
