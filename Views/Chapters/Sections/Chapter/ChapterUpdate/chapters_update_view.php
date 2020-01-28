@@ -7,20 +7,37 @@
 
 <section class="updateChapters content-section text-left">
     <div class="container">
-        <h2 class="section-title text-center text-uppercase">Modifier un chapitre</h2>
         <div class="row">
-            <div class="col-md-12 col-md-offset-2">
-                <form class="form-horizontal" action="<?= CURRENT_PATH ?>chapters?action=updateChapter&id=<?= $_GET['id'] ?>" method="post">
-                    <div class="form-group">
-                        <label for="exampleInputName2">Titre du chapitre</label>
-                        <input type="text" name="titleTicket" class="form-control" id="exampleInputName2" value="<?= $showChapter['title'] ?>">
+            <div class="col-md-12 col-md-5 textHeaderUpdateChapter">
+                <div class="text-container">
+                    <h2 class="section-title text-center text-uppercase">Modifier un chapitre</h2>                   
+                </div>
+            </div>
+            <div id="infobox-update-chapter" class="col-sm-12">
+                <div class="box-shadow-full boxContainer">
+                    <div class="row">   
+                        <div class="col-md-12 col-md-offset-2">
+                            <form class="form-horizontal" action="<?= CURRENT_PATH ?>chapters?action=updateChapter&id=<?= $_GET['id'] ?>" method="post">
+                                <div class="form-group">
+                                    <label for="exampleInputName2">Titre du chapitre</label>
+                                    <input type="text" name="titleTicket" class="form-control" id="exampleInputName2" value="<?= $showChapter['title'] ?>">
+                                </div>
+                                <div class="form-group">
+                                    <label for="imageCard" id="imageCard">Choisir une image</label>
+                                    <input type="file" id="imageCard" name="imageCard" accept="image/png, image/jpeg">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputText3">Contenu</label>
+                                    <textarea id="contentTicket" name="contentTicket" class="form-control" value="<?= $showChapter['content'] ?>"></textarea> 
+                                </div>
+                                <div class="col-md-12 text-center" id="btn-container">
+                                    <button type="submit" name="btnUpdateChapter" id="btnUpdate" class="button button-a">Modifier</button>
+                                    <button type="submit" id="btnCancel" class="btn btn-default">Cancel</button>
+                                </div>    
+                            </form>
+                        </div>
                     </div>
-                    <div class="form-group ">
-                        <label for="exampleInputText3">Contenu</label>
-                        <textarea id="contentTicket" name="contentTicket" class="form-control" value="<?= $showChapter['content'] ?>"></textarea> 
-                    </div>
-                    <button type="submit" name="btnUpdateChapter" class="btn btn-default">Modifier</button>
-                </form>
+                </div>
             </div>
         </div>
     </div>
