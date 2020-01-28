@@ -1,8 +1,55 @@
+
 .addChapters {
-    .container {
-        color: white;
+    .textHeaderAddChapter{
+        text-align: center;        
+        margin-bottom: 2rem;
         .section-title {
-            margin-bottom: 3.5rem;
+            color: black;
+            margin-bottom: 15px;
+        }
+    }
+
+    #infobox-add-chapter {
+        z-index: 0;
+
+        .boxContainer {
+            padding: 3rem 3.25rem;
+
+            #imageCard {
+                width: 100%;
+            }
+            #btnAdd {
+                padding: .4rem 1.5rem;
+                margin-right: 15px;
+            }
+            #btnCancel {
+                padding: .4rem 1.5rem;
+                &:hover {
+                    transition: all 500ms ease;
+                    box-shadow: 0 0 0 4px #f9f9f9;
+                }
+            }
+        }        
+    }
+}
+
+.mce-notification.mce-in, #mceu_14, #mceu_15 {
+    display: none;
+}
+
+#mceu_2-body {
+    display: flex;
+    #mceu_3 {
+        border: none;
+    }
+}
+
+@media(max-width: 414px) {
+    .addChapters {
+        #infobox-add-chapter {
+            .boxContainer {
+                padding: 3rem 1.25rem;
+            }
         }
     }
 }

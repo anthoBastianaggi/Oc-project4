@@ -26,7 +26,7 @@
 <script type="text/javascript">
     tinymce.init({
         selector: "#contentTicket",
-        height: 200,
+        height: 400,
         toolbar: 'fontsizeselect',
         fontsize_formats: '8pt 10pt 12pt 14pt 18pt 24pt 36pt'
     });
