@@ -12,7 +12,6 @@ function removeClassOptionsComment(e, c) {
 var dropdownOptionsComment = document.querySelectorAll('.dropdownOptions');
 dropdownOptionsComment.forEach(function(o) {
     o.addEventListener('click', function(e) {
-        e.preventDefault();
         removeClassOptionsComment(o, 'active');
         this.classList.add('active');
         removeClassOptionsComment(o);
