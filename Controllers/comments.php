@@ -32,7 +32,7 @@ function updateComment($page) {
     if(!empty($_POST) && isset($_POST['btnUpdateComment'])) {
         $comment = new Comments();
         $updateComment = $comment->updateComment($_POST['idComment'], $_POST['contentComment'], $_GET['id']);
-        include_once 'Views/Chapters/Sections/Comment/'.$page.'_update_view.php'; exit;
+        include_once 'Views/Chapters/Sections/Comment/CommentUpdate/'.$page.'_update_view.php'; exit;
     }
-    include_once 'Views/Chapters/Sections/Comment/'.$page.'_update_view.php';  
+    include_once 'Views/Chapters/Sections/Comment/CommentUpdate/'.$page.'_update_view.php';  
 }

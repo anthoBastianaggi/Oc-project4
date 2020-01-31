@@ -233,6 +233,32 @@ header .navigation .navContainer .navbarRight {
     header .navigation .navContainer .navbarRight .navbarRightNavigation a {
       color: white;
       padding: 0.5rem 1rem; }
+    header .navigation .navContainer .navbarRight .navbarRightNavigation .dropdownMenu {
+      display: none; }
+      header .navigation .navContainer .navbarRight .navbarRightNavigation .dropdownMenu .dropdown-menu-list {
+        display: flex;
+        flex-direction: column;
+        min-width: 190px;
+        padding: 0;
+        border-radius: 3px;
+        box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.2);
+        background-color: #f0f0f0;
+        right: 15px;
+        max-width: 150px;
+        width: 100%;
+        list-style: none;
+        position: absolute;
+        top: 40px; }
+        header .navigation .navContainer .navbarRight .navbarRightNavigation .dropdownMenu .dropdown-menu-list .dropdown-menu-item {
+          padding: 7px 10px;
+          display: flex;
+          justify-content: flex-start; }
+          header .navigation .navContainer .navbarRight .navbarRightNavigation .dropdownMenu .dropdown-menu-list .dropdown-menu-item:hover {
+            background-color: #dfdfdf; }
+          header .navigation .navContainer .navbarRight .navbarRightNavigation .dropdownMenu .dropdown-menu-list .dropdown-menu-item a {
+            color: black;
+            padding: 0.5rem 1rem;
+            text-decoration: none; }
 
 @media (max-width: 834px) {
   header .navigation .navContainer .navbarRight {
@@ -453,10 +479,11 @@ main #home {
   background-position: center;
   background-size: cover;
   position: relative;
-  height: 79.4vh;
+  height: 100vh;
   background-attachment: fixed;
   color: #fff;
-  width: 100%; }
+  width: 100%;
+  margin-top: -9.3rem; }
   main #home .container {
     width: 100%;
     height: 100%;
@@ -556,7 +583,7 @@ main #homeChapters aside .list-group {
 
 @media (max-width: 834px) {
   main #home {
-    max-height: 615px; } }
+    margin-top: -6.3rem; } }
 
 #sectionAbout .textHeaderAbout {
   text-align: center;
@@ -950,6 +977,15 @@ main #homeChapters aside .list-group {
     height: 150px; }
   #addComments #comment_add .card-block-container #btnAddComment {
     padding: 0; }
+
+main .update-comment {
+  flex: 1;
+  display: flex; }
+  main .update-comment #comment_post {
+    height: 100%;
+    justify-content: center; }
+    main .update-comment #comment_post #btnUpdateComment {
+      padding: .4rem 1.5rem; }
 
 /*======================================
 //--//-->   CONTACT
