@@ -21,6 +21,39 @@ header {
               color: white;
               padding: 0.5rem 1rem;
             }
+            .dropdownMenu {
+              display: none;
+              .dropdown-menu-list {
+                display: flex;
+                flex-direction: column;
+                min-width: 190px;
+                padding: 0;
+                border-radius: 3px;
+                box-shadow: 0 2px 12px 0
+                rgba(0, 0, 0, 0.2);
+                background-color:
+                #f0f0f0;
+                right: 15px;
+                max-width: 150px;
+                width: 100%;
+                list-style: none;
+                position: absolute;
+                top: 40px;
+                .dropdown-menu-item {
+                  padding: 7px 10px;
+                  display: flex;
+                  justify-content: flex-start;
+                  &:hover {
+                    background-color: #dfdfdf;
+                  }
+                  a {
+                    color: black;
+                    padding: 0.5rem 1rem;
+                    text-decoration: none;
+                  }
+                }
+              }
+            }
           }
         }
       }

@@ -12,7 +12,7 @@
                 <header>
                     <?php include_once 'Views/includes/Header/header.php' ?>
                 </header>
-                <main role="main"> 
+                <main role="main" id="main"> 
                     <?php if(Session::getInstance()->hasFlashes()): ?>
                         <?php foreach(Session::getInstance()->getFlashes() as $type => $message): ?>
                             <div class="alert alert-<?= $type; ?>">
