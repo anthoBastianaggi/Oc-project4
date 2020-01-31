@@ -238,7 +238,7 @@ header .navigation .navContainer .navbarRight {
       header .navigation .navContainer .navbarRight .navbarRightNavigation .dropdownMenu .dropdown-menu-list {
         display: flex;
         flex-direction: column;
-        min-width: 190px;
+        min-width: 200px;
         padding: 0;
         border-radius: 3px;
         box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.2);
