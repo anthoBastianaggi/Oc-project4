@@ -22,13 +22,13 @@
                         </a>
                     </li>
                     <li>
-                        <a class="nav-link" href="<?= CURRENT_PATH ?>params?action=params">
+                        <a class="nav-link" href="<?= CURRENT_PATH ?>settings?action=settings">
                             <i class="nc-icon nc-notes"></i>
                             <p>Params</p>
                         </a>
                     </li>
                     <li>
-                        <a class="nav-link" href="<?= CURRENT_PATH ?>tableList?action=tableList">
+                        <a class="nav-link" href="<?= CURRENT_PATH ?>chapterList?action=chapterList">
                             <i class="nc-icon nc-paper-2"></i>
                             <p>Table List</p>
                         </a>

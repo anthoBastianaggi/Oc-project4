@@ -6,7 +6,7 @@
             <div id="myDropdown" class="dropdownMenu">
                 <ul class="dropdown-menu-list">
                     <li class="dropdown-menu-item">
-                        <a href="<?= CURRENT_PATH ?>account?action=account">Mon compte</a>
+                        <a href="<?= CURRENT_PATH ?>profile?action=profile">Mon compte</a>
                     </li>
                     <li class="dropdown-menu-item">
                         <a href="<?= CURRENT_PATH ?>logout?action=logout">Se déconnecter</a>

@@ -16,7 +16,7 @@
             <div class="col-md-10">
                 <form class="form-horizontal" action="<?= CURRENT_PATH ?>comments?action=updateComment&id=<?= $_GET['id'] ?>" method="post">
                     <div class="form-group ">
-                        <textarea id="idComment" cols="80" rows="4" name="contentComment" class="form-control" value="<?= $updateComment['content'] ?>"></textarea> 
+                        <textarea id="idComment" cols="80" rows="4" name="contentComment" class="form-control"><?= $showComment['content'] ?></textarea> 
                         <label for="exampleInputText3">Comment by Jean Forteroche</label>
                         <div class="col-lg-12 text-right">
                             <button type="submit" id="btnUpdateComment" name="btnUpdateComment" class="button button-a">Modifier</button>

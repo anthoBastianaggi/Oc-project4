@@ -28,11 +28,11 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="exampleInputText3">Contenu</label>
-                                    <textarea id="contentTicket" name="contentTicket" class="form-control" value="<?= $showChapter['content'] ?>"></textarea> 
+                                    <textarea id="contentTicket" name="contentTicket" class="form-control"><?= $showChapter['content'] ?></textarea> 
                                 </div>
                                 <div class="col-md-12 text-center" id="btn-container">
                                     <button type="submit" name="btnUpdateChapter" id="btnUpdate" class="button button-a">Modifier</button>
-                                    <button type="submit" id="btnCancel" class="btn btn-default">Cancel</button>
+                                    <button type="button" id="btnCancel" class="btn btn-default" onclick="window.location.href='<?= CURRENT_PATH ?>chapters?action=showChapter&id=<?= $_GET['id'] ?>'">Cancel</button>
                                 </div>    
                             </form>
                         </div>
