@@ -20,6 +20,13 @@ class Comments {
         $reqComments->execute(array($id, $commentChapter, 1));
     }
 
+    public function addChapter($titleTicket, $contentTicket) {
+        global $db;
+
+        $reqTicket= $db->prepare('INSERT INTO ticket(title, content, user_id, created_at) VALUES(?, ?, ?, NOW())');
+        $reqTicket->execute(array($titleTicket, $contentTicket, 1));
+    }
+
     
     /**
         * Envoie tous les commentaires

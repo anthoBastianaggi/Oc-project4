@@ -1,0 +1,90 @@
+section {
+    padding: 0 !important;
+    aside {
+        height: 100%;
+        .sidebar{ 
+            width:260px;  
+            transition: all 0.5s  ease-in-out; 
+            background-color: #353c52;
+            height: 100%;
+            .sidebar-container {
+                .user-panel {
+                    border-top: 1px solid;
+                    padding: 25px 15px;
+                    border-bottom: 1px solid;
+                    display: flex;
+                    margin-top: 1px;
+                    .image {
+                        height: 34px; 
+                        img {
+                            width: 100%;
+                            max-width: 34px;
+                            height: auto; 
+                        }
+                    }
+            
+                    .info {
+                        line-height: 34px;
+                        color:#fff;
+                        display: flex;
+                        align-items: center;
+                        margin-left: 10px;
+                        
+                        a {
+                            color: #fff;
+                        }
+            
+                        p {
+                            font-weight: 600;
+                            margin-bottom: 9px;
+                        }
+                    }
+                }
+        
+                .list-sidebar-container {
+                    .list-sidebar {
+                        list-style:none; 
+                        margin:0px; 
+                        padding:0px; 
+            
+                        li {
+                            height: 50px;
+                            border-bottom: 1px solid;
+                            width: 100%;
+                            line-height: 30px;
+                            .nav-link {
+                                display:block; 
+                                padding:8px 12px; 
+                                color:#fff;
+                                border-left:0px solid #dedede;  
+                                text-decoration:none;
+                                height: 100%;
+                                &:active {
+                                    display:block; 
+                                    padding:8px 12px; 
+                                    color:#fff;
+                                    text-decoration:none;
+                                    background-color:#000;
+                                    border-left:5px solid #dedede; 
+                                    transition: all 0.5s  ease-in-out;
+                                }
+            
+                                &:hover {
+                                    background-color: #555D70;
+                                }
+            
+                                i {
+                                    padding-right:5px;
+                                }
+            
+                                .nav-label {
+                                    transition: all 0.5s  ease-in-out;
+                                }
+                            }
+                        }
+                    }
+                }  
+            } 
+        }
+    }
+}

@@ -20,15 +20,15 @@
                                 </div>
                                 <ul class="sidebarMenuUser">
                                     <li class="sidebarItemUser">
-                                        <span class="username">Jean Forteroche</span>
+                                        <span class="username"><?= $_SESSION['auth']->firstname ?> <?= $_SESSION['auth']->lastname ?></span>
                                     </li>
                                     <li class="sidebarItemUser">
-                                        <span class="address">jean.forteroche@gmail.com</span>
+                                        <span class="address"><?= $_SESSION['auth']->email ?></span>
                                     </li>
                                 </ul>
                             </div>
                             <div class="btnSidebarProfileContainer">
-                                <button class="btnProfile">
+                                <button class="btnProfile" onclick="window.location.href='<?= CURRENT_PATH ?>profile?action=profile'">
                                     <i class="fa fa-user"></i>
                                     <span>Profil</span>
                                 </button>
@@ -39,7 +39,7 @@
                                 </button>
                             </div>
                             <div class="btnLogOutContainer">
-                                <button class="btnLogOut">
+                                <button class="btnLogOut" onclick="window.location.href='<?= CURRENT_PATH ?>logout?action=logout'">
                                     <i class="fa fa-sign-out"></i>
                                     <span>Déconnexion</span>
                                 </button>

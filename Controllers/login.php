@@ -6,7 +6,7 @@ function login($page) {
     $db = App::getDatabase();
     $auth->connectFromCookie($db);
     if($auth->user()){
-        App::redirect('/projet4/account?action=account');
+        App::redirect('/sites/projet4/account?action=account');
     }
 
     if(!empty($_POST) && !empty($_POST['username']) && !empty($_POST['password'])) {
@@ -14,7 +14,7 @@ function login($page) {
         $session = Session::getInstance();
         if($user) {
             $session->setFlash('success', "Vous êtes maintenant connecté");
-            App::redirect('/projet4/account?action=account');
+            App::redirect('/sites/projet4/profile?action=profile');
         } else {
             $session->setFlash('danger', "Identifiant ou mot de passe incorrecte");
         }
