@@ -1,64 +1,19 @@
 .chapterList {
     display: flex;
+    flex: 1;
     .main-panel {
         width: 100%;
         margin-bottom: 2rem;
         .block-edit {
-            .card-body-section-title {
-                font-family: "Helvetica", sans-serif;
-                font-size: 24px;
-                font-weight: bold;
-                letter-spacing: -0.8;
-                line-height: 1.33;
-                margin: 20px auto;
-                color: #353c52;
-            }
-            .card-body-section-box {
+            .card-header {
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
-                border-bottom: 1px solid #c8cbd3;
-                padding: 24px 0;
                 flex-wrap: wrap;
-                &:first-child {
-                    border-top: 1px solid #c8cbd3;
-                }
-
-                .item-container {
+                .card-header-item-container {
                     display: inline-flex;
-                    font-family: "Helvetica", sans-serif;
-                    font-size: 16px;
-                    font-weight: normal;
-                    letter-spacing: normal;
-                    .box-label {
-                        font-family: "Helvetica", sans-serif;
-                        font-size: 12px;
-                        font-weight: normal;
-                        letter-spacing: normal;
-                        line-height: 1.17;
-                        color: #c8cbd3;
-                        margin: 0 auto;
-                    }
-                    .box-title {
-                        font-family: "Helvetica", sans-serif;
-                        font-size: 16px;
-                        font-weight: normal;
-                        letter-spacing: normal;
-                        line-height: 1.5;
-                        color: #353c52;
-                        margin: 6px auto;
-                    }
-                    .box-description {
-                        font-family: "Helvetica", sans-serif;
-                        font-size: 14px;
-                        font-weight: normal;
-                        letter-spacing: normal;
-                        line-height: 1.29;
-                        color: #5c6f84;
-                        margin: 6px auto;
-                    }
-
-                    .btn-add, .btn-update, .btn-delete {
+                    .btn-add {
+                        background-color: #007bff;
                         font-size: 14px;
                         font-weight: 400;
                         letter-spacing: 0;
@@ -74,6 +29,7 @@
                         color: #fff;
                         &:hover {
                             box-shadow: none;
+                            background-color: #0056b3;
                         }
 
                         .icon {
@@ -81,31 +37,96 @@
                             align-items: center;
                         }
                     }
+                }
+            }
 
-                    .btn-update {
-                        background-color: #28a745;
-                        margin-right: 7px;
-                        &:hover {
-                            background-color: #218838;
-                        }
+            .card-body {
+                .card-body-section-box {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    border-bottom: 1px solid #c8cbd3;
+                    padding: 24px 0;
+                    flex-wrap: wrap;
+                    &:first-child {
+                        border-top: 1px solid #c8cbd3;
                     }
-
-                    .btn-add {
-                        background-color: #007bff;
-                        margin-right: 7px;
-                        &:hover {
-                            background-color: #0056b3;
+    
+                    .item-container {
+                        display: inline-flex;
+                        font-family: "Helvetica", sans-serif;
+                        font-size: 16px;
+                        font-weight: normal;
+                        letter-spacing: normal;
+                        .box-label {
+                            font-family: "Helvetica", sans-serif;
+                            font-size: 12px;
+                            font-weight: normal;
+                            letter-spacing: normal;
+                            line-height: 1.17;
+                            color: #c8cbd3;
+                            margin: 0 auto;
                         }
-                    }
-
-                    .btn-delete {
-                        background-color: #fa3e3e;
-                        &:hover {
-                            background-color: #dc3545;
+                        .box-title {
+                            font-family: "Helvetica", sans-serif;
+                            font-size: 16px;
+                            font-weight: normal;
+                            letter-spacing: normal;
+                            line-height: 1.5;
+                            color: #353c52;
+                            margin: 6px auto;
+                        }
+                        .box-description {
+                            font-family: "Helvetica", sans-serif;
+                            font-size: 14px;
+                            font-weight: normal;
+                            letter-spacing: normal;
+                            line-height: 1.29;
+                            color: #5c6f84;
+                            margin: 6px auto;
+                        }
+    
+                        .btn-update, .btn-delete {
+                            font-size: 14px;
+                            font-weight: 400;
+                            letter-spacing: 0;
+                            line-height: 18px;
+                            display: flex;
+                            position: relative;
+                            justify-content: center;
+                            align-items: center;
+                            padding: 8px 12px 6px;
+                            height: 32px;
+                            overflow: hidden;
+                            cursor: pointer;
+                            color: #fff;
+                            &:hover {
+                                box-shadow: none;
+                            }
+    
+                            .icon {
+                                display: flex;
+                                align-items: center;
+                            }
+                        }
+    
+                        .btn-update {
+                            background-color: #28a745;
+                            margin-right: 7px;
+                            &:hover {
+                                background-color: #218838;
+                            }
+                        }
+    
+                        .btn-delete {
+                            background-color: #fa3e3e;
+                            &:hover {
+                                background-color: #dc3545;
+                            }
                         }
                     }
                 }
-            }
+            }        
         }
     }   
-}
+}    

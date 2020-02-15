@@ -22,7 +22,14 @@
                     <div class="col-lg-12 col-xl-12 block-edit">
                         <div class="card">
                             <div class="card-header">
-                                <h4 class="card-title">Chapter List</h4>
+                                <div class="card-header-item-container">
+                                    <h4 class="card-title">Chapter List</h4>
+                                </div>
+                                <div class="card-header-item-container">
+                                    <a class="button btn-add" href="<?= CURRENT_PATH ?>chapters?action=addChapter">
+                                    <i class="fa fa-plus icon"></i>  
+                                    </a>
+                                </div>                
                             </div>
                             <div class="card-body">
                                 <div class="card-body-container">
@@ -33,15 +40,12 @@
                                                 <p class="box-title"><?= $ticket['title'] ?></p>
                                             </div>
                                             <div class="item-container">
-                                                <button type="submit" class="button btn-add">
-                                                    <i class="fa fa-plus icon"></i>           
-                                                </button>
-                                                <button type="submit" class="button btn-update">
-                                                    <i class="fa fa-pencil icon"></i>           
-                                                </button>
-                                                <button type="submit" class="button btn-delete">
-                                                    <i class="fa fa-trash icon"></i>           
-                                                </button>
+                                                <a href="<?= CURRENT_PATH ?>chapters?action=updateChapter&id=<?= $ticket['id'] ?>" class="button btn-update">
+                                                <i class="fa fa-pencil icon"></i>
+                                                </a>
+                                                <a href="<?= CURRENT_PATH ?>chapters?action=deleteChapter&id=<?= $ticket['id'] ?>" class="button btn-delete">
+                                                <i class="fa fa-trash icon"></i>
+                                                </a>
                                             </div>
                                         </div>
                                         <?php } ?>

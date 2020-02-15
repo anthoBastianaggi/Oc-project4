@@ -18,9 +18,3 @@ dropdownOptionsComment.forEach(function(o) {
         this.querySelector('.dropdownListOptions').classList.toggle('active');
     });
 });
-
-var sectionUpdateComment = document.querySelector('.update-comment');
-if (sectionUpdateComment) {
-    document.getElementById('main').style.display = "flex";
-    document.getElementById('main').style.flex = "1";
-}

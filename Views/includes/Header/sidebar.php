@@ -33,7 +33,7 @@
                                     <span>Profil</span>
                                 </button>
                                 <div class="separator"></div>
-                                <button class="btnSettings">
+                                <button class="btnSettings"  onclick="window.location.href='<?= CURRENT_PATH ?>settings?action=settings'" >
                                     <i class="fa fa-cog"></i>
                                     <span>Paramètres</span>
                                 </button>

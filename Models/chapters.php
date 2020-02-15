@@ -18,8 +18,8 @@ class Chapters {
         global $db;
 
         $reqTickets = $db -> prepare(
-        'SELECT *
-        FROM ticket  
+        'SELECT users.firstname AS "users_firstname", users.lastname AS "users_lastname", ticket.*
+        FROM ticket INNER JOIN users ON ticket.users_id = users.id
         ORDER BY ticket.id DESC');
         $reqTickets -> execute();
         return $reqTickets -> fetchAll();
@@ -33,8 +33,8 @@ class Chapters {
         global $db;
 
             $reqTicket = $db -> prepare(
-            'SELECT *
-            FROM ticket  
+            'SELECT users.firstname AS "users_firstname", users.lastname AS "users_lastname", ticket.*
+            FROM ticket INNER JOIN users ON ticket.users_id = users.id
             ORDER BY ticket.id DESC
             LIMIT 3');
             $reqTicket -> execute();    
@@ -50,8 +50,8 @@ class Chapters {
 
             $id = $_GET['id'];
             $reqTicket = $db -> prepare(
-            'SELECT *
-            FROM ticket WHERE id = ?');
+            'SELECT users.firstname AS "users_firstname", users.lastname AS "users_lastname", ticket.* 
+            FROM ticket INNER JOIN users ON ticket.users_id = users.id WHERE ticket.id = ?');
             $reqTicket -> execute(array($id));
             return $reqTicket -> fetch();
     }
@@ -60,11 +60,11 @@ class Chapters {
         * Ajout de chapitres
         * @return array
     */
-    public function addChapter($titleTicket, $contentTicket) {
+    public function addChapter($titleTicket, $contentTicket, $author) {
         global $db;
 
-        $reqTicket= $db->prepare('INSERT INTO ticket(title, content, user_id, created_at) VALUES(?, ?, ?, NOW())');
-        $reqTicket->execute(array($titleTicket, $contentTicket, 1));
+        $reqTicket= $db->prepare('INSERT INTO ticket(title, content, users_id, created_at) VALUES(?, ?, ?, NOW())');
+        $reqTicket->execute(array($titleTicket, $contentTicket, $author));
     }
 
     /**

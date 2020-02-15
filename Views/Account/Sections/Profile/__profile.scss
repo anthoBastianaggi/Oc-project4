@@ -1,0 +1,160 @@
+.profile {
+    display: flex;
+    .main-panel {
+        width: 100%;
+        margin-bottom: 2rem;
+        .block-edit {
+            #btn-profile {
+                button {
+                    padding: .6rem 1.3rem;
+                }
+            }
+        }
+    
+        .block-user {
+            .card-user {
+                .card-image {
+                    margin: auto;
+                    margin-top: 2rem;
+                    img {
+                        width: 150px;
+                        border-radius: 50%;
+                        height: 150px;
+                    }
+                }
+                .card-body {
+                    padding: 0;
+                    .author {
+                        text-align: center;
+                        padding: 1.25rem;
+    
+                        .title {
+                            font-size: 1.5rem;
+                        }
+    
+                        .username {
+                            font-size: 13px;
+                            color: #5c6f84;
+                        }
+                        .address-container {
+                            color: #5c6f84;
+                            display: flex;
+                            justify-content: center;
+                            align-content: center;
+                            i {
+                                font-size: 20px;
+                                margin-right: 10px;
+                            }
+                            .address {
+                                font-size: 13px;
+                                margin-bottom: 0;
+                            }
+                        }
+                        
+                    }
+                
+                    .box {
+                        display: flex;
+                        flex-wrap: wrap;
+                        .box-container {
+                            border-bottom: 1px solid #c8cbd3;
+                            padding: 12px 1.25rem;
+                            width: 100%;
+                            &:first-child {
+                                border-top: 1px solid #c8cbd3;
+                            }
+                            span {
+                                margin-left: 15px;
+                            }
+                            i {
+                                width: 16px;
+                            }
+                        }
+                    }
+                        
+                    .social-reseau {
+                        width: 100%;
+                        background-color: rgba(0, 0, 0, 0.03);
+                        height: 50px;
+                        text-align: center;
+                        align-items: center;
+                        display: flex;
+                        justify-content: center;
+            
+                        .social {
+                            width: 100%;
+                            justify-content: space-between;
+                            display: flex;
+                            padding: 0 20px;
+                            height: 100%;
+                            margin: 0;
+                            .list-inline-item {
+                                width: 100%;
+                                align-items: center;
+                                display: flex;
+                                justify-content: center;
+            
+                                a {
+                                    color: black;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 1200px) {
+    .profile { 
+        .block-edit {
+            right: 25%;
+            width: 66.66666667%;
+            float: left;
+        }
+
+        .block-user {
+            width: 33.33333333%;
+            left: 75%;
+            float: left;
+        }
+    }
+}
+
+
+
+@media(min-width: 920px) and (max-width: 1199px) {
+    .profile { 
+        .block-edit {
+            right: 33.33333333%;
+            width: 66.66666667%;
+            float: left;
+        }
+
+        .block-user {
+            width: 33.33333333%;
+            left: 66.66666667%;
+            float: left;
+        }
+    }
+}
+
+@media(max-width: 919px) {
+    .profile { 
+       .content {
+        max-width: 500px;
+        margin: auto;
+
+        .block-edit {
+            margin-top: 2rem;
+
+            .item-container {
+                max-width: 100%;
+                flex: 0 0 100%;
+            }
+        }
+       
+       }
+    }
+}

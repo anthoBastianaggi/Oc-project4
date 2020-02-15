@@ -18,7 +18,7 @@ class Auth {
     public function register($db, $firstname, $lastname, $birthdate, $username, $password, $email) {
         $password = $this->hashPassword($password);
         $token = Str::random(60);
-        $db->query("INSERT INTO users SET firstname = ?, lastname = ?, birthdate = ?, username = ?, password = ?, email = ?, confirmation_token = ?", [
+        $db->query("INSERT INTO users SET firstname = ?, lastname = ?, birthdate = ?, username = ?, password = ?, email = ?, role_id = 2, confirmation_token = ?", [
             $firstname, 
             $lastname, 
             $birthdate, 

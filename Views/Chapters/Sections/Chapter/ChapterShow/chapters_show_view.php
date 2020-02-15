@@ -19,7 +19,7 @@
                             <a href="https://bit.ly/2LHKl61">
                                 <img src="https://i.ibb.co/HrtN39y/services1.jpg" alt="" />
                                 <div class="meta-info">
-                                    Written by <span class="author">Jean Forteroche</span> <span class="date"><?= $showChapter['created_at'] ?></span>
+                                    Written by <span class="author"><?= $showChapter['users_firstname'] ?> <?= $showChapter['users_lastname'] ?></span> <span class="date"><?= $showChapter['created_at'] ?></span>
                                 </div>
                             </a>
                         </div>
@@ -32,6 +32,7 @@
                                     <?= $showChapter['content'] ?>
                                 </div>
                                 <div class="card-footer">
+                                    <?php if($_SESSION['auth']->role_id === "1"): ?>
                                     <div class="btn-body-card">
                                         <div class="btn-card">
                                             <a href="<?= CURRENT_PATH ?>chapters?action=updateChapter&id=<?= $_GET['id'] ?>" class="btn btn-default stat-item">
@@ -42,6 +43,7 @@
                                             </a>
                                         </div>
                                     </div>
+                                    <?php endif; ?>
                                 </div>   
                             </div>                            
                         </div>
@@ -89,7 +91,7 @@
                     <div class="list-group mb-3">
                         <?php foreach ($lastChapters as $ticket) { ?>
                             <div class="list-group-container">
-                                <a href="<?= CURRENT_PATH ?>chapters?action=showChapter&id= <?= $ticket['id'] ?>" class="">
+                                <a href="<?= CURRENT_PATH ?>chapters?action=showChapter&id=<?= $ticket['id'] ?>">
                                     <h4 class="list-group-item-heading"><?=  $ticket['title'] ?></h4>
                                     <p class="list-group-item-text">
                                         <?=  substr($ticket['content'], 0, 300).' '.'. . .' ?>
@@ -112,13 +114,13 @@
                     <div class="card-block">
                         <h3>Commentaires</h3>
                         <div class="card-block-container">
-                            <?php foreach ($allComments as $comment) { ?>                           
+                            <?php foreach ($allComments as $comment) { ?>                        
                                 <div class="panel panel-white post panel-shadow">
                                     <div class="post-heading">
                                         <div class="pull-left image">
                                             <p class="comment-author">
                                                 <img src="http://bootdey.com/img/Content/user_1.jpg" class="img-circle avatar" alt="user profile image">
-                                                <span class="comment-author-name">Jean Forteroche</span>
+                                                <span class="comment-author-name"><?= $comment['users_username'] ?></span>
                                                 <span class="says">made a post.</span>
                                             </p>    
                                             <h6 class="text-muted time"><?= $comment['created_at'] ?></h6>                          

@@ -17,7 +17,8 @@ overlay.onclick = function() {
 }
 
 function displayMenuSidebar() {
-  var dropdownMenuList = document.querySelector('#sidebarDropdownMenu').style.display;
+  var dropdownMenu = document.querySelector('#sidebarDropdownMenu');
+  var dropdownMenuList = window.getComputedStyle(dropdownMenu, null).getPropertyValue("display");
   var iconChevron =  document.querySelector('#iconChevron');
   if (dropdownMenuList === "block") {
     document.querySelector('#sidebarDropdownMenu').style.display = "none";
@@ -27,4 +28,9 @@ function displayMenuSidebar() {
     document.querySelector('#sidebarDropdownMenu').style.display = "block";
     iconChevron.classList.remove('active');
   }
+}
+
+var sidebarDashboard = document.querySelector('.sidebar-dashboard');
+document.querySelector('#dashboardMenuSidebar').onclick = function() {
+    sidebarDashboard.classList.toggle('sidebar-collapse')
 }

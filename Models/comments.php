@@ -13,20 +13,12 @@ class Comments {
         * Ajout d'un commentaire
         * @return array
     */
-    public function addComment($id, $commentChapter) {
+    public function addComment($id, $commentChapter, $authorComment) {
         global $db;
 
         $reqComments= $db->prepare('INSERT INTO comment(ticket_id, content, users_id, created_at) VALUES(?, ?, ?, NOW())');
-        $reqComments->execute(array($id, $commentChapter, 1));
+        $reqComments->execute(array($id, $commentChapter, $authorComment));
     }
-
-    public function addChapter($titleTicket, $contentTicket) {
-        global $db;
-
-        $reqTicket= $db->prepare('INSERT INTO ticket(title, content, user_id, created_at) VALUES(?, ?, ?, NOW())');
-        $reqTicket->execute(array($titleTicket, $contentTicket, 1));
-    }
-
     
     /**
         * Envoie tous les commentaires
@@ -35,9 +27,9 @@ class Comments {
     public function getAllComments($id) {
         global $db;
 
-        $reqComments = $db -> prepare(
-        'SELECT id, content, created_at
-        FROM comment  
+        $reqComments = $db -> prepare( 
+        'SELECT comment.id, content, created_at, users.username AS "users_username" 
+        FROM comment INNER JOIN users ON comment.users_id = users.id
         WHERE ticket_id = ?');
         $reqComments -> execute(array($id));
         return $reqComments -> fetchAll();

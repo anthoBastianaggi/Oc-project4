@@ -27,7 +27,7 @@ function addChapter($page) {
             $contentTicket = str_secur($_POST['contentTicket']);
 
             $chapter = new Chapters();
-            $addChapter = $chapter->addChapter($_POST['titleTicket'], $_POST['contentTicket']);
+            $addChapter = $chapter->addChapter($_POST['titleTicket'], $_POST['contentTicket'], $_SESSION['auth']->id);
         }
     }
     include_once 'Views/Chapters/Sections/Chapter/ChapterAdd/'.$page.'_add_view.php';   
@@ -36,16 +36,15 @@ function addChapter($page) {
 function deleteChapter($page) { 
     $chapter = new Chapters();
     $deleteChapter = $chapter->deleteChapter();
-    header('Location: /sites/projet4/home'); 
+    header('Location: /projet4/home'); 
 }
 
 function updateChapter($page) {
     $chapter = new Chapters();
     $showChapter = $chapter->showChapter();
     if(!empty($_POST) && isset($_POST['btnUpdateChapter'])) {
-        
         $updateChapter = $chapter->updateChapter($_POST['titleTicket'], $_POST['contentTicket'], $_GET['id']);
-        include_once 'Views/Chapters/Sections/Chapter/ChapterShow/'.$page.'_show_view.php'; exit;
+        header('Location: /projet4/chapters?action=showChapter&id='.$_GET['id']); 
     }
     include_once 'Views/Chapters/Sections/Chapter/ChapterUpdate/'.$page.'_update_view.php'; 
 }

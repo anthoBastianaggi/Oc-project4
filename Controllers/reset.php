@@ -16,7 +16,7 @@ function reset($page) {
                     $db->query('UPDATE users SET password = ?, reset_at = NULL, reset_token = NULL WHERE id = ?', [$password, $_GET['id']]);
                     $auth->connect($user);
                     Session::getInstance()->setFlash('success', "Votre mot de passe a bien été modifié");
-                    App::redirect('/projet4/account?action=account');
+                    App::redirect('/projet4/dashboard?action=dashboard');
                 }     
             }
         }else{

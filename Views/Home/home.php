@@ -38,7 +38,7 @@
                             </div>
                             <div class="card-block">
                                 <div class="meta-info">
-                                    Written by <span class="author">Jean Forteroche</span> <span class="date"><?= $ticket['created_at'] ?></span>
+                                    Written by <span class="author"><?= $ticket['users_firstname'] ?> <?= $ticket['users_lastname'] ?></span> <span class="date"><?= $ticket['created_at'] ?></span>
                                 </div>
                                 <div class="blog-content home-blog">                       
                                     <p class="lead"><?= substr($ticket['content'], 0, 300).' '.'. . .' ?></p>
