@@ -34,5 +34,6 @@
         <script src='Public/javascript/Header/header.js'></script>
         <script src='Public/javascript/Header/sidebar.js'></script>
         <script src='Public/javascript/Comment/comment.js'></script>
+        <script src='Public/javascript/main.js'></script>
     </body>
 </html>

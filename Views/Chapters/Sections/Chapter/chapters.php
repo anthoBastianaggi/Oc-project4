@@ -28,7 +28,7 @@
                                     <img src="https://i.ibb.co/HrtN39y/services1.jpg" alt="" />
                                 </div>
                                 <div class="meta-info">
-                                    Written by <span class="author">Jean Forteroche</span> <span class="date"><?= $ticket['created_at'] ?></span>
+                                    Written by <span class="author"><?= $ticket['users_firstname'] ?> <?= $ticket['users_lastname'] ?></span> <span class="date"><?= $ticket['created_at'] ?></span>
                                 </div>
                                 <div class="blog-content home-blog">                       
                                     <p class="lead"><?= substr($ticket['content'], 0, 700).' '.'. . .' ?></p>
@@ -92,9 +92,11 @@
                     </div>
                 </div>            
             </aside>
+            <?php if($_SESSION['auth']->role_id === "1"): ?>
             <div class="col-lg-12 text-center">
                 <a id="btn-addChapters" class="btn btn-primary" href="<?= CURRENT_PATH ?>chapters?action=addChapter" role="button">Ajouter chapitre</a>
             </div>
+            <?php endif; ?>
         </div>
     </div>
 </section>

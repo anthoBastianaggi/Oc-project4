@@ -46,27 +46,30 @@
 
             .card-block {
                 text-align: justify;
-                margin-top: 1rem;
                 .card-block-container {
                     background-color: white;
                     border-radius: 0 0 0.25rem 0.25rem;
-                    .card-header {
-                        padding: 7px 1.25rem;
-                        background-color:rgba(0, 0, 0, 0.03);
-                        border-bottom: 1px solidrgba(0, 0, 0, 0.125);
-                        border-left: 5px solid#007bff;
-                        a {
-                            &:hover {
-                                color: #2B96CC;
-                                transition: 0.4s;
-                                text-decoration: none;
-                            }
-                        }                       
+                    .headerChapter {
+                        .card-header {
+                            padding: 7px 1.25rem;
+                            background-color:rgba(0, 0, 0, 0.03);
+                            border-bottom: 1px solidrgba(0, 0, 0, 0.125);
+                            border-left: 5px solid#007bff;
+                            a {
+                                &:hover {
+                                    color: #2B96CC;
+                                    transition: 0.4s;
+                                    text-decoration: none;
+                                }
+                            }                       
+                        }
                     }
-                }
-
-                .blog-content.home-blog p {
-                    padding: 0 1.5rem 1rem 1.5rem;
+                    .blog-content.home-blog p {
+                        padding: 0 1.5rem 1rem 1.5rem;
+                    }
+                    .card-footer {
+                        min-height: 50px;
+                    }
                 }
             }                    
         }

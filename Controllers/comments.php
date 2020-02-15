@@ -14,10 +14,10 @@ function addComment($page) {
         if(!empty($_POST['commentChapter'])) {
             $commentChapter= str_secur($_POST['commentChapter']);
             $comment = new Comments();
-            $addComment = $comment->addComment($_GET['id'], $commentChapter);
+            $addComment = $comment->addComment($_GET['id'], $commentChapter,  $_SESSION['auth']->id);
         }
     }
-    header('Location: /sites/projet4/chapters?action=showChapter&id=' .$_GET['id']); 
+    header('Location: /projet4/chapters?action=showChapter&id=' .$_GET['id']); 
 }
 
 function deleteComment($page) { 
@@ -32,7 +32,7 @@ function updateComment($page) {
     if(!empty($_POST) && isset($_POST['btnUpdateComment'])) {
 
         $updateComment = $comment->updateComment($_POST['idComment'], $_POST['contentComment'], $_GET['id']);
-        header('Location: /sites/projet4/chapters?action=showChapter&id=' .$_GET['id']); exit;
+        header('Location: /projet4/chapters?action=showChapter&id=' .$showComment['ticket_id']); exit;
     }
     include_once 'Views/Chapters/Sections/Comment/CommentUpdate/'.$page.'_update_view.php';  
 }
