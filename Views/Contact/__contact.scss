@@ -35,95 +35,162 @@
     .contact-mf {
         #contact {
             position: inherit;
-            margin-bottom: 3rem;
-            form {
-                border-radius: 5px;
-                max-width:700px;
-                width:100%;
-                margin: 5% auto;
-                background-color: #FFFFFF;
-                overflow: hidden;
-                #sendmessage {
-                    color: #0070FF;
-                    border: 1px solid #0078ff;
-                    display: none;
-                    text-align: center;
-                    padding: 15px;
-                    margin-bottom: 15px;
+            margin-bottom: 0;
+            .block-info {
+                .list-info-contact {
+                    margin-bottom: 10px;
                 }
-                #errormessage {
-                    color: #FF0000;
-                    display: none;
-                    border: 1px solid red;
-                    text-align: center;
-                    padding: 15px;
-                    margin-bottom: 15px;
-                }
-                #sendmessage.show {
-                    display: block;
-                }
-                #errormessage.show {
-                    display: block;
-                }
-                .show {
-                    display: block;
-                }
+            }
+            
+            .block-form {
+                form {
+                    border-radius: 5px;
+                    max-width:700px;
+                    width:100%;
+                    margin: 5% auto;
+                    background-color: #FFFFFF;
+                    overflow: hidden;
+                    #sendmessage {
+                        color: #0070FF;
+                        border: 1px solid #0078ff;
+                        display: none;
+                        text-align: center;
+                        padding: 15px;
+                        margin-bottom: 15px;
+                    }
+                    #errormessage {
+                        color: #FF0000;
+                        display: none;
+                        border: 1px solid red;
+                        text-align: center;
+                        padding: 15px;
+                        margin-bottom: 15px;
+                    }
+                    #sendmessage.show {
+                        display: block;
+                    }
+                    #errormessage.show {
+                        display: block;
+                    }
+                    .show {
+                        display: block;
+                    }
 
-                .inputGroupContainer {
-                    padding-right: 0;
-                    padding-left: 0;
-                    width: 100%;
-                    .input-group {
-                        position: relative;
-                        display: flex;
-                        border-collapse: separate;
+                    .inputGroupContainer {
+                        padding-right: 0;
+                        padding-left: 0;
                         width: 100%;
-                        margin-bottom: 1rem;
-                        input {
-                            height: 42px;
-                            z-index: 0;
-                        }
-
-                        .icon-case {
-                            width: 35px;
-                            float: left;
-                            border-radius: 5px 0px 0px 5px;
-                            background:#eeeeee;
-                            height:42px;
+                        .input-group {
                             position: relative;
-                            text-align: center;
-                            line-height:40px;
-                            border: 1px solid#ccc;
-                            border-right: 0;
-                        }
-                        
-                        .icon-case-textarea {
-                            height: auto;
-                            line-height:130px;
-                        }
+                            display: flex;
+                            border-collapse: separate;
+                            width: 100%;
+                            margin-bottom: 1rem;
+                            input {
+                                height: 42px;
+                                z-index: 0;
+                            }
 
-                        textarea {
-                            z-index: 0;
-                        }
+                            .icon-case {
+                                width: 35px;
+                                float: left;
+                                border-radius: 5px 0px 0px 5px;
+                                background:#eeeeee;
+                                height:42px;
+                                position: relative;
+                                text-align: center;
+                                line-height:40px;
+                                border: 1px solid#ccc;
+                                border-right: 0;
+                            }
+                            
+                            .icon-case-textarea {
+                                height: auto;
+                                line-height:130px;
+                            }
 
-                        .validation {
-                            color: #FF0000;
-                            display: none;
-                            margin: 0 0 20px;
-                            font-size: 13px;
+                            textarea {
+                                z-index: 0;
+                            }
+
+                            .validation {
+                                color: #FF0000;
+                                display: none;
+                                margin: 0 0 20px;
+                                font-size: 13px;
+                            }
                         }
+                    }
+
+                    #btn-contact {
+                        button {
+                            padding: .6rem 2.3rem;
+                            .icon-send {
+                                margin-left: 10px;
+                            }
+                        }
+                    }          
+                }   
+            }                     
+        }      
+    }
+}
+
+@media(min-width: 834px) {
+    #sectionContact { 
+        .contact-mf {
+            #contact {
+                .block-form {
+                    right: 50.4%;
+                    width: 66.66666667%;
+                    float: left;
+                }
+    
+                .block-info {
+                    width: 33.33333333%;
+                    left: 50.5%;
+                    float: left;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 833px) {
+    #sectionContact { 
+        .contact-mf {
+            #contact {
+                .block-form {
+                    flex: 0 0 100%;
+                    max-width: 100%;
+                    .block-form-title {
+                        padding-top: 3rem;
                     }
                 }
+    
+                .block-info {
+                    padding: 0 15px;
+                    flex: 0 0 100%;
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}
 
-                #btn-contact {
-                    button {
-                        padding: .6rem 2.3rem;
-                        .icon-send {
-                            margin-left: 10px;
-                        }
+@media(max-width: 360px) {
+    #sectionContact { 
+        .contact-mf {
+            #contact {
+                .block-form {
+                    flex: 0 0 100%;
+                    max-width: 100%;
+                    #btn-contact {
+                        padding: 0;
+                        text-align: center;
                     }
-                }          
-            }               
-        }      
+                }
+            }
+        }
     }
 }
