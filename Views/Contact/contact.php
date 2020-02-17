@@ -21,8 +21,27 @@
                 <div class="contact-mf">
                     <div id="contact" class="box-shadow-full">
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-md-6 block-info">
                                 <div class="title-box-2">
+                                    <h5 class="title-left">
+                                        Entrez en contact
+                                    </h5>
+                                </div>
+                                <div class="more-info">
+                                    <h3 class="card-title">Informations</h3>
+                                    <p class="lead">
+                                        Vous pouvez utiliser les informations suivantes ou le formulaire de contact ci-dessous pour me contacter.
+                                    </p>
+                                    <h3 class="card-title">Contact Moi</h3>
+                                    <ul class="list-ico">
+                                        <li class="list-info-contact"><span class="fa fa-map-marker"></span> 14, Place de la Madeleine 75009 PARIS</li>
+                                        <li class="list-info-contact"><span class="fa fa-phone"></span> 01.26.73.50.74</li>
+                                        <li class="list-info-contact"><span class="fa fa-envelope"></span> j.forteroche@gmail.com</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-6 block-form">
+                                <div class="title-box-2 block-form-title">
                                     <h5 class="title-left">
                                         Envoyez-moi un message
                                     </h5>
@@ -92,25 +111,6 @@
                                             </div>
                                         </div>
                                     </form>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="title-box-2 pt-4 pt-md-0">
-                                    <h5 class="title-left">
-                                        Entrez en contact
-                                    </h5>
-                                </div>
-                                <div class="more-info">
-                                    <h3 class="card-title">Informations</h3>
-                                    <p class="lead">
-                                        Vous pouvez utiliser les informations suivantes ou le formulaire de contact ci-dessous pour me contacter.
-                                    </p>
-                                    <h3 class="card-title">Contact Moi</h3>
-                                    <ul class="list-ico">
-                                        <li><span class="fa fa-map-marker"></span> 14, Place de la Madeleine 75009 PARIS</li>
-                                        <li><span class="fa fa-phone"></span> 01.26.73.50.74</li>
-                                        <li><span class="fa fa-envelope"></span> j.forteroche@gmail.com</li>
-                                    </ul>
                                 </div>
                             </div>
                         </div>
