@@ -20,7 +20,7 @@
         <div class="content">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-lg-4 col-xl-3 block-user">
+                    <div class="col-lg-12 block-user">
                         <div class="card card-user">
                             <div class="card-image">
                                 <img src="https://ununsplash.imgix.net/photo-1431578500526-4d9613015464?fit=crop&fm=jpg&h=300&q=75&w=400" alt="...">
@@ -81,7 +81,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-8 col-xl-9 block-edit">
+                    <div class="col block-edit">
                         <div class="card">
                             <div class="card-header">
                                 <h4 class="card-title">Edit Profile</h4>

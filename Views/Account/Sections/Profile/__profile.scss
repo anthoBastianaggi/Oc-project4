@@ -3,6 +3,7 @@
     .main-panel {
         width: 100%;
         margin-bottom: 2rem;
+        z-index: -1;
         .block-edit {
             #btn-profile {
                 button {
@@ -106,55 +107,55 @@
     }
 }
 
-@media(min-width: 1200px) {
-    .profile { 
-        .block-edit {
-            right: 25%;
-            width: 66.66666667%;
-            float: left;
-        }
-
-        .block-user {
-            width: 33.33333333%;
-            left: 75%;
-            float: left;
-        }
-    }
-}
-
-
-
-@media(min-width: 920px) and (max-width: 1199px) {
-    .profile { 
-        .block-edit {
-            right: 33.33333333%;
-            width: 66.66666667%;
-            float: left;
-        }
-
-        .block-user {
-            width: 33.33333333%;
-            left: 66.66666667%;
-            float: left;
-        }
-    }
-}
-
-@media(max-width: 919px) {
+@media(max-width: 1280px) {
     .profile { 
        .content {
-        max-width: 500px;
-        margin: auto;
+            max-width: 500px;
+            margin: auto;
 
-        .block-edit {
-            margin-top: 2rem;
+            .block-edit {
+                margin-top: 2rem;
+                right: auto !important;
 
-            .item-container {
-                max-width: 100%;
-                flex: 0 0 100%;
+                .item-container {
+                    max-width: 100%;
+                    flex: 0 0 100%;
+                }
+            }      
+        }
+    }
+}
+
+@media(min-width: 1281px) and (max-width: 1499px) {
+    .profile { 
+       .content {
+            .block-edit {
+                right: 33.5%;
+            }
+
+            .block-user {
+                -ms-flex: 0 0 33.333333%;
+                flex: 0 0 33.333333%;
+                max-width: 33.333333%;
+                left: 66.5%;
             }
         }
-       
-       }
+    }
+}
+
+@media(min-width: 1500px) {
+    .profile { 
+       .content {
+            .block-edit {
+                right: 26%;
+            }
+
+            .block-user {
+                -ms-flex: 0 0 26%;
+                flex: 0 0 26%;
+                max-width: 26%;
+                left: 74%;
+            }
+        }
     }
 }
