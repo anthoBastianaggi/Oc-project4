@@ -32,11 +32,11 @@ function displayMenuSidebar() {
 
 var sidebarDashboard = document.querySelector('.sidebar-dashboard');
 var wrapper = document.querySelector('.wrapper');
-var menuDashboard = document.querySelector('.menu-dashboard');
+var sidebarMenuDashboard = document.querySelector('.menu-dashboard');
 var overlayDashboard = document.querySelector('.overlay-dashboard');
 document.querySelector('#dashboardMenuSidebar').onclick = function() {
   sidebarDashboard.classList.toggle('sidebar-collapse');
   wrapper.classList.toggle('active');
-  menuDashboard.classList.toggle('active');
+  sidebarMenuDashboard.classList.toggle('active');
   overlayDashboard.classList.toggle('active');
 }
