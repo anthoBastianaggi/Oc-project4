@@ -6,7 +6,7 @@ function login($page) {
     $db = App::getDatabase();
     $auth->connectFromCookie($db);
     if($auth->user()){
-        App::redirect('/projet4/dashboard?action=dashboard');
+        App::redirect('/projet4/profile?action=profile');
     }
 
     if(!empty($_POST) && !empty($_POST['username']) && !empty($_POST['password'])) {

@@ -33,9 +33,15 @@
                                 <div class="blog-content home-blog">                       
                                     <p class="lead"><?= substr($ticket['content'], 0, 700).' '.'. . .' ?></p>
                                 </div>
-                                <div class="link-box home-blog-link">
-                                    <a href="<?= CURRENT_PATH ?>chapters?action=showChapter&id= <?= $ticket['id'] ?>" class="btn btn-primary">Voir plus</a>
-                                </div>                         
+                                <?php if(isset($_SESSION['auth'])): ?>
+                                    <div class="link-box home-blog-link">
+                                        <a href="<?= CURRENT_PATH ?>chapters?action=showChapter&id= <?= $ticket['id'] ?>" class="btn btn-primary">Voir plus</a>
+                                    </div>    
+                                <?php else: ?>   
+                                    <div class="link-box home-blog-link">
+                                        <a href="<?= CURRENT_PATH ?>login?action=login" class="btn btn-primary">Voir plus</a>
+                                    </div>      
+                                <?php endif; ?>              
                             </div>
                         </div>
                     </article>
@@ -81,18 +87,27 @@
                     <div class="list-group mb-3">
                         <?php foreach ($lastChapters as $ticket) { ?>
                             <div class="list-group-container">
+                            <?php if(isset($_SESSION['auth'])): ?>
                                 <a href="<?= CURRENT_PATH ?>chapters?action=showChapter&id= <?= $ticket['id'] ?>" class="">
                                     <h4 class="list-group-item-heading"><?=  $ticket['title'] ?></h4>
                                     <p class="list-group-item-text">
                                         <?=  substr($ticket['content'], 0, 300).' '.'. . .' ?>
                                     </p>
                                 </a>
+                            <?php else: ?>   
+                                <a href="<?= CURRENT_PATH ?>login?action=login" class="">
+                                    <h4 class="list-group-item-heading"><?=  $ticket['title'] ?></h4>
+                                    <p class="list-group-item-text">
+                                        <?=  substr($ticket['content'], 0, 300).' '.'. . .' ?>
+                                    </p>
+                                </a>
+                            <?php endif; ?> 
                             </div>
                         <?php } ?>                
                     </div>
                 </div>            
             </aside>
-            <?php if($_SESSION['auth']->role_id === "1"): ?>
+            <?php if(isset($_SESSION['auth']) && $_SESSION['auth']->role_id === "1"): ?>
             <div class="col-lg-12 text-center">
                 <a id="btn-addChapters" class="btn btn-primary" href="<?= CURRENT_PATH ?>chapters?action=addChapter" role="button">Ajouter chapitre</a>
             </div>
