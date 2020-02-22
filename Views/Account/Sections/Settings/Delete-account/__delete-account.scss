@@ -1,0 +1,43 @@
+#delete-account {
+    .text-header-delete-account {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+   
+    #infobox-delete-account {
+        display: flex;
+        justify-content: center;
+        .box-shadow-full {
+            padding: 0;
+            margin-bottom: 0;
+            z-index: 0;
+        }
+        .infobox-container {
+            padding: 3rem 1.25rem 3rem 1.25rem;
+            margin: 0;
+            .info-delete-account-container {
+                .icon-container {
+                    display: flex;
+                    justify-content: center;
+                    margin-bottom: 2rem;
+    
+                    i {
+                        font-size: 50px;
+                        color: red;
+                    }
+                }         
+            }
+        }
+
+        .btn-card {
+            text-align: right;
+            #btnCancel {
+                padding: .3rem .6rem;
+            }
+
+            #btnDeleteAccount {
+                margin-right: 10px;
+            }
+        }
+    }
+}

@@ -45,9 +45,15 @@
                                 </div>
                             </div>
                             <div class="card-footer">
+                            <?php if(isset($_SESSION['auth'])): ?>
                                 <div class="link-box home-blog-link">
                                     <a href="<?= CURRENT_PATH ?>chapters?action=showChapter&id= <?= $ticket['id'] ?>" class="btn btn-primary">Voir plus</a>
                                 </div>  
+                            <?php else: ?>   
+                                <div class="link-box home-blog-link">
+                                    <a href="<?= CURRENT_PATH ?>login?action=login" class="btn btn-primary">Voir plus</a>
+                                </div>      
+                            <?php endif; ?>    
                             </div>
                         </div>                  
                     </article>
@@ -93,12 +99,21 @@
                     <div class="list-group mb-3">
                         <?php foreach ($lastChapters as $ticket) { ?>
                             <div class="list-group-container">
+                            <?php if(isset($_SESSION['auth'])): ?>
                                 <a href="<?= CURRENT_PATH ?>chapters?action=showChapter&id= <?= $ticket['id'] ?>" class="">
                                     <h4 class="list-group-item-heading"><?=  $ticket['title'] ?></h4>
                                     <p class="list-group-item-text">
                                         <?=  substr($ticket['content'], 0, 300).' '.'. . .' ?>
                                     </p>
                                 </a>
+                            <?php else: ?>   
+                                <a href="<?= CURRENT_PATH ?>login?action=login" class="">
+                                    <h4 class="list-group-item-heading"><?=  $ticket['title'] ?></h4>
+                                    <p class="list-group-item-text">
+                                        <?=  substr($ticket['content'], 0, 300).' '.'. . .' ?>
+                                    </p>
+                                </a>
+                            <?php endif; ?> 
                             </div>
                         <?php } ?>                
                     </div>

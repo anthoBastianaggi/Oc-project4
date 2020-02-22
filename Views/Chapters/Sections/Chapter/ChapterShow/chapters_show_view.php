@@ -114,7 +114,14 @@
                     <div class="card-block">
                         <h3>Commentaires</h3>
                         <div class="card-block-container">
-                            <?php foreach ($allComments as $comment) { ?>                        
+                            <?php if(empty($allComments)): ?>
+                                <div class="post panel-shadow"> 
+                                    <div class="post-description"> 
+                                        <p>Aucun commentaire actuellement.</p>                          
+                                    </div>
+                                </div>  
+                            <?php else: ?>
+                            <?php foreach ($allComments as $comment) { ?> 
                                 <div class="panel panel-white post panel-shadow">
                                     <div class="post-heading">
                                         <div class="pull-left image">
@@ -128,6 +135,7 @@
                                         <div class="dropdownOptions">
                                             <i class="fa fa-ellipsis-v"></i>
                                             <ul class="dropdownListOptions">
+                                            <?php if($comment['users_username'] === $_SESSION['auth']->username): ?>
                                                 <li class="dropdownItemOptions">
                                                     <a href="<?= CURRENT_PATH ?>comments?action=updateComment&id=<?= $comment['id'] ?>" class="btn btn-default stat-item">
                                                         <i class="fa fa-pencil"></i>
@@ -140,20 +148,30 @@
                                                         <span>Supprimer</span>
                                                     </a>
                                                 </li>
+                                                <?php elseif($comment['users_username'] !== $_SESSION['auth']->username && $_SESSION['auth']->role_id === "1"): ?>   
+                                                <li class="dropdownItemOptions">
+                                                    <a href="<?= CURRENT_PATH ?>comments?action=deleteComment&id=<?= $comment['id'] ?>" class="btn btn-default stat-item">
+                                                        <i class="fa fa-trash"></i>
+                                                        <span>Supprimer</span>
+                                                    </a>
+                                                </li>
+                                                <?php else: ?> 
                                                 <li class="dropdownItemOptions">
                                                     <a href="<?= CURRENT_PATH ?>comments?action=signalComment&id=<?= $_GET['id'] ?>" class="btn btn-default stat-item">
                                                         <i class="fa fa-flag"></i>
                                                         <span>Signaler</span>
                                                     </a>
                                                 </li>
+                                                <?php endif; ?> 
                                             </ul>
                                         </div>
                                     </div> 
                                     <div class="post-description"> 
                                         <p><?= $comment['content'] ?></p>                          
                                     </div>
-                                </div>
+                                </div>   
                             <?php } ?>
+                            <?php endif; ?>
                         </div>                                            
                     </div>
                 </div>

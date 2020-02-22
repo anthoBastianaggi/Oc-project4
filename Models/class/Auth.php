@@ -110,7 +110,7 @@ class Auth {
         if($user){
             $reset_token = Str::random(60);
             $db->query('UPDATE users SET reset_token = ?, reset_at = NOW() WHERE id = ?', [$reset_token, $user->id]);
-            mail($_POST['email'], 'Réinitiatilisation de votre mot de passe', "Afin de réinitialiser votre mot de passe merci de cliquer sur ce lien\n\nhttp://localhost/compte/reset.php?id={$user->id}&token=$reset_token");
+            mail($_POST['email'], 'Réinitiatilisation de votre mot de passe', "Afin de réinitialiser votre mot de passe merci de cliquer sur ce lien\n\nhttp://localhost/projet4/reset?action=reset?id={$user->id}&token=$reset_token");
             return $user;
         }
         return false;

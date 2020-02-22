@@ -107,7 +107,7 @@
                                                 </div>   
                                             </div>
                                             <div class="col-md-12" id="btn-contact">
-                                                <button type="submit" class="button button-a button-big">Envoyez message<span class="icon-send"><i class="fa fa-paper-plane"></i></span></button>
+                                                <button type="submit" name="btn-contact" class="button button-a button-big">Envoyez message<span class="icon-send"><i class="fa fa-paper-plane"></i></span></button>
                                             </div>
                                         </div>
                                     </form>

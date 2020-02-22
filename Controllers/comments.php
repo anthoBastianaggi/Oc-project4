@@ -31,7 +31,7 @@ function updateComment($page) {
     $showComment = $comment->showComment();
     if(!empty($_POST) && isset($_POST['btnUpdateComment'])) {
 
-        $updateComment = $comment->updateComment($_POST['idComment'], $_POST['contentComment'], $_GET['id']);
+        $updateComment = $comment->updateComment($_POST['contentComment'], $_GET['id']);
         header('Location: /projet4/chapters?action=showChapter&id=' .$showComment['ticket_id']); exit;
     }
     include_once 'Views/Chapters/Sections/Comment/CommentUpdate/'.$page.'_update_view.php';  
