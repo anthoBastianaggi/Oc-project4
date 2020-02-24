@@ -1,0 +1,83 @@
+#showChapters .textHeaderShowChapters {
+  text-align: center;
+  margin-bottom: 2rem; }
+  #showChapters .textHeaderShowChapters .section-title {
+    position: relative;
+    margin-bottom: 45px;
+    display: inline-block;
+    font-weight: 600;
+    color: black;
+    line-height: 1; }
+
+#showChapters article {
+  text-align: justify; }
+  #showChapters article .card {
+    transition: .3s;
+    background-color: transparent; }
+    #showChapters article .card:hover {
+      box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.12); }
+    #showChapters article .card .blog-thumb {
+      padding: 15px;
+      background-color: white;
+      border-radius: 0.25rem 0.25rem 0 0; }
+      #showChapters article .card .blog-thumb a:hover {
+        text-decoration: none; }
+      #showChapters article .card .blog-thumb a img {
+        width: 100%; }
+      #showChapters article .card .blog-thumb a .meta-info {
+        position: relative;
+        height: 35px;
+        margin: -35px 0 0 0;
+        background: rgba(0, 0, 0, 0.8);
+        color: #ccc;
+        line-height: 35px;
+        padding: 0 15px; }
+    #showChapters article .card .card-block {
+      text-align: justify; }
+      #showChapters article .card .card-block .card-block-container {
+        background-color: white;
+        border-radius: 0 0 0.25rem 0.25rem; }
+        #showChapters article .card .card-block .card-block-container .headerChapter .card-header {
+          padding: 7px 1.25rem;
+          background-color: rgba(0, 0, 0, 0.03);
+          border-bottom: 1px solidrgba(0, 0, 0, 0.125);
+          border-left: 5px solid #007bff; }
+          #showChapters article .card .card-block .card-block-container .headerChapter .card-header a:hover {
+            color: #2B96CC;
+            transition: 0.4s;
+            text-decoration: none; }
+        #showChapters article .card .card-block .card-block-container .blog-content.home-blog p {
+          padding: 0 1.5rem 1rem 1.5rem; }
+        #showChapters article .card .card-block .card-block-container .card-footer {
+          min-height: 50px; }
+
+#showChapters aside .card-header {
+  text-align: center;
+  color: #007bff; }
+  #showChapters aside .card-header:hover {
+    color: #2B96CC;
+    transition: 0.4s; }
+
+#showChapters aside .list-group {
+  padding: 0.75rem 1.25rem; }
+  #showChapters aside .list-group .list-group-about-container {
+    text-align: justify;
+    margin-bottom: 1rem; }
+  #showChapters aside .list-group .list-group-container {
+    text-align: justify;
+    margin-bottom: 1rem;
+    border-bottom: solid 1px #ddd; }
+    #showChapters aside .list-group .list-group-container a {
+      color: black; }
+      #showChapters aside .list-group .list-group-container a:hover {
+        text-decoration: none; }
+      #showChapters aside .list-group .list-group-container a .list-group-item-heading {
+        text-align: center; }
+        #showChapters aside .list-group .list-group-container a .list-group-item-heading:hover {
+          color: #2B96CC;
+          transition: 0.4s; }
+
+@media (max-width: 480px) {
+  #showChapters article .card .blog-thumb a .meta-info {
+    height: 65px;
+    margin: -65px 0 0 0; } }

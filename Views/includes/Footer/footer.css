@@ -1,0 +1,47 @@
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+footer {
+  width: 100%;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.03);
+  border-top: 1px solid rgba(0, 0, 0, 0.125);
+  padding: 1rem 0 !important;
+  z-index: -1; }
+  footer .containerSection #footer {
+    line-height: 50px;
+    height: 50px; }
+    footer .containerSection #footer .socialContainer {
+      margin-top: 0 !important;
+      height: 100%; }
+      footer .containerSection #footer .socialContainer .social li {
+        padding: 3px 0; }
+        footer .containerSection #footer .socialContainer .social li:hover a i {
+          font-size: 30px;
+          margin-top: -10px; }
+        footer .containerSection #footer .socialContainer .social li a {
+          color: black;
+          text-decoration: none !important;
+          background-color: transparent;
+          -webkit-text-decoration-skip: objects; }
+          footer .containerSection #footer .socialContainer .social li a:hover {
+            color: black; }
+          footer .containerSection #footer .socialContainer .social li a i {
+            margin-right: 5px;
+            font-size: 25px;
+            -webkit-transition: 0.5s all ease;
+            -moz-transition: 0.5s all ease;
+            transition: 0.5s all ease; }
+            footer .containerSection #footer .socialContainer .social li a i .d-md-inline-flex {
+              margin-left: 10px; }
+  footer .containerSection .separator {
+    border: 1px solid lightgray;
+    margin: 24px auto;
+    opacity: 0.3;
+    width: 30%;
+    min-width: 150px; }
+  footer .containerSection #copyright {
+    color: black;
+    padding: 0 15px; }
+    footer .containerSection #copyright .copyrightContainer {
+      width: 100%;
+      display: flex;
+      justify-content: center; }
