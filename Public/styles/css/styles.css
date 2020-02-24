@@ -1714,6 +1714,34 @@ section .wrapper {
         max-width: 100%;
         flex: 0 0 100%; } }
 
+#delete-account .text-header-delete-account {
+  text-align: center;
+  margin-bottom: 2rem; }
+
+#delete-account #infobox-delete-account {
+  display: flex;
+  justify-content: center; }
+  #delete-account #infobox-delete-account .box-shadow-full {
+    padding: 0;
+    margin-bottom: 0;
+    z-index: 0; }
+  #delete-account #infobox-delete-account .infobox-container {
+    padding: 3rem 1.25rem 3rem 1.25rem;
+    margin: 0; }
+    #delete-account #infobox-delete-account .infobox-container .info-delete-account-container .icon-container {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 2rem; }
+      #delete-account #infobox-delete-account .infobox-container .info-delete-account-container .icon-container i {
+        font-size: 50px;
+        color: red; }
+  #delete-account #infobox-delete-account .btn-card {
+    text-align: right; }
+    #delete-account #infobox-delete-account .btn-card #btnCancel {
+      padding: .3rem .6rem; }
+    #delete-account #infobox-delete-account .btn-card #btnDeleteAccount {
+      margin-right: 10px; }
+
 .chapterList {
   display: flex;
   flex: 1; }
