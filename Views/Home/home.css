@@ -1,0 +1,111 @@
+main #home {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  background-image: url("../../images/alaska.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  height: 100vh;
+  background-attachment: fixed;
+  color: #fff;
+  width: 100%;
+  margin-top: -9.3rem; }
+  main #home .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center; }
+
+main #homeChapters .textHeaderHomeChapters {
+  text-align: center;
+  margin-bottom: 2rem; }
+  main #homeChapters .textHeaderHomeChapters .section-title {
+    position: relative;
+    margin-bottom: 45px;
+    display: inline-block;
+    font-weight: 600;
+    color: black;
+    line-height: 1; }
+  main #homeChapters .textHeaderHomeChapters .section-title::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    width: 60px;
+    height: 2px;
+    background: #007bff;
+    bottom: -25px;
+    margin-left: -30px; }
+  main #homeChapters .textHeaderHomeChapters p {
+    color: black !important; }
+
+main #homeChapters article {
+  margin-bottom: 5rem;
+  text-align: justify;
+  display: inline-flex;
+  max-width: 49%;
+  min-height: 660px; }
+  main #homeChapters article .card {
+    transition: .3s; }
+    main #homeChapters article .card:hover {
+      box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.12); }
+    main #homeChapters article .card .headerChapter {
+      padding: 10px 15px;
+      text-align: center; }
+      main #homeChapters article .card .headerChapter h2 {
+        color: #007bff; }
+        main #homeChapters article .card .headerChapter h2:focus, main #homeChapters article .card .headerChapter h2:hover {
+          color: #2B96CC;
+          text-decoration: none; }
+    main #homeChapters article .card .blog-thumb img {
+      width: 100%; }
+    main #homeChapters article .card .card-block {
+      padding: 10px 15px;
+      text-align: justify;
+      flex: 1; }
+      main #homeChapters article .card .card-block .meta-info {
+        margin-bottom: 1.5rem; }
+      main #homeChapters article .card .card-block .blog-content.home-blog p {
+        margin-bottom: 10px; }
+    main #homeChapters article .card .card-footer {
+      text-align: center; }
+      main #homeChapters article .card .card-footer .link-box.home-blog-link a {
+        font-size: 14px; }
+      main #homeChapters article .card .card-footer .link-box a {
+        color: white;
+        font-weight: 600; }
+
+main #homeChapters aside .card-header {
+  text-align: center;
+  color: #007bff; }
+  main #homeChapters aside .card-header:hover {
+    color: #2B96CC;
+    transition: 0.4s; }
+
+main #homeChapters aside .list-group {
+  padding: 0.75rem 1.25rem; }
+  main #homeChapters aside .list-group .list-group-about-container {
+    text-align: justify;
+    margin-bottom: 1rem; }
+  main #homeChapters aside .list-group .list-group-container {
+    text-align: justify;
+    margin-bottom: 1rem;
+    border-bottom: solid 1px #ddd; }
+    main #homeChapters aside .list-group .list-group-container a {
+      color: black; }
+      main #homeChapters aside .list-group .list-group-container a:hover {
+        text-decoration: none; }
+      main #homeChapters aside .list-group .list-group-container a .list-group-item-heading {
+        text-align: center; }
+        main #homeChapters aside .list-group .list-group-container a .list-group-item-heading:hover {
+          color: #2B96CC;
+          transition: 0.4s; }
+
+@media (max-width: 990px) {
+  main #homeChapters article {
+    max-width: 100%; } }
+
+@media (max-width: 834px) {
+  main #home {
+    margin-top: -6.3rem; } }

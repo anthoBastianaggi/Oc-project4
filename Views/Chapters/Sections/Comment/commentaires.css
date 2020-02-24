@@ -1,0 +1,94 @@
+#commentChapter .card-block h3 {
+  color: black; }
+
+#commentChapter .card-block .card-block-container .panel {
+  margin-bottom: 20px;
+  background-color: #fff;
+  border: 1px solid transparent;
+  border-radius: 4px; }
+
+#commentChapter .card-block .card-block-container .panel-white {
+  border: 1px solid #dddddd; }
+
+#commentChapter .card-block .card-block-container .post .post-heading {
+  height: 95px;
+  padding: 20px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  #commentChapter .card-block .card-block-container .post .post-heading .pull-left {
+    height: 55px; }
+    #commentChapter .card-block .card-block-container .post .post-heading .pull-left .comment-author {
+      margin-bottom: 4px; }
+      #commentChapter .card-block .card-block-container .post .post-heading .pull-left .comment-author .avatar {
+        width: 55px;
+        height: 55px;
+        display: block;
+        margin-right: 15px;
+        float: left; }
+  #commentChapter .card-block .card-block-container .post .post-heading .meta .title {
+    margin-bottom: 0; }
+  #commentChapter .card-block .card-block-container .post .post-heading .meta .title a {
+    color: black; }
+    #commentChapter .card-block .card-block-container .post .post-heading .meta .title a:hover {
+      color: gainsboro; }
+  #commentChapter .card-block .card-block-container .post .post-heading .meta .time {
+    margin-top: 8px;
+    color: #999; }
+  #commentChapter .card-block .card-block-container .post .post-heading .dropdownOptions {
+    font-size: 18px;
+    width: 18px;
+    text-align: center;
+    cursor: pointer; }
+    #commentChapter .card-block .card-block-container .post .post-heading .dropdownOptions .dropdownListOptions {
+      display: none; }
+    #commentChapter .card-block .card-block-container .post .post-heading .dropdownOptions.active .dropdownListOptions.active {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      min-width: 85px;
+      padding: 0;
+      border-radius: 3px;
+      box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.2);
+      background-color: #f0f0f0;
+      right: 35px;
+      max-width: 150px;
+      width: 100%;
+      list-style: none; }
+      #commentChapter .card-block .card-block-container .post .post-heading .dropdownOptions.active .dropdownListOptions.active .dropdownItemOptions {
+        padding: 0 10px;
+        display: flex;
+        justify-content: flex-start; }
+        #commentChapter .card-block .card-block-container .post .post-heading .dropdownOptions.active .dropdownListOptions.active .dropdownItemOptions:hover {
+          background-color: #dfdfdf; }
+        #commentChapter .card-block .card-block-container .post .post-heading .dropdownOptions.active .dropdownListOptions.active .dropdownItemOptions a span {
+          margin-left: 10px; }
+
+#commentChapter .card-block .card-block-container .post .post-description {
+  padding: 15px; }
+  #commentChapter .card-block .card-block-container .post .post-description p {
+    font-size: 14px; }
+  #commentChapter .card-block .card-block-container .post .post-description .stats {
+    margin-top: 20px; }
+    #commentChapter .card-block .card-block-container .post .post-description .stats .stat-item {
+      display: inline-block;
+      margin-right: 15px; }
+    #commentChapter .card-block .card-block-container .post .post-description .stats a {
+      text-decoration: none; }
+      #commentChapter .card-block .card-block-container .post .post-description .stats a .icon {
+        margin-right: 8px; }
+    #commentChapter .card-block .card-block-container .post .post-description .stats .btn-default {
+      color: #333;
+      background-color: #fff;
+      border-color: #ccc; }
+      #commentChapter .card-block .card-block-container .post .post-description .stats .btn-default:hover {
+        background-color: gainsboro; }
+
+#addComments {
+  padding: 1.25rem 0; }
+  #addComments #comment_add h3 {
+    color: black; }
+  #addComments #comment_add .card-block-container textarea {
+    height: 150px; }
+  #addComments #comment_add .card-block-container #btnAddComment {
+    padding: 0; }

@@ -1,0 +1,101 @@
+.chapterList {
+  display: flex;
+  flex: 1; }
+  .chapterList .main-panel {
+    width: 100%;
+    margin-bottom: 2rem; }
+    .chapterList .main-panel .block-edit .card-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap; }
+      .chapterList .main-panel .block-edit .card-header .card-header-item-container {
+        display: inline-flex; }
+        .chapterList .main-panel .block-edit .card-header .card-header-item-container .btn-add {
+          background-color: #007bff;
+          font-size: 14px;
+          font-weight: 400;
+          letter-spacing: 0;
+          line-height: 18px;
+          display: flex;
+          position: relative;
+          justify-content: center;
+          align-items: center;
+          padding: 8px 12px 6px;
+          height: 32px;
+          overflow: hidden;
+          cursor: pointer;
+          color: #fff; }
+          .chapterList .main-panel .block-edit .card-header .card-header-item-container .btn-add:hover {
+            box-shadow: none;
+            background-color: #0056b3; }
+          .chapterList .main-panel .block-edit .card-header .card-header-item-container .btn-add .icon {
+            display: flex;
+            align-items: center; }
+    .chapterList .main-panel .block-edit .card-body .card-body-section-box {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #c8cbd3;
+      padding: 24px 0;
+      flex-wrap: wrap; }
+      .chapterList .main-panel .block-edit .card-body .card-body-section-box:first-child {
+        border-top: 1px solid #c8cbd3; }
+      .chapterList .main-panel .block-edit .card-body .card-body-section-box .item-container {
+        display: inline-flex;
+        font-family: "Helvetica", sans-serif;
+        font-size: 16px;
+        font-weight: normal;
+        letter-spacing: normal; }
+        .chapterList .main-panel .block-edit .card-body .card-body-section-box .item-container .box-label {
+          font-family: "Helvetica", sans-serif;
+          font-size: 12px;
+          font-weight: normal;
+          letter-spacing: normal;
+          line-height: 1.17;
+          color: #c8cbd3;
+          margin: 0 auto; }
+        .chapterList .main-panel .block-edit .card-body .card-body-section-box .item-container .box-title {
+          font-family: "Helvetica", sans-serif;
+          font-size: 16px;
+          font-weight: normal;
+          letter-spacing: normal;
+          line-height: 1.5;
+          color: #353c52;
+          margin: 6px auto; }
+        .chapterList .main-panel .block-edit .card-body .card-body-section-box .item-container .box-description {
+          font-family: "Helvetica", sans-serif;
+          font-size: 14px;
+          font-weight: normal;
+          letter-spacing: normal;
+          line-height: 1.29;
+          color: #5c6f84;
+          margin: 6px auto; }
+        .chapterList .main-panel .block-edit .card-body .card-body-section-box .item-container .btn-update, .chapterList .main-panel .block-edit .card-body .card-body-section-box .item-container .btn-delete {
+          font-size: 14px;
+          font-weight: 400;
+          letter-spacing: 0;
+          line-height: 18px;
+          display: flex;
+          position: relative;
+          justify-content: center;
+          align-items: center;
+          padding: 8px 12px 6px;
+          height: 32px;
+          overflow: hidden;
+          cursor: pointer;
+          color: #fff; }
+          .chapterList .main-panel .block-edit .card-body .card-body-section-box .item-container .btn-update:hover, .chapterList .main-panel .block-edit .card-body .card-body-section-box .item-container .btn-delete:hover {
+            box-shadow: none; }
+          .chapterList .main-panel .block-edit .card-body .card-body-section-box .item-container .btn-update .icon, .chapterList .main-panel .block-edit .card-body .card-body-section-box .item-container .btn-delete .icon {
+            display: flex;
+            align-items: center; }
+        .chapterList .main-panel .block-edit .card-body .card-body-section-box .item-container .btn-update {
+          background-color: #28a745;
+          margin-right: 7px; }
+          .chapterList .main-panel .block-edit .card-body .card-body-section-box .item-container .btn-update:hover {
+            background-color: #218838; }
+        .chapterList .main-panel .block-edit .card-body .card-body-section-box .item-container .btn-delete {
+          background-color: #fa3e3e; }
+          .chapterList .main-panel .block-edit .card-body .card-body-section-box .item-container .btn-delete:hover {
+            background-color: #dc3545; }
