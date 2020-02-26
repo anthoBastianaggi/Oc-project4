@@ -12,7 +12,7 @@
                     <h2 class="section-title text-center text-uppercase"><?= $showChapter['title'] ?></h2>                    
                 </div>
             </div>
-            <div class="col-md-8">
+            <div class="col-md-7 col-lg-8">
                 <article class="col-lg-12">
                     <div class="card mb-3">
                         <div class="blog-thumb">
@@ -51,7 +51,7 @@
                     </div>                  
                 </article>
             </div>
-            <aside class="col-md-4">
+            <aside class="col-md-5 col-lg-4">
                 <div class="card mb-3">
                     <h3 class="card-header mb-3">Join our Newsletter</h3>
                     <form class="form-horizontal">

@@ -16,7 +16,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-8">
+            <div class="col-md-7 col-lg-8">
                 <?php foreach ($allChapters as $ticket) { ?>
                     <article>
                         <div class="blog-wrapper home-blog-wrapper white-bg">
@@ -47,7 +47,7 @@
                     </article>
                 <?php } ?>
             </div>
-            <aside class="col-md-4">
+            <aside class="col-md-5 col-lg-4">
                 <div class="card mb-3">
                     <h3 class="card-header mb-3">Join our Newsletter</h3>
                     <form class="form-horizontal">

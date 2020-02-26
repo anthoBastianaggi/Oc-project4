@@ -111,3 +111,11 @@
         }    
     }
 }
+
+@media(min-width: 767px) and (max-width: 990px) {
+    #allChapters {
+       .container {
+           max-width: 767px;
+       }
+    }
+}

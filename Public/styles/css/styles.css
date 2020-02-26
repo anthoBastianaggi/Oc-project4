@@ -578,6 +578,10 @@ main #homeChapters aside .list-group {
           color: #2B96CC;
           transition: 0.4s; }
 
+@media (min-width: 767px) and (max-width: 990px) {
+  main #homeChapters .container {
+    max-width: 767px; } }
+
 @media (max-width: 990px) {
   main #homeChapters article {
     max-width: 100%; } }
@@ -735,6 +739,10 @@ main #homeChapters aside .list-group {
           color: #2B96CC;
           transition: 0.4s; }
 
+@media (min-width: 767px) and (max-width: 990px) {
+  #allChapters .container {
+    max-width: 767px; } }
+
 #showChapters .textHeaderShowChapters {
   text-align: center;
   margin-bottom: 2rem; }
@@ -813,6 +821,10 @@ main #homeChapters aside .list-group {
         #showChapters aside .list-group .list-group-container a .list-group-item-heading:hover {
           color: #2B96CC;
           transition: 0.4s; }
+
+@media (min-width: 767px) and (max-width: 990px) {
+  #showChapters .container {
+    max-width: 767px; } }
 
 @media (max-width: 480px) {
   #showChapters article .card .blog-thumb a .meta-info {
