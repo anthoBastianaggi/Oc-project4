@@ -19,7 +19,7 @@
                             <a href="https://bit.ly/2LHKl61">
                                 <img src="https://i.ibb.co/HrtN39y/services1.jpg" alt="" />
                                 <div class="meta-info">
-                                    Written by <span class="author"><?= $showChapter['users_firstname'] ?> <?= $showChapter['users_lastname'] ?></span> <span class="date"><?= $showChapter['created_at'] ?></span>
+                                    Edité par <span class="author"><?= $showChapter['users_firstname'] ?> <?= $showChapter['users_lastname'] ?></span> le <span class="date"><?= $dateFormatted ?></span>
                                 </div>
                             </a>
                         </div>
@@ -125,10 +125,10 @@
                                         <div class="pull-left image">
                                             <p class="comment-author">
                                                 <img src="http://bootdey.com/img/Content/user_1.jpg" class="img-circle avatar" alt="user profile image">
+                                                <span class="says">Commenté par</span>
                                                 <span class="comment-author-name"><?= $comment['users_username'] ?></span>
-                                                <span class="says">made a post.</span>
                                             </p>    
-                                            <h6 class="text-muted time"><?= $comment['created_at'] ?></h6>                          
+                                            <h6 class="text-muted time">Le <?= date('d-m-Y', strtotime($comment['created_at'])) ?></h6>                          
                                         </div>
                                         <div class="dropdownOptions">
                                             <i class="fa fa-ellipsis-v"></i>

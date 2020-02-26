@@ -112,7 +112,7 @@ header {
   height: 150px;
   width: 100%;
   position: fixed;
-  z-index: 1; }
+  z-index: 2; }
   header .navigation {
     height: 100%;
     width: 100%;
@@ -471,7 +471,8 @@ header .navigation .navContainer .sidebar {
 
 @media (max-width: 414px) {
   header .navigation .navContainer .sidebar .sidebarOpen {
-    width: 100%; } }
+    width: 100%;
+    right: -100%; } }
 
 main #home {
   border-bottom: 1px solid rgba(0, 0, 0, 0.125);
@@ -691,9 +692,11 @@ main #homeChapters aside .list-group {
         color: #2B96CC;
         text-decoration: none; }
     #allChapters article .blog-wrapper .blog-thumb {
-      margin-bottom: 20px; }
+      margin-bottom: 15px; }
       #allChapters article .blog-wrapper .blog-thumb img {
         width: 100%; }
+    #allChapters article .blog-wrapper .meta-info {
+      margin-bottom: 1.5rem; }
     #allChapters article .blog-wrapper .blog-content.home-blog p {
       margin-bottom: 10px; }
     #allChapters article .blog-wrapper .link-box.home-blog-link a {
@@ -1183,6 +1186,17 @@ main .update-comment {
     #register #infobox-register form #btn-register button {
       padding: .6rem 2.3rem; }
 
+@media (max-width: 766px) {
+  #register #infobox-register {
+    max-width: 100%; } }
+
+@media (max-width: 414px) {
+  #register #infobox-register {
+    max-width: 100%; }
+    #register #infobox-register form {
+      width: 100%;
+      margin: 0; } }
+
 #forget .textHeaderForget {
   text-align: center;
   margin-bottom: 2rem; }
@@ -1371,7 +1385,8 @@ section .wrapper {
   display: flex; }
   section .wrapper .menu-dashboard {
     display: flex;
-    margin-top: 1px; }
+    margin-top: 1px;
+    z-index: 1 !important; }
     section .wrapper .menu-dashboard aside {
       height: 100%; }
       section .wrapper .menu-dashboard aside .sidebar-dashboard {
@@ -1496,7 +1511,6 @@ section .wrapper {
       transition: left .3s;
       top: 6.25rem;
       height: 100%;
-      z-index: 0;
       margin-top: 0; }
       section .wrapper .menu-dashboard.active {
         left: 0;
@@ -1519,8 +1533,7 @@ section .wrapper {
   display: flex; }
   .profile .main-panel {
     width: 100%;
-    margin-bottom: 2rem;
-    z-index: -1; }
+    margin-bottom: 2rem; }
     .profile .main-panel .block-edit #btn-profile button {
       padding: .6rem 1.3rem; }
     .profile .main-panel .block-user .card-user .card-image {
@@ -1616,6 +1629,14 @@ section .wrapper {
     max-width: 26%;
     left: 74%; } }
 
+@media (max-width: 350px) {
+  .profile .main-panel .block-user .card-user .card-body .author .address-container i {
+    margin-right: 5px; }
+  .profile .main-panel .block-user .card-user .card-body .box .box-container {
+    padding: 12px 0.65rem; }
+  .profile .main-panel .block-edit .card-body {
+    padding: 1.25rem 0.65rem; } }
+
 .settings {
   display: flex; }
   .settings .main-panel {
@@ -1689,7 +1710,6 @@ section .wrapper {
           .settings .main-panel .block-edit .card-body-section-box .item-container .btn-change .icon, .settings .main-panel .block-edit .card-body-section-box .item-container .btn-delete .icon {
             display: flex;
             align-items: center;
-            z-index: 1;
             margin-right: 7px; }
 
 @media (min-width: 1200px) {
@@ -1741,6 +1761,12 @@ section .wrapper {
       padding: .3rem .6rem; }
     #delete-account #infobox-delete-account .btn-card #btnDeleteAccount {
       margin-right: 10px; }
+
+@media (max-width: 348px) {
+  #delete-account #infobox-delete-account .btn-card {
+    text-align: center; }
+    #delete-account #infobox-delete-account .btn-card #btnCancel {
+      margin-top: 10px; } }
 
 .chapterList {
   display: flex;

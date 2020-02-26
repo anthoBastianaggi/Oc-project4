@@ -13,6 +13,8 @@ function chapters($page) {
 function showChapter($page) {
     $chapter = new Chapters();
     $showChapter = $chapter->showChapter();
+    $date = $showChapter['created_at'];
+    $dateFormatted = date('d-m-Y', strtotime($date));
     $lastChapters = $chapter->getThreeLastChapters();
     $comment = new Comments();
     $allComments = $comment->getAllComments($showChapter['id']);
