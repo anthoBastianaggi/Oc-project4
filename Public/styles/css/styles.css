@@ -127,7 +127,7 @@ header {
       header .navigation .navContainer .linkTitle {
         color: white;
         width: 100%;
-        max-width: 435px;
+        max-width: 450px;
         margin: 0 auto;
         height: 80px; }
         header .navigation .navContainer .linkTitle .iconBook {
@@ -168,7 +168,7 @@ header {
   header {
     height: 100px; }
     header .navigation .navContainer .linkTitle {
-      max-width: 400px;
+      max-width: 415px;
       height: 70px;
       margin: 0; }
       header .navigation .navContainer .linkTitle .iconBook .icon {
