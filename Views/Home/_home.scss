@@ -145,6 +145,16 @@ main {
     }    
 }
 
+@media(min-width: 767px) and (max-width: 990px) {
+    main {
+        #homeChapters {
+            .container {
+                max-width: 767px;
+            }
+        }
+    }
+}
+
 @media(max-width:990px) {
     main {
         #homeChapters {

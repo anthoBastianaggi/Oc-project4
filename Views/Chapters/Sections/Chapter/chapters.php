@@ -16,7 +16,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-8">
+            <div class="col-md-7 col-lg-8">
                 <?php foreach ($allChapters as $ticket) { ?>
                     <article>
                         <div class="blog-wrapper home-blog-wrapper white-bg">
@@ -28,10 +28,10 @@
                                     <img src="https://i.ibb.co/HrtN39y/services1.jpg" alt="" />
                                 </div>
                                 <div class="meta-info">
-                                    Written by <span class="author"><?= $ticket['users_firstname'] ?> <?= $ticket['users_lastname'] ?></span> <span class="date"><?= $ticket['created_at'] ?></span>
+                                    Edité par <span class="author"><?= $ticket['users_firstname'] ?> <?= $ticket['users_lastname'] ?></span> le <span class="date"><?= date('d-m-Y', strtotime($ticket['created_at'])) ?></span>
                                 </div>
                                 <div class="blog-content home-blog">                       
-                                    <p class="lead"><?= substr($ticket['content'], 0, 700).' '.'. . .' ?></p>
+                                    <?= substr($ticket['content'], 0, 700).' '.'. . .' ?>
                                 </div>
                                 <?php if(isset($_SESSION['auth'])): ?>
                                     <div class="link-box home-blog-link">
@@ -47,7 +47,7 @@
                     </article>
                 <?php } ?>
             </div>
-            <aside class="col-md-4">
+            <aside class="col-md-5 col-lg-4">
                 <div class="card mb-3">
                     <h3 class="card-header mb-3">Join our Newsletter</h3>
                     <form class="form-horizontal">
@@ -69,9 +69,9 @@
                     <div class="list-group  mb-3">
                         <div class="list-group-about-container">    
                             <p class="list-group-item-text"> 
-                                Des plaines verdoyantes, aux montagnes acérées ...</br>                
+                                Des plaines verdoyantes, aux montagnes acérées ...<br>                
                                 À travers un format inédit et résolument moderne, je souhaite vous faire découvrir mon nouveau roman :
-                                </br><strong>« Un billet simple pour l'Alaska»</strong>    
+                                <br><strong>« Un billet simple pour l'Alaska»</strong>    
                             </p>
                             <p class="list-group-item-text">
                                 Êtes vous prêt pour le voyage le plus glacial de votre vie ... ?
@@ -97,9 +97,7 @@
                             <?php else: ?>   
                                 <a href="<?= CURRENT_PATH ?>login?action=login" class="">
                                     <h4 class="list-group-item-heading"><?=  $ticket['title'] ?></h4>
-                                    <p class="list-group-item-text">
-                                        <?=  substr($ticket['content'], 0, 300).' '.'. . .' ?>
-                                    </p>
+                                    <?=  substr($ticket['content'], 0, 300).' '.'. . .' ?>
                                 </a>
                             <?php endif; ?> 
                             </div>

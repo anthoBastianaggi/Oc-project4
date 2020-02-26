@@ -12,14 +12,14 @@
                     <h2 class="section-title text-center text-uppercase"><?= $showChapter['title'] ?></h2>                    
                 </div>
             </div>
-            <div class="col-md-8">
+            <div class="col-md-7 col-lg-8">
                 <article class="col-lg-12">
                     <div class="card mb-3">
                         <div class="blog-thumb">
                             <a href="https://bit.ly/2LHKl61">
                                 <img src="https://i.ibb.co/HrtN39y/services1.jpg" alt="" />
                                 <div class="meta-info">
-                                    Written by <span class="author"><?= $showChapter['users_firstname'] ?> <?= $showChapter['users_lastname'] ?></span> <span class="date"><?= $showChapter['created_at'] ?></span>
+                                    Edité par <span class="author"><?= $showChapter['users_firstname'] ?> <?= $showChapter['users_lastname'] ?></span> le <span class="date"><?= $dateFormatted ?></span>
                                 </div>
                             </a>
                         </div>
@@ -51,7 +51,7 @@
                     </div>                  
                 </article>
             </div>
-            <aside class="col-md-4">
+            <aside class="col-md-5 col-lg-4">
                 <div class="card mb-3">
                     <h3 class="card-header mb-3">Join our Newsletter</h3>
                     <form class="form-horizontal">
@@ -73,9 +73,9 @@
                     <div class="list-group  mb-3">
                         <div class="list-group-about-container">    
                             <p class="list-group-item-text"> 
-                                Des plaines verdoyantes, aux montagnes acérées ...</br>                
+                                Des plaines verdoyantes, aux montagnes acérées ...<br>                
                                 À travers un format inédit et résolument moderne, je souhaite vous faire découvrir mon nouveau roman :
-                                </br><strong>« Un billet simple pour l'Alaska»</strong>    
+                                <br><strong>« Un billet simple pour l'Alaska»</strong>    
                             </p>
                             <p class="list-group-item-text">
                                 Êtes vous prêt pour le voyage le plus glacial de votre vie ... ?
@@ -93,9 +93,7 @@
                             <div class="list-group-container">
                                 <a href="<?= CURRENT_PATH ?>chapters?action=showChapter&id=<?= $ticket['id'] ?>">
                                     <h4 class="list-group-item-heading"><?=  $ticket['title'] ?></h4>
-                                    <p class="list-group-item-text">
-                                        <?=  substr($ticket['content'], 0, 300).' '.'. . .' ?>
-                                    </p>
+                                    <?=  substr($ticket['content'], 0, 300).' '.'. . .' ?>
                                 </a>
                             </div>
                         <?php } ?>                
@@ -127,10 +125,10 @@
                                         <div class="pull-left image">
                                             <p class="comment-author">
                                                 <img src="http://bootdey.com/img/Content/user_1.jpg" class="img-circle avatar" alt="user profile image">
+                                                <span class="says">Commenté par</span>
                                                 <span class="comment-author-name"><?= $comment['users_username'] ?></span>
-                                                <span class="says">made a post.</span>
                                             </p>    
-                                            <h6 class="text-muted time"><?= $comment['created_at'] ?></h6>                          
+                                            <h6 class="text-muted time">Le <?= date('d-m-Y', strtotime($comment['created_at'])) ?></h6>                          
                                         </div>
                                         <div class="dropdownOptions">
                                             <i class="fa fa-ellipsis-v"></i>

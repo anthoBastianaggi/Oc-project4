@@ -3,7 +3,7 @@
     <div class="navContainer">
         <a class="js-scroll-trigger linkTitle" href="#">
             <div class="iconBook">
-               <img class='icon' src="../projet4/Public/images/livre.png"> 
+               <img class='icon' src="../projet4/Public/images/livre.png" alt="icon-book"> 
             </div>
            <div class="titleContainer">
                 <span class="title">Jean Forteroche</span>

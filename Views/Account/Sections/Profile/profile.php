@@ -29,10 +29,10 @@
                                 <div class="author">
                                     <h5 class="title"><?= $_SESSION['auth']->firstname ?> <?= $_SESSION['auth']->lastname ?></h5>
                                     <p class="username">@<?= $_SESSION['auth']->username ?></p>
-                                    <p class="description text-center">Formation Développeur Web Junior chez OpenClassrooms </br> Développeur Front-end chez Qwant Music</p>
+                                    <p class="description text-center">Formation Développeur Web Junior chez OpenClassrooms <br> Développeur Front-end chez Qwant Music</p>
                                     <div class="address-container">
                                         <i class="fa fa-map-marker"></i>
-                                        <p class="address"><?= $_SESSION['auth']->address ?></br><?= $_SESSION['auth']->postal_code ?> <?= $_SESSION['auth']->city ?></p>
+                                        <p class="address"><?= $_SESSION['auth']->address ?><br><?= $_SESSION['auth']->postal_code ?> <?= $_SESSION['auth']->city ?></p>
                                     </div>
                                 </div>
                                 <div class="box">

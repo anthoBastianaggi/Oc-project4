@@ -41,3 +41,17 @@
         }
     }
 }
+
+
+@media(max-width:348px) {
+    #delete-account {
+        #infobox-delete-account {
+            .btn-card {
+                text-align: center;
+                #btnCancel {
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+  }

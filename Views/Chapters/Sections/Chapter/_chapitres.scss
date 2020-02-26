@@ -43,10 +43,14 @@
             }
 
             .blog-thumb {
-                margin-bottom: 20px;
+                margin-bottom: 15px;
                 img {
                     width: 100%;
                 }
+            }
+
+            .meta-info {
+                margin-bottom: 1.5rem;
             }
             
             .blog-content.home-blog p {
@@ -105,5 +109,13 @@
                 
             }
         }    
+    }
+}
+
+@media(min-width: 767px) and (max-width: 990px) {
+    #allChapters {
+       .container {
+           max-width: 767px;
+       }
     }
 }

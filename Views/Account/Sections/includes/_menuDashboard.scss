@@ -4,6 +4,7 @@ section {
         .menu-dashboard {
             display: flex;
             margin-top: 1px;
+            z-index: 1 !important;
             aside {
                 height: 100%;
                 .sidebar-dashboard { 
@@ -185,7 +186,6 @@ section {
             transition: left .3s;
             top: 6.25rem;
             height: 100%;
-            z-index: 0;
             margin-top: 0;
             &.active {
                 left: 0;

@@ -1,5 +1,5 @@
 <div class="btnSidebarOpen">
-    <button id="menuBurgerOpen" class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+    <button id="menuBurgerOpen" class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <i class="fa fa-bars"></i>
     </button> 
 </div>
@@ -49,20 +49,20 @@
                 <?php else: ?>
                     <div class="sidebarLoginContainer">
                         <div class="sidebarNotConnected">
-                            <form class="form-horizontal" action="" method="POST">  
+                            <form class="form-horizontal" method="POST">  
                                 <div class="form-group">
                                     <div class="inputGroupContainer">
-                                        <label class="label-login" for="">Nom d'utilisateur</label>
+                                        <label class="label-login">Nom d'utilisateur</label>
                                         <div class="input-group">      
-                                            <input type="text" name="username" maxlength="25" class="form-control" id="exampleInputName2" placeholder="Entrez votre nom d'utilisateur"/>                                                                                                               
+                                            <input type="text" name="username" maxlength="25" class="form-control" placeholder="Entrez votre nom d'utilisateur"/>                                                                                                               
                                         </div>
                                     </div>
                                 </div>   
                                 <div class="form-group">
                                     <div class="inputGroupContainer">
-                                        <label class="label-login" for="">Mot de passe</label>
+                                        <label class="label-login">Mot de passe</label>
                                         <div class="input-group">        
-                                            <input type="password" name="password" minlength="8" maxlength="32" class="form-control" id="exampleInputName2" placeholder="Entrez votre mot de passe" />                                                                    
+                                            <input type="password" name="password" minlength="8" maxlength="32" class="form-control" placeholder="Entrez votre mot de passe" />                                                                    
                                         </div>
                                     </div>
                                 </div>   

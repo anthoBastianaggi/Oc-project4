@@ -3,7 +3,6 @@
     .main-panel {
         width: 100%;
         margin-bottom: 2rem;
-        z-index: -1;
         .block-edit {
             #btn-profile {
                 button {
@@ -155,6 +154,33 @@
                 flex: 0 0 26%;
                 max-width: 26%;
                 left: 74%;
+            }
+        }
+    }
+}
+
+@media(max-width: 350px) {
+    .profile {
+        .main-panel {
+            .block-user {
+                .card-user {
+                    .card-body {
+                        .author .address-container i {
+                            margin-right: 5px;
+                        }
+                        .box {
+                            .box-container {
+                                padding: 12px 0.65rem;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .block-edit {
+                .card-body {
+                    padding: 1.25rem 0.65rem;
+                }
             }
         }
     }
