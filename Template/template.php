@@ -1,7 +1,7 @@
 <?php include_once 'Models/class/Session.php' ?>
 
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
         <title><?= ucfirst($page) ?> - <?= $title; ?></title>
         <?php include_once 'Views/includes/Head/head.php' ?>
@@ -12,7 +12,7 @@
                 <header>
                     <?php include_once 'Views/includes/Header/header.php' ?>
                 </header>
-                <main role="main" id="main"> 
+                <main id="main"> 
                     <?php if(Session::getInstance()->hasFlashes()): ?>
                         <?php foreach(Session::getInstance()->getFlashes() as $type => $message): ?>
                             <div class="alert alert-<?= $type; ?>">

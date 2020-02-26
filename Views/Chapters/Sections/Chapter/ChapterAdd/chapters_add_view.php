@@ -19,8 +19,8 @@
                         <div class="col-md-12 col-md-offset-2">
                         <form class="form-horizontal" action="<?= CURRENT_PATH ?>chapters?action=addChapter" method="post">
                             <div class="form-group">
-                                <label for="exampleInputName2">Titre du chapitre</label>
-                                <input type="text" name="titleTicket" class="form-control" id="exampleInputName2" placeholder="Entrez votre titre du chapitre">
+                                <label>Titre du chapitre</label>
+                                <input type="text" name="titleTicket" class="form-control" placeholder="Entrez votre titre du chapitre">
                             </div>
                             <div class="form-group">
                                 <label for="imageCard" id="imageCard">Choisir une image</label>

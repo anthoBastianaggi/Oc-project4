@@ -19,7 +19,7 @@
                             <a href="https://bit.ly/2LHKl61">
                                 <img src="https://i.ibb.co/HrtN39y/services1.jpg" alt="" />
                                 <div class="meta-info">
-                                    Written by <span class="author"><?= $showChapter['users_firstname'] ?> <?= $showChapter['users_lastname'] ?></span> <span class="date"><?= $showChapter['created_at'] ?></span>
+                                    Written by <span class="author"><?= $showChapter['users_firstname'] ?> <?= $showChapter['users_lastname'] ?></span> <span class="date"><?= $showChapter['created_at']->format('Y-m-d') ?></span>
                                 </div>
                             </a>
                         </div>

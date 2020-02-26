@@ -30,13 +30,13 @@
                             </div>
                         </div>
                     <div class="col-md-12 col-md-offset-2">
-                        <form class="form-horizontal" action="" method="POST">                        
+                        <form class="form-horizontal" method="POST">                        
                             <div class="form-group">
                                 <div class="inputGroupContainer">
                                     <div class="input-group">
                                         <label class="label-register" for="">Adresse e-mail</label>
                                         <span class="icon-case"><i class="fa fa-envelope-o"></i></span>                                                                 
-                                        <input type="email" name="email" class="form-control" id="exampleInputName2" placeholder="Entrez votre adresse email"/>
+                                        <input type="email" name="email" class="form-control" placeholder="Entrez votre adresse email"/>
                                     </div>
                                 </div>
                             </div>                    

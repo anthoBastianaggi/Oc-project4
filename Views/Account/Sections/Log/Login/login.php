@@ -27,22 +27,22 @@
                             </div>
                         </div>       
                         <div class="col-md-12 col-md-offset-2">
-                            <form class="form-horizontal" action="" method="POST">                        
+                            <form class="form-horizontal" method="POST">                        
                                 <div class="form-group">
                                     <div class="inputGroupContainer">
                                         <div class="input-group">
-                                            <label class="label-login" for="">Nom d'utilisateur ou adresse e-mail</label>
+                                            <label class="label-login">Nom d'utilisateur ou adresse e-mail</label>
                                             <span class="icon-case"><i class="fa fa-user"></i></span>
-                                            <input type="text" name="username" maxlength="25" class="form-control" id="exampleInputName2" placeholder="Entrez votre nom d'utilisateur ou adresse e-mail"/>                                                                                                               
+                                            <input type="text" name="username" maxlength="25" class="form-control" placeholder="Entrez votre nom d'utilisateur ou adresse e-mail"/>                                                                                                               
                                         </div>
                                     </div>
                                 </div>   
                                 <div class="form-group">
                                     <div class="inputGroupContainer">
                                         <div class="input-group">
-                                            <label class="label-login" for="">Mot de passe</label>
+                                            <label class="label-login">Mot de passe</label>
                                             <span class="icon-case"><i class="fa fa-lock"></i></span> 
-                                            <input type="password" name="password" minlength="8" maxlength="32" class="form-control" id="exampleInputName2" placeholder="Entrez votre mot de passe" />                                                                    
+                                            <input type="password" name="password" minlength="8" maxlength="32" class="form-control" placeholder="Entrez votre mot de passe" />                                                                    
                                         </div>
                                     </div>
                                 </div>     

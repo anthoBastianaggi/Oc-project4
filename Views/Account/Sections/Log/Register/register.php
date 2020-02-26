@@ -47,13 +47,13 @@
                                 S'enregistrer
                             </h5>
                         </div>
-                        <form class="form-horizontal" action="" method="POST">
+                        <form class="form-horizontal" method="POST">
                             <div class="form-group">
                                 <div class="inputGroupContainer">
                                     <div class="input-group">
                                         <label class="label-register" for="">Prénom</label>
                                         <span class="icon-case"><i class="fa fa-male"></i></span>                               
-                                        <input type="text" name="firstname" maxlength="16"  class="form-control" id="exampleInputName2" placeholder="Entrez votre prénom" />
+                                        <input type="text" name="firstname" maxlength="16"  class="form-control" placeholder="Entrez votre prénom" />
                                     </div>
                                 </div>
                             </div>
@@ -62,7 +62,7 @@
                                     <div class="input-group">
                                         <label class="label-register" for="">Nom</label>
                                         <span class="icon-case"><i class="fa fa-user"></i></span>                                                               
-                                        <input type="text" name="lastname" maxlength="16" class="form-control" id="exampleInputName2" placeholder="Entrez votre nom" />
+                                        <input type="text" name="lastname" maxlength="16" class="form-control" placeholder="Entrez votre nom" />
                                     </div>
                                 </div>
                             </div>
@@ -80,7 +80,7 @@
                                     <div class="input-group">
                                         <label class="label-register" for="">Pseudo</label>
                                         <span class="icon-case"><i class="fa fa-user"></i></span>                                                          
-                                        <input type="text" name="username" maxlength="25" class="form-control" id="exampleInputName2" placeholder="Entrez votre pseudo" />
+                                        <input type="text" name="username" maxlength="25" class="form-control" placeholder="Entrez votre pseudo" />
                                     </div>
                                 </div>
                             </div>
@@ -89,7 +89,7 @@
                                     <div class="input-group">
                                         <label class="label-register" for="">Email</label>
                                         <span class="icon-case"><i class="fa fa-envelope-o"></i></span>                                                                 
-                                        <input type="email" name="email" class="form-control" id="exampleInputName2" placeholder="Entrez votre adresse email"/>
+                                        <input type="email" name="email" class="form-control" placeholder="Entrez votre adresse email"/>
                                     </div>
                                 </div>
                             </div>
@@ -98,7 +98,7 @@
                                     <div class="input-group">
                                         <label class="label-register" for="">Mot de passe</label>
                                         <span class="icon-case"><i class="fa fa-lock"></i></span>                                                                 
-                                        <input type="password" name="password" minlength="8" maxlength="32" class="form-control" id="exampleInputName2" placeholder="Entrez votre mot de passe"/>
+                                        <input type="password" name="password" minlength="8" maxlength="32" class="form-control" placeholder="Entrez votre mot de passe"/>
                                     </div>
                                 </div>
                             </div>
@@ -107,7 +107,7 @@
                                     <div class="input-group">
                                         <label class="label-register" for="">Confirmer mot de passe</label>
                                         <span class="icon-case"><i class="fa fa-lock"></i></span>                                                         
-                                        <input type="password" name="password-confirm" class="form-control" id="exampleInputName2" placeholder="Confirmez votre mot de passe"/>
+                                        <input type="password" name="password-confirm" class="form-control" placeholder="Confirmez votre mot de passe"/>
                                     </div>
                                 </div>
                             </div>   

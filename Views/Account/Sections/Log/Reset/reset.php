@@ -17,7 +17,7 @@
                 <div class="box-shadow-full">
                     <div class="row">
                         <div class="col-md-12 col-md-offset-2">
-                            <form class="form-horizontal" action="" method="POST">
+                            <form class="form-horizontal" method="POST">
                                 <div class="form-group">
                                     <div class="inputGroupContainer">
                                         <div class="input-group">

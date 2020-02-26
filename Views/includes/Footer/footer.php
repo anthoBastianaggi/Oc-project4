@@ -1,5 +1,5 @@
 <div class="containerSection">
-    <section id="footer"> 
+    <div id="footer"> 
         <div class="container"> 
             <div class="row"> 
                 <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5 socialContainer"> 
@@ -41,12 +41,12 @@
                         </li> 
                     </ul> 
                 </div> 
-                </hr> 
+                <hr> 
             </div>     
         </div> 
-    </section> 
+    </div> 
     <div class="separator"></div>
-    <section id="copyright"> 
+    <div id="copyright"> 
         <div class="copyrightContainer"> 
             <div class="row"> 
                 <div class="footer-copyright text-center">© 2018 Copyright:
@@ -56,6 +56,6 @@
                 </div>
             </div>
         </div> 
-    </section>
+    </div>
 </div>
 
