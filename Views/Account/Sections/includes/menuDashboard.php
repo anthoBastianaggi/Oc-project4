@@ -45,6 +45,12 @@
                                 <span class="nav-label">Liste des chapitres</span>
                             </a> 
                         </li>
+                        <li> 
+                            <a href="<?= CURRENT_PATH ?>reportComment?action=reportComment" class="nav-link">
+                                <i class="fa fa-list"></i> 
+                                <span class="nav-label">Commentaires signalés</span>
+                            </a> 
+                        </li>
                         <?php endif; ?>
                     </ul>
                 </div>

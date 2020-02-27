@@ -155,7 +155,7 @@
                                                 </li>
                                                 <?php else: ?> 
                                                 <li class="dropdownItemOptions">
-                                                    <a href="<?= CURRENT_PATH ?>comments?action=signalComment&id=<?= $_GET['id'] ?>" class="btn btn-default stat-item">
+                                                    <a href="<?= CURRENT_PATH ?>comments?action=signaleComment&id=<?= $comment['id'] ?>" class="btn btn-default stat-item">
                                                         <i class="fa fa-flag"></i>
                                                         <span>Signaler</span>
                                                     </a>
