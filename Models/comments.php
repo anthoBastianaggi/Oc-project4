@@ -68,4 +68,45 @@ class Comments {
         $reqComments= $db->prepare('UPDATE comment SET `content` = ?, updated_at = NOW() WHERE id = ?');
         $reqComments->execute(array($contentComment, $id));
     }
+
+     /**
+        * Ajout d'un commentaire
+        * @return array
+    */
+    public function signaleComment($usersId, $commentId) {
+        global $db;
+
+        $reqComments= $db->prepare('INSERT INTO report(users_id, comment_id) VALUES(?, ?)');
+        $reqComments->execute(array($usersId, $commentId));
+    }
+
+    public function getAllSignaleComment() {
+        global $db;
+
+        $reqComments = $db -> prepare(
+            'SELECT report.id as report_id, writers.username AS "writer", 
+            reporters.username AS "reporter", comment.content AS "content", 
+            ticket.title as "chapter" 
+            FROM report INNER JOIN comment ON report.comment_id = comment.id 
+            INNER JOIN users as writers ON writers.id = comment.users_id 
+            INNER JOIN users as reporters ON reporters.id = report.users_id 
+            INNER JOIN ticket ON comment.ticket_id = ticket.id ');
+            $reqComments -> execute();
+            return $reqComments -> fetchAll();
+    }
+
+    public function validateSignaleComment($id) {
+        global $db;
+
+        $reqComments= $db->prepare('UPDATE report SET `validate` = passed WHERE id = ?');
+        $reqComments->execute($id);
+    }
+
+    public function deleteSignaleComment() {
+        global $db;
+
+        //Requete SQL pour supprimer le commentaire dans la base
+        $reqComments= $db->prepare("DELETE FROM report WHERE id = :id");
+        $reqComments->execute(array(':id' => $_GET['id']));
+    }
 }

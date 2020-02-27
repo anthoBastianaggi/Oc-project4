@@ -36,3 +36,10 @@ function updateComment($page) {
     }
     include_once 'Views/Chapters/Sections/Comment/CommentUpdate/'.$page.'_update_view.php';  
 }
+
+function signaleComment($page) { 
+    $comment = new Comments();
+    $showComment = $comment->showComment();
+    $signaleComment = $comment->signaleComment($_SESSION['auth']->id, $_GET['id']);
+    header('Location: /sites/projet4/chapters?action=showChapter&id=' .$showComment['ticket_id']);
+}
