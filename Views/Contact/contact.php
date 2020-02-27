@@ -51,6 +51,19 @@
                                         <div id="sendmessage">Your message has been sent. Thank you!</div>
                                         <div id="errormessage"></div>
                                         <div class="row">
+                                        <?php if(isset($_SESSION['auth'])): ?>
+                                            <div class="col-md-12 mb-3">
+                                                <div class="form-group">
+                                                    <div class="inputGroupContainer">
+                                                        <div class="input-group">
+                                                            <span class="icon-case"><i class="fa fa-user"></i></span>                                                          
+                                                            <input type="text" name="username" maxlength="25" class="form-control" placeholder="Entrez votre pseudo" />
+                                                            <div class="validation"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        <?php else: ?>
                                             <div class="col-md-12 mb-3">
                                                 <div class="form-group">
                                                     <div class="inputGroupContainer">
@@ -84,6 +97,7 @@
                                                     </div>
                                                 </div>      
                                             </div>
+                                            <?php endif; ?>
                                             <div class="col-md-12 mb-3">
                                                 <div class="form-group">
                                                     <div class="inputGroupContainer">
