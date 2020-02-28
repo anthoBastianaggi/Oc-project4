@@ -4,9 +4,11 @@
     // Mise en mémoire tampon (rien ne s'affichera)
     ob_start(); 
 ?>
-<section class="profile">
+<section class="dashboard">
     <div class="wrapper">
+    
         <?php include_once 'Views/Account/Sections/includes/menuDashboard.php' ?>
+        <canvas id="myChart"></canvas>
     </div>
 </section>
 <?php 

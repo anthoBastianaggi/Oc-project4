@@ -31,9 +31,31 @@
         </div>
         
         <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
         <script src='Public/javascript/Header/header.js'></script>
         <script src='Public/javascript/Header/sidebar.js'></script>
         <script src='Public/javascript/Comment/comment.js'></script>
         <script src='Public/javascript/main.js'></script>
+        <script>
+            var ctx = document.getElementById('myChart').getContext('2d');
+            var chart = new Chart(ctx, {
+                // The type of chart we want to create
+                type: 'bar',
+
+                // The data for our dataset
+                data: {
+                    labels: ['2018', '2019', '2020'],
+                    datasets: [{
+                        label: "Statistique nombres d'utilisateurs",
+                        backgroundColor: 'rgb(255, 99, 132)',
+                        borderColor: 'rgb(255, 99, 132)',
+                        data: [10, 5, 20]
+                    }]
+                },
+
+                // Configuration options go here
+                options: {}
+            });
+        </script>
     </body>
 </html>
