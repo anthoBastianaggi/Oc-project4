@@ -12,7 +12,7 @@
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg " color-on-scroll="500">
             <div class=" container-fluid  ">
-                <a class="navbar-brand" href="#"> Profile : <?= $_SESSION['auth']->username ?></a>
+                <a class="navbar-brand" href="#"> Profil : <?= $_SESSION['auth']->username ?></a>
             </div>
         </nav>
         <!-- End Navbar -->
@@ -23,7 +23,7 @@
                         <div class="card">
                             <div class="card-header">
                                 <div class="card-header-item-container">
-                                    <h4 class="card-title">Chapter List</h4>
+                                    <h4 class="card-title">Liste des chapitres</h4>
                                 </div>
                                 <div class="card-header-item-container">
                                     <a class="button btn-add" href="<?= CURRENT_PATH ?>chapters?action=addChapter">

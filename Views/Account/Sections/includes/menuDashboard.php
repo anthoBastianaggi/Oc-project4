@@ -12,7 +12,7 @@
                             <span class="username"><?= $_SESSION['auth']->firstname ?> <?= $_SESSION['auth']->lastname ?></span>
                         </li>
                         <li class="sidebarItemUser">
-                            <span class="role"><?= $_SESSION['auth']->role_id ?></span>
+                            <span class="role"><?= $_SESSION['auth']->role_label ?></span>
                         </li>
                     </ul>
                 </div>

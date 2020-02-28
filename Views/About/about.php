@@ -27,7 +27,7 @@
                                     <table class="item-meta">
                                         <tbody>
                                             <tr>
-                                                <th>Category</th>
+                                                <th>Categorie</th>
                                                 <td>Ecrivain</td>
                                             </tr>
                                             <tr>

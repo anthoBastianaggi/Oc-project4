@@ -53,7 +53,7 @@
             </div>
             <aside class="col-md-5 col-lg-4">
                 <div class="card mb-3">
-                    <h3 class="card-header mb-3">Join our Newsletter</h3>
+                    <h3 class="card-header mb-3">Rejoignez notre Newsletter</h3>
                     <form class="form-horizontal">
                         <div class="form-group">
                         <div class="col-sm-12">
@@ -63,7 +63,7 @@
 
                         <div class="form-group">
                             <div class="col-sm-12">
-                                <button type="submit" class="btn btn-primary">Join Us</button>
+                                <button type="submit" class="btn btn-primary">Rejoignez nous</button>
                             </div>
                         </div>
                     </form>
@@ -165,7 +165,7 @@
                                         </div>
                                     </div> 
                                     <div class="post-description"> 
-                                        <p><?= $comment['content'] ?></p>                          
+                                        <p style="white-space:pre-line"><?= $comment['content'] ?></p>                          
                                     </div>
                                 </div>   
                             <?php } ?>
@@ -192,7 +192,7 @@
                                 </div>
                                 <div class="form-group">
                                     <div class="col-sm-12" id="btnAddComment">
-                                        <button type="submit" name="btnAddComment" class="btn btn-primary">Envoyé commentaire</button>
+                                        <button type="submit" name="btnAddComment" class="btn btn-primary">Envoyer commentaire</button>
                                     </div>
                                 </div>
                             </form>

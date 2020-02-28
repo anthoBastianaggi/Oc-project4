@@ -13,7 +13,7 @@
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg " color-on-scroll="500">
             <div class=" container-fluid  ">
-                <a class="navbar-brand" href="#"> Profile : <?= $_SESSION['auth']->username ?></a>
+                <a class="navbar-brand" href="#"> Profil : <?= $_SESSION['auth']->username ?></a>
             </div>
         </nav>
         <!-- End Navbar -->
@@ -84,26 +84,26 @@
                     <div class="col block-edit">
                         <div class="card">
                             <div class="card-header">
-                                <h4 class="card-title">Edit Profile</h4>
+                                <h4 class="card-title">Editer Profil</h4>
                             </div>
                             <div class="card-body">
                                 <form>
                                     <div class="row">
                                         <div class="col-md-4 item-container">
                                             <div class="form-group">
-                                                <label>Username</label>
+                                                <label>Pseudo</label>
                                                 <input type="text" class="form-control" placeholder="Username" value="<?= $_SESSION['auth']->username ?>">
                                             </div>
                                         </div>
                                         <div class="col-md-4 item-container">
                                             <div class="form-group">
-                                                <label>First Name</label>
+                                                <label>Nom</label>
                                                 <input type="text" class="form-control" placeholder="Company" value="<?= $_SESSION['auth']->firstname ?>">
                                             </div>
                                         </div>
                                         <div class="col-md-4 item-container">
                                             <div class="form-group">
-                                                <label>Last Name</label>
+                                                <label>Prénom</label>
                                                 <input type="text" class="form-control" placeholder="Last Name" value="<?= $_SESSION['auth']->lastname ?>">
                                             </div>
                                         </div> 
@@ -111,27 +111,27 @@
                                     <div class="row">                             
                                         <div class="col-md-4 item-container">
                                             <div class="form-group">
-                                                <label for="exampleInputDate1">Birthdate</label>
+                                                <label for="exampleInputDate1">Date de Naissance</label>
                                                 <input type="date" class="form-control" placeholder="Birthdate" value="<?= $_SESSION['auth']->birthdate ?>">
                                             </div>
                                         </div>
                                         <div class="col-md-4 item-container">
                                             <div class="form-group">
-                                                <label>Fix number</label>
-                                                <input class="form-control" type="tel" placeholder="04.95.01.02.03" pattern="[0-9]{2} [0-9]{2} [0-9]{2} [0-9]{2} [0-9]{2}" value="<?= $_SESSION['auth']->fix_number ?>">
+                                                <label>Fixe</label>
+                                                <input class="form-control" type="tel" placeholder="0495010203" pattern="[0-9]{2}[0-9]{2}[0-9]{2}[0-9]{2}[0-9]{2}" value="<?= $_SESSION['auth']->fix_number ?>">
                                             </div>
                                         </div>
                                         <div class="col-md-4 item-container">
                                             <div class="form-group">
-                                                <label>Phone</label>
-                                                <input class="form-control" type="tel" placeholder="06.00.01.02.03" pattern="[0-9]{2} [0-9]{2} [0-9]{2} [0-9]{2} [0-9]{2}" value="<?= $_SESSION['auth']->phone_number ?>">
+                                                <label>Mobile</label>
+                                                <input class="form-control" type="tel" placeholder="0600010203" pattern="[0-9]{2}[0-9]{2}[0-9]{2}[0-9]{2}[0-9]{2}" value="<?= $_SESSION['auth']->phone_number ?>">
                                             </div>
                                         </div>
                                     </div>                       
                                     <div class="row">
                                         <div class="col-md-12">
                                             <div class="form-group">
-                                                <label>Address</label>
+                                                <label>Adresse</label>
                                                 <input type="text" class="form-control" placeholder="Home Address" value="<?= $_SESSION['auth']->address ?>">
                                             </div>
                                         </div>
@@ -139,19 +139,19 @@
                                     <div class="row">
                                         <div class="col-md-4 item-container">
                                             <div class="form-group">
-                                                <label>City</label>
+                                                <label>Ville</label>
                                                 <input type="text" class="form-control" placeholder="City" value="<?= $_SESSION['auth']->city ?>">
                                             </div>
                                         </div>
                                         <div class="col-md-4 item-container">
                                             <div class="form-group">
-                                                <label>Country</label>
+                                                <label>Pays</label>
                                                 <input type="text" class="form-control" placeholder="Country" value="<?= $_SESSION['auth']->country ?>">
                                             </div>
                                         </div>
                                         <div class="col-md-4 item-container">
                                             <div class="form-group">
-                                                <label>Postal Code</label>
+                                                <label>Code Postal</label>
                                                 <input type="number" class="form-control" placeholder="ZIP Code" value="<?= $_SESSION['auth']->postal_code ?>">
                                             </div>
                                         </div>
@@ -159,13 +159,13 @@
                                     <div class="row">
                                         <div class="col-md-12">
                                             <div class="form-group">
-                                                <label>About Me</label>
+                                                <label>A propos de moi</label>
                                                 <textarea rows="4" cols="80" maxlength="100" class="form-control" placeholder="Here can be your description">Formation Développeur Web Junior chez OpenClassrooms, Développeur Front-end chez Qwant Music</textarea>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-md-12 text-right" id="btn-profile">
-                                        <button type="submit" class="button button-a button-big">Update Profile</button>
+                                        <button type="submit" class="button button-a button-big">Modifier Profil</button>
                                     </div>     
                                 </form>
                             </div>

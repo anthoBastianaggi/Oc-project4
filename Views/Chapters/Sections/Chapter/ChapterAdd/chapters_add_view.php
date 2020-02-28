@@ -32,7 +32,7 @@
                             </div>
                             <div class="col-md-12 text-center" id="btn-container">
                                 <button type="submit" name="btnAjoutTicket" id="btnAdd" class="button button-a">Publier</button>
-                                <button type="button" id="btnCancel" class="btn btn-default" onclick="window.location.href='<?= CURRENT_PATH ?>chapters?action=chapters'">Cancel</button>
+                                <button type="button" id="btnCancel" class="btn btn-default" onclick="window.location.href='<?= CURRENT_PATH ?>chapters?action=chapters'">Annuler</button>
                             </div> 
                         </form>
                         </div>
