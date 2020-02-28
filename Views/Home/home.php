@@ -61,7 +61,7 @@
             </div>
             <aside class="col-md-5 col-lg-4">
                 <div class="card mb-3">
-                    <h3 class="card-header mb-3">Join our Newsletter</h3>
+                    <h3 class="card-header mb-3">Rejoignez notre Newsletter</h3>
                     <form class="form-horizontal">
                         <div class="form-group">
                         <div class="col-sm-12">
@@ -71,7 +71,7 @@
 
                         <div class="form-group">
                             <div class="col-sm-12">
-                                <button type="submit" class="btn btn-primary">Join Us</button>
+                                <button type="submit" class="btn btn-primary">Rejoignez Nous</button>
                             </div>
                         </div>
                     </form>

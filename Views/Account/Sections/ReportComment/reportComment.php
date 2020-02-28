@@ -12,7 +12,7 @@
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg " color-on-scroll="500">
             <div class=" container-fluid  ">
-                <a class="navbar-brand" href="#"> Profile : <?= $_SESSION['auth']->username ?></a>
+                <a class="navbar-brand" href="#"> Profil : <?= $_SESSION['auth']->username ?></a>
             </div>
         </nav>
         <!-- End Navbar -->
@@ -22,7 +22,7 @@
                     <div class="col-lg-12 col-xl-12 block-edit">
                         <div class="card">
                             <div class="card-header">
-                                <h4 class="card-title">Report comment</h4>
+                                <h4 class="card-title">Commentaires signalés</h4>
                             </div>
                             <div class="card-body">
                                 <div class="card-body-container">

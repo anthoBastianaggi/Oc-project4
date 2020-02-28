@@ -1780,6 +1780,152 @@ section .wrapper {
     #delete-account #infobox-delete-account .btn-card #btnCancel {
       margin-top: 10px; } }
 
+#updatePassword .text-header-update-password {
+  text-align: center;
+  margin-bottom: 2rem; }
+  #updatePassword .text-header-update-password .section-title {
+    position: relative;
+    margin-bottom: 45px;
+    display: inline-block;
+    font-weight: 600;
+    color: black;
+    line-height: 1; }
+  #updatePassword .text-header-update-password .section-subheading {
+    color: black !important; }
+
+#updatePassword #infobox-update-password {
+  z-index: 0;
+  max-width: 75%;
+  margin: 0 auto; }
+  #updatePassword #infobox-update-password form {
+    border-radius: 5px;
+    max-width: 100%;
+    width: 90%;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    overflow: hidden; }
+    #updatePassword #infobox-update-password form .inputGroupContainer {
+      padding-right: 0;
+      padding-left: 0;
+      width: 100%; }
+      #updatePassword #infobox-update-password form .inputGroupContainer .input-group {
+        position: relative;
+        display: flex;
+        border-collapse: separate;
+        width: 100%;
+        margin-bottom: 1rem; }
+        #updatePassword #infobox-update-password form .inputGroupContainer .input-group input {
+          height: 42px;
+          z-index: 0; }
+        #updatePassword #infobox-update-password form .inputGroupContainer .input-group .icon-case {
+          width: 35px;
+          float: left;
+          border-radius: 5px 0px 0px 5px;
+          background: #eeeeee;
+          height: 42px;
+          position: relative;
+          text-align: center;
+          line-height: 40px;
+          border: 1px solid #ccc;
+          border-right: 0; }
+        #updatePassword #infobox-update-password form .inputGroupContainer .input-group .label-register {
+          font-size: 1.25rem;
+          width: 100%; }
+    #updatePassword #infobox-update-password form #btn-password .btn-update-password {
+      margin-right: 10px; }
+    #updatePassword #infobox-update-password form #btn-password .btn-cancel {
+      padding: .3rem .6rem; }
+
+@media (max-width: 766px) {
+  #updatePassword #infobox-update-password {
+    max-width: 100%; } }
+
+@media (max-width: 414px) {
+  #updatePassword #infobox-update-password {
+    max-width: 100%; }
+    #updatePassword #infobox-update-password form {
+      width: 100%;
+      margin: 0; } }
+
+@media (max-width: 374px) {
+  #updatePassword #infobox-update-password #btn-password {
+    text-align: center; }
+    #updatePassword #infobox-update-password #btn-password .btn-cancel {
+      margin-top: 10px; } }
+
+#updateEmail .text-header-update-email {
+  text-align: center;
+  margin-bottom: 2rem; }
+  #updateEmail .text-header-update-email .section-title {
+    position: relative;
+    margin-bottom: 45px;
+    display: inline-block;
+    font-weight: 600;
+    color: black;
+    line-height: 1; }
+  #updateEmail .text-header-update-email .section-subheading {
+    color: black !important; }
+
+#updateEmail #infobox-update-email {
+  z-index: 0;
+  max-width: 75%;
+  margin: 0 auto; }
+  #updateEmail #infobox-update-email form {
+    border-radius: 5px;
+    max-width: 100%;
+    width: 90%;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    overflow: hidden; }
+    #updateEmail #infobox-update-email form .inputGroupContainer {
+      padding-right: 0;
+      padding-left: 0;
+      width: 100%; }
+      #updateEmail #infobox-update-email form .inputGroupContainer .input-group {
+        position: relative;
+        display: flex;
+        border-collapse: separate;
+        width: 100%;
+        margin-bottom: 1rem; }
+        #updateEmail #infobox-update-email form .inputGroupContainer .input-group input {
+          height: 42px;
+          z-index: 0; }
+        #updateEmail #infobox-update-email form .inputGroupContainer .input-group .icon-case {
+          width: 35px;
+          float: left;
+          border-radius: 5px 0px 0px 5px;
+          background: #eeeeee;
+          height: 42px;
+          position: relative;
+          text-align: center;
+          line-height: 40px;
+          border: 1px solid #ccc;
+          border-right: 0; }
+        #updateEmail #infobox-update-email form .inputGroupContainer .input-group .label-register {
+          font-size: 1.25rem;
+          width: 100%; }
+    #updateEmail #infobox-update-email form #btn-email .btn-update-email {
+      margin-right: 10px; }
+    #updateEmail #infobox-update-email form #btn-email .btn-cancel {
+      padding: .3rem .6rem; }
+
+@media (max-width: 766px) {
+  #updateEmail #infobox-update-email {
+    max-width: 100%; } }
+
+@media (max-width: 414px) {
+  #updateEmail #infobox-update-email {
+    max-width: 100%; }
+    #updateEmail #infobox-update-email form {
+      width: 100%;
+      margin: 0; } }
+
+@media (max-width: 384px) {
+  #updateEmail #infobox-update-email #btn-email {
+    text-align: center; }
+    #updateEmail #infobox-update-email #btn-email .btn-cancel {
+      margin-top: 10px; } }
+
 .chapterList {
   display: flex;
   flex: 1; }
