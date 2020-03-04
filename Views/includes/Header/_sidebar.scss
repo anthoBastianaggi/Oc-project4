@@ -169,25 +169,28 @@ header {
                 .sidebarLoginContainer {
                   background-color:#353c52;
                   .sidebarNotConnected {
-                    padding: 60px 20px 20px;   
-                    .inputGroupContainer {
-                      text-transform: none !important;
-                      color: white;
+                    .form-container {
+                      padding: 60px 20px 20px;   
+                      .inputGroupContainer {
+                        text-transform: none !important;
+                        color: white;
+                      }
                     }
-                  }
-                  .btnLoginContainer {
-                    background-color:#5c6f84;
-                    height: 50px;
-                    display: flex;
-                    justify-content: center;
-                    &:hover {
-                      background-color: #555D70;
-                    }
-                    .btnLogin {
-                      border: none;
-                      background: none;
-                      color: white;
-                      cursor: pointer;
+
+                    .btnLoginContainer {
+                      background-color:#5c6f84;
+                      height: 50px;
+                      display: flex;
+                      justify-content: center;
+                      &:hover {
+                        background-color: #555D70;
+                      }
+                      .btnLogin {
+                        border: none;
+                        background: none;
+                        color: white;
+                        cursor: pointer;
+                      }
                     }
                   }
 

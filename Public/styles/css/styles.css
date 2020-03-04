@@ -387,19 +387,19 @@ header .navigation .navContainer .sidebar {
                   cursor: pointer; }
           header .navigation .navContainer .sidebar .sidebarOpen .sidebarMenu .sidebarContainer .sidebarLoginContainer {
             background-color: #353c52; }
-            header .navigation .navContainer .sidebar .sidebarOpen .sidebarMenu .sidebarContainer .sidebarLoginContainer .sidebarNotConnected {
+            header .navigation .navContainer .sidebar .sidebarOpen .sidebarMenu .sidebarContainer .sidebarLoginContainer .sidebarNotConnected .form-container {
               padding: 60px 20px 20px; }
-              header .navigation .navContainer .sidebar .sidebarOpen .sidebarMenu .sidebarContainer .sidebarLoginContainer .sidebarNotConnected .inputGroupContainer {
+              header .navigation .navContainer .sidebar .sidebarOpen .sidebarMenu .sidebarContainer .sidebarLoginContainer .sidebarNotConnected .form-container .inputGroupContainer {
                 text-transform: none !important;
                 color: white; }
-            header .navigation .navContainer .sidebar .sidebarOpen .sidebarMenu .sidebarContainer .sidebarLoginContainer .btnLoginContainer {
+            header .navigation .navContainer .sidebar .sidebarOpen .sidebarMenu .sidebarContainer .sidebarLoginContainer .sidebarNotConnected .btnLoginContainer {
               background-color: #5c6f84;
               height: 50px;
               display: flex;
               justify-content: center; }
-              header .navigation .navContainer .sidebar .sidebarOpen .sidebarMenu .sidebarContainer .sidebarLoginContainer .btnLoginContainer:hover {
+              header .navigation .navContainer .sidebar .sidebarOpen .sidebarMenu .sidebarContainer .sidebarLoginContainer .sidebarNotConnected .btnLoginContainer:hover {
                 background-color: #555D70; }
-              header .navigation .navContainer .sidebar .sidebarOpen .sidebarMenu .sidebarContainer .sidebarLoginContainer .btnLoginContainer .btnLogin {
+              header .navigation .navContainer .sidebar .sidebarOpen .sidebarMenu .sidebarContainer .sidebarLoginContainer .sidebarNotConnected .btnLoginContainer .btnLogin {
                 border: none;
                 background: none;
                 color: white;
