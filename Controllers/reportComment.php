@@ -10,11 +10,11 @@ function reportComment($page) {
 function validateSignaleComment($page) {
     $comment = new Comments();
     $valideSignaleComment = $comment->validateSignaleComment($_GET['id']);
-    header('Location: /sites/projet4/reportComment?action=reportComment'); 
+    header('Location: /projet4/reportComment?action=reportComment'); 
 }
 
 function deleteSignaleComment($page) {
     $comment = new Comments();
     $deleteSignaleComment = $comment->deleteSignaleComment();
-    header('Location: /sites/projet4/reportComment?action=reportComment'); 
+    header('Location: /projet4/reportComment?action=reportComment'); 
 }

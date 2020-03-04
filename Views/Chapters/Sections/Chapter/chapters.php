@@ -33,15 +33,9 @@
                                 <div class="blog-content home-blog">                       
                                     <?= substr($ticket['content'], 0, 700).' '.'. . .' ?>
                                 </div>
-                                <?php if(isset($_SESSION['auth'])): ?>
-                                    <div class="link-box home-blog-link">
-                                        <a href="<?= CURRENT_PATH ?>chapters?action=showChapter&id= <?= $ticket['id'] ?>" class="btn btn-primary">Voir plus</a>
-                                    </div>    
-                                <?php else: ?>   
-                                    <div class="link-box home-blog-link">
-                                        <a href="<?= CURRENT_PATH ?>login?action=login" class="btn btn-primary">Voir plus</a>
-                                    </div>      
-                                <?php endif; ?>              
+                                <div class="link-box home-blog-link">
+                                    <a href="<?= CURRENT_PATH ?>chapters?action=showChapter&id= <?= $ticket['id'] ?>" class="btn btn-primary">Voir plus</a>
+                                </div>             
                             </div>
                         </div>
                     </article>
