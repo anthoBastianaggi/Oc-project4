@@ -1,0 +1,27 @@
+// Les partials
+@import "_global.scss";
+@import "views/includes/header/_header.scss";
+@import "views/includes/header/_navbar-left.scss";
+@import "views/includes/header/_navbar-right.scss";
+@import "views/includes/header/_sidebar.scss";
+@import "views/home/_home.scss";
+@import "views/about/_about.scss";
+@import "views/chapters/sections/chapter/_chapters.scss";
+@import "views/chapters/sections/chapter/chapter-show/_chapter-show.scss";
+@import "views/chapters/sections/chapter/chapter-update/_chapter-update.scss";
+@import "views/chapters/sections/chapter/chapter-add/_chapter-add.scss";
+@import "views/chapters/sections/comment/_comments.scss";
+@import "views/chapters/sections/comment/comment-update/_comment-update.scss"; 
+@import "views/contact/_contact.scss";
+@import "views/account/sections/log/register/_register.scss";
+@import "views/account/sections/log/forget/_forget.scss";
+@import "views/account/sections/log/login/_login.scss";
+@import "views/includes/footer/_footer.scss";
+@import "views/account/sections/includes/_menu-dashboard.scss";
+@import "views/account/sections/profile/_profile.scss";
+@import "views/account/sections/settings/_settings.scss";
+@import "views/account/sections/settings/delete-account/_delete-account.scss";
+@import "views/account/sections/settings/update-password/_update-password.scss";
+@import "views/account/sections/settings/update-email/_update-email.scss";
+@import "views/account/sections/chapter-list/_chapter-list.scss";
+@import "views/account/sections/dashboard/_dashboard.scss";
