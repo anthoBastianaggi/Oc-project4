@@ -41,5 +41,5 @@ function signaleComment($page) {
     $comment = new Comments();
     $showComment = $comment->showComment();
     $signaleComment = $comment->signaleComment($_SESSION['auth']->id, $_GET['id']);
-    header('Location: /sites/projet4/chapters?action=showChapter&id=' .$showComment['ticket_id']);
+    header('Location: /projet4/chapters?action=showChapter&id=' .$showComment['ticket_id']);
 }

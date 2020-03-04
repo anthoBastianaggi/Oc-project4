@@ -3,12 +3,13 @@
 include_once 'Models/contact.php';
 
 function contact($page) {
+    require 'Views/includes/bootstrap.php';
     if(isset($_SESSION['auth'])) {
         if(!empty($_POST) && isset($_POST['btn-contact'])) {
             if(isset($_POST['username'])  && isset($_POST['subject']) && isset($_POST['message'])) {
                 if(!empty($_POST['username']) && !empty($_POST['subject']) && !empty($_POST['message'])) {
                     if($_POST['username'] !== $_SESSION['auth']->username) {
-                        $error = "Erreur ! Votre pseudo est différent de celui ou vous êtes connecté. Veuillez entrer le bon pseudo.";
+                        Session::getInstance()->setFlash('danger', "Votre pseudo est différent de celui ou vous êtes connecté. Veuillez entrer le bon pseudo.");
                     } else {
                         $username = str_secur($_POST['username']);
                         $email = str_secur($_SESSION['auth']->email);
@@ -21,11 +22,11 @@ function contact($page) {
                         // ENVOYER UN EMAIL
                         mail('a.bastianaggi@gmail.com', 'On me contacte sur mon site', $message);
                     }
-                } else {              
-                    $error = "Vous devez remplir tous les champs !";
+                } else {     
+                    Session::getInstance()->setFlash('danger', "Vous devez remplir tous les champs !");         
                 } 
             } else {
-                $error = "Une erreur s'est produite. Rééssayez !";
+                Session::getInstance()->setFlash('danger', "Une erreur s'est produite. Rééssayez !");
             }
         }
     } else {
@@ -43,11 +44,11 @@ function contact($page) {
                     $message .= ' - email envoyé par : ' . $firstname . ' ' . $lastname . ' : ' . $email;
                     // ENVOYER UN EMAIL
                     mail('a.bastianaggi@gmail.com', 'On me contacte sur mon site', $message);
-                } else {              
-                    $error = "Vous devez remplir tous les champs !";
+                } else {
+                    Session::getInstance()->setFlash('danger', "Vous devez remplir tous les champs !");              
                 } 
             } else {
-                $error = "Une erreur s'est produite. Rééssayez !";
+                Session::getInstance()->setFlash('danger', "Une erreur s'est produite. Rééssayez !");
             }
         } 
     }  

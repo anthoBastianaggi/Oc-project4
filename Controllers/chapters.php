@@ -11,14 +11,21 @@ function chapters($page) {
 }
 
 function showChapter($page) {
-    $chapter = new Chapters();
-    $showChapter = $chapter->showChapter();
-    $date = $showChapter['created_at'];
-    $dateFormatted = date('d-m-Y', strtotime($date));
-    $lastChapters = $chapter->getThreeLastChapters();
-    $comment = new Comments();
-    $allComments = $comment->getAllComments($showChapter['id']);
-    include_once 'Views/Chapters/Sections/Chapter/ChapterShow/'.$page.'_show_view.php';
+    require 'Views/includes/bootstrap.php';
+    if(isset($_SESSION['auth'])) {
+        $chapter = new Chapters();
+        $showChapter = $chapter->showChapter();
+        $date = $showChapter['created_at'];
+        $dateFormatted = date('d-m-Y', strtotime($date));
+        $lastChapters = $chapter->getThreeLastChapters();
+        $comment = new Comments();
+        $allComments = $comment->getAllComments($showChapter['id']);
+        include_once 'Views/Chapters/Sections/Chapter/ChapterShow/'.$page.'_show_view.php';
+    } else {
+        header('Location: /projet4/login?action=login'); 
+        Session::getInstance()->setFlash('info', "Pour visualiser le chapitre en entier veuillez vous connecter.");         
+    }
+  
 }
 
 function addChapter($page) { 
