@@ -17,7 +17,15 @@ html body {
     html body .layout main {
       padding-top: 9.3rem; }
       html body .layout main section {
-        padding: 2rem 0; }
+        padding: 0;
+        display: flex;
+        flex: 1; }
+        html body .layout main section .main-panel {
+          width: 100%;
+          margin-bottom: 2rem; }
+        html body .layout main section .section-content {
+          padding: 2rem 0;
+          width: 100%; }
 
 @media (max-width: 834px) {
   html body .layout main {
@@ -474,133 +482,133 @@ header .navigation .navContainer .sidebar {
     width: 100%;
     right: -100%; } }
 
-main #home {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
-  background-image: url("../../images/alaska.jpg");
-  background-position: center;
-  background-size: cover;
-  position: relative;
-  height: 100vh;
-  background-attachment: fixed;
-  color: #fff;
-  width: 100%;
-  margin-top: -9.3rem; }
-  main #home .container {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    -webkit-box-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    align-items: center; }
-
-main #homeChapters .textHeaderHomeChapters {
-  text-align: center;
-  margin-bottom: 2rem; }
-  main #homeChapters .textHeaderHomeChapters .section-title {
+main .home-content {
+  padding-top: 0 !important; }
+  main .home-content #home {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+    background-image: url("../../images/alaska.jpg");
+    background-position: center;
+    background-size: cover;
     position: relative;
-    margin-bottom: 45px;
-    display: inline-block;
-    font-weight: 600;
-    color: black;
-    line-height: 1; }
-  main #homeChapters .textHeaderHomeChapters .section-title::before {
-    content: "";
-    position: absolute;
-    left: 50%;
-    width: 60px;
-    height: 2px;
-    background: #007bff;
-    bottom: -25px;
-    margin-left: -30px; }
-  main #homeChapters .textHeaderHomeChapters p {
-    color: black !important; }
-
-main #homeChapters article {
-  margin-bottom: 5rem;
-  text-align: justify;
-  display: inline-flex;
-  max-width: 49%;
-  min-height: 660px; }
-  main #homeChapters article .card {
-    transition: .3s; }
-    main #homeChapters article .card:hover {
-      box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.12); }
-    main #homeChapters article .card .headerChapter {
-      padding: 10px 15px;
-      text-align: center; }
-      main #homeChapters article .card .headerChapter h2 {
-        color: #007bff; }
-        main #homeChapters article .card .headerChapter h2:focus, main #homeChapters article .card .headerChapter h2:hover {
-          color: #2B96CC;
-          text-decoration: none; }
-    main #homeChapters article .card .blog-thumb img {
-      width: 100%; }
-    main #homeChapters article .card .card-block {
-      padding: 10px 15px;
+    height: 100vh;
+    background-attachment: fixed;
+    color: #fff;
+    width: 100%;
+    margin-top: -9.3rem; }
+    main .home-content #home .container {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      -webkit-box-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      align-items: center; }
+  main .home-content #homeChapters {
+    padding-top: 2rem; }
+    main .home-content #homeChapters .textHeaderHomeChapters {
+      text-align: center;
+      margin-bottom: 2rem; }
+      main .home-content #homeChapters .textHeaderHomeChapters .section-title {
+        position: relative;
+        margin-bottom: 45px;
+        display: inline-block;
+        font-weight: 600;
+        color: black;
+        line-height: 1; }
+      main .home-content #homeChapters .textHeaderHomeChapters .section-title::before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        width: 60px;
+        height: 2px;
+        background: #007bff;
+        bottom: -25px;
+        margin-left: -30px; }
+      main .home-content #homeChapters .textHeaderHomeChapters p {
+        color: black !important; }
+    main .home-content #homeChapters article {
+      margin-bottom: 5rem;
       text-align: justify;
-      flex: 1; }
-      main #homeChapters article .card .card-block .meta-info {
-        margin-bottom: 1.5rem; }
-      main #homeChapters article .card .card-block .blog-content.home-blog p {
-        margin-bottom: 10px; }
-    main #homeChapters article .card .card-footer {
-      text-align: center; }
-      main #homeChapters article .card .card-footer .link-box.home-blog-link a {
-        font-size: 14px; }
-      main #homeChapters article .card .card-footer .link-box a {
-        color: white;
-        font-weight: 600; }
-
-main #homeChapters aside .card-header {
-  text-align: center;
-  color: #007bff; }
-  main #homeChapters aside .card-header:hover {
-    color: #2B96CC;
-    transition: 0.4s; }
-
-main #homeChapters aside .list-group {
-  padding: 0.75rem 1.25rem; }
-  main #homeChapters aside .list-group .list-group-about-container {
-    text-align: justify;
-    margin-bottom: 1rem; }
-  main #homeChapters aside .list-group .list-group-container {
-    text-align: justify;
-    margin-bottom: 1rem;
-    border-bottom: solid 1px #ddd; }
-    main #homeChapters aside .list-group .list-group-container a {
-      color: black; }
-      main #homeChapters aside .list-group .list-group-container a:hover {
-        text-decoration: none; }
-      main #homeChapters aside .list-group .list-group-container a .list-group-item-heading {
-        text-align: center; }
-        main #homeChapters aside .list-group .list-group-container a .list-group-item-heading:hover {
-          color: #2B96CC;
-          transition: 0.4s; }
+      display: inline-flex;
+      max-width: 49%;
+      min-height: 660px; }
+      main .home-content #homeChapters article .card {
+        transition: .3s; }
+        main .home-content #homeChapters article .card:hover {
+          box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.12); }
+        main .home-content #homeChapters article .card .headerChapter {
+          padding: 10px 15px;
+          text-align: center; }
+          main .home-content #homeChapters article .card .headerChapter h2 {
+            color: #007bff; }
+            main .home-content #homeChapters article .card .headerChapter h2:focus, main .home-content #homeChapters article .card .headerChapter h2:hover {
+              color: #2B96CC;
+              text-decoration: none; }
+        main .home-content #homeChapters article .card .blog-thumb img {
+          width: 100%; }
+        main .home-content #homeChapters article .card .card-block {
+          padding: 10px 15px;
+          text-align: justify;
+          flex: 1; }
+          main .home-content #homeChapters article .card .card-block .meta-info {
+            margin-bottom: 1.5rem; }
+          main .home-content #homeChapters article .card .card-block .blog-content.home-blog p {
+            margin-bottom: 10px; }
+        main .home-content #homeChapters article .card .card-footer {
+          text-align: center; }
+          main .home-content #homeChapters article .card .card-footer .link-box.home-blog-link a {
+            font-size: 14px; }
+          main .home-content #homeChapters article .card .card-footer .link-box a {
+            color: white;
+            font-weight: 600; }
+    main .home-content #homeChapters aside .card-header {
+      text-align: center;
+      color: #007bff; }
+      main .home-content #homeChapters aside .card-header:hover {
+        color: #2B96CC;
+        transition: 0.4s; }
+    main .home-content #homeChapters aside .list-group {
+      padding: 0.75rem 1.25rem; }
+      main .home-content #homeChapters aside .list-group .list-group-about-container {
+        text-align: justify;
+        margin-bottom: 1rem; }
+      main .home-content #homeChapters aside .list-group .list-group-container {
+        text-align: justify;
+        margin-bottom: 1rem;
+        border-bottom: solid 1px #ddd; }
+        main .home-content #homeChapters aside .list-group .list-group-container a {
+          color: black; }
+          main .home-content #homeChapters aside .list-group .list-group-container a:hover {
+            text-decoration: none; }
+          main .home-content #homeChapters aside .list-group .list-group-container a .list-group-item-heading {
+            text-align: center; }
+            main .home-content #homeChapters aside .list-group .list-group-container a .list-group-item-heading:hover {
+              color: #2B96CC;
+              transition: 0.4s; }
 
 @media (min-width: 767px) and (max-width: 990px) {
-  main #homeChapters .container {
+  main .home-content #homeChapters .container {
     max-width: 767px; } }
 
 @media (max-width: 990px) {
-  main #homeChapters article {
+  main .home-content #homeChapters article {
     max-width: 100%; } }
 
 @media (max-width: 834px) {
-  main #home {
+  main .home-content #home {
     margin-top: -6.3rem; } }
 
-#sectionAbout .textHeaderAbout {
+.textHeaderAbout {
   text-align: center;
   margin-bottom: 2rem; }
-  #sectionAbout .textHeaderAbout .section-title {
+  .textHeaderAbout .section-title {
     position: relative;
     margin-bottom: 45px;
     display: inline-block;
     font-weight: 600;
     color: black;
     line-height: 1; }
-  #sectionAbout .textHeaderAbout .section-title::before {
+  .textHeaderAbout .section-title::before {
     content: "";
     position: absolute;
     left: 50%;
@@ -609,26 +617,26 @@ main #homeChapters aside .list-group {
     background: #007bff;
     bottom: -25px;
     margin-left: -30px; }
-  #sectionAbout .textHeaderAbout p {
+  .textHeaderAbout p {
     color: black !important; }
 
-#sectionAbout .about-mf #about {
+.about-mf #about {
   position: inherit;
   margin-bottom: 3rem; }
-  #sectionAbout .about-mf #about .blockText {
+  .about-mf #about .blockText {
     text-align: justify; }
-  #sectionAbout .about-mf #about .blockImg {
+  .about-mf #about .blockImg {
     padding: 0 25px 0 0; }
-    #sectionAbout .about-mf #about .blockImg .item {
+    .about-mf #about .blockImg .item {
       position: relative;
       margin: 0 0 30px; }
-      #sectionAbout .about-mf #about .blockImg .item .item-meta {
+      .about-mf #about .blockImg .item .item-meta {
         width: 100%;
         border-top: 1px solid #363636;
         border-collapse: separate;
         border-spacing: 0;
         margin-top: 15px; }
-        #sectionAbout .about-mf #about .blockImg .item .item-meta th, #sectionAbout .about-mf #about .blockImg .item .item-meta td {
+        .about-mf #about .blockImg .item .item-meta th, .about-mf #about .blockImg .item .item-meta td {
           font-size: 11px;
           letter-spacing: 0.1em;
           text-transform: uppercase;
@@ -638,40 +646,40 @@ main #homeChapters aside .list-group {
           border-bottom: 1px solid #363636;
           border-left: 1px solid #363636;
           width: 50%; }
-        #sectionAbout .about-mf #about .blockImg .item .item-meta td {
+        .about-mf #about .blockImg .item .item-meta td {
           font-weight: 400;
           border-right: 1px solid #363636; }
 
 @media (min-width: 834px) {
-  #sectionAbout .about-mf #about .blockText {
+  .about-mf #about .blockText {
     right: 33.33333333%;
     width: 66.66666667%;
     float: left; }
-  #sectionAbout .about-mf #about .blockImg {
+  .about-mf #about .blockImg {
     width: 33.33333333%;
     left: 66.66666667%;
     float: left; } }
 
 @media (max-width: 833px) {
-  #sectionAbout .about-mf #about .blockText {
+  .about-mf #about .blockText {
     flex: 0 0 100%;
     max-width: 100%; }
-  #sectionAbout .about-mf #about .blockImg {
+  .about-mf #about .blockImg {
     padding: 0 15px;
     flex: 0 0 100%;
     max-width: 100%; } }
 
-#allChapters .textHeaderChapters {
+.textHeaderChapters {
   text-align: center;
   margin-bottom: 2rem; }
-  #allChapters .textHeaderChapters .section-title {
+  .textHeaderChapters .section-title {
     position: relative;
     margin-bottom: 45px;
     display: inline-block;
     font-weight: 600;
     color: black;
     line-height: 1; }
-  #allChapters .textHeaderChapters .section-title::before {
+  .textHeaderChapters .section-title::before {
     content: "";
     position: absolute;
     left: 50%;
@@ -680,73 +688,73 @@ main #homeChapters aside .list-group {
     background: #007bff;
     bottom: -25px;
     margin-left: -30px; }
-  #allChapters .textHeaderChapters p {
+  .textHeaderChapters p {
     color: black !important; }
 
-#allChapters article {
+article {
   margin-bottom: 5rem;
   text-align: justify; }
-  #allChapters article .blog-wrapper {
+  article .blog-wrapper {
     background: #fff;
     overflow: hidden;
     padding: 20px; }
-    #allChapters article .blog-wrapper h2 {
+    article .blog-wrapper h2 {
       color: #007bff; }
-      #allChapters article .blog-wrapper h2:focus, #allChapters article .blog-wrapper h2:hover {
+      article .blog-wrapper h2:focus, article .blog-wrapper h2:hover {
         color: #2B96CC;
         text-decoration: none; }
-    #allChapters article .blog-wrapper .blog-thumb {
+    article .blog-wrapper .blog-thumb {
       margin-bottom: 15px; }
-      #allChapters article .blog-wrapper .blog-thumb img {
+      article .blog-wrapper .blog-thumb img {
         width: 100%; }
-    #allChapters article .blog-wrapper .meta-info {
+    article .blog-wrapper .meta-info {
       margin-bottom: 1.5rem; }
-    #allChapters article .blog-wrapper .blog-content.home-blog p {
+    article .blog-wrapper .blog-content.home-blog p {
       margin-bottom: 10px; }
-    #allChapters article .blog-wrapper .link-box.home-blog-link a {
+    article .blog-wrapper .link-box.home-blog-link a {
       font-size: 14px; }
-    #allChapters article .blog-wrapper .link-box a {
+    article .blog-wrapper .link-box a {
       color: white;
       font-weight: 600; }
-  #allChapters article .home-blog-wrapper {
+  article .home-blog-wrapper {
     transition: .3s; }
-  #allChapters article .blog-wrapper.home-blog-wrapper:hover {
+  article .blog-wrapper.home-blog-wrapper:hover {
     box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.12); }
 
-#allChapters aside .card-header {
+aside .card-header {
   text-align: center;
   color: #007bff; }
-  #allChapters aside .card-header:hover {
+  aside .card-header:hover {
     color: #2B96CC;
     transition: 0.4s; }
 
-#allChapters aside .list-group {
+aside .list-group {
   padding: 0.75rem 1.25rem; }
-  #allChapters aside .list-group .list-group-about-container {
+  aside .list-group .list-group-about-container {
     text-align: justify;
     margin-bottom: 1rem; }
-  #allChapters aside .list-group .list-group-container {
+  aside .list-group .list-group-container {
     text-align: justify;
     margin-bottom: 1rem;
     border-bottom: solid 1px #ddd; }
-    #allChapters aside .list-group .list-group-container a {
+    aside .list-group .list-group-container a {
       color: black; }
-      #allChapters aside .list-group .list-group-container a:hover {
+      aside .list-group .list-group-container a:hover {
         text-decoration: none; }
-      #allChapters aside .list-group .list-group-container a .list-group-item-heading {
+      aside .list-group .list-group-container a .list-group-item-heading {
         text-align: center; }
-        #allChapters aside .list-group .list-group-container a .list-group-item-heading:hover {
+        aside .list-group .list-group-container a .list-group-item-heading:hover {
           color: #2B96CC;
           transition: 0.4s; }
 
 @media (min-width: 767px) and (max-width: 990px) {
-  #allChapters .container {
+  .all-chapters .container {
     max-width: 767px; } }
 
-#showChapters .textHeaderShowChapters {
+.textHeaderShowChapters {
   text-align: center;
   margin-bottom: 2rem; }
-  #showChapters .textHeaderShowChapters .section-title {
+  .textHeaderShowChapters .section-title {
     position: relative;
     margin-bottom: 45px;
     display: inline-block;
@@ -754,22 +762,22 @@ main #homeChapters aside .list-group {
     color: black;
     line-height: 1; }
 
-#showChapters article {
+article {
   text-align: justify; }
-  #showChapters article .card {
+  article .card {
     transition: .3s;
     background-color: transparent; }
-    #showChapters article .card:hover {
+    article .card:hover {
       box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.12); }
-    #showChapters article .card .blog-thumb {
+    article .card .blog-thumb {
       padding: 15px;
       background-color: white;
       border-radius: 0.25rem 0.25rem 0 0; }
-      #showChapters article .card .blog-thumb a:hover {
+      article .card .blog-thumb a:hover {
         text-decoration: none; }
-      #showChapters article .card .blog-thumb a img {
+      article .card .blog-thumb a img {
         width: 100%; }
-      #showChapters article .card .blog-thumb a .meta-info {
+      article .card .blog-thumb a .meta-info {
         position: relative;
         height: 35px;
         margin: -35px 0 0 0;
@@ -777,79 +785,79 @@ main #homeChapters aside .list-group {
         color: #ccc;
         line-height: 35px;
         padding: 0 15px; }
-    #showChapters article .card .card-block {
+    article .card .card-block {
       text-align: justify; }
-      #showChapters article .card .card-block .card-block-container {
+      article .card .card-block .card-block-container {
         background-color: white;
         border-radius: 0 0 0.25rem 0.25rem; }
-        #showChapters article .card .card-block .card-block-container .headerChapter .card-header {
+        article .card .card-block .card-block-container .headerChapter .card-header {
           padding: 7px 1.25rem;
           background-color: rgba(0, 0, 0, 0.03);
           border-bottom: 1px solidrgba(0, 0, 0, 0.125);
           border-left: 5px solid #007bff; }
-          #showChapters article .card .card-block .card-block-container .headerChapter .card-header a:hover {
+          article .card .card-block .card-block-container .headerChapter .card-header a:hover {
             color: #2B96CC;
             transition: 0.4s;
             text-decoration: none; }
-        #showChapters article .card .card-block .card-block-container .blog-content.home-blog p {
+        article .card .card-block .card-block-container .blog-content.home-blog p {
           padding: 0 1.5rem 1rem 1.5rem; }
-        #showChapters article .card .card-block .card-block-container .card-footer {
+        article .card .card-block .card-block-container .card-footer {
           min-height: 50px; }
 
-#showChapters aside .card-header {
+aside .card-header {
   text-align: center;
   color: #007bff; }
-  #showChapters aside .card-header:hover {
+  aside .card-header:hover {
     color: #2B96CC;
     transition: 0.4s; }
 
-#showChapters aside .list-group {
+aside .list-group {
   padding: 0.75rem 1.25rem; }
-  #showChapters aside .list-group .list-group-about-container {
+  aside .list-group .list-group-about-container {
     text-align: justify;
     margin-bottom: 1rem; }
-  #showChapters aside .list-group .list-group-container {
+  aside .list-group .list-group-container {
     text-align: justify;
     margin-bottom: 1rem;
     border-bottom: solid 1px #ddd; }
-    #showChapters aside .list-group .list-group-container a {
+    aside .list-group .list-group-container a {
       color: black; }
-      #showChapters aside .list-group .list-group-container a:hover {
+      aside .list-group .list-group-container a:hover {
         text-decoration: none; }
-      #showChapters aside .list-group .list-group-container a .list-group-item-heading {
+      aside .list-group .list-group-container a .list-group-item-heading {
         text-align: center; }
-        #showChapters aside .list-group .list-group-container a .list-group-item-heading:hover {
+        aside .list-group .list-group-container a .list-group-item-heading:hover {
           color: #2B96CC;
           transition: 0.4s; }
 
 @media (min-width: 767px) and (max-width: 990px) {
-  #showChapters .container {
+  .show-chapters .container {
     max-width: 767px; } }
 
 @media (max-width: 480px) {
-  #showChapters article .card .blog-thumb a .meta-info {
+  article .card .blog-thumb a .meta-info {
     height: 65px;
     margin: -65px 0 0 0; } }
 
-.updateChapters .textHeaderUpdateChapter {
+.textHeaderUpdateChapter {
   text-align: center;
   margin-bottom: 2rem; }
-  .updateChapters .textHeaderUpdateChapter .section-title {
+  .textHeaderUpdateChapter .section-title {
     color: black;
     margin-bottom: 15px; }
 
-.updateChapters #infobox-update-chapter {
+#infobox-update-chapter {
   z-index: 0; }
-  .updateChapters #infobox-update-chapter .boxContainer {
+  #infobox-update-chapter .boxContainer {
     padding: 3rem 3.25rem; }
-    .updateChapters #infobox-update-chapter .boxContainer #imageCard {
+    #infobox-update-chapter .boxContainer #imageCard {
       width: 100%; }
-    .updateChapters #infobox-update-chapter .boxContainer #btnUpdate {
+    #infobox-update-chapter .boxContainer #btnUpdate {
       padding: .4rem 1.5rem;
       margin-right: 15px; }
-    .updateChapters #infobox-update-chapter .boxContainer #btnCancel {
+    #infobox-update-chapter .boxContainer #btnCancel {
       padding: .4rem 1.5rem; }
-      .updateChapters #infobox-update-chapter .boxContainer #btnCancel:hover {
+      #infobox-update-chapter .boxContainer #btnCancel:hover {
         transition: all 500ms ease;
         box-shadow: 0 0 0 4px #f9f9f9; }
 
@@ -862,28 +870,28 @@ main #homeChapters aside .list-group {
     border: none; }
 
 @media (max-width: 414px) {
-  .updateChapters #infobox-update-chapter .boxContainer {
+  #infobox-update-chapter .boxContainer {
     padding: 3rem 1.25rem; } }
 
-.addChapters .textHeaderAddChapter {
+.textHeaderAddChapter {
   text-align: center;
   margin-bottom: 2rem; }
-  .addChapters .textHeaderAddChapter .section-title {
+  .textHeaderAddChapter .section-title {
     color: black;
     margin-bottom: 15px; }
 
-.addChapters #infobox-add-chapter {
+#infobox-add-chapter {
   z-index: 0; }
-  .addChapters #infobox-add-chapter .boxContainer {
+  #infobox-add-chapter .boxContainer {
     padding: 3rem 3.25rem; }
-    .addChapters #infobox-add-chapter .boxContainer #imageCard {
+    #infobox-add-chapter .boxContainer #imageCard {
       width: 100%; }
-    .addChapters #infobox-add-chapter .boxContainer #btnAdd {
+    #infobox-add-chapter .boxContainer #btnAdd {
       padding: .4rem 1.5rem;
       margin-right: 15px; }
-    .addChapters #infobox-add-chapter .boxContainer #btnCancel {
+    #infobox-add-chapter .boxContainer #btnCancel {
       padding: .4rem 1.5rem; }
-      .addChapters #infobox-add-chapter .boxContainer #btnCancel:hover {
+      #infobox-add-chapter .boxContainer #btnCancel:hover {
         transition: all 500ms ease;
         box-shadow: 0 0 0 4px #f9f9f9; }
 
@@ -896,54 +904,54 @@ main #homeChapters aside .list-group {
     border: none; }
 
 @media (max-width: 414px) {
-  .addChapters #infobox-add-chapter .boxContainer {
+  #infobox-add-chapter .boxContainer {
     padding: 3rem 1.25rem; } }
 
-#commentChapter .card-block h3 {
+.card-block h3 {
   color: black; }
 
-#commentChapter .card-block .card-block-container .panel {
+.card-block .card-block-container .panel {
   margin-bottom: 20px;
   background-color: #fff;
   border: 1px solid transparent;
   border-radius: 4px; }
 
-#commentChapter .card-block .card-block-container .panel-white {
+.card-block .card-block-container .panel-white {
   border: 1px solid #dddddd; }
 
-#commentChapter .card-block .card-block-container .post .post-heading {
+.card-block .card-block-container .post .post-heading {
   height: 95px;
   padding: 20px 15px;
   display: flex;
   align-items: center;
   justify-content: space-between; }
-  #commentChapter .card-block .card-block-container .post .post-heading .pull-left {
+  .card-block .card-block-container .post .post-heading .pull-left {
     height: 55px; }
-    #commentChapter .card-block .card-block-container .post .post-heading .pull-left .comment-author {
+    .card-block .card-block-container .post .post-heading .pull-left .comment-author {
       margin-bottom: 4px; }
-      #commentChapter .card-block .card-block-container .post .post-heading .pull-left .comment-author .avatar {
+      .card-block .card-block-container .post .post-heading .pull-left .comment-author .avatar {
         width: 55px;
         height: 55px;
         display: block;
         margin-right: 15px;
         float: left; }
-  #commentChapter .card-block .card-block-container .post .post-heading .meta .title {
+  .card-block .card-block-container .post .post-heading .meta .title {
     margin-bottom: 0; }
-  #commentChapter .card-block .card-block-container .post .post-heading .meta .title a {
+  .card-block .card-block-container .post .post-heading .meta .title a {
     color: black; }
-    #commentChapter .card-block .card-block-container .post .post-heading .meta .title a:hover {
+    .card-block .card-block-container .post .post-heading .meta .title a:hover {
       color: gainsboro; }
-  #commentChapter .card-block .card-block-container .post .post-heading .meta .time {
+  .card-block .card-block-container .post .post-heading .meta .time {
     margin-top: 8px;
     color: #999; }
-  #commentChapter .card-block .card-block-container .post .post-heading .dropdownOptions {
+  .card-block .card-block-container .post .post-heading .dropdownOptions {
     font-size: 18px;
     width: 18px;
     text-align: center;
     cursor: pointer; }
-    #commentChapter .card-block .card-block-container .post .post-heading .dropdownOptions .dropdownListOptions {
+    .card-block .card-block-container .post .post-heading .dropdownOptions .dropdownListOptions {
       display: none; }
-    #commentChapter .card-block .card-block-container .post .post-heading .dropdownOptions.active .dropdownListOptions.active {
+    .card-block .card-block-container .post .post-heading .dropdownOptions.active .dropdownListOptions.active {
       position: absolute;
       display: flex;
       flex-direction: column;
@@ -956,67 +964,69 @@ main #homeChapters aside .list-group {
       max-width: 150px;
       width: 100%;
       list-style: none; }
-      #commentChapter .card-block .card-block-container .post .post-heading .dropdownOptions.active .dropdownListOptions.active .dropdownItemOptions {
+      .card-block .card-block-container .post .post-heading .dropdownOptions.active .dropdownListOptions.active .dropdownItemOptions {
         padding: 0 10px;
         display: flex;
         justify-content: flex-start; }
-        #commentChapter .card-block .card-block-container .post .post-heading .dropdownOptions.active .dropdownListOptions.active .dropdownItemOptions:hover {
+        .card-block .card-block-container .post .post-heading .dropdownOptions.active .dropdownListOptions.active .dropdownItemOptions:hover {
           background-color: #dfdfdf; }
-        #commentChapter .card-block .card-block-container .post .post-heading .dropdownOptions.active .dropdownListOptions.active .dropdownItemOptions a span {
+        .card-block .card-block-container .post .post-heading .dropdownOptions.active .dropdownListOptions.active .dropdownItemOptions a span {
           margin-left: 10px; }
 
-#commentChapter .card-block .card-block-container .post .post-description {
+.card-block .card-block-container .post .post-description {
   padding: 15px; }
-  #commentChapter .card-block .card-block-container .post .post-description p {
+  .card-block .card-block-container .post .post-description p {
     font-size: 14px; }
-  #commentChapter .card-block .card-block-container .post .post-description .stats {
+  .card-block .card-block-container .post .post-description .stats {
     margin-top: 20px; }
-    #commentChapter .card-block .card-block-container .post .post-description .stats .stat-item {
+    .card-block .card-block-container .post .post-description .stats .stat-item {
       display: inline-block;
       margin-right: 15px; }
-    #commentChapter .card-block .card-block-container .post .post-description .stats a {
+    .card-block .card-block-container .post .post-description .stats a {
       text-decoration: none; }
-      #commentChapter .card-block .card-block-container .post .post-description .stats a .icon {
+      .card-block .card-block-container .post .post-description .stats a .icon {
         margin-right: 8px; }
-    #commentChapter .card-block .card-block-container .post .post-description .stats .btn-default {
+    .card-block .card-block-container .post .post-description .stats .btn-default {
       color: #333;
       background-color: #fff;
       border-color: #ccc; }
-      #commentChapter .card-block .card-block-container .post .post-description .stats .btn-default:hover {
+      .card-block .card-block-container .post .post-description .stats .btn-default:hover {
         background-color: gainsboro; }
 
-#addComments {
-  padding: 1.25rem 0; }
-  #addComments #comment_add h3 {
-    color: black; }
-  #addComments #comment_add .card-block-container textarea {
-    height: 150px; }
-  #addComments #comment_add .card-block-container #btnAddComment {
-    padding: 0; }
+#comment_add h3 {
+  color: black; }
 
-main .update-comment {
-  flex: 1;
-  display: flex; }
-  main .update-comment #comment_post {
-    height: 100%;
-    justify-content: center; }
-    main .update-comment #comment_post #btnUpdateComment {
-      padding: .4rem 1.5rem; }
+#comment_add .card-block-container textarea {
+  height: 150px; }
+
+#comment_add .card-block-container #btnAddComment {
+  padding: 0; }
+
+main #comment_post {
+  height: 100%;
+  justify-content: center; }
+  main #comment_post .textHeaderComment {
+    margin-bottom: 2rem; }
+    main #comment_post .textHeaderComment .section-title {
+      margin-bottom: 32px;
+      line-height: 1; }
+  main #comment_post #btnUpdateComment {
+    padding: .4rem 1.5rem; }
 
 /*======================================
 //--//-->   CONTACT
 ======================================*/
-#sectionContact .textHeaderContact {
+.textHeaderContact {
   text-align: center;
   margin-bottom: 2rem; }
-  #sectionContact .textHeaderContact .section-title {
+  .textHeaderContact .section-title {
     position: relative;
     margin-bottom: 45px;
     display: inline-block;
     font-weight: 600;
     color: black;
     line-height: 1; }
-  #sectionContact .textHeaderContact .section-title::before {
+  .textHeaderContact .section-title::before {
     content: "";
     position: absolute;
     left: 50%;
@@ -1025,55 +1035,55 @@ main .update-comment {
     background: #007bff;
     bottom: -25px;
     margin-left: -30px; }
-  #sectionContact .textHeaderContact p {
+  .textHeaderContact p {
     color: black !important; }
 
-#sectionContact .contact-mf #contact {
+.contact-mf #contact {
   position: inherit;
   margin-bottom: 0; }
-  #sectionContact .contact-mf #contact .block-info .list-info-contact {
+  .contact-mf #contact .block-info .list-info-contact {
     margin-bottom: 10px; }
-  #sectionContact .contact-mf #contact .block-form form {
+  .contact-mf #contact .block-form form {
     border-radius: 5px;
     max-width: 700px;
     width: 100%;
     margin: 5% auto;
     background-color: #FFFFFF;
     overflow: hidden; }
-    #sectionContact .contact-mf #contact .block-form form #sendmessage {
+    .contact-mf #contact .block-form form #sendmessage {
       color: #0070FF;
       border: 1px solid #0078ff;
       display: none;
       text-align: center;
       padding: 15px;
       margin-bottom: 15px; }
-    #sectionContact .contact-mf #contact .block-form form #errormessage {
+    .contact-mf #contact .block-form form #errormessage {
       color: #FF0000;
       display: none;
       border: 1px solid red;
       text-align: center;
       padding: 15px;
       margin-bottom: 15px; }
-    #sectionContact .contact-mf #contact .block-form form #sendmessage.show {
+    .contact-mf #contact .block-form form #sendmessage.show {
       display: block; }
-    #sectionContact .contact-mf #contact .block-form form #errormessage.show {
+    .contact-mf #contact .block-form form #errormessage.show {
       display: block; }
-    #sectionContact .contact-mf #contact .block-form form .show {
+    .contact-mf #contact .block-form form .show {
       display: block; }
-    #sectionContact .contact-mf #contact .block-form form .inputGroupContainer {
+    .contact-mf #contact .block-form form .inputGroupContainer {
       padding-right: 0;
       padding-left: 0;
       width: 100%; }
-      #sectionContact .contact-mf #contact .block-form form .inputGroupContainer .input-group {
+      .contact-mf #contact .block-form form .inputGroupContainer .input-group {
         position: relative;
         display: flex;
         border-collapse: separate;
         width: 100%;
         margin-bottom: 1rem; }
-        #sectionContact .contact-mf #contact .block-form form .inputGroupContainer .input-group input {
+        .contact-mf #contact .block-form form .inputGroupContainer .input-group input {
           height: 42px;
           z-index: 0; }
-        #sectionContact .contact-mf #contact .block-form form .inputGroupContainer .input-group .icon-case {
+        .contact-mf #contact .block-form form .inputGroupContainer .input-group .icon-case {
           width: 35px;
           float: left;
           border-radius: 5px 0px 0px 5px;
@@ -1084,61 +1094,61 @@ main .update-comment {
           line-height: 40px;
           border: 1px solid #ccc;
           border-right: 0; }
-        #sectionContact .contact-mf #contact .block-form form .inputGroupContainer .input-group .icon-case-textarea {
+        .contact-mf #contact .block-form form .inputGroupContainer .input-group .icon-case-textarea {
           height: auto;
           line-height: 130px; }
-        #sectionContact .contact-mf #contact .block-form form .inputGroupContainer .input-group textarea {
+        .contact-mf #contact .block-form form .inputGroupContainer .input-group textarea {
           z-index: 0; }
-        #sectionContact .contact-mf #contact .block-form form .inputGroupContainer .input-group .validation {
+        .contact-mf #contact .block-form form .inputGroupContainer .input-group .validation {
           color: #FF0000;
           display: none;
           margin: 0 0 20px;
           font-size: 13px; }
-    #sectionContact .contact-mf #contact .block-form form #btn-contact button {
+    .contact-mf #contact .block-form form #btn-contact button {
       padding: .6rem 2.3rem; }
-      #sectionContact .contact-mf #contact .block-form form #btn-contact button .icon-send {
+      .contact-mf #contact .block-form form #btn-contact button .icon-send {
         margin-left: 10px; }
 
 @media (min-width: 834px) {
-  #sectionContact .contact-mf #contact .block-form {
+  .contact-mf #contact .block-form {
     right: 50.4%;
     width: 66.66666667%;
     float: left; }
-  #sectionContact .contact-mf #contact .block-info {
+  .contact-mf #contact .block-info {
     width: 33.33333333%;
     left: 50.5%;
     float: left; } }
 
 @media (max-width: 833px) {
-  #sectionContact .contact-mf #contact .block-form {
+  .contact-mf #contact .block-form {
     flex: 0 0 100%;
     max-width: 100%; }
-    #sectionContact .contact-mf #contact .block-form .block-form-title {
+    .contact-mf #contact .block-form .block-form-title {
       padding-top: 3rem; }
-  #sectionContact .contact-mf #contact .block-info {
+  .contact-mf #contact .block-info {
     padding: 0 15px;
     flex: 0 0 100%;
     max-width: 100%; } }
 
 @media (max-width: 360px) {
-  #sectionContact .contact-mf #contact .block-form {
+  .contact-mf #contact .block-form {
     flex: 0 0 100%;
     max-width: 100%; }
-    #sectionContact .contact-mf #contact .block-form #btn-contact {
+    .contact-mf #contact .block-form #btn-contact {
       padding: 0;
       text-align: center; } }
 
-#register .textHeaderRegister {
+.textHeaderRegister {
   text-align: center;
   margin-bottom: 2rem; }
-  #register .textHeaderRegister .section-title {
+  .textHeaderRegister .section-title {
     position: relative;
     margin-bottom: 45px;
     display: inline-block;
     font-weight: 600;
     color: black;
     line-height: 1; }
-  #register .textHeaderRegister .section-title::before {
+  .textHeaderRegister .section-title::before {
     content: "";
     position: absolute;
     left: 50%;
@@ -1147,41 +1157,41 @@ main .update-comment {
     background: #007bff;
     bottom: -25px;
     margin-left: -30px; }
-  #register .textHeaderRegister .section-subheading {
+  .textHeaderRegister .section-subheading {
     color: black !important; }
 
-#register #infobox-register {
+#infobox-register {
   z-index: 0;
   max-width: 75%;
   margin: 0 auto; }
-  #register #infobox-register .infoRegisterContainer {
+  #infobox-register .infoRegisterContainer {
     border: 1px solid #0000004f;
     margin: 0 15px 1rem 15px;
     position: relative;
     width: 100%;
     padding-right: 15px;
     padding-left: 15px; }
-  #register #infobox-register form {
+  #infobox-register form {
     border-radius: 5px;
     max-width: 100%;
     width: 90%;
     margin: 0 auto;
     background-color: #FFFFFF;
     overflow: hidden; }
-    #register #infobox-register form .inputGroupContainer {
+    #infobox-register form .inputGroupContainer {
       padding-right: 0;
       padding-left: 0;
       width: 100%; }
-      #register #infobox-register form .inputGroupContainer .input-group {
+      #infobox-register form .inputGroupContainer .input-group {
         position: relative;
         display: flex;
         border-collapse: separate;
         width: 100%;
         margin-bottom: 1rem; }
-        #register #infobox-register form .inputGroupContainer .input-group input {
+        #infobox-register form .inputGroupContainer .input-group input {
           height: 42px;
           z-index: 0; }
-        #register #infobox-register form .inputGroupContainer .input-group .icon-case {
+        #infobox-register form .inputGroupContainer .input-group .icon-case {
           width: 35px;
           float: left;
           border-radius: 5px 0px 0px 5px;
@@ -1192,61 +1202,61 @@ main .update-comment {
           line-height: 40px;
           border: 1px solid #ccc;
           border-right: 0; }
-        #register #infobox-register form .inputGroupContainer .input-group .label-register {
+        #infobox-register form .inputGroupContainer .input-group .label-register {
           font-size: 1.25rem;
           width: 100%; }
-    #register #infobox-register form #btn-register button {
+    #infobox-register form #btn-register button {
       padding: .6rem 2.3rem; }
 
 @media (max-width: 766px) {
-  #register #infobox-register {
+  #infobox-register {
     max-width: 100%; } }
 
 @media (max-width: 414px) {
-  #register #infobox-register {
+  #infobox-register {
     max-width: 100%; }
-    #register #infobox-register form {
+    #infobox-register form {
       width: 100%;
       margin: 0; } }
 
-#forget .textHeaderForget {
+.textHeaderForget {
   text-align: center;
   margin-bottom: 2rem; }
-  #forget .textHeaderForget .section-title {
+  .textHeaderForget .section-title {
     color: black;
     margin-bottom: 15px; }
-  #forget .textHeaderForget .section-subheading {
+  .textHeaderForget .section-subheading {
     color: black !important; }
 
-#forget #infobox-forget {
+#infobox-forget {
   z-index: 0; }
-  #forget #infobox-forget .infoForgetContainer {
+  #infobox-forget .infoForgetContainer {
     margin: 0 15px 1rem 15px;
     position: relative;
     width: 100%;
     padding-right: 15px;
     padding-left: 15px; }
-  #forget #infobox-forget form {
+  #infobox-forget form {
     border-radius: 5px;
     max-width: 100%;
     width: 100%;
     margin: 0;
     background-color: #FFFFFF;
     overflow: hidden; }
-    #forget #infobox-forget form .inputGroupContainer {
+    #infobox-forget form .inputGroupContainer {
       padding-right: 0;
       padding-left: 0;
       width: 100%; }
-      #forget #infobox-forget form .inputGroupContainer .input-group {
+      #infobox-forget form .inputGroupContainer .input-group {
         position: relative;
         display: flex;
         border-collapse: separate;
         width: 100%;
         margin-bottom: 1rem; }
-        #forget #infobox-forget form .inputGroupContainer .input-group input {
+        #infobox-forget form .inputGroupContainer .input-group input {
           height: 42px;
           z-index: 0; }
-        #forget #infobox-forget form .inputGroupContainer .input-group .icon-case {
+        #infobox-forget form .inputGroupContainer .input-group .icon-case {
           width: 35px;
           float: left;
           border-radius: 5px 0px 0px 5px;
@@ -1257,69 +1267,69 @@ main .update-comment {
           line-height: 40px;
           border: 1px solid #ccc;
           border-right: 0; }
-        #forget #infobox-forget form .inputGroupContainer .input-group .label-register {
+        #infobox-forget form .inputGroupContainer .input-group .label-register {
           font-size: 1.25rem;
           width: 20%;
           height: 42px;
           line-height: 40px;
           padding-left: 15px; }
-    #forget #infobox-forget form #btn-forget {
+    #infobox-forget form #btn-forget {
       padding-right: 0; }
 
 @media (max-width: 990px) {
-  #forget #infobox-forget form .inputGroupContainer .input-group .label-register {
+  #infobox-forget form .inputGroupContainer .input-group .label-register {
     width: 100%;
     padding-left: 0; }
-  #forget #infobox-forget form #btn-forget {
+  #infobox-forget form #btn-forget {
     text-align: center !important;
     padding-left: 0; } }
 
-#login .textHeaderLogin {
+.textHeaderLogin {
   text-align: center;
   margin-bottom: 2rem; }
-  #login .textHeaderLogin .section-title {
+  .textHeaderLogin .section-title {
     color: black;
     margin-bottom: 15px; }
-  #login .textHeaderLogin .section-subheading {
+  .textHeaderLogin .section-subheading {
     color: black !important; }
 
-#login #infobox-login {
+#infobox-login {
   z-index: 0;
   max-width: 75%;
   margin: 0 auto; }
-  #login #infobox-login .boxContainer {
+  #infobox-login .boxContainer {
     padding: 1.25rem 1.25rem 3rem 1.25rem; }
-    #login #infobox-login .boxContainer .infoForgetContainer {
+    #infobox-login .boxContainer .infoForgetContainer {
       width: 100%;
       text-align: center; }
-      #login #infobox-login .boxContainer .infoForgetContainer .iconContainer {
+      #infobox-login .boxContainer .infoForgetContainer .iconContainer {
         width: 100%;
         font-size: 150px; }
-        #login #infobox-login .boxContainer .infoForgetContainer .iconContainer span i {
+        #infobox-login .boxContainer .infoForgetContainer .iconContainer span i {
           color: #007bff; }
-      #login #infobox-login .boxContainer .infoForgetContainer .description p {
+      #infobox-login .boxContainer .infoForgetContainer .description p {
         font-size: 2.25rem; }
-  #login #infobox-login form {
+  #infobox-login form {
     width: 80%;
     margin: 0 auto;
     border-radius: 5px;
     max-width: 100%;
     background-color: #FFFFFF;
     overflow: hidden; }
-    #login #infobox-login form .inputGroupContainer {
+    #infobox-login form .inputGroupContainer {
       padding-right: 0;
       padding-left: 0;
       width: 100%; }
-      #login #infobox-login form .inputGroupContainer .input-group {
+      #infobox-login form .inputGroupContainer .input-group {
         position: relative;
         display: flex;
         border-collapse: separate;
         width: 100%;
         margin-bottom: 1rem; }
-        #login #infobox-login form .inputGroupContainer .input-group input {
+        #infobox-login form .inputGroupContainer .input-group input {
           height: 42px;
           z-index: 0; }
-        #login #infobox-login form .inputGroupContainer .input-group .icon-case {
+        #infobox-login form .inputGroupContainer .input-group .icon-case {
           width: 35px;
           float: left;
           border-radius: 5px 0px 0px 5px;
@@ -1330,7 +1340,7 @@ main .update-comment {
           line-height: 40px;
           border: 1px solid #ccc;
           border-right: 0; }
-        #login #infobox-login form .inputGroupContainer .input-group .label-login {
+        #infobox-login form .inputGroupContainer .input-group .label-login {
           font-size: 1.25rem;
           width: 100%;
           height: 42px;
@@ -1338,12 +1348,12 @@ main .update-comment {
           display: flex;
           line-height: 37px;
           margin-top: 1rem; }
-          #login #infobox-login form .inputGroupContainer .input-group .label-login input {
+          #infobox-login form .inputGroupContainer .input-group .label-login input {
             margin-right: 10px; }
-    #login #infobox-login form #btn-login {
+    #infobox-login form #btn-login {
       padding-right: 0;
       padding-left: 0; }
-      #login #infobox-login form #btn-login button {
+      #infobox-login form #btn-login button {
         padding: .6rem 2.3rem; }
 
 footer {
@@ -1541,283 +1551,254 @@ section .wrapper {
         width: auto;
         transition: none; } }
 
-.profile {
-  display: flex; }
-  .profile .main-panel {
+.block-edit-profile #btn-profile button {
+  padding: .6rem 1.3rem; }
+
+.block-user .card-user .card-image {
+  margin: auto;
+  margin-top: 2rem; }
+  .block-user .card-user .card-image img {
+    width: 150px;
+    border-radius: 50%;
+    height: 150px; }
+
+.block-user .card-user .card-body {
+  padding: 0; }
+  .block-user .card-user .card-body .author {
+    text-align: center;
+    padding: 1.25rem; }
+    .block-user .card-user .card-body .author .title {
+      font-size: 1.5rem; }
+    .block-user .card-user .card-body .author .username {
+      font-size: 13px;
+      color: #5c6f84; }
+    .block-user .card-user .card-body .author .address-container {
+      color: #5c6f84;
+      display: flex;
+      justify-content: center;
+      align-content: center; }
+      .block-user .card-user .card-body .author .address-container i {
+        font-size: 20px;
+        margin-right: 10px; }
+      .block-user .card-user .card-body .author .address-container .address {
+        font-size: 13px;
+        margin-bottom: 0; }
+  .block-user .card-user .card-body .box {
+    display: flex;
+    flex-wrap: wrap; }
+    .block-user .card-user .card-body .box .box-container {
+      border-bottom: 1px solid #c8cbd3;
+      padding: 12px 1.25rem;
+      width: 100%; }
+      .block-user .card-user .card-body .box .box-container:first-child {
+        border-top: 1px solid #c8cbd3; }
+      .block-user .card-user .card-body .box .box-container span {
+        margin-left: 15px; }
+      .block-user .card-user .card-body .box .box-container i {
+        width: 16px; }
+  .block-user .card-user .card-body .social-reseau {
     width: 100%;
-    margin-bottom: 2rem; }
-    .profile .main-panel .block-edit #btn-profile button {
-      padding: .6rem 1.3rem; }
-    .profile .main-panel .block-user .card-user .card-image {
-      margin: auto;
-      margin-top: 2rem; }
-      .profile .main-panel .block-user .card-user .card-image img {
-        width: 150px;
-        border-radius: 50%;
-        height: 150px; }
-    .profile .main-panel .block-user .card-user .card-body {
-      padding: 0; }
-      .profile .main-panel .block-user .card-user .card-body .author {
-        text-align: center;
-        padding: 1.25rem; }
-        .profile .main-panel .block-user .card-user .card-body .author .title {
-          font-size: 1.5rem; }
-        .profile .main-panel .block-user .card-user .card-body .author .username {
-          font-size: 13px;
-          color: #5c6f84; }
-        .profile .main-panel .block-user .card-user .card-body .author .address-container {
-          color: #5c6f84;
-          display: flex;
-          justify-content: center;
-          align-content: center; }
-          .profile .main-panel .block-user .card-user .card-body .author .address-container i {
-            font-size: 20px;
-            margin-right: 10px; }
-          .profile .main-panel .block-user .card-user .card-body .author .address-container .address {
-            font-size: 13px;
-            margin-bottom: 0; }
-      .profile .main-panel .block-user .card-user .card-body .box {
-        display: flex;
-        flex-wrap: wrap; }
-        .profile .main-panel .block-user .card-user .card-body .box .box-container {
-          border-bottom: 1px solid #c8cbd3;
-          padding: 12px 1.25rem;
-          width: 100%; }
-          .profile .main-panel .block-user .card-user .card-body .box .box-container:first-child {
-            border-top: 1px solid #c8cbd3; }
-          .profile .main-panel .block-user .card-user .card-body .box .box-container span {
-            margin-left: 15px; }
-          .profile .main-panel .block-user .card-user .card-body .box .box-container i {
-            width: 16px; }
-      .profile .main-panel .block-user .card-user .card-body .social-reseau {
+    background-color: rgba(0, 0, 0, 0.03);
+    height: 50px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center; }
+    .block-user .card-user .card-body .social-reseau .social {
+      width: 100%;
+      justify-content: space-between;
+      display: flex;
+      padding: 0 20px;
+      height: 100%;
+      margin: 0; }
+      .block-user .card-user .card-body .social-reseau .social .list-inline-item {
         width: 100%;
-        background-color: rgba(0, 0, 0, 0.03);
-        height: 50px;
-        text-align: center;
         align-items: center;
         display: flex;
         justify-content: center; }
-        .profile .main-panel .block-user .card-user .card-body .social-reseau .social {
-          width: 100%;
-          justify-content: space-between;
-          display: flex;
-          padding: 0 20px;
-          height: 100%;
-          margin: 0; }
-          .profile .main-panel .block-user .card-user .card-body .social-reseau .social .list-inline-item {
-            width: 100%;
-            align-items: center;
-            display: flex;
-            justify-content: center; }
-            .profile .main-panel .block-user .card-user .card-body .social-reseau .social .list-inline-item a {
-              color: black; }
+        .block-user .card-user .card-body .social-reseau .social .list-inline-item a {
+          color: black; }
 
 @media (max-width: 1280px) {
-  .profile .content {
+  .contentProfile {
     max-width: 500px;
     margin: auto; }
-    .profile .content .block-edit {
+    .contentProfile .block-edit-profile {
       margin-top: 2rem;
       right: auto !important; }
-      .profile .content .block-edit .item-container {
+      .contentProfile .block-edit-profile .item-container {
         max-width: 100%;
         flex: 0 0 100%; } }
 
 @media (min-width: 1281px) and (max-width: 1499px) {
-  .profile .content .block-edit {
+  .contentProfile .block-edit-profile {
     right: 33.5%; }
-  .profile .content .block-user {
+  .contentProfile .block-user {
     -ms-flex: 0 0 33.333333%;
     flex: 0 0 33.333333%;
     max-width: 33.333333%;
     left: 66.5%; } }
 
 @media (min-width: 1500px) {
-  .profile .content .block-edit {
+  .contentProfile .block-edit-profile {
     right: 26%; }
-  .profile .content .block-user {
+  .contentProfile .block-user {
     -ms-flex: 0 0 26%;
     flex: 0 0 26%;
     max-width: 26%;
     left: 74%; } }
 
 @media (max-width: 350px) {
-  .profile .main-panel .block-user .card-user .card-body .author .address-container i {
+  .block-user .card-user .card-body .author .address-container i {
     margin-right: 5px; }
-  .profile .main-panel .block-user .card-user .card-body .box .box-container {
+  .block-user .card-user .card-body .box .box-container {
     padding: 12px 0.65rem; }
-  .profile .main-panel .block-edit .card-body {
+  .block-edit-profile .card-body {
     padding: 1.25rem 0.65rem; } }
 
-.settings {
-  display: flex; }
-  .settings .main-panel {
-    width: 100%;
-    margin-bottom: 2rem; }
-    .settings .main-panel .block-edit .card-body-section-title {
+.block-edit-settings .card-body-section-title {
+  font-family: "Helvetica", sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: -0.8;
+  line-height: 1.33;
+  margin: 20px auto;
+  color: #353c52; }
+
+.block-edit-settings .card-body-section-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #c8cbd3;
+  padding-bottom: 24px;
+  flex-wrap: wrap; }
+  .block-edit-settings .card-body-section-box:not(:nth-child(2)) {
+    padding-top: 24px; }
+  .block-edit-settings .card-body-section-box .item-container {
+    font-family: "Helvetica", sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    letter-spacing: normal; }
+    .block-edit-settings .card-body-section-box .item-container .box-label {
       font-family: "Helvetica", sans-serif;
-      font-size: 24px;
-      font-weight: bold;
-      letter-spacing: -0.8;
-      line-height: 1.33;
-      margin: 20px auto;
-      color: #353c52; }
-    .settings .main-panel .block-edit .card-body-section-box {
+      font-size: 12px;
+      font-weight: normal;
+      letter-spacing: normal;
+      line-height: 1.17;
+      color: #c8cbd3;
+      margin: 0 auto; }
+    .block-edit-settings .card-body-section-box .item-container .box-title {
+      font-family: "Helvetica", sans-serif;
+      font-size: 16px;
+      font-weight: normal;
+      letter-spacing: normal;
+      line-height: 1.5;
+      color: #353c52;
+      margin: 6px auto; }
+    .block-edit-settings .card-body-section-box .item-container .box-description {
+      font-family: "Helvetica", sans-serif;
+      font-size: 14px;
+      font-weight: normal;
+      letter-spacing: normal;
+      line-height: 1.29;
+      color: #5c6f84;
+      margin: 6px auto; }
+    .block-edit-settings .card-body-section-box .item-container .btn-change, .block-edit-settings .card-body-section-box .item-container .btn-delete {
+      font-size: 14px;
+      font-weight: 400;
+      letter-spacing: 0;
+      line-height: 18px;
       display: flex;
+      position: relative;
+      justify-content: center;
       align-items: center;
-      justify-content: space-between;
-      border-bottom: 1px solid #c8cbd3;
-      padding-bottom: 24px;
-      flex-wrap: wrap; }
-      .settings .main-panel .block-edit .card-body-section-box:not(:nth-child(2)) {
-        padding-top: 24px; }
-      .settings .main-panel .block-edit .card-body-section-box .item-container {
-        font-family: "Helvetica", sans-serif;
-        font-size: 16px;
-        font-weight: normal;
-        letter-spacing: normal; }
-        .settings .main-panel .block-edit .card-body-section-box .item-container .box-label {
-          font-family: "Helvetica", sans-serif;
-          font-size: 12px;
-          font-weight: normal;
-          letter-spacing: normal;
-          line-height: 1.17;
-          color: #c8cbd3;
-          margin: 0 auto; }
-        .settings .main-panel .block-edit .card-body-section-box .item-container .box-title {
-          font-family: "Helvetica", sans-serif;
-          font-size: 16px;
-          font-weight: normal;
-          letter-spacing: normal;
-          line-height: 1.5;
-          color: #353c52;
-          margin: 6px auto; }
-        .settings .main-panel .block-edit .card-body-section-box .item-container .box-description {
-          font-family: "Helvetica", sans-serif;
-          font-size: 14px;
-          font-weight: normal;
-          letter-spacing: normal;
-          line-height: 1.29;
-          color: #5c6f84;
-          margin: 6px auto; }
-        .settings .main-panel .block-edit .card-body-section-box .item-container .btn-change, .settings .main-panel .block-edit .card-body-section-box .item-container .btn-delete {
-          font-size: 14px;
-          font-weight: 400;
-          letter-spacing: 0;
-          line-height: 18px;
-          display: flex;
-          position: relative;
-          justify-content: center;
-          align-items: center;
-          padding: 8px 12px 6px;
-          border-radius: 50px;
-          height: 32px;
-          overflow: hidden;
-          cursor: pointer;
-          color: #5c6f84;
-          background-color: transparent; }
-          .settings .main-panel .block-edit .card-body-section-box .item-container .btn-change:hover, .settings .main-panel .block-edit .card-body-section-box .item-container .btn-delete:hover {
-            box-shadow: none;
-            color: #353c52; }
-          .settings .main-panel .block-edit .card-body-section-box .item-container .btn-change .icon, .settings .main-panel .block-edit .card-body-section-box .item-container .btn-delete .icon {
-            display: flex;
-            align-items: center;
-            margin-right: 7px; }
+      padding: 8px 12px 6px;
+      border-radius: 50px;
+      height: 32px;
+      overflow: hidden;
+      cursor: pointer;
+      color: #5c6f84;
+      background-color: transparent; }
+      .block-edit-settings .card-body-section-box .item-container .btn-change:hover, .block-edit-settings .card-body-section-box .item-container .btn-delete:hover {
+        box-shadow: none;
+        color: #353c52; }
+      .block-edit-settings .card-body-section-box .item-container .btn-change .icon, .block-edit-settings .card-body-section-box .item-container .btn-delete .icon {
+        display: flex;
+        align-items: center;
+        margin-right: 7px; }
 
-@media (min-width: 1200px) {
-  .profile .block-edit {
-    right: 25%;
-    width: 66.66666667%;
-    float: left; } }
-
-@media (min-width: 920px) and (max-width: 1199px) {
-  .profile .block-edit {
-    right: 33.33333333%;
-    width: 66.66666667%;
-    float: left; } }
-
-@media (max-width: 919px) {
-  .profile .content {
-    max-width: 500px;
-    margin: auto; }
-    .profile .content .block-edit {
-      margin-top: 2rem; }
-      .profile .content .block-edit .item-container {
-        max-width: 100%;
-        flex: 0 0 100%; } }
-
-#delete-account .text-header-delete-account {
+.text-header-delete-account {
   text-align: center;
   margin-bottom: 2rem; }
 
-#delete-account #infobox-delete-account {
+#infobox-delete-account {
   display: flex;
   justify-content: center; }
-  #delete-account #infobox-delete-account .box-shadow-full {
+  #infobox-delete-account .box-shadow-full {
     padding: 0;
     margin-bottom: 0;
     z-index: 0; }
-  #delete-account #infobox-delete-account .infobox-container {
+  #infobox-delete-account .infobox-container {
     padding: 3rem 1.25rem 3rem 1.25rem;
     margin: 0; }
-    #delete-account #infobox-delete-account .infobox-container .info-delete-account-container .icon-container {
+    #infobox-delete-account .infobox-container .info-delete-account-container .icon-container {
       display: flex;
       justify-content: center;
       margin-bottom: 2rem; }
-      #delete-account #infobox-delete-account .infobox-container .info-delete-account-container .icon-container i {
+      #infobox-delete-account .infobox-container .info-delete-account-container .icon-container i {
         font-size: 50px;
         color: red; }
-  #delete-account #infobox-delete-account .btn-card {
+  #infobox-delete-account .btn-card {
     text-align: right; }
-    #delete-account #infobox-delete-account .btn-card #btnCancel {
+    #infobox-delete-account .btn-card #btnCancel {
       padding: .3rem .6rem; }
-    #delete-account #infobox-delete-account .btn-card #btnDeleteAccount {
+    #infobox-delete-account .btn-card #btnDeleteAccount {
       margin-right: 10px; }
 
 @media (max-width: 348px) {
-  #delete-account #infobox-delete-account .btn-card {
+  #infobox-delete-account .btn-card {
     text-align: center; }
-    #delete-account #infobox-delete-account .btn-card #btnCancel {
+    #infobox-delete-account .btn-card #btnCancel {
       margin-top: 10px; } }
 
-#updatePassword .text-header-update-password {
+.text-header-update-password {
   text-align: center;
   margin-bottom: 2rem; }
-  #updatePassword .text-header-update-password .section-title {
+  .text-header-update-password .section-title {
     position: relative;
     margin-bottom: 45px;
     display: inline-block;
     font-weight: 600;
     color: black;
     line-height: 1; }
-  #updatePassword .text-header-update-password .section-subheading {
+  .text-header-update-password .section-subheading {
     color: black !important; }
 
-#updatePassword #infobox-update-password {
+#infobox-update-password {
   z-index: 0;
   max-width: 75%;
   margin: 0 auto; }
-  #updatePassword #infobox-update-password form {
+  #infobox-update-password form {
     border-radius: 5px;
     max-width: 100%;
     width: 90%;
     margin: 0 auto;
     background-color: #FFFFFF;
     overflow: hidden; }
-    #updatePassword #infobox-update-password form .inputGroupContainer {
+    #infobox-update-password form .inputGroupContainer {
       padding-right: 0;
       padding-left: 0;
       width: 100%; }
-      #updatePassword #infobox-update-password form .inputGroupContainer .input-group {
+      #infobox-update-password form .inputGroupContainer .input-group {
         position: relative;
         display: flex;
         border-collapse: separate;
         width: 100%;
         margin-bottom: 1rem; }
-        #updatePassword #infobox-update-password form .inputGroupContainer .input-group input {
+        #infobox-update-password form .inputGroupContainer .input-group input {
           height: 42px;
           z-index: 0; }
-        #updatePassword #infobox-update-password form .inputGroupContainer .input-group .icon-case {
+        #infobox-update-password form .inputGroupContainer .input-group .icon-case {
           width: 35px;
           float: left;
           border-radius: 5px 0px 0px 5px;
@@ -1828,22 +1809,22 @@ section .wrapper {
           line-height: 40px;
           border: 1px solid #ccc;
           border-right: 0; }
-        #updatePassword #infobox-update-password form .inputGroupContainer .input-group .label-register {
+        #infobox-update-password form .inputGroupContainer .input-group .label-register {
           font-size: 1.25rem;
           width: 100%; }
-    #updatePassword #infobox-update-password form #btn-password .btn-update-password {
+    #infobox-update-password form #btn-password .btn-update-password {
       margin-right: 10px; }
-    #updatePassword #infobox-update-password form #btn-password .btn-cancel {
+    #infobox-update-password form #btn-password .btn-cancel {
       padding: .3rem .6rem; }
 
 @media (max-width: 766px) {
-  #updatePassword #infobox-update-password {
+  #infobox-update-password {
     max-width: 100%; } }
 
 @media (max-width: 414px) {
-  #updatePassword #infobox-update-password {
+  #infobox-update-password {
     max-width: 100%; }
-    #updatePassword #infobox-update-password form {
+    #infobox-update-password form {
       width: 100%;
       margin: 0; } }
 
@@ -1853,44 +1834,44 @@ section .wrapper {
     #updatePassword #infobox-update-password #btn-password .btn-cancel {
       margin-top: 10px; } }
 
-#updateEmail .text-header-update-email {
+.text-header-update-email {
   text-align: center;
   margin-bottom: 2rem; }
-  #updateEmail .text-header-update-email .section-title {
+  .text-header-update-email .section-title {
     position: relative;
     margin-bottom: 45px;
     display: inline-block;
     font-weight: 600;
     color: black;
     line-height: 1; }
-  #updateEmail .text-header-update-email .section-subheading {
+  .text-header-update-email .section-subheading {
     color: black !important; }
 
-#updateEmail #infobox-update-email {
+#infobox-update-email {
   z-index: 0;
   max-width: 75%;
   margin: 0 auto; }
-  #updateEmail #infobox-update-email form {
+  #infobox-update-email form {
     border-radius: 5px;
     max-width: 100%;
     width: 90%;
     margin: 0 auto;
     background-color: #FFFFFF;
     overflow: hidden; }
-    #updateEmail #infobox-update-email form .inputGroupContainer {
+    #infobox-update-email form .inputGroupContainer {
       padding-right: 0;
       padding-left: 0;
       width: 100%; }
-      #updateEmail #infobox-update-email form .inputGroupContainer .input-group {
+      #infobox-update-email form .inputGroupContainer .input-group {
         position: relative;
         display: flex;
         border-collapse: separate;
         width: 100%;
         margin-bottom: 1rem; }
-        #updateEmail #infobox-update-email form .inputGroupContainer .input-group input {
+        #infobox-update-email form .inputGroupContainer .input-group input {
           height: 42px;
           z-index: 0; }
-        #updateEmail #infobox-update-email form .inputGroupContainer .input-group .icon-case {
+        #infobox-update-email form .inputGroupContainer .input-group .icon-case {
           width: 35px;
           float: left;
           border-radius: 5px 0px 0px 5px;
@@ -1901,129 +1882,124 @@ section .wrapper {
           line-height: 40px;
           border: 1px solid #ccc;
           border-right: 0; }
-        #updateEmail #infobox-update-email form .inputGroupContainer .input-group .label-register {
+        #infobox-update-email form .inputGroupContainer .input-group .label-register {
           font-size: 1.25rem;
           width: 100%; }
-    #updateEmail #infobox-update-email form #btn-email .btn-update-email {
+    #infobox-update-email form #btn-email .btn-update-email {
       margin-right: 10px; }
-    #updateEmail #infobox-update-email form #btn-email .btn-cancel {
+    #infobox-update-email form #btn-email .btn-cancel {
       padding: .3rem .6rem; }
 
 @media (max-width: 766px) {
-  #updateEmail #infobox-update-email {
+  #infobox-update-email {
     max-width: 100%; } }
 
 @media (max-width: 414px) {
-  #updateEmail #infobox-update-email {
+  #infobox-update-email {
     max-width: 100%; }
-    #updateEmail #infobox-update-email form {
+    #infobox-update-email form {
       width: 100%;
       margin: 0; } }
 
 @media (max-width: 384px) {
-  #updateEmail #infobox-update-email #btn-email {
+  #infobox-update-email #btn-email {
     text-align: center; }
-    #updateEmail #infobox-update-email #btn-email .btn-cancel {
+    #infobox-update-email #btn-email .btn-cancel {
       margin-top: 10px; } }
 
-.chapterList {
+.block-edit-chapter-list .card-header {
   display: flex;
-  flex: 1; }
-  .chapterList .main-panel {
-    width: 100%;
-    margin-bottom: 2rem; }
-    .chapterList .main-panel .block-edit .card-header {
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+  .block-edit-chapter-list .card-header .card-header-item-container {
+    display: inline-flex; }
+    .block-edit-chapter-list .card-header .card-header-item-container .btn-add {
+      background-color: #007bff;
+      font-size: 14px;
+      font-weight: 400;
+      letter-spacing: 0;
+      line-height: 18px;
       display: flex;
+      position: relative;
+      justify-content: center;
       align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap; }
-      .chapterList .main-panel .block-edit .card-header .card-header-item-container {
-        display: inline-flex; }
-        .chapterList .main-panel .block-edit .card-header .card-header-item-container .btn-add {
-          background-color: #007bff;
-          font-size: 14px;
-          font-weight: 400;
-          letter-spacing: 0;
-          line-height: 18px;
-          display: flex;
-          position: relative;
-          justify-content: center;
-          align-items: center;
-          padding: 8px 12px 6px;
-          height: 32px;
-          overflow: hidden;
-          cursor: pointer;
-          color: #fff; }
-          .chapterList .main-panel .block-edit .card-header .card-header-item-container .btn-add:hover {
-            box-shadow: none;
-            background-color: #0056b3; }
-          .chapterList .main-panel .block-edit .card-header .card-header-item-container .btn-add .icon {
-            display: flex;
-            align-items: center; }
-    .chapterList .main-panel .block-edit .card-body .card-body-section-box {
+      padding: 8px 12px 6px;
+      height: 32px;
+      overflow: hidden;
+      cursor: pointer;
+      color: #fff; }
+      .block-edit-chapter-list .card-header .card-header-item-container .btn-add:hover {
+        box-shadow: none;
+        background-color: #0056b3; }
+      .block-edit-chapter-list .card-header .card-header-item-container .btn-add .icon {
+        display: flex;
+        align-items: center; }
+
+.block-edit-chapter-list .card-body .card-body-section-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #c8cbd3;
+  padding: 24px 0;
+  flex-wrap: wrap; }
+  .block-edit-chapter-list .card-body .card-body-section-box:first-child {
+    border-top: 1px solid #c8cbd3; }
+  .block-edit-chapter-list .card-body .card-body-section-box .item-container {
+    display: inline-flex;
+    font-family: "Helvetica", sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    letter-spacing: normal; }
+    .block-edit-chapter-list .card-body .card-body-section-box .item-container .box-label {
+      font-family: "Helvetica", sans-serif;
+      font-size: 12px;
+      font-weight: normal;
+      letter-spacing: normal;
+      line-height: 1.17;
+      color: #c8cbd3;
+      margin: 0 auto; }
+    .block-edit-chapter-list .card-body .card-body-section-box .item-container .box-title {
+      font-family: "Helvetica", sans-serif;
+      font-size: 16px;
+      font-weight: normal;
+      letter-spacing: normal;
+      line-height: 1.5;
+      color: #353c52;
+      margin: 6px auto; }
+    .block-edit-chapter-list .card-body .card-body-section-box .item-container .box-description {
+      font-family: "Helvetica", sans-serif;
+      font-size: 14px;
+      font-weight: normal;
+      letter-spacing: normal;
+      line-height: 1.29;
+      color: #5c6f84;
+      margin: 6px auto; }
+    .block-edit-chapter-list .card-body .card-body-section-box .item-container .btn-update, .block-edit-chapter-list .card-body .card-body-section-box .item-container .btn-delete {
+      font-size: 14px;
+      font-weight: 400;
+      letter-spacing: 0;
+      line-height: 18px;
       display: flex;
+      position: relative;
+      justify-content: center;
       align-items: center;
-      justify-content: space-between;
-      border-bottom: 1px solid #c8cbd3;
-      padding: 24px 0;
-      flex-wrap: wrap; }
-      .chapterList .main-panel .block-edit .card-body .card-body-section-box:first-child {
-        border-top: 1px solid #c8cbd3; }
-      .chapterList .main-panel .block-edit .card-body .card-body-section-box .item-container {
-        display: inline-flex;
-        font-family: "Helvetica", sans-serif;
-        font-size: 16px;
-        font-weight: normal;
-        letter-spacing: normal; }
-        .chapterList .main-panel .block-edit .card-body .card-body-section-box .item-container .box-label {
-          font-family: "Helvetica", sans-serif;
-          font-size: 12px;
-          font-weight: normal;
-          letter-spacing: normal;
-          line-height: 1.17;
-          color: #c8cbd3;
-          margin: 0 auto; }
-        .chapterList .main-panel .block-edit .card-body .card-body-section-box .item-container .box-title {
-          font-family: "Helvetica", sans-serif;
-          font-size: 16px;
-          font-weight: normal;
-          letter-spacing: normal;
-          line-height: 1.5;
-          color: #353c52;
-          margin: 6px auto; }
-        .chapterList .main-panel .block-edit .card-body .card-body-section-box .item-container .box-description {
-          font-family: "Helvetica", sans-serif;
-          font-size: 14px;
-          font-weight: normal;
-          letter-spacing: normal;
-          line-height: 1.29;
-          color: #5c6f84;
-          margin: 6px auto; }
-        .chapterList .main-panel .block-edit .card-body .card-body-section-box .item-container .btn-update, .chapterList .main-panel .block-edit .card-body .card-body-section-box .item-container .btn-delete {
-          font-size: 14px;
-          font-weight: 400;
-          letter-spacing: 0;
-          line-height: 18px;
-          display: flex;
-          position: relative;
-          justify-content: center;
-          align-items: center;
-          padding: 8px 12px 6px;
-          height: 32px;
-          overflow: hidden;
-          cursor: pointer;
-          color: #fff; }
-          .chapterList .main-panel .block-edit .card-body .card-body-section-box .item-container .btn-update:hover, .chapterList .main-panel .block-edit .card-body .card-body-section-box .item-container .btn-delete:hover {
-            box-shadow: none; }
-          .chapterList .main-panel .block-edit .card-body .card-body-section-box .item-container .btn-update .icon, .chapterList .main-panel .block-edit .card-body .card-body-section-box .item-container .btn-delete .icon {
-            display: flex;
-            align-items: center; }
-        .chapterList .main-panel .block-edit .card-body .card-body-section-box .item-container .btn-update {
-          background-color: #28a745;
-          margin-right: 7px; }
-          .chapterList .main-panel .block-edit .card-body .card-body-section-box .item-container .btn-update:hover {
-            background-color: #218838; }
-        .chapterList .main-panel .block-edit .card-body .card-body-section-box .item-container .btn-delete {
-          background-color: #fa3e3e; }
-          .chapterList .main-panel .block-edit .card-body .card-body-section-box .item-container .btn-delete:hover {
-            background-color: #dc3545; }
+      padding: 8px 12px 6px;
+      height: 32px;
+      overflow: hidden;
+      cursor: pointer;
+      color: #fff; }
+      .block-edit-chapter-list .card-body .card-body-section-box .item-container .btn-update:hover, .block-edit-chapter-list .card-body .card-body-section-box .item-container .btn-delete:hover {
+        box-shadow: none; }
+      .block-edit-chapter-list .card-body .card-body-section-box .item-container .btn-update .icon, .block-edit-chapter-list .card-body .card-body-section-box .item-container .btn-delete .icon {
+        display: flex;
+        align-items: center; }
+    .block-edit-chapter-list .card-body .card-body-section-box .item-container .btn-update {
+      background-color: #28a745;
+      margin-right: 7px; }
+      .block-edit-chapter-list .card-body .card-body-section-box .item-container .btn-update:hover {
+        background-color: #218838; }
+    .block-edit-chapter-list .card-body .card-body-section-box .item-container .btn-delete {
+      background-color: #fa3e3e; }
+      .block-edit-chapter-list .card-body .card-body-section-box .item-container .btn-delete:hover {
+        background-color: #dc3545; }

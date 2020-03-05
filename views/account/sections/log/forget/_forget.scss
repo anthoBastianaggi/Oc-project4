@@ -1,93 +1,90 @@
-#forget {
-    .textHeaderForget {       
-        text-align: center;        
-        margin-bottom: 2rem;
-        .section-title {
-            color: black;
-            margin-bottom: 15px;
-        }
-        .section-subheading {
-            color: black !important;
-        }
-    }  
+.textHeaderForget {       
+    text-align: center;        
+    margin-bottom: 2rem;
+    .section-title {
+        color: black;
+        margin-bottom: 15px;
+    }
+    .section-subheading {
+        color: black !important;
+    }
+}  
 
-    #infobox-forget {
-        z-index: 0;
-        .infoForgetContainer {       
-            margin: 0 15px 1rem 15px;
-            position: relative;
+#infobox-forget {
+    z-index: 0;
+    .infoForgetContainer {       
+        margin: 0 15px 1rem 15px;
+        position: relative;
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    form {
+        border-radius: 5px;
+        max-width:100%;
+        width:100%;
+        margin: 0;
+        background-color: #FFFFFF;
+        overflow: hidden;
+        .inputGroupContainer {
+            padding-right: 0;
+            padding-left: 0;
             width: 100%;
-            padding-right: 15px;
-            padding-left: 15px;
-        }
-
-        form {
-            border-radius: 5px;
-            max-width:100%;
-            width:100%;
-            margin: 0;
-            background-color: #FFFFFF;
-            overflow: hidden;
-            .inputGroupContainer {
-                padding-right: 0;
-                padding-left: 0;
+            .input-group {
+                position: relative;
+                display: flex;
+                border-collapse: separate;
                 width: 100%;
-                .input-group {
-                    position: relative;
-                    display: flex;
-                    border-collapse: separate;
-                    width: 100%;
-                    margin-bottom: 1rem;
-                    input {
-                        height: 42px;
-                        z-index: 0;
-                    }
-        
-                    .icon-case {
-                        width: 35px;
-                        float: left;
-                        border-radius: 5px 0px 0px 5px;
-                        background:#eeeeee;
-                        height:42px;
-                        position: relative;
-                        text-align: center;
-                        line-height:40px;
-                        border: 1px solid#ccc;
-                        border-right: 0;
-                    }  
-
-                    .label-register {
-                        font-size: 1.25rem;
-                        width: 20%;
-                        height: 42px;
-                        line-height: 40px;
-                        padding-left: 15px;
-                    } 
+                margin-bottom: 1rem;
+                input {
+                    height: 42px;
+                    z-index: 0;
                 }
-            } 
-            #btn-forget {
-                padding-right: 0;
+    
+                .icon-case {
+                    width: 35px;
+                    float: left;
+                    border-radius: 5px 0px 0px 5px;
+                    background:#eeeeee;
+                    height:42px;
+                    position: relative;
+                    text-align: center;
+                    line-height:40px;
+                    border: 1px solid#ccc;
+                    border-right: 0;
+                }  
+
+                .label-register {
+                    font-size: 1.25rem;
+                    width: 20%;
+                    height: 42px;
+                    line-height: 40px;
+                    padding-left: 15px;
+                } 
             }
+        } 
+        #btn-forget {
+            padding-right: 0;
         }
     }
 }
 
-@media(max-width: 990px) {
-    #forget {        
-        #infobox-forget {
-            form {
-                .inputGroupContainer {
-                    .input-group {
-                        .label-register {
-                            width: 100%;
-                            padding-left: 0;
-                        } 
-                    }
-                } 
-                #btn-forget {
-                    text-align: center !important;
-                    padding-left: 0;
+
+@media(max-width: 990px) {       
+    #infobox-forget {
+        form {
+            .inputGroupContainer {
+                .input-group {
+                    .label-register {
+                        width: 100%;
+                        padding-left: 0;
+                    } 
                 }
+            } 
+            #btn-forget {
+                text-align: center !important;
+                padding-left: 0;
             }
         }
     }

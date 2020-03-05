@@ -5,7 +5,7 @@
     ob_start();
 ?>
 
-<section class="module-cover parallax fullscreen text-center">
+<div class="section-content home-content">
     <div id="home">
         <div class="container">
             <div class="row">
@@ -16,8 +16,6 @@
             </div> 
         </div>
     </div>
-</section>
-<section>
     <div id="homeChapters">
         <div class="container">
             <div class="row">
@@ -126,7 +124,7 @@
             </div>
         </div>
     </div>
-</section>
+</div>
 
 <?php 
     // On recupere dans une variable le contenu du tampon 

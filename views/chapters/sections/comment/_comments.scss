@@ -1,122 +1,120 @@
-#commentChapter {
-    .card-block {
-        h3 {
-            color: black;
+.card-block {
+    h3 {
+        color: black;
+    }
+
+    .card-block-container {
+        .panel {
+            margin-bottom: 20px;
+            background-color: #fff;
+            border: 1px solid transparent;
+            border-radius: 4px;            
         }
 
-        .card-block-container {
-            .panel {
-                margin-bottom: 20px;
-                background-color: #fff;
-                border: 1px solid transparent;
-                border-radius: 4px;            
-            }
+        .panel-white {
+            border: 1px solid #dddddd;
+        }
+        .post {
+            .post-heading {
+                height: 95px;
+                padding: 20px 15px;               
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .pull-left {
+                    height: 55px;
+                    .comment-author {
+                        margin-bottom: 4px;
+                        .avatar {
+                            width: 55px;
+                            height: 55px;
+                            display: block;
+                            margin-right: 15px;
+                            float: left;
+                        }
+                    }                    
+                }
+                .meta {
+                    .title {
+                        margin-bottom: 0;
+                    }
+                    .title a {
+                        color: black;
+                        &:hover {
+                            color: gainsboro;
+                        }
+                    }
+                    .time {
+                        margin-top: 8px;
+                        color: #999;
+                    }
+                }
 
-            .panel-white {
-                border: 1px solid #dddddd;
-            }
-            .post {
-                .post-heading {
-                    height: 95px;
-                    padding: 20px 15px;               
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-between;
-                    .pull-left {
-                        height: 55px;
-                        .comment-author {
-                            margin-bottom: 4px;
-                            .avatar {
-                                width: 55px;
-                                height: 55px;
-                                display: block;
-                                margin-right: 15px;
-                                float: left;
-                            }
-                        }                    
+                .dropdownOptions {
+                    font-size: 18px;
+                    width: 18px;
+                    text-align: center;
+                    cursor: pointer;
+                    .dropdownListOptions {
+                        display: none;
                     }
-                    .meta {
-                        .title {
-                            margin-bottom: 0;
-                        }
-                        .title a {
-                            color: black;
-                            &:hover {
-                                color: gainsboro;
-                            }
-                        }
-                        .time {
-                            margin-top: 8px;
-                            color: #999;
-                        }
-                    }
- 
-                    .dropdownOptions {
-                        font-size: 18px;
-                        width: 18px;
-                        text-align: center;
-                        cursor: pointer;
+                    &.active {
                         .dropdownListOptions {
-                            display: none;
-                        }
-                        &.active {
-                            .dropdownListOptions {
-                                &.active {                            
-                                    position: absolute;
+                            &.active {                            
+                                position: absolute;
+                                display: flex;
+                                flex-direction: column;
+                                min-width: 85px;
+                                padding: 0;
+                                border-radius: 3px;
+                                box-shadow: 0 2px 12px 0 rgba(0,0,0,0.2);
+                                background-color: #f0f0f0;
+                                right: 35px;
+                                max-width: 150px;
+                                width: 100%;
+                                list-style: none;
+                                                        
+                                .dropdownItemOptions {
+                                    padding: 0 10px;
                                     display: flex;
-                                    flex-direction: column;
-                                    min-width: 85px;
-                                    padding: 0;
-                                    border-radius: 3px;
-                                    box-shadow: 0 2px 12px 0 rgba(0,0,0,0.2);
-                                    background-color: #f0f0f0;
-                                    right: 35px;
-                                    max-width: 150px;
-                                    width: 100%;
-                                    list-style: none;
-                                                           
-                                    .dropdownItemOptions {
-                                        padding: 0 10px;
-                                        display: flex;
-                                        justify-content: flex-start;
-                                        &:hover {
-                                            background-color: #dfdfdf;
-                                        }
-                                        a {
-                                            span {
-                                                margin-left: 10px;
-                                            }
-                                        }                                       
+                                    justify-content: flex-start;
+                                    &:hover {
+                                        background-color: #dfdfdf;
                                     }
+                                    a {
+                                        span {
+                                            margin-left: 10px;
+                                        }
+                                    }                                       
                                 }
                             }
                         }
                     }
                 }
-                .post-description {
-                    padding: 15px;
-                    p {
-                        font-size: 14px;
+            }
+            .post-description {
+                padding: 15px;
+                p {
+                    font-size: 14px;
+                }
+                .stats {
+                    margin-top: 20px;
+                    .stat-item {
+                        display: inline-block;
+                        margin-right: 15px;
                     }
-                    .stats {
-                        margin-top: 20px;
-                        .stat-item {
-                            display: inline-block;
-                            margin-right: 15px;
+                    a {
+                        text-decoration: none;
+                        .icon {
+                            margin-right: 8px;
                         }
-                        a {
-                            text-decoration: none;
-                            .icon {
-                                margin-right: 8px;
-                            }
-                        }
-                        .btn-default {
-                            color: #333;
-                            background-color: #fff;
-                            border-color: #ccc;
-                            &:hover {
-                                background-color: gainsboro;
-                            }
+                    }
+                    .btn-default {
+                        color: #333;
+                        background-color: #fff;
+                        border-color: #ccc;
+                        &:hover {
+                            background-color: gainsboro;
                         }
                     }
                 }
@@ -125,20 +123,17 @@
     }
 }
 
-#addComments {
-    padding: 1.25rem 0;
-    #comment_add {
-        h3 {
-            color: black;
+#comment_add {
+    h3 {
+        color: black;
+    }
+    .card-block-container {
+        textarea {
+            height: 150px;
         }
-        .card-block-container {
-            textarea {
-                height: 150px;
-            }
 
-            #btnAddComment {
-                padding: 0;
-            }
+        #btnAddComment {
+            padding: 0;
         }
-    }  
-}
+    }
+}  

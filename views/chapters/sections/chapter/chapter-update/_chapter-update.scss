@@ -1,35 +1,33 @@
-.updateChapters {
-    .textHeaderUpdateChapter{
-        text-align: center;        
-        margin-bottom: 2rem;
-        .section-title {
-            color: black;
-            margin-bottom: 15px;
+.textHeaderUpdateChapter{
+    text-align: center;        
+    margin-bottom: 2rem;
+    .section-title {
+        color: black;
+        margin-bottom: 15px;
+    }
+}
+
+#infobox-update-chapter {
+    z-index: 0;
+
+    .boxContainer {
+        padding: 3rem 3.25rem;
+
+        #imageCard {
+            width: 100%;
         }
-    }
-
-    #infobox-update-chapter {
-        z-index: 0;
-
-        .boxContainer {
-            padding: 3rem 3.25rem;
-
-            #imageCard {
-                width: 100%;
+        #btnUpdate {
+            padding: .4rem 1.5rem;
+            margin-right: 15px;
+        }
+        #btnCancel {
+            padding: .4rem 1.5rem;
+            &:hover {
+                transition: all 500ms ease;
+                box-shadow: 0 0 0 4px #f9f9f9;
             }
-            #btnUpdate {
-                padding: .4rem 1.5rem;
-                margin-right: 15px;
-            }
-            #btnCancel {
-                padding: .4rem 1.5rem;
-                &:hover {
-                    transition: all 500ms ease;
-                    box-shadow: 0 0 0 4px #f9f9f9;
-                }
-            }
-        }        
-    }
+        }
+    }        
 }
 
 .mce-notification.mce-in, #mceu_14, #mceu_15 {
@@ -44,11 +42,9 @@
 }
 
 @media(max-width: 414px) {
-    .updateChapters {
-        #infobox-update-chapter {
-            .boxContainer {
-                padding: 3rem 1.25rem;
-            }
+    #infobox-update-chapter {
+        .boxContainer {
+            padding: 3rem 1.25rem;
         }
     }
 }

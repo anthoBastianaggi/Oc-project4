@@ -28,7 +28,7 @@ class Comments {
         global $db;
 
         $reqComments = $db -> prepare( 
-        'SELECT comment.validate AS "validate", comment.id AS "comment", comment.content AS "content", 
+        'SELECT comment.validate AS "validate", comment.id AS "id", comment.content AS "content", 
         comment.created_at AS "created", users.username AS "username" FROM comment 
         INNER JOIN users ON comment.users_id = users.id WHERE ticket_id = ?');
         $reqComments -> execute(array($id));

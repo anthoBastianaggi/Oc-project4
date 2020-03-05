@@ -1,95 +1,93 @@
-#login {
-    .textHeaderLogin {       
-        text-align: center;        
-        margin-bottom: 2rem;
-        .section-title {
-            color: black;
-            margin-bottom: 15px;
-        }
-        .section-subheading {
-            color: black !important;
-        }
-   }
+.textHeaderLogin {       
+    text-align: center;        
+    margin-bottom: 2rem;
+    .section-title {
+        color: black;
+        margin-bottom: 15px;
+    }
+    .section-subheading {
+        color: black !important;
+    }
+}
 
-    #infobox-login {
-        z-index: 0;
-        max-width: 75%;
+#infobox-login {
+    z-index: 0;
+    max-width: 75%;
+    margin: 0 auto;
+    .boxContainer {
+        padding: 1.25rem 1.25rem 3rem 1.25rem;
+        .infoForgetContainer {
+            width: 100%;
+            text-align: center;
+            .iconContainer {
+                width: 100%;
+                font-size: 150px;
+                span i {
+                    color: #007bff;
+                }
+            }
+            .description {
+                p {
+                    font-size: 2.25rem;
+                }                  
+            }
+        }
+    }
+
+    form {
+        width: 80%;
         margin: 0 auto;
-        .boxContainer {
-            padding: 1.25rem 1.25rem 3rem 1.25rem;
-            .infoForgetContainer {
+        border-radius: 5px;
+        max-width:100%;
+        background-color: #FFFFFF;
+        overflow: hidden;
+        .inputGroupContainer {
+            padding-right: 0;
+            padding-left: 0;
+            width: 100%;
+            .input-group {
+                position: relative;
+                display: flex;
+                border-collapse: separate;
                 width: 100%;
-                text-align: center;
-                .iconContainer {
+                margin-bottom: 1rem;
+                input {
+                    height: 42px;
+                    z-index: 0;
+                }
+    
+                .icon-case {
+                    width: 35px;
+                    float: left;
+                    border-radius: 5px 0px 0px 5px;
+                    background:#eeeeee;
+                    height:42px;
+                    position: relative;
+                    text-align: center;
+                    line-height:40px;
+                    border: 1px solid#ccc;
+                    border-right: 0;
+                }  
+
+                .label-login {
+                    font-size: 1.25rem;
                     width: 100%;
-                    font-size: 150px;
-                    span i {
-                        color: #007bff;
+                    height: 42px;
+                    align-content: center;
+                    display: flex;
+                    line-height: 37px;
+                    margin-top: 1rem;
+                    input {
+                        margin-right: 10px;
                     }
-                }
-                .description {
-                    p {
-                        font-size: 2.25rem;
-                    }                  
-                }
+                } 
             }
         }
-
-        form {
-            width: 80%;
-            margin: 0 auto;
-            border-radius: 5px;
-            max-width:100%;
-            background-color: #FFFFFF;
-            overflow: hidden;
-            .inputGroupContainer {
-                padding-right: 0;
-                padding-left: 0;
-                width: 100%;
-                .input-group {
-                    position: relative;
-                    display: flex;
-                    border-collapse: separate;
-                    width: 100%;
-                    margin-bottom: 1rem;
-                    input {
-                        height: 42px;
-                        z-index: 0;
-                    }
-        
-                    .icon-case {
-                        width: 35px;
-                        float: left;
-                        border-radius: 5px 0px 0px 5px;
-                        background:#eeeeee;
-                        height:42px;
-                        position: relative;
-                        text-align: center;
-                        line-height:40px;
-                        border: 1px solid#ccc;
-                        border-right: 0;
-                    }  
-
-                    .label-login {
-                        font-size: 1.25rem;
-                        width: 100%;
-                        height: 42px;
-                        align-content: center;
-                        display: flex;
-                        line-height: 37px;
-                        margin-top: 1rem;
-                        input {
-                            margin-right: 10px;
-                        }
-                    } 
-                }
-            }
-            #btn-login {
-                padding-right: 0;
-                padding-left: 0;
-                button {
-                    padding: .6rem 2.3rem;
-                }
+        #btn-login {
+            padding-right: 0;
+            padding-left: 0;
+            button {
+                padding: .6rem 2.3rem;
             }
         }
     }

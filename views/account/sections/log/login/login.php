@@ -5,7 +5,7 @@
     ob_start();
 ?>
 
-<section id="login" class="content-section text-left">
+<div class="section-content">
     <div class="container">
         <div class="row">
             <div class="col-md-12 col-md-5 textHeaderLogin">
@@ -66,7 +66,8 @@
             </div>
         </div>
     </div>
-</section>
+</div>
+
 <?php 
     // On recupere dans une variable le contenu du tampon 
     $content = ob_get_clean() ;

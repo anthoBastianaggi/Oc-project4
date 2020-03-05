@@ -5,7 +5,7 @@
     ob_start(); 
 ?>
 
-<section class="update-comment">
+<div class="section-content">
     <div class="container">
         <div class="row" id="comment_post">
             <div class="col-md-12 col-md-5 textHeaderComment">
@@ -26,7 +26,7 @@
             </div>
         </div>
     </div>
-</section>
+</div>
 
 <?php 
     // On recupere dans une variable le contenu du tampon 

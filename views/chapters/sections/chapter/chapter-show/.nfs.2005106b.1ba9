@@ -4,7 +4,7 @@
     // Mise en mémoire tampon (rien ne s'affichera)
     ob_start(); 
 ?>
-<div class="section-content show-chapters">
+<section id="showChapters">
     <div class="container">
         <div class="row">
             <div class="col-md-12 col-md-5 textHeaderShowChapters">
@@ -102,6 +102,9 @@
             </aside>
         </div>
     </div>
+</section>
+
+<section id="commentChapter">
     <div class="container">
         <div class="row">        
             <div class="col-md-8">
@@ -181,6 +184,9 @@
             </div>
         </div>
     </div>
+</section>
+
+<section id="addComments">
     <div class="container">
         <div class="row" id="comment_add">        
             <div class="col-md-8">
@@ -204,7 +210,7 @@
             </div>
         </div>
     </div>
-</div>
+</section>
 
 <?php 
     // On recupere dans une variable le contenu du tampon 
