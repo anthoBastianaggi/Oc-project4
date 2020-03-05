@@ -17,7 +17,19 @@ html {
             main {
                 padding-top: 9.3rem;
                 section {
-                    padding: 2rem 0;
+					padding: 0;
+					display: flex;
+					flex: 1;
+
+					.main-panel {
+						width: 100%;
+						margin-bottom: 2rem;
+					}
+
+					.section-content {
+						padding: 2rem 0;
+						width: 100%;
+					}
                 }
             }
         } 

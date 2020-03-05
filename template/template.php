@@ -13,16 +13,17 @@
                     <?php include_once 'views/includes/header/header.php' ?>
                 </header>
                 <main id="main"> 
-                    <?php if(Session::getInstance()->hasFlashes()): ?>
-                        <?php foreach(Session::getInstance()->getFlashes() as $type => $message): ?>
-                            <div class="alert alert-<?= $type; ?>">
-                                <?= $message; ?>
-                            </div>
-                        <?php endforeach; ?>
-                    <?php endif; ?>
-                
-                    <?= $content; ?>
+                    <section>
+                        <?php if(Session::getInstance()->hasFlashes()): ?>
+                            <?php foreach(Session::getInstance()->getFlashes() as $type => $message): ?>
+                                <div class="alert alert-<?= $type; ?>">
+                                    <?= $message; ?>
+                                </div>
+                            <?php endforeach; ?>
+                        <?php endif; ?>
                     
+                        <?= $content; ?>
+                    </section>
                 </main>    
                 <footer id="footer-page" class="page-footer font-small special-color-dark pt-4">
                     <?php include_once 'views/includes/footer/footer.php' ?>

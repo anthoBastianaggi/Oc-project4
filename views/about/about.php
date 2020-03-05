@@ -4,7 +4,7 @@
     // Mise en mémoire tampon (rien ne s'affichera)
     ob_start(); 
 ?>
-<section class="paralax-mf route" id="sectionAbout">
+<div class="section-content">
     <div class="container">
         <div class="row">
             <div class="col-md-12 col-md-5 textHeaderAbout">
@@ -98,7 +98,7 @@
             </div>
         </div>
     </div>
-</section>
+</div>
 
 <?php 
     // On recupere dans une variable le contenu du tampon 

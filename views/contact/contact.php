@@ -6,7 +6,7 @@
 ?>
 
 <!--/ Section Contact-Footer Star /-->
-<section class="paralax-mf route" id="sectionContact">
+<div class="section-content">
     <div class="container">
         <div class="row">
             <div class="col-md-12 col-md-5 textHeaderContact">
@@ -133,7 +133,7 @@
             </div>
         </div>
     </div>
-</section>
+</div>
 <!--/ Section Contact-footer End /-->
 
 <?php 

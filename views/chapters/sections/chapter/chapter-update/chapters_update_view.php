@@ -5,7 +5,7 @@
     ob_start(); 
 ?>
 
-<section class="updateChapters content-section text-left">
+<div class="section-content">
     <div class="container">
         <div class="row">
             <div class="col-md-12 col-md-5 textHeaderUpdateChapter">
@@ -41,7 +41,7 @@
             </div>
         </div>
     </div>
-</section>
+</div>
 
 <?php 
     // On recupere dans une variable le contenu du tampon 

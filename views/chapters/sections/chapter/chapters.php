@@ -5,7 +5,7 @@
     ob_start(); 
 ?>
 
-<section class="paralax-mf route" id="allChapters">
+<div class="section-content all-chapters">
     <div class="container">
         <div class="row">
             <div class="col-md-12 col-md-5 textHeaderChapters">
@@ -106,7 +106,7 @@
             <?php endif; ?>
         </div>
     </div>
-</section>
+</div>
 
 <?php 
     // On recupere dans une variable le contenu du tampon 
