@@ -28,9 +28,9 @@ class Comments {
         global $db;
 
         $reqComments = $db -> prepare( 
-        'SELECT comment.id, content, created_at, users.username AS "users_username" 
-        FROM comment INNER JOIN users ON comment.users_id = users.id
-        WHERE ticket_id = ?');
+        'SELECT comment.validate AS "validate", comment.id AS "comment", comment.content AS "content", 
+        comment.created_at AS "created", users.username AS "username" FROM comment 
+        INNER JOIN users ON comment.users_id = users.id WHERE ticket_id = ?');
         $reqComments -> execute(array($id));
         return $reqComments -> fetchAll();
     }
@@ -80,26 +80,56 @@ class Comments {
         $reqComments->execute(array($usersId, $commentId));
     }
 
-    public function getAllSignaleComment() {
+    public function getAllSignaleCommentValidate() {
         global $db;
 
         $reqComments = $db -> prepare(
-            'SELECT report.id as report_id, writers.username AS "writer", 
-            reporters.username AS "reporter", comment.content AS "content", 
-            ticket.title as "chapter" 
+            'SELECT report.id as report_id, comment.validate AS "validate", 
+            writers.username AS "writer", reporters.username AS "reporter", 
+            comment.content AS "content", ticket.title as "chapter" 
             FROM report INNER JOIN comment ON report.comment_id = comment.id 
             INNER JOIN users as writers ON writers.id = comment.users_id 
             INNER JOIN users as reporters ON reporters.id = report.users_id 
-            INNER JOIN ticket ON comment.ticket_id = ticket.id ');
+            INNER JOIN ticket ON comment.ticket_id = ticket.id WHERE comment.validate IS NOT NULL');
+            // 'SELECT report.id as report_id, report.validate as validate, writers.username AS "writer", 
+            // reporters.username AS "reporter", comment.content AS "content", 
+            // ticket.title as "chapter" 
+            // FROM report INNER JOIN comment ON report.comment_id = comment.id 
+            // INNER JOIN users as writers ON writers.id = comment.users_id 
+            // INNER JOIN users as reporters ON reporters.id = report.users_id 
+            // INNER JOIN ticket ON comment.ticket_id = ticket.id WHERE report.validate IS NOT NULL');
             $reqComments -> execute();
             return $reqComments -> fetchAll();
     }
 
-    public function validateSignaleComment($id) {
+    public function getAllSignaleCommentNotValidate() {
         global $db;
 
-        $reqComments= $db->prepare('UPDATE report SET `validate` = passed WHERE id = ?');
-        $reqComments->execute($id);
+        $reqComments = $db -> prepare(
+            'SELECT report.id as report_id, comment.validate AS "validate", 
+            writers.username AS "writer", reporters.username AS "reporter", 
+            comment.content AS "content", ticket.title as "chapter" FROM report 
+            INNER JOIN comment ON report.comment_id = comment.id 
+            INNER JOIN users as writers ON writers.id = comment.users_id 
+            INNER JOIN users as reporters ON reporters.id = report.users_id 
+            INNER JOIN ticket ON comment.ticket_id = ticket.id 
+            WHERE comment.validate IS NULL'); 
+            // 'SELECT report.id as report_id, comment.validate AS "validate", writers.username AS "writer", 
+            // reporters.username AS "reporter", comment.content AS "content", 
+            // ticket.title as "chapter" 
+            // FROM report INNER JOIN comment ON report.comment_id = comment.id 
+            // INNER JOIN users as writers ON writers.id = comment.users_id 
+            // INNER JOIN users as reporters ON reporters.id = report.users_id 
+            // INNER JOIN ticket ON comment.ticket_id = ticket.id WHERE comment.validate IS NULL');
+            $reqComments -> execute();
+            return $reqComments -> fetchAll();
+    }
+
+    public function validateSignaleComment() {
+        global $db;
+
+        $reqComments= $db->prepare('UPDATE comment SET `validate` = "Ok" WHERE id = :id');
+        $reqComments->execute(array(':id' => $_GET['id']));
     }
 
     public function deleteSignaleComment() {
