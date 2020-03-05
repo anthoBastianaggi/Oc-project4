@@ -126,14 +126,15 @@
                                             <p class="comment-author">
                                                 <img src="http://bootdey.com/img/Content/user_1.jpg" class="img-circle avatar" alt="user profile image">
                                                 <span class="says">Commenté par</span>
-                                                <span class="comment-author-name"><?= $comment['users_username'] ?></span>
+                                                <span class="comment-author-name"><?= $comment['username'] ?></span>
                                             </p>    
-                                            <h6 class="text-muted time">Le <?= date('d-m-Y', strtotime($comment['created_at'])) ?></h6>                          
+                                            <h6 class="text-muted time">Le <?= date('d-m-Y', strtotime($comment['created'])) ?></h6>                          
                                         </div>
+                                        <?php if($comment['validate'] === NULL): ?>
                                         <div class="dropdownOptions">
                                             <i class="fa fa-ellipsis-v"></i>
                                             <ul class="dropdownListOptions">
-                                            <?php if($comment['users_username'] === $_SESSION['auth']->username): ?>
+                                            <?php if($comment['username'] === $_SESSION['auth']->username): ?>
                                                 <li class="dropdownItemOptions">
                                                     <a href="<?= CURRENT_PATH ?>comments?action=updateComment&id=<?= $comment['id'] ?>" class="btn btn-default stat-item">
                                                         <i class="fa fa-pencil"></i>
@@ -146,7 +147,7 @@
                                                         <span>Supprimer</span>
                                                     </a>
                                                 </li>
-                                                <?php elseif($comment['users_username'] !== $_SESSION['auth']->username && $_SESSION['auth']->role_id === "1"): ?>   
+                                                <?php elseif($comment['username'] !== $_SESSION['auth']->username && $_SESSION['auth']->role_id === "1"): ?>   
                                                 <li class="dropdownItemOptions">
                                                     <a href="<?= CURRENT_PATH ?>comments?action=deleteComment&id=<?= $comment['id'] ?>" class="btn btn-default stat-item">
                                                         <i class="fa fa-trash"></i>
@@ -163,10 +164,17 @@
                                                 <?php endif; ?> 
                                             </ul>
                                         </div>
+                                        <?php endif; ?>
                                     </div> 
+                                    <?php if($comment['validate'] === NULL): ?>
                                     <div class="post-description"> 
                                         <p style="white-space:pre-line"><?= $comment['content'] ?></p>                          
-                                    </div>
+                                    </div>  
+                                    <?php else: ?>
+                                        <div class="post-description"> 
+                                        <p style="color: red; white-space: pre-line">Ce commentaire à été signalé et ne peut être lu car le contenu est indésirable.</p>                          
+                                    </div> 
+                                    <?php endif; ?>
                                 </div>   
                             <?php } ?>
                             <?php endif; ?>

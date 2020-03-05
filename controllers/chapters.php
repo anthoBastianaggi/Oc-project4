@@ -7,7 +7,6 @@ function chapters($page) {
     $chapter = new Chapters();
     $allChapters = $chapter->getAllChapters();
     $lastChapters = $chapter->getThreeLastChapters();
-    var_dump($_SESSION['auth']); die;
     include_once 'views/chapters/sections/chapter/'.$page.'.php';
 }
 
