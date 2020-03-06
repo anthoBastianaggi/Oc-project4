@@ -29,31 +29,36 @@ function showChapter($page) {
 }
 
 function addChapter($page) { 
-
-    if(!empty($_POST) && isset($_POST['btnAjoutTicket'])) {      
+    require 'views/includes/bootstrap.php';
+    if(!empty($_POST) && isset($_POST['btnAjoutTicket'])) {  
         if(!empty($_POST['titleTicket']) && !empty($_POST['contentTicket'])) {
             $titleTicket = str_secur($_POST['titleTicket']);
             $contentTicket = str_secur($_POST['contentTicket']);
-
             $chapter = new Chapters();
             $addChapter = $chapter->addChapter($_POST['titleTicket'], $_POST['contentTicket'], $_SESSION['auth']->id);
+            Session::getInstance()->setFlash('success', "Le chapitre a bien été ajouté.");
+            header('Location: /sites/projet4/chapters?action=chapters'); exit;
         }
     }
     include_once 'views/chapters/sections/chapter/chapter-add/'.$page.'_add_view.php';   
 }
 
 function deleteChapter($page) { 
+    require 'views/includes/bootstrap.php';
     $chapter = new Chapters();
     $deleteChapter = $chapter->deleteChapter();
-    header('Location: /projet4/home'); 
+    Session::getInstance()->setFlash('success', "Le chapitre a bien été supprimé.");
+    header('Location: /sites/projet4/chapters?action=chapters');  
 }
 
 function updateChapter($page) {
+    require 'views/includes/bootstrap.php';
     $chapter = new Chapters();
     $showChapter = $chapter->showChapter();
     if(!empty($_POST) && isset($_POST['btnUpdateChapter'])) {
         $updateChapter = $chapter->updateChapter($_POST['titleTicket'], $_POST['contentTicket'], $_GET['id']);
-        header('Location: /projet4/chapters?action=showChapter&id='.$_GET['id']); 
+        Session::getInstance()->setFlash('success', "Le chapitre a bien été mis à jour.");
+        header('Location: /sites/projet4/chapters?action=showChapter&id='.$_GET['id']); exit;
     }
     include_once 'views/chapters/sections/chapter/chapter-update/'.$page.'_update_view.php'; 
 }

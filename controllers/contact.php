@@ -21,6 +21,7 @@ function contact($page) {
                         $message .= ' - email envoyé par : ' . $username . ' : ' . $email;
                         // ENVOYER UN EMAIL
                         mail('a.bastianaggi@gmail.com', 'On me contacte sur mon site', $message);
+                        Session::getInstance()->setFlash('success', "Le message a bien été envoyé.");
                     }
                 } else {     
                     Session::getInstance()->setFlash('danger', "Vous devez remplir tous les champs !");         
