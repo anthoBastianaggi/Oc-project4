@@ -42,19 +42,20 @@
         <script src='public/javascript/comment/comment.js'></script>
         <script src='public/javascript/main.js'></script>
         <script>
-            var ctx = document.getElementById('myChart').getContext('2d');
+            var ctx = document.querySelector('#myChart').getContext('2d');
+            console.log(ctx);
             var chart = new Chart(ctx, {
                 // The type of chart we want to create
                 type: 'bar',
 
                 // The data for our dataset
                 data: {
-                    labels: ['2018', '2019', '2020'],
+                    labels: [],
                     datasets: [{
                         label: "Statistique nombres d'utilisateurs",
                         backgroundColor: 'rgb(255, 99, 132)',
                         borderColor: 'rgb(255, 99, 132)',
-                        data: [10, 5, 20]
+                        data: [2, 10, 5, 20]
                     }]
                 },
 

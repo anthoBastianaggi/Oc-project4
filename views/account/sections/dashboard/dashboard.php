@@ -5,8 +5,8 @@
     ob_start(); 
 ?>
 
-<canvas id="myChart"></canvas>
-
+ <canvas id="myChart"></canvas>
+ 
 <?php 
     // On recupere dans une variable le contenu du tampon 
     $content = ob_get_clean() ;
