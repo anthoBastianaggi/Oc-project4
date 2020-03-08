@@ -84,29 +84,7 @@ class Comments {
         global $db;
 
         $reqComments = $db -> prepare(
-            'SELECT report.id as report_id, comment.validate AS "validate", 
-            writers.username AS "writer", reporters.username AS "reporter", 
-            comment.content AS "content", ticket.title as "chapter" 
-            FROM report INNER JOIN comment ON report.comment_id = comment.id 
-            INNER JOIN users as writers ON writers.id = comment.users_id 
-            INNER JOIN users as reporters ON reporters.id = report.users_id 
-            INNER JOIN ticket ON comment.ticket_id = ticket.id WHERE comment.validate IS NOT NULL');
-            // 'SELECT report.id as report_id, report.validate as validate, writers.username AS "writer", 
-            // reporters.username AS "reporter", comment.content AS "content", 
-            // ticket.title as "chapter" 
-            // FROM report INNER JOIN comment ON report.comment_id = comment.id 
-            // INNER JOIN users as writers ON writers.id = comment.users_id 
-            // INNER JOIN users as reporters ON reporters.id = report.users_id 
-            // INNER JOIN ticket ON comment.ticket_id = ticket.id WHERE report.validate IS NOT NULL');
-            $reqComments -> execute();
-            return $reqComments -> fetchAll();
-    }
-
-    public function getAllSignaleCommentNotValidate() {
-        global $db;
-
-        $reqComments = $db -> prepare(
-            'SELECT report.id as report_id, comment.validate AS "validate", 
+            'SELECT report.id as report_id, comment.id AS "comment_id", comment.validate AS "validate", 
             writers.username AS "writer", reporters.username AS "reporter", 
             comment.content AS "content", ticket.title as "chapter" FROM report 
             INNER JOIN comment ON report.comment_id = comment.id 
@@ -114,13 +92,6 @@ class Comments {
             INNER JOIN users as reporters ON reporters.id = report.users_id 
             INNER JOIN ticket ON comment.ticket_id = ticket.id 
             WHERE comment.validate IS NULL'); 
-            // 'SELECT report.id as report_id, comment.validate AS "validate", writers.username AS "writer", 
-            // reporters.username AS "reporter", comment.content AS "content", 
-            // ticket.title as "chapter" 
-            // FROM report INNER JOIN comment ON report.comment_id = comment.id 
-            // INNER JOIN users as writers ON writers.id = comment.users_id 
-            // INNER JOIN users as reporters ON reporters.id = report.users_id 
-            // INNER JOIN ticket ON comment.ticket_id = ticket.id WHERE comment.validate IS NULL');
             $reqComments -> execute();
             return $reqComments -> fetchAll();
     }

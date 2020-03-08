@@ -41,9 +41,9 @@
         <script src='public/javascript/header/sidebar.js'></script>
         <script src='public/javascript/comment/comment.js'></script>
         <script src='public/javascript/main.js'></script>
+        <script src='public/javascript/ajax.js'></script>
         <script>
             var ctx = document.querySelector('#myChart').getContext('2d');
-            console.log(ctx);
             var chart = new Chart(ctx, {
                 // The type of chart we want to create
                 type: 'bar',
