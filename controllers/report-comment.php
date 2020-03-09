@@ -4,7 +4,6 @@ include_once 'models/comments.php';
 function reportComment($page) {
     $comment = new Comments();
     $allSignaleCommentsValidate = $comment->getAllSignaleCommentValidate();
-    $allSignaleCommentsNotValidate = $comment->getAllSignaleCommentNotValidate();
     include_once 'views/account/sections/report-comment/'.$page.'.php';
 }
 

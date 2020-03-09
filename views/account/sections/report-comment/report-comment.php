@@ -30,6 +30,7 @@
                                                 <td scope="col" class="text-center">Content</td>
                                                 <td scope="col" class="text-center">Chapitre lié</td>
                                                 <td scope="col" class="text-center">Signalé par</td>
+                                                <td scope="col" colspan=2 class="text-center">Validation</td>
                                             </tr>
                                             <?php foreach ($allSignaleCommentsValidate as $signaleCommentValidate) { ?>
                                             <tr>
@@ -37,34 +38,13 @@
                                                 <td><?= $signaleCommentValidate['content'] ?></td>
                                                 <td><?= $signaleCommentValidate['chapter'] ?></td>
                                                 <td><?= $signaleCommentValidate['reporter'] ?></td>
-                                            </tr>
-                                            <?php } ?>
-                                        </table>
-                                    </div>
-                                </div>
-                                <div class="col-md-12 card-body-section-box">
-                                    <div class="item-container">
-                                        <table class="table table-bordered">
-                                            <tr>
-                                                <td scope="col" class="text-center">Publié par</td>
-                                                <td scope="col" class="text-center">Content</td>
-                                                <td scope="col" class="text-center">Chapitre lié</td>
-                                                <td scope="col" class="text-center">Signalé par</td>
-                                                <td scope="col" colspan=2 class="text-center">Validation</td>
-                                            </tr>
-                                            <?php foreach ($allSignaleCommentsNotValidate as $signaleCommentNotValidate) { ?>
-                                            <tr>
-                                                <td><?= $signaleCommentNotValidate['writer'] ?></td>
-                                                <td><?= $signaleCommentNotValidate['content'] ?></td>
-                                                <td><?= $signaleCommentNotValidate['chapter'] ?></td>
-                                                <td><?= $signaleCommentNotValidate['reporter'] ?></td>
                                                 <td>
-                                                    <a href="<?= CURRENT_PATH ?>report-comment?action=validateSignaleComment&id=<?= $signaleCommentNotValidate['report_id'] ?>">
+                                                    <a href="<?= CURRENT_PATH ?>report-comment?action=validateSignaleComment&id=<?= $signaleCommentValidate['comment_id'] ?>">
                                                         <i class="fa fa-pencil icon"></i>Valider
                                                     </a>
                                                 </td>
                                                 <td>  
-                                                    <a href="<?= CURRENT_PATH ?>report-comment?action=deleteSignaleComment&id=<?= $signaleCommentNotValidate['report_id'] ?>">
+                                                    <a href="<?= CURRENT_PATH ?>report-comment?action=deleteSignaleComment&id=<?= $signaleCommentValidate['report_id'] ?>">
                                                         <i class="fa fa-pencil icon"></i>Annuler
                                                     </a>
                                                 </td>
