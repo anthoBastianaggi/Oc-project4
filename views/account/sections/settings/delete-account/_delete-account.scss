@@ -1,59 +1,66 @@
-.text-header-delete-account {
-    text-align: center;
-    margin-bottom: 2rem;
-}
-
-#infobox-delete-account {
-    display: flex;
-    justify-content: center;
-    .box-shadow-full {
-        padding: 0;
-        margin-bottom: 0;
-        z-index: 0;
+.container-delete-account {
+    @media (max-width: 1200px) {
+        max-width: 100%;
     }
-    .infobox-container {
-        padding: 3rem 1.25rem 3rem 1.25rem;
-        margin: 0;
-        .info-delete-account-container {
-            .icon-container {
-                display: flex;
-                justify-content: center;
-                margin-bottom: 2rem;
-
-                i {
-                    font-size: 50px;
-                    color: red;
-                }
-            }         
-        }
+    .text-header-delete-account {
+        text-align: center;
+        margin-bottom: 2rem;
     }
-
-    .btn-card {
-        text-align: right;
-        #btnCancel {
-            padding: .3rem .6rem;
+    
+    #infobox-delete-account {
+        display: flex;
+        justify-content: center;
+        .box-shadow-full {
+            padding: 0;
+            margin-bottom: 0;
+            z-index: 0;
         }
-
-        #btnDeleteAccount {
-            margin-right: 10px;
+        .infobox-container {
+            padding: 3rem 1.25rem 3rem 1.25rem;
+            margin: 0;
+            .info-delete-account-container {
+                .icon-container {
+                    display: flex;
+                    justify-content: center;
+                    margin-bottom: 2rem;
+    
+                    i {
+                        font-size: 50px;
+                        color: red;
+                    }
+                }         
+            }
+        }
+    
+        .btn-card {
+            text-align: right;
+            #btnCancel {
+                padding: .3rem .6rem;
+            }
+    
+            #btnDeleteAccount {
+                margin-right: 10px;
+            }
         }
     }
 }
 
 @media(max-width: 414px) {
-    #infobox-delete-account {
-        .btn-card {
-            text-align: center;
-
-            #btnDeleteAccount {
-                display: block;
-                margin: auto;
-            }
-
-            #btnCancel {
-                display: block;
-                margin: 10px auto auto;
+    .container-delete-account {
+        #infobox-delete-account {
+            .btn-card {
+                text-align: center;
+    
+                #btnDeleteAccount {
+                    display: block;
+                    margin: auto;
+                }
+    
+                #btnCancel {
+                    display: block;
+                    margin: 10px auto auto;
+                }
             }
         }
     }
-}
+ }

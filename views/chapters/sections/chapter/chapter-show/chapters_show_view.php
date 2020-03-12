@@ -5,16 +5,16 @@
     ob_start(); 
 ?>
 <div class="section-content show-chapters">
-    <div class="container">
+    <div class="container conttainer-show-chapters">
         <div class="row">
             <div class="col-md-12 col-md-5 textHeaderShowChapters">
                 <div class="text-container">
                     <h2 class="section-title text-center text-uppercase"><?= $showChapter['title'] ?></h2>                    
                 </div>
             </div>
-            <div class="col-md-7 col-lg-8">
+            <div class="col-lg-8 col-md-7">
                 <article class="col-lg-12">
-                    <div class="card mb-3">
+                    <div class="card md-3">
                         <div class="blog-thumb">
                             <a href="https://bit.ly/2LHKl61">
                                 <img src="https://i.ibb.co/HrtN39y/services1.jpg" alt="" />
@@ -102,10 +102,10 @@
             </aside>
         </div>
     </div>
-    <div class="container">
+    <div class="container container-show-comment">
         <div class="row">        
-            <div class="col-md-8">
-                <div class="col-lg-12">
+            <div class="col-md-7 col-lg-8">
+                <div class="col-lg-12 card-comment">
                     <div class="card-block">
                         <h3>Commentaires</h3>
                         <div class="card-block-container">
@@ -181,10 +181,10 @@
             </div>
         </div>
     </div>
-    <div class="container">
+    <div class="container container-add-comment">
         <div class="row" id="comment_add">        
-            <div class="col-md-8">
-                <div class="col-lg-12">
+            <div class="col-md-7 col-lg-8">
+                <div class="col-lg-12 card-comment">
                     <div class="card-block">
                         <h3>Laisser un commentaire</h3>
                         <div class="card-block-container">

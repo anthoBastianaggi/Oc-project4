@@ -26,8 +26,14 @@
     }
 }  
 article {
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
     text-align: justify;
+    @media (max-width: 767px) {
+        &:last-child {
+            margin-bottom: 5rem;
+        }
+    }
+
     .blog-wrapper {
         background: #fff;
         overflow: hidden;
@@ -111,10 +117,18 @@ aside {
 }
 
 
-@media(min-width: 767px) and (max-width: 990px) {
+@media(min-width: 992px) {
     .all-chapters {
        .container {
-           max-width: 767px;
+           max-width: 1140px;
+       }
+    }
+}
+
+@media(min-width: 768px) and (max-width: 991px) {
+    .all-chapters {
+       .container {
+           max-width: 860px;
        }
     }
 }

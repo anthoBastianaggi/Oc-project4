@@ -6,7 +6,7 @@
 ?>
 
 <div class="section-content">
-    <div class="container">
+    <div class="container container-delete-account">
         <div class="row">
             <div class="col-md-12 col-md-5 text-header-delete-account">
                 <div class="text-container">
@@ -14,7 +14,7 @@
                 </div>
             </div>
             <div  id="infobox-delete-account" class="col-sm-12">
-                <div class="box-shadow-full col-sm-8">
+                <div class="box-shadow-full col-sm-10 col-md-8">
                     <div class="row infobox-container">
                         <div class="info-delete-account-container">
                             <div class="icon-container">

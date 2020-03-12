@@ -6,14 +6,14 @@
 ?>
 
 <div class="section-content">
-    <div class="container">
+    <div class="container container-login">
         <div class="row">
             <div class="col-md-12 col-md-5 textHeaderLogin">
                 <div class="text-container">
                     <h2 class="section-title text-center text-uppercase">Se connecter au compte</h2>                   
                 </div>
             </div>
-            <div  id="infobox-login" class="col-sm-12">
+            <div  id="infobox-login" class="col-sm-10 col-md-8">
                 <div class="box-shadow-full boxContainer">
                     <div class="row">   
                         <div class="infoForgetContainer">

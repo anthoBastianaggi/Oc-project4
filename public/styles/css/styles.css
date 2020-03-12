@@ -622,7 +622,7 @@ main .home-content {
 
 .about-mf #about {
   position: inherit;
-  margin-bottom: 3rem; }
+  margin-bottom: 2rem; }
   .about-mf #about .blockText {
     text-align: justify; }
   .about-mf #about .blockImg {
@@ -661,13 +661,15 @@ main .home-content {
     float: left; } }
 
 @media (max-width: 833px) {
-  .about-mf #about .blockText {
-    flex: 0 0 100%;
-    max-width: 100%; }
-  .about-mf #about .blockImg {
-    padding: 0 15px;
-    flex: 0 0 100%;
-    max-width: 100%; } }
+  .about-mf #about {
+    padding: 3rem 1.25rem 1.5rem 1.25rem; }
+    .about-mf #about .blockText {
+      flex: 0 0 100%;
+      max-width: 100%; }
+    .about-mf #about .blockImg {
+      padding: 0 15px;
+      flex: 0 0 100%;
+      max-width: 100%; } }
 
 .textHeaderChapters {
   text-align: center;
@@ -692,8 +694,11 @@ main .home-content {
     color: black !important; }
 
 article {
-  margin-bottom: 5rem;
+  margin-bottom: 2rem;
   text-align: justify; }
+  @media (max-width: 767px) {
+    article:last-child {
+      margin-bottom: 5rem; } }
   article .blog-wrapper {
     background: #fff;
     overflow: hidden;
@@ -747,97 +752,108 @@ aside .list-group {
           color: #2B96CC;
           transition: 0.4s; }
 
-@media (min-width: 767px) and (max-width: 990px) {
+@media (min-width: 992px) {
   .all-chapters .container {
-    max-width: 767px; } }
+    max-width: 1140px; } }
 
-.textHeaderShowChapters {
-  text-align: center;
-  margin-bottom: 2rem; }
-  .textHeaderShowChapters .section-title {
-    position: relative;
-    margin-bottom: 45px;
-    display: inline-block;
-    font-weight: 600;
-    color: black;
-    line-height: 1; }
+@media (min-width: 768px) and (max-width: 991px) {
+  .all-chapters .container {
+    max-width: 860px; } }
 
-article {
-  text-align: justify; }
-  article .card {
-    transition: .3s;
-    background-color: transparent; }
-    article .card:hover {
-      box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.12); }
-    article .card .blog-thumb {
-      padding: 15px;
-      background-color: white;
-      border-radius: 0.25rem 0.25rem 0 0; }
-      article .card .blog-thumb a:hover {
-        text-decoration: none; }
-      article .card .blog-thumb a img {
-        width: 100%; }
-      article .card .blog-thumb a .meta-info {
-        position: relative;
-        height: 35px;
-        margin: -35px 0 0 0;
-        background: rgba(0, 0, 0, 0.8);
-        color: #ccc;
-        line-height: 35px;
-        padding: 0 15px; }
-    article .card .card-block {
-      text-align: justify; }
-      article .card .card-block .card-block-container {
+.show-chapters .container, .show-chapters .container-show-chapters {
+  max-width: 1140px; }
+  @media (max-width: 1140px) {
+    .show-chapters .container, .show-chapters .container-show-chapters {
+      padding: 0 2rem; } }
+  .show-chapters .container .textHeaderShowChapters, .show-chapters .container-show-chapters .textHeaderShowChapters {
+    text-align: center;
+    margin-bottom: 2rem; }
+    .show-chapters .container .textHeaderShowChapters .section-title, .show-chapters .container-show-chapters .textHeaderShowChapters .section-title {
+      position: relative;
+      margin-bottom: 45px;
+      display: inline-block;
+      font-weight: 600;
+      color: black;
+      line-height: 1; }
+  .show-chapters .container article, .show-chapters .container-show-chapters article {
+    text-align: justify;
+    padding: 0; }
+    .show-chapters .container article .card, .show-chapters .container-show-chapters article .card {
+      transition: .3s;
+      background-color: transparent; }
+      .show-chapters .container article .card:hover, .show-chapters .container-show-chapters article .card:hover {
+        box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.12); }
+      .show-chapters .container article .card .blog-thumb, .show-chapters .container-show-chapters article .card .blog-thumb {
+        padding: 15px;
         background-color: white;
-        border-radius: 0 0 0.25rem 0.25rem; }
-        article .card .card-block .card-block-container .headerChapter .card-header {
-          padding: 7px 1.25rem;
-          background-color: rgba(0, 0, 0, 0.03);
-          border-bottom: 1px solidrgba(0, 0, 0, 0.125);
-          border-left: 5px solid #007bff; }
-          article .card .card-block .card-block-container .headerChapter .card-header a:hover {
-            color: #2B96CC;
-            transition: 0.4s;
+        border-radius: 0.25rem 0.25rem 0 0; }
+        .show-chapters .container article .card .blog-thumb a:hover, .show-chapters .container-show-chapters article .card .blog-thumb a:hover {
+          text-decoration: none; }
+        .show-chapters .container article .card .blog-thumb a img, .show-chapters .container-show-chapters article .card .blog-thumb a img {
+          width: 100%; }
+        .show-chapters .container article .card .blog-thumb a .meta-info, .show-chapters .container-show-chapters article .card .blog-thumb a .meta-info {
+          position: relative;
+          height: 35px;
+          margin: -35px 0 0 0;
+          background: rgba(0, 0, 0, 0.8);
+          color: #ccc;
+          line-height: 35px;
+          padding: 0 15px; }
+      .show-chapters .container article .card .card-block, .show-chapters .container-show-chapters article .card .card-block {
+        text-align: justify; }
+        .show-chapters .container article .card .card-block .card-block-container, .show-chapters .container-show-chapters article .card .card-block .card-block-container {
+          background-color: white;
+          border-radius: 0 0 0.25rem 0.25rem; }
+          .show-chapters .container article .card .card-block .card-block-container .headerChapter .card-header, .show-chapters .container-show-chapters article .card .card-block .card-block-container .headerChapter .card-header {
+            padding: 7px 1.25rem;
+            background-color: rgba(0, 0, 0, 0.03);
+            border-bottom: 1px solidrgba(0, 0, 0, 0.125);
+            border-left: 5px solid #007bff; }
+            .show-chapters .container article .card .card-block .card-block-container .headerChapter .card-header a:hover, .show-chapters .container-show-chapters article .card .card-block .card-block-container .headerChapter .card-header a:hover {
+              color: #2B96CC;
+              transition: 0.4s;
+              text-decoration: none; }
+          .show-chapters .container article .card .card-block .card-block-container .blog-content.home-blog p, .show-chapters .container-show-chapters article .card .card-block .card-block-container .blog-content.home-blog p {
+            padding: 0 1.5rem 1rem 1.5rem; }
+          .show-chapters .container article .card .card-block .card-block-container .card-footer, .show-chapters .container-show-chapters article .card .card-block .card-block-container .card-footer {
+            min-height: 50px; }
+  .show-chapters .container aside, .show-chapters .container-show-chapters aside {
+    margin-bottom: 4rem; }
+    .show-chapters .container aside .card-header, .show-chapters .container-show-chapters aside .card-header {
+      text-align: center;
+      color: #007bff; }
+      .show-chapters .container aside .card-header:hover, .show-chapters .container-show-chapters aside .card-header:hover {
+        color: #2B96CC;
+        transition: 0.4s; }
+    .show-chapters .container aside .list-group, .show-chapters .container-show-chapters aside .list-group {
+      padding: 0.75rem 1.25rem; }
+      .show-chapters .container aside .list-group .list-group-about-container, .show-chapters .container-show-chapters aside .list-group .list-group-about-container {
+        text-align: justify;
+        margin-bottom: 1rem; }
+      .show-chapters .container aside .list-group .list-group-container, .show-chapters .container-show-chapters aside .list-group .list-group-container {
+        text-align: justify;
+        margin-bottom: 1rem;
+        border-bottom: solid 1px #ddd; }
+        .show-chapters .container aside .list-group .list-group-container a, .show-chapters .container-show-chapters aside .list-group .list-group-container a {
+          color: black; }
+          .show-chapters .container aside .list-group .list-group-container a:hover, .show-chapters .container-show-chapters aside .list-group .list-group-container a:hover {
             text-decoration: none; }
-        article .card .card-block .card-block-container .blog-content.home-blog p {
-          padding: 0 1.5rem 1rem 1.5rem; }
-        article .card .card-block .card-block-container .card-footer {
-          min-height: 50px; }
+          .show-chapters .container aside .list-group .list-group-container a .list-group-item-heading, .show-chapters .container-show-chapters aside .list-group .list-group-container a .list-group-item-heading {
+            text-align: center; }
+            .show-chapters .container aside .list-group .list-group-container a .list-group-item-heading:hover, .show-chapters .container-show-chapters aside .list-group .list-group-container a .list-group-item-heading:hover {
+              color: #2B96CC;
+              transition: 0.4s; }
 
-aside .card-header {
-  text-align: center;
-  color: #007bff; }
-  aside .card-header:hover {
-    color: #2B96CC;
-    transition: 0.4s; }
-
-aside .list-group {
-  padding: 0.75rem 1.25rem; }
-  aside .list-group .list-group-about-container {
-    text-align: justify;
-    margin-bottom: 1rem; }
-  aside .list-group .list-group-container {
-    text-align: justify;
-    margin-bottom: 1rem;
-    border-bottom: solid 1px #ddd; }
-    aside .list-group .list-group-container a {
-      color: black; }
-      aside .list-group .list-group-container a:hover {
-        text-decoration: none; }
-      aside .list-group .list-group-container a .list-group-item-heading {
-        text-align: center; }
-        aside .list-group .list-group-container a .list-group-item-heading:hover {
-          color: #2B96CC;
-          transition: 0.4s; }
-
-@media (min-width: 767px) and (max-width: 990px) {
-  .show-chapters .container {
-    max-width: 767px; } }
+@media (max-width: 767px) {
+  .show-chapters .container, .show-chapters .container-show-chapters {
+    max-width: 540px; } }
 
 @media (max-width: 480px) {
-  article .card .blog-thumb a .meta-info {
-    height: 65px;
-    margin: -65px 0 0 0; } }
+  .show-chapters .container, .show-chapters .container-show-chapters {
+    padding: 0 15px; }
+    .show-chapters .container article .card .blog-thumb a .meta-info, .show-chapters .container-show-chapters article .card .blog-thumb a .meta-info {
+      height: 65px;
+      margin: -65px 0 0 0; } }
 
 .textHeaderUpdateChapter {
   text-align: center;
@@ -911,100 +927,98 @@ aside .list-group {
     #infobox-add-chapter .boxContainer #btn-container {
       padding: 0; } }
 
-.card-block h3 {
-  color: black; }
-
-.card-block .card-block-container .panel {
-  margin-bottom: 20px;
-  background-color: #fff;
-  border: 1px solid transparent;
-  border-radius: 4px; }
-
-.card-block .card-block-container .panel-white {
-  border: 1px solid #dddddd; }
-
-.card-block .card-block-container .post .post-heading {
-  height: 95px;
-  padding: 20px 15px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between; }
-  .card-block .card-block-container .post .post-heading .pull-left {
-    height: 55px; }
-    .card-block .card-block-container .post .post-heading .pull-left .comment-author {
-      margin-bottom: 4px; }
-      .card-block .card-block-container .post .post-heading .pull-left .comment-author .avatar {
-        width: 55px;
-        height: 55px;
-        display: block;
-        margin-right: 15px;
-        float: left; }
-  .card-block .card-block-container .post .post-heading .meta .title {
-    margin-bottom: 0; }
-  .card-block .card-block-container .post .post-heading .meta .title a {
-    color: black; }
-    .card-block .card-block-container .post .post-heading .meta .title a:hover {
-      color: gainsboro; }
-  .card-block .card-block-container .post .post-heading .meta .time {
-    margin-top: 8px;
-    color: #999; }
-  .card-block .card-block-container .post .post-heading .dropdownOptions {
-    font-size: 18px;
-    width: 18px;
-    text-align: center;
-    cursor: pointer; }
-    .card-block .card-block-container .post .post-heading .dropdownOptions .dropdownListOptions {
-      display: none; }
-    .card-block .card-block-container .post .post-heading .dropdownOptions.active .dropdownListOptions.active {
-      position: absolute;
-      display: flex;
-      flex-direction: column;
-      min-width: 85px;
-      padding: 0;
-      border-radius: 3px;
-      box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.2);
-      background-color: #f0f0f0;
-      right: 35px;
-      max-width: 150px;
-      width: 100%;
-      list-style: none; }
-      .card-block .card-block-container .post .post-heading .dropdownOptions.active .dropdownListOptions.active .dropdownItemOptions {
-        padding: 0 10px;
-        display: flex;
-        justify-content: flex-start; }
-        .card-block .card-block-container .post .post-heading .dropdownOptions.active .dropdownListOptions.active .dropdownItemOptions:hover {
-          background-color: #dfdfdf; }
-        .card-block .card-block-container .post .post-heading .dropdownOptions.active .dropdownListOptions.active .dropdownItemOptions a span {
-          margin-left: 10px; }
-
-.card-block .card-block-container .post .post-description {
-  padding: 15px; }
-  .card-block .card-block-container .post .post-description p {
-    font-size: 14px; }
-  .card-block .card-block-container .post .post-description .stats {
-    margin-top: 20px; }
-    .card-block .card-block-container .post .post-description .stats .stat-item {
-      display: inline-block;
-      margin-right: 15px; }
-    .card-block .card-block-container .post .post-description .stats a {
-      text-decoration: none; }
-      .card-block .card-block-container .post .post-description .stats a .icon {
-        margin-right: 8px; }
-    .card-block .card-block-container .post .post-description .stats .btn-default {
-      color: #333;
-      background-color: #fff;
-      border-color: #ccc; }
-      .card-block .card-block-container .post .post-description .stats .btn-default:hover {
-        background-color: gainsboro; }
-
-#comment_add h3 {
-  color: black; }
-
-#comment_add .card-block-container textarea {
-  height: 150px; }
-
-#comment_add .card-block-container #btnAddComment {
+.card-comment {
   padding: 0; }
+  .card-comment .card-block h3 {
+    color: black; }
+  .card-comment .card-block .card-block-container .panel {
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid transparent;
+    border-radius: 4px; }
+  .card-comment .card-block .card-block-container .panel-white {
+    border: 1px solid #dddddd; }
+  .card-comment .card-block .card-block-container .post .post-heading {
+    height: 95px;
+    padding: 20px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    .card-comment .card-block .card-block-container .post .post-heading .pull-left {
+      height: 55px; }
+      .card-comment .card-block .card-block-container .post .post-heading .pull-left .comment-author {
+        margin-bottom: 4px; }
+        .card-comment .card-block .card-block-container .post .post-heading .pull-left .comment-author .avatar {
+          width: 55px;
+          height: 55px;
+          display: block;
+          margin-right: 15px;
+          float: left; }
+    .card-comment .card-block .card-block-container .post .post-heading .meta .title {
+      margin-bottom: 0; }
+    .card-comment .card-block .card-block-container .post .post-heading .meta .title a {
+      color: black; }
+      .card-comment .card-block .card-block-container .post .post-heading .meta .title a:hover {
+        color: gainsboro; }
+    .card-comment .card-block .card-block-container .post .post-heading .meta .time {
+      margin-top: 8px;
+      color: #999; }
+    .card-comment .card-block .card-block-container .post .post-heading .dropdownOptions {
+      font-size: 18px;
+      width: 18px;
+      text-align: center;
+      cursor: pointer; }
+      .card-comment .card-block .card-block-container .post .post-heading .dropdownOptions .dropdownListOptions {
+        display: none; }
+      .card-comment .card-block .card-block-container .post .post-heading .dropdownOptions.active .dropdownListOptions.active {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        min-width: 85px;
+        padding: 0;
+        border-radius: 3px;
+        box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.2);
+        background-color: #f0f0f0;
+        right: 35px;
+        max-width: 150px;
+        width: 100%;
+        list-style: none; }
+        .card-comment .card-block .card-block-container .post .post-heading .dropdownOptions.active .dropdownListOptions.active .dropdownItemOptions {
+          padding: 0 10px;
+          display: flex;
+          justify-content: flex-start; }
+          .card-comment .card-block .card-block-container .post .post-heading .dropdownOptions.active .dropdownListOptions.active .dropdownItemOptions:hover {
+            background-color: #dfdfdf; }
+          .card-comment .card-block .card-block-container .post .post-heading .dropdownOptions.active .dropdownListOptions.active .dropdownItemOptions a span {
+            margin-left: 10px; }
+  .card-comment .card-block .card-block-container .post .post-description {
+    padding: 15px; }
+    .card-comment .card-block .card-block-container .post .post-description p {
+      font-size: 14px; }
+    .card-comment .card-block .card-block-container .post .post-description .stats {
+      margin-top: 20px; }
+      .card-comment .card-block .card-block-container .post .post-description .stats .stat-item {
+        display: inline-block;
+        margin-right: 15px; }
+      .card-comment .card-block .card-block-container .post .post-description .stats a {
+        text-decoration: none; }
+        .card-comment .card-block .card-block-container .post .post-description .stats a .icon {
+          margin-right: 8px; }
+      .card-comment .card-block .card-block-container .post .post-description .stats .btn-default {
+        color: #333;
+        background-color: #fff;
+        border-color: #ccc; }
+        .card-comment .card-block .card-block-container .post .post-description .stats .btn-default:hover {
+          background-color: gainsboro; }
+
+#comment_add .card-comment {
+  padding: 0; }
+  #comment_add .card-comment h3 {
+    color: black; }
+  #comment_add .card-comment .card-block-container textarea {
+    height: 150px; }
+  #comment_add .card-comment .card-block-container #btnAddComment {
+    padding: 0; }
 
 main #comment_post {
   height: 100%;
@@ -1288,52 +1302,56 @@ main #comment_post {
     text-align: center !important;
     padding-left: 0; } }
 
-.textHeaderLogin {
+@media (max-width: 1200px) {
+  .container-login {
+    max-width: 100%; } }
+
+.container-login .textHeaderLogin {
   text-align: center;
   margin-bottom: 2rem; }
-  .textHeaderLogin .section-title {
+  .container-login .textHeaderLogin .section-title {
     color: black;
     margin-bottom: 15px; }
-  .textHeaderLogin .section-subheading {
+  .container-login .textHeaderLogin .section-subheading {
     color: black !important; }
 
-#infobox-login {
+.container-login #infobox-login {
   z-index: 0;
-  max-width: 75%;
   margin: 0 auto; }
-  #infobox-login .boxContainer {
-    padding: 1.25rem 1.25rem 3rem 1.25rem; }
-    #infobox-login .boxContainer .infoForgetContainer {
+  .container-login #infobox-login .boxContainer {
+    padding: 1.25rem 1.25rem 3rem 1.25rem;
+    margin-bottom: 2rem; }
+    .container-login #infobox-login .boxContainer .infoForgetContainer {
       width: 100%;
       text-align: center; }
-      #infobox-login .boxContainer .infoForgetContainer .iconContainer {
+      .container-login #infobox-login .boxContainer .infoForgetContainer .iconContainer {
         width: 100%;
         font-size: 150px; }
-        #infobox-login .boxContainer .infoForgetContainer .iconContainer span i {
+        .container-login #infobox-login .boxContainer .infoForgetContainer .iconContainer span i {
           color: #007bff; }
-      #infobox-login .boxContainer .infoForgetContainer .description p {
+      .container-login #infobox-login .boxContainer .infoForgetContainer .description p {
         font-size: 2.25rem; }
-  #infobox-login form {
+  .container-login #infobox-login form {
     width: 80%;
     margin: 0 auto;
     border-radius: 5px;
     max-width: 100%;
     background-color: #FFFFFF;
     overflow: hidden; }
-    #infobox-login form .inputGroupContainer {
+    .container-login #infobox-login form .inputGroupContainer {
       padding-right: 0;
       padding-left: 0;
       width: 100%; }
-      #infobox-login form .inputGroupContainer .input-group {
+      .container-login #infobox-login form .inputGroupContainer .input-group {
         position: relative;
         display: flex;
         border-collapse: separate;
         width: 100%;
         margin-bottom: 1rem; }
-        #infobox-login form .inputGroupContainer .input-group input {
+        .container-login #infobox-login form .inputGroupContainer .input-group input {
           height: 42px;
           z-index: 0; }
-        #infobox-login form .inputGroupContainer .input-group .icon-case {
+        .container-login #infobox-login form .inputGroupContainer .input-group .icon-case {
           width: 35px;
           float: left;
           border-radius: 5px 0px 0px 5px;
@@ -1344,7 +1362,7 @@ main #comment_post {
           line-height: 40px;
           border: 1px solid #ccc;
           border-right: 0; }
-        #infobox-login form .inputGroupContainer .input-group .label-login {
+        .container-login #infobox-login form .inputGroupContainer .input-group .label-login {
           font-size: 1.25rem;
           width: 100%;
           height: 42px;
@@ -1352,13 +1370,21 @@ main #comment_post {
           display: flex;
           line-height: 37px;
           margin-top: 1rem; }
-          #infobox-login form .inputGroupContainer .input-group .label-login input {
+          .container-login #infobox-login form .inputGroupContainer .input-group .label-login input {
             margin-right: 10px; }
-    #infobox-login form #btn-login {
+    .container-login #infobox-login form #btn-login {
       padding-right: 0;
       padding-left: 0; }
-      #infobox-login form #btn-login button {
+      .container-login #infobox-login form #btn-login button {
         padding: .6rem 2.3rem; }
+
+@media (max-width: 414px) {
+  .container-login #infobox-login .boxContainer .infoForgetContainer .iconContainer {
+    font-size: 120px; }
+  .container-login #infobox-login form {
+    width: 100%; }
+    .container-login #infobox-login form .inputGroupContainer .input-group .label-login {
+      height: auto; } }
 
 footer {
   width: 100%;
@@ -1731,41 +1757,45 @@ section .wrapper {
         align-items: center;
         margin-right: 7px; }
 
-.text-header-delete-account {
+@media (max-width: 1200px) {
+  .container-delete-account {
+    max-width: 100%; } }
+
+.container-delete-account .text-header-delete-account {
   text-align: center;
   margin-bottom: 2rem; }
 
-#infobox-delete-account {
+.container-delete-account #infobox-delete-account {
   display: flex;
   justify-content: center; }
-  #infobox-delete-account .box-shadow-full {
+  .container-delete-account #infobox-delete-account .box-shadow-full {
     padding: 0;
     margin-bottom: 0;
     z-index: 0; }
-  #infobox-delete-account .infobox-container {
+  .container-delete-account #infobox-delete-account .infobox-container {
     padding: 3rem 1.25rem 3rem 1.25rem;
     margin: 0; }
-    #infobox-delete-account .infobox-container .info-delete-account-container .icon-container {
+    .container-delete-account #infobox-delete-account .infobox-container .info-delete-account-container .icon-container {
       display: flex;
       justify-content: center;
       margin-bottom: 2rem; }
-      #infobox-delete-account .infobox-container .info-delete-account-container .icon-container i {
+      .container-delete-account #infobox-delete-account .infobox-container .info-delete-account-container .icon-container i {
         font-size: 50px;
         color: red; }
-  #infobox-delete-account .btn-card {
+  .container-delete-account #infobox-delete-account .btn-card {
     text-align: right; }
-    #infobox-delete-account .btn-card #btnCancel {
+    .container-delete-account #infobox-delete-account .btn-card #btnCancel {
       padding: .3rem .6rem; }
-    #infobox-delete-account .btn-card #btnDeleteAccount {
+    .container-delete-account #infobox-delete-account .btn-card #btnDeleteAccount {
       margin-right: 10px; }
 
 @media (max-width: 414px) {
-  #infobox-delete-account .btn-card {
+  .container-delete-account #infobox-delete-account .btn-card {
     text-align: center; }
-    #infobox-delete-account .btn-card #btnDeleteAccount {
+    .container-delete-account #infobox-delete-account .btn-card #btnDeleteAccount {
       display: block;
       margin: auto; }
-    #infobox-delete-account .btn-card #btnCancel {
+    .container-delete-account #infobox-delete-account .btn-card #btnCancel {
       display: block;
       margin: 10px auto auto; } }
 
