@@ -40,12 +40,19 @@
     }
 }
 
-@media(max-width:348px) {
+@media(max-width: 414px) {
     #infobox-delete-account {
         .btn-card {
             text-align: center;
+
+            #btnDeleteAccount {
+                display: block;
+                margin: auto;
+            }
+
             #btnCancel {
-                margin-top: 10px;
+                display: block;
+                margin: 10px auto auto;
             }
         }
     }

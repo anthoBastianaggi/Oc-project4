@@ -45,6 +45,9 @@
     #infobox-add-chapter {
         .boxContainer {
             padding: 3rem 1.25rem;
+            #btn-container {
+                padding: 0;
+            }
         }
     }
 }

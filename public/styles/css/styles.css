@@ -871,7 +871,9 @@ aside .list-group {
 
 @media (max-width: 414px) {
   #infobox-update-chapter .boxContainer {
-    padding: 3rem 1.25rem; } }
+    padding: 3rem 1.25rem; }
+    #infobox-update-chapter .boxContainer #btn-container {
+      padding: 0; } }
 
 .textHeaderAddChapter {
   text-align: center;
@@ -905,7 +907,9 @@ aside .list-group {
 
 @media (max-width: 414px) {
   #infobox-add-chapter .boxContainer {
-    padding: 3rem 1.25rem; } }
+    padding: 3rem 1.25rem; }
+    #infobox-add-chapter .boxContainer #btn-container {
+      padding: 0; } }
 
 .card-block h3 {
   color: black; }
@@ -1755,11 +1759,15 @@ section .wrapper {
     #infobox-delete-account .btn-card #btnDeleteAccount {
       margin-right: 10px; }
 
-@media (max-width: 348px) {
+@media (max-width: 414px) {
   #infobox-delete-account .btn-card {
     text-align: center; }
+    #infobox-delete-account .btn-card #btnDeleteAccount {
+      display: block;
+      margin: auto; }
     #infobox-delete-account .btn-card #btnCancel {
-      margin-top: 10px; } }
+      display: block;
+      margin: 10px auto auto; } }
 
 .text-header-update-password {
   text-align: center;
@@ -1826,13 +1834,16 @@ section .wrapper {
     max-width: 100%; }
     #infobox-update-password form {
       width: 100%;
-      margin: 0; } }
-
-@media (max-width: 374px) {
-  #updatePassword #infobox-update-password #btn-password {
-    text-align: center; }
-    #updatePassword #infobox-update-password #btn-password .btn-cancel {
-      margin-top: 10px; } }
+      margin: 0; }
+      #infobox-update-password form #btn-password {
+        text-align: center;
+        padding: 0; }
+        #infobox-update-password form #btn-password .btn-update-password {
+          display: block;
+          margin: auto; }
+        #infobox-update-password form #btn-password .btn-cancel {
+          display: block;
+          margin: 10px auto auto; } }
 
 .text-header-update-email {
   text-align: center;
@@ -1894,18 +1905,21 @@ section .wrapper {
   #infobox-update-email {
     max-width: 100%; } }
 
-@media (max-width: 414px) {
+@media (max-width: 420px) {
   #infobox-update-email {
     max-width: 100%; }
     #infobox-update-email form {
       width: 100%;
-      margin: 0; } }
-
-@media (max-width: 384px) {
-  #infobox-update-email #btn-email {
-    text-align: center; }
-    #infobox-update-email #btn-email .btn-cancel {
-      margin-top: 10px; } }
+      margin: 0; }
+      #infobox-update-email form #btn-email {
+        text-align: center;
+        padding: 0; }
+        #infobox-update-email form #btn-email .btn-update-email {
+          display: block;
+          margin: auto; }
+        #infobox-update-email form #btn-email .btn-cancel {
+          display: block;
+          margin: 10px auto auto; } }
 
 .block-edit-chapter-list .card-header {
   display: flex;

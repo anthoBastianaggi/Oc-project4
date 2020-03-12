@@ -1,5 +1,6 @@
 var sidebar = document.querySelector('.sidebarOpen');
 var overlay = document.querySelector('.overlay');
+var overlayDashboard = document.querySelector('.overlay-dashboard');
 
 document.querySelector('#menuBurgerOpen').onclick = function() {
   sidebar.classList.add('active');
@@ -39,4 +40,11 @@ document.querySelector('#dashboardMenuSidebar').onclick = function() {
   wrapper.classList.toggle('active');
   sidebarMenuDashboard.classList.toggle('active');
   overlayDashboard.classList.toggle('active');
+}
+
+overlayDashboard.onclick = function() {
+  sidebarDashboard.classList.toggle('sidebar-collapse');
+  wrapper.classList.toggle('active');
+  sidebarMenuDashboard.classList.remove('active');
+  overlayDashboard.classList.remove('active');
 }
