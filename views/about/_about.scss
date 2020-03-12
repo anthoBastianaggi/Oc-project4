@@ -29,7 +29,7 @@
 .about-mf {
     #about {
         position: inherit;
-        margin-bottom: 3rem;
+        margin-bottom: 2rem;
         .blockText {
             text-align: justify;
         }
@@ -88,6 +88,7 @@
 @media(max-width: 833px) {
     .about-mf {
         #about {
+            padding: 3rem 1.25rem 1.5rem 1.25rem;
             .blockText {
                 flex: 0 0 100%;
                 max-width: 100%;
