@@ -16,8 +16,10 @@ html body {
     display: flex; }
     html body .layout main {
       padding-top: 9.3rem;
-      display: flex;
+      display: grid;
       flex-grow: 1; }
+      html body .layout main .alert-success {
+        z-index: 1; }
       html body .layout main section {
         padding: 0;
         display: flex;

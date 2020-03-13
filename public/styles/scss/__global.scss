@@ -16,8 +16,11 @@ html {
             display: flex;
             main {
 				padding-top: 9.3rem;
-				display: flex;
+				display: grid;
 				flex-grow: 1;
+				.alert-success {
+					z-index: 1;
+				}
                 section {
 					padding: 0;
 					display: flex;
