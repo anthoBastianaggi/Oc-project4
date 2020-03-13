@@ -18,3 +18,14 @@ dropdownOptionsComment.forEach(function(o) {
         this.querySelector('.dropdownListOptions').classList.toggle('active');
     });
 });
+
+window.onclick = function(event) {
+    if (!event.target.matches('.dropdownOptions')) {
+        var dropdown = document.getElementsByClassName("dropdownListOptions");
+        for (i = 0; i < dropdown.length; i++) {
+            if (dropdown[i].classList.contains('active')) {
+                dropdown[i].classList.remove('active');
+            }
+        }
+    }
+}
