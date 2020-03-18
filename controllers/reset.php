@@ -1,5 +1,5 @@
 <?php
-function reset($page) {
+function resetPassword($page) {
     require 'views/includes/bootstrap.php';
     if(isset($_GET['id']) && isset($_GET['token'])){
         $auth = App::getAuth();
@@ -7,13 +7,13 @@ function reset($page) {
         $user = $auth->checkResetToken($db, $_GET['id'], $_GET['token']);
         if($user){
             if(!empty($_POST)){
-                $pdo->prepare('UPDATE users SET password = ? WHERE id = ?')->execute([$password, $user->id]);
+                $updatePassword = $auth->updatePassword($_POST['password'], $user->id);
                 
                 $validator = new Validator($_POST);
                 $validator->isConfirmed('password');
                 if($validator->isValid()) {
                     $password = $auth->hashPassword($_POST['password']);
-                    $db->query('UPDATE users SET password = ?, reset_at = NULL, reset_token = NULL WHERE id = ?', [$password, $_GET['id']]);
+                    $updatePasswordisValid = $auth->updatePasswordisValid($password, $_GET['id']);
                     $auth->connect($user);
                     Session::getInstance()->setFlash('success', "Votre mot de passe a bien été modifié");
                     App::redirect('/projet4/profile?action=profile');
@@ -26,4 +26,5 @@ function reset($page) {
     }else{
         App::redirect('/projet4/login?action=login');
     }
+    include_once 'views/account/sections/log/reset/'.$page.'.php';
 }

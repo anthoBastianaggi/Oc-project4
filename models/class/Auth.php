@@ -111,7 +111,8 @@ class Auth {
         if($user){
             $reset_token = Str::random(60);
             $db->query('UPDATE users SET reset_token = ?, reset_at = NOW() WHERE id = ?', [$reset_token, $user->id]);
-            mail($_POST['email'], 'Réinitiatilisation de votre mot de passe', "Afin de réinitialiser votre mot de passe merci de cliquer sur ce lien\n\nhttp://localhost/projet4/reset?action=reset?id={$user->id}&token=$reset_token");
+            $redirectLink = sprintf("http://localhost/projet4/reset?action=resetPassword&id=%s&token=%s", $user->id, $reset_token);
+            mail($_POST['email'], 'Réinitiatilisation de votre mot de passe', "Afin de réinitialiser votre mot de passe merci de cliquer sur ce lien ".$redirectLink);
             return $user;
         }
         return false;
@@ -119,5 +120,19 @@ class Auth {
 
     public function checkResetToken($db, $user_id, $token) {
         return $db->query('SELECT * FROM users WHERE id = ? AND reset_token IS NOT NULL AND reset_token = ? AND reset_at > DATE_SUB(NOW(), INTERVAL 30 MINUTE)', [$user_id, $token])->fetch();
+    }
+
+    public function updatePassword($password, $id) {
+        global $db;
+
+        $reqComments= $db->prepare('UPDATE users SET password = ? WHERE id = ?');
+        $reqComments->execute(array($password, $id));
+    }
+
+    public function updatePasswordisValid($password, $id) {
+        global $db;
+
+        $reqComments= $db->prepare('UPDATE users SET password = ?, reset_at = NULL, reset_token = NULL WHERE id = ?');
+        $reqComments->execute(array($password, $id));
     }
 }

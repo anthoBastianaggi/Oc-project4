@@ -1,7 +1,7 @@
 <?php
 include_once 'models/dashboard.php';
 
-function ajax() {
+function ajax($page) {
     require 'views/includes/bootstrap.php';
     $chart = New Dashboard;
     $countUsers2018 = $chart->numberUsers2018();
@@ -28,4 +28,5 @@ function ajax() {
         )
     );
     $dataFormatJson = json_encode($dataChartUsers);
+    include_once 'views/ajax/'.$page.'.php';
 }
