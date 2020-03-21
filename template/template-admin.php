@@ -43,25 +43,39 @@
         <script src='public/javascript/main.js'></script>
         <script src='public/javascript/ajax.js'></script>
         <script>
-            var ctx = document.querySelector('#myChart').getContext('2d');
-            var chart = new Chart(ctx, {
-                // The type of chart we want to create
-                type: 'bar',
+            async function makeit() {
+                var labels = [];
+                var data = [];
 
-                // The data for our dataset
-                data: {
-                    labels: [],
-                    datasets: [{
-                        label: "Statistique nombres d'utilisateurs",
-                        backgroundColor: 'rgb(255, 99, 132)',
-                        borderColor: 'rgb(255, 99, 132)',
-                        data: [2, 10, 5, 20]
-                    }]
-                },
+                var dataAjax = await get('ajax?action=ajax');
+                response = JSON.parse(dataAjax);
+                response.forEach(function(item) {
+                    var element = Object.values(item);
+                    labels.push(element[1]);
+                    data.push(parseInt(element[0], 10));
+                });
 
-                // Configuration options go here
-                options: {}
-            });
+                var ctx = document.querySelector('#myChart').getContext('2d');
+                var chart = new Chart(ctx, {
+                    // The type of chart we want to create
+                    type: 'bar',
+
+                    // The data for our dataset
+                    data: {
+                        labels: labels,
+                        datasets: [{
+                            label: "Statistique nombres d'utilisateurs",
+                            backgroundColor: 'rgb(255, 99, 132)',
+                            borderColor: 'rgb(255, 99, 132)',
+                            data: data
+                        }]
+                    },
+
+                    // Configuration options go here
+                    options: {}
+                });
+            }
+            makeit();
         </script>
     </body>
 </html>

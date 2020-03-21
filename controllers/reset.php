@@ -7,13 +7,13 @@ function resetPassword($page) {
         $user = $auth->checkResetToken($db, $_GET['id'], $_GET['token']);
         if($user){
             if(!empty($_POST)){
-                $updatePassword = $auth->updatePassword($_POST['password'], $user->id);
+                $auth->updatePassword($_POST['password'], $user->id);
                 
                 $validator = new Validator($_POST);
                 $validator->isConfirmed('password');
                 if($validator->isValid()) {
                     $password = $auth->hashPassword($_POST['password']);
-                    $updatePasswordisValid = $auth->updatePasswordisValid($password, $_GET['id']);
+                    $auth->updatePasswordIsValid($password, $_GET['id']);
                     $auth->connect($user);
                     Session::getInstance()->setFlash('success', "Votre mot de passe a bien été modifié");
                     App::redirect('/projet4/profile?action=profile');

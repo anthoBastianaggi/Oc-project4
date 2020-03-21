@@ -1024,16 +1024,16 @@ aside .list-group {
   #comment_add .card-comment .card-block-container #btnAddComment {
     padding: 0; }
 
-main #comment_post {
-  height: 100%;
-  justify-content: center; }
-  main #comment_post .textHeaderComment {
-    margin-bottom: 2rem; }
-    main #comment_post .textHeaderComment .section-title {
-      margin-bottom: 32px;
+main .update-comments .container {
+  height: 100%; }
+  main .update-comments .container #comment_post {
+    height: 100%;
+    justify-content: center; }
+    main .update-comments .container #comment_post .textHeaderComment .section-title {
       line-height: 1; }
-  main #comment_post #btnUpdateComment {
-    padding: .4rem 1.5rem; }
+    main .update-comments .container #comment_post #btnUpdateComment {
+      padding: .4rem .6rem;
+      margin-top: 1rem; }
 
 /*======================================
 //--//-->   CONTACT
@@ -1240,6 +1240,78 @@ main #comment_post {
     #infobox-register form {
       width: 100%;
       margin: 0; } }
+
+.reset-password .container {
+  height: 100%; }
+  .reset-password .container .row {
+    height: 100%; }
+    .reset-password .container .row .text-header-reset-password {
+      text-align: center; }
+      .reset-password .container .row .text-header-reset-password .section-title {
+        position: relative;
+        display: inline-block;
+        font-weight: 600;
+        color: black;
+        line-height: 1; }
+    .reset-password .container .row #infobox-reset-password {
+      z-index: 0;
+      max-width: 75%;
+      margin: 0 auto; }
+      .reset-password .container .row #infobox-reset-password .box-shadow-full {
+        margin-bottom: 0; }
+        .reset-password .container .row #infobox-reset-password .box-shadow-full form {
+          border-radius: 5px;
+          max-width: 100%;
+          width: 90%;
+          margin: 0 auto;
+          background-color: #FFFFFF;
+          overflow: hidden; }
+          .reset-password .container .row #infobox-reset-password .box-shadow-full form .inputGroupContainer {
+            padding-right: 0;
+            padding-left: 0;
+            width: 100%; }
+            .reset-password .container .row #infobox-reset-password .box-shadow-full form .inputGroupContainer .input-group {
+              position: relative;
+              display: flex;
+              border-collapse: separate;
+              width: 100%;
+              margin-bottom: 1rem; }
+              .reset-password .container .row #infobox-reset-password .box-shadow-full form .inputGroupContainer .input-group input {
+                height: 42px;
+                z-index: 0; }
+              .reset-password .container .row #infobox-reset-password .box-shadow-full form .inputGroupContainer .input-group .icon-case {
+                width: 35px;
+                float: left;
+                border-radius: 5px 0px 0px 5px;
+                background: #eeeeee;
+                height: 42px;
+                position: relative;
+                text-align: center;
+                line-height: 40px;
+                border: 1px solid #ccc;
+                border-right: 0; }
+              .reset-password .container .row #infobox-reset-password .box-shadow-full form .inputGroupContainer .input-group .label-reset-password, .reset-password .container .row #infobox-reset-password .box-shadow-full form .inputGroupContainer .input-group .label-reset-password-confirm {
+                font-size: 1.25rem;
+                width: 100%; }
+          .reset-password .container .row #infobox-reset-password .box-shadow-full form #btn-reset .btn-reset-password {
+            padding: .4rem .6rem; }
+
+@media (max-width: 766px) {
+  #infobox-reset-password {
+    max-width: 100%; } }
+
+@media (max-width: 414px) {
+  #infobox-reset-password {
+    max-width: 100%; }
+    #infobox-reset-password form {
+      width: 100%;
+      margin: 0; }
+      #infobox-reset-password form #btn-reset {
+        text-align: center;
+        padding: 0; }
+        #infobox-reset-password form #btn-reset .btn-reset-password {
+          display: block;
+          margin: auto; } }
 
 .textHeaderForget {
   text-align: center;
