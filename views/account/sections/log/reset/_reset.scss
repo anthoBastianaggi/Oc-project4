@@ -1,0 +1,102 @@
+.reset-password {
+    .container {
+        height: 100%;
+        .row {
+            height: 100%;
+            .text-header-reset-password {       
+                text-align: center;        
+            
+                .section-title {
+                    position: relative;
+                    display: inline-block;
+                    font-weight: 600;
+                    color: black;
+                    line-height: 1;
+                }
+            }  
+            
+            #infobox-reset-password {
+                z-index: 0;
+                max-width: 75%;
+                margin: 0 auto;
+                .box-shadow-full {
+                    margin-bottom: 0;
+                    form {
+                        border-radius: 5px;
+                        max-width:100%;
+                        width:90%;
+                        margin: 0 auto;
+                        background-color: #FFFFFF;
+                        overflow: hidden;
+                        .inputGroupContainer {
+                            padding-right: 0;
+                            padding-left: 0;
+                            width: 100%;
+                            .input-group {
+                                position: relative;
+                                display: flex;
+                                border-collapse: separate;
+                                width: 100%;
+                                margin-bottom: 1rem;
+                                input {
+                                    height: 42px;
+                                    z-index: 0;
+                                }
+                    
+                                .icon-case {
+                                    width: 35px;
+                                    float: left;
+                                    border-radius: 5px 0px 0px 5px;
+                                    background:#eeeeee;
+                                    height:42px;
+                                    position: relative;
+                                    text-align: center;
+                                    line-height:40px;
+                                    border: 1px solid#ccc;
+                                    border-right: 0;
+                                }  
+                
+                                .label-reset-password, .label-reset-password-confirm {
+                                    font-size: 1.25rem;
+                                    width: 100%;
+                                } 
+                            }
+                        } 
+                
+                        #btn-reset {
+                            .btn-reset-password {
+                                padding: .4rem .6rem;
+                            }
+                        }
+                    }
+                }    
+            }
+        }
+    }
+}
+
+@media(max-width: 766px) { 
+    #infobox-reset-password {
+        max-width: 100%;
+    }
+}        
+
+@media(max-width: 414px) {
+    #infobox-reset-password {
+        max-width: 100%;
+        form {
+            width: 100%;
+            margin: 0;
+
+            #btn-reset {
+                text-align: center;
+                padding: 0;
+                
+                .btn-reset-password {
+                    display: block;
+                    margin: auto;
+                }
+            }
+        }
+    }
+} 

@@ -1,17 +1,21 @@
 main {
-    #comment_post {
-        height: 100%;
-        justify-content: center;
-        .textHeaderComment {
-            margin-bottom: 2rem;  
-            .section-title {
-                margin-bottom: 32px;      
-                line-height: 1;
+    .update-comments {
+        .container {
+            height: 100%;
+            #comment_post {
+                height: 100%;
+                justify-content: center;
+                .textHeaderComment {
+                    .section-title {
+                        line-height: 1;
+                    }
+                }
+        
+                #btnUpdateComment {
+                    padding: .4rem .6rem;
+                    margin-top: 1rem;
+                }
             }
-        }
-
-        #btnUpdateComment {
-            padding: .4rem 1.5rem;
         }
     }
 }

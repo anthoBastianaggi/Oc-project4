@@ -1,1 +1,3 @@
-<?php echo $dataFormatJson; ?>
+<?php 
+    echo $dataFormatJson; 
+?>

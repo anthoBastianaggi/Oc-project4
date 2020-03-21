@@ -129,7 +129,7 @@ class Auth {
         $reqComments->execute(array($password, $id));
     }
 
-    public function updatePasswordisValid($password, $id) {
+    public function updatePasswordIsValid($password, $id) {
         global $db;
 
         $reqComments= $db->prepare('UPDATE users SET password = ?, reset_at = NULL, reset_token = NULL WHERE id = ?');
