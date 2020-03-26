@@ -31,9 +31,9 @@
                             <div class="form-group">
                                 <div class="inputGroupContainer">
                                     <div class="input-group">
-                                        <label class="label-register" for="">Retaper nouveau mot de passe</label>
+                                        <label class="label-register" for="">Nouveau mot de passe</label>
                                         <span class="icon-case"><i class="fa fa-lock"></i></span>
-                                        <input type="password" class="form-control" name="confirm-new-password" id="confirm-new-password" placeholder="Répétez votre nouveau mot de passe" data-rule="email" data-msg="Please enter a valid email" />
+                                        <input type="password" class="form-control" name="new-password" id="new-password" placeholder="Entrez votre nouveau mot de passe" data-rule="email" data-msg="Please enter a valid email" />
                                         <div class="validation"></div>
                                     </div>
                                 </div>
@@ -41,9 +41,9 @@
                             <div class="form-group">
                                 <div class="inputGroupContainer">
                                     <div class="input-group">
-                                        <label class="label-register" for="">Retaper nouveau mot de passe</label>
+                                        <label class="label-register" for="">Confirmer nouveau mot de passe</label>
                                         <span class="icon-case"><i class="fa fa-lock"></i></span>
-                                        <input type="password" class="form-control" name="confirm-new-password" id="confirm-new-password" placeholder="Répétez votre nouveau mot de passe" data-rule="email" data-msg="Please enter a valid email" />
+                                        <input type="password" class="form-control" name="new-password-confirm" id="new-password-confirm" placeholder="Confirmez votre nouveau mot de passe" data-rule="email" data-msg="Please enter a valid email" />
                                         <div class="validation"></div>
                                     </div>
                                 </div>
