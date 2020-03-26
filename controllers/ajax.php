@@ -13,20 +13,45 @@ function ajax($page) {
     $dateFormatted2018 = date('Y', strtotime($date2018));
     $dateFormatted2019 = date('Y', strtotime($date2019));
     $dateFormatted2020 = date('Y', strtotime($date2020));
+    $percentBirthdate1 = $chart->percentBirthdate1();
+    $percentBirthdate2 = $chart->percentBirthdate2();
+    $percentBirthdate3 = $chart->percentBirthdate3();
+    $percentBirthdate4 = $chart->percentBirthdate4();
     $dataChartUsers = array(
-        array(
-            "numberUsers" => $countUsers2018["number"],
-            "periode" => $dateFormatted2018
+        "countNumberUsers" => array(
+            array(
+                "numberUsers" => $countUsers2018["number"],
+                "periode" => $dateFormatted2018
+            ),
+            array(
+                "numberUsers" => $countUsers2019["number"],
+                "periode" => $dateFormatted2019
+            ),
+            array(
+                "numberUsers" => $countUsers2020["number"],
+                "periode" => $dateFormatted2020
+            )
         ),
-        array(
-            "numberUsers" => $countUsers2019["number"],
-            "periode" => $dateFormatted2019
-        ),
-        array(
-            "numberUsers" => $countUsers2020["number"],
-            "periode" => $dateFormatted2020
+        "percentBirthdateUsers" => array(
+            array(
+                "percent" => $percentBirthdate1["percent"],
+                "periode" => "0-25 ans"
+            ),
+            array(
+                "percent" => $percentBirthdate2["percent"],
+                "periode" => "25-50 ans"
+            ),
+            array(
+                "percent" => $percentBirthdate3["percent"],
+                "periode" => "50-75 ans"
+            ),
+            array(
+                "percent" => $percentBirthdate4["percent"],
+                "periode" => "75-100 ans"
+            )
         )
     );
+
     $dataFormatJson = json_encode($dataChartUsers);
     include_once 'views/ajax/'.$page.'.php';
 }

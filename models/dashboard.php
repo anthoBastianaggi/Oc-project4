@@ -40,4 +40,36 @@ class Dashboard {
         $reqNumberUsers -> execute(array());
         return $reqNumberUsers->fetch();
     }
+
+    public function percentBirthdate1() {
+        global $db;
+
+        $reqNumberUsers = $db -> prepare('SELECT 100*COUNT(*)/(SELECT COUNT(*) FROM users ) AS "percent" FROM users WHERE birthdate BETWEEN "1995-12-31" AND "2020-12-31"');
+        $reqNumberUsers -> execute(array());
+        return $reqNumberUsers->fetch();
+    }
+
+    public function percentBirthdate2() {
+        global $db;
+
+        $reqNumberUsers = $db -> prepare('SELECT 100*COUNT(*)/(SELECT COUNT(*) FROM users ) AS "percent" FROM users WHERE birthdate BETWEEN "1970-12-31" AND "1995-12-31"');
+        $reqNumberUsers -> execute(array());
+        return $reqNumberUsers->fetch();
+    }
+
+    public function percentBirthdate3() {
+        global $db;
+
+        $reqNumberUsers = $db -> prepare('SELECT 100*COUNT(*)/(SELECT COUNT(*) FROM users ) AS "percent" FROM users WHERE birthdate BETWEEN "1945-12-31" AND "1970-12-31"');
+        $reqNumberUsers -> execute(array());
+        return $reqNumberUsers->fetch();
+    }
+
+    public function percentBirthdate4() {
+        global $db;
+
+        $reqNumberUsers = $db -> prepare('SELECT 100*COUNT(*)/(SELECT COUNT(*) FROM users ) AS "percent" FROM users WHERE birthdate BETWEEN "1920-12-31" AND "1945-12-31"');
+        $reqNumberUsers -> execute(array());
+        return $reqNumberUsers->fetch();
+    }
 }

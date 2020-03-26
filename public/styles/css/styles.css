@@ -2123,3 +2123,24 @@ section .wrapper {
       background-color: #fa3e3e; }
       .block-edit-chapter-list .card-body .card-body-section-box .item-container .btn-delete:hover {
         background-color: #dc3545; }
+
+.main-panel {
+  margin-bottom: 0 !important; }
+  .main-panel .dashboard .textHeaderDasboard .text-container .section-title {
+    margin-bottom: 2rem; }
+  .main-panel .dashboard .card {
+    margin-bottom: 2rem; }
+    .main-panel .dashboard .card .card-header .card-title {
+      margin-bottom: 0;
+      font-size: 1.5rem;
+      color: #007bff; }
+      .main-panel .dashboard .card .card-header .card-title:hover {
+        color: #2B96CC; }
+    .main-panel .dashboard .card .card-body .chart {
+      vertical-align: middle;
+      width: 100% !important;
+      margin: 0 auto;
+      position: relative;
+      display: inline-block; }
+    .main-panel .dashboard .card .card-body canvas {
+      height: 100% !important; }

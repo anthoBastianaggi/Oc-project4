@@ -44,30 +44,69 @@
         <script src='public/javascript/ajax.js'></script>
         <script>
             async function makeit() {
-                var labels = [];
-                var data = [];
+                var labelsNumberUsers = [];
+                var dataNumberUsers = [];
+                var labelsPercentBirthdate = [];
+                var dataPercentBirthdateUsers = [];
 
-                var dataAjax = await get('ajax?action=ajax');
-                response = JSON.parse(dataAjax);
-                response.forEach(function(item) {
+                var dataCountNumberUsers = await get('ajax?action=ajax');
+                response = JSON.parse(dataCountNumberUsers);
+                response.countNumberUsers.forEach(function(item) {
                     var element = Object.values(item);
-                    labels.push(element[1]);
-                    data.push(parseInt(element[0], 10));
+                    labelsNumberUsers.push(element[1]);
+                    dataNumberUsers.push(parseInt(element[0], 10));
                 });
 
-                var ctx = document.querySelector('#myChart').getContext('2d');
-                var chart = new Chart(ctx, {
+                var chartNumberUsers = document.querySelector('#chartCountNumberUsers').getContext('2d');
+                var chart = new Chart(chartNumberUsers, {
                     // The type of chart we want to create
                     type: 'bar',
 
                     // The data for our dataset
                     data: {
-                        labels: labels,
+                        labels: labelsNumberUsers,
                         datasets: [{
-                            label: "Statistique nombres d'utilisateurs",
-                            backgroundColor: 'rgb(255, 99, 132)',
-                            borderColor: 'rgb(255, 99, 132)',
-                            data: data
+                            label: "Nombres d'utilisateurs",
+                            backgroundColor: "#36A2EB",
+                            borderColor: "#36A2EB",
+                            data: dataNumberUsers
+                        }]
+                    },
+
+                    // Configuration options go here
+                    options: {}
+                });
+
+                var dataPercentBirthdate = await get('ajax?action=ajax');
+                response = JSON.parse(dataPercentBirthdate);
+                response.percentBirthdateUsers.forEach(function(item) {
+                    var element = Object.values(item);
+                    labelsPercentBirthdate.push(element[1]);
+                    dataPercentBirthdateUsers.push(parseInt(element[0], 10));
+                });
+
+                var chartPercent = document.querySelector('#chartPercentBirthdate').getContext('2d');
+                var chart = new Chart(chartPercent, {
+                    // The type of chart we want to create
+                    type: 'pie',
+
+                    // The data for our dataset
+                    data: {
+                        labels: labelsPercentBirthdate,
+                        datasets: [{
+                            backgroundColor: [
+                                "#90EE90",
+                                "#FF6384",
+                                "#36A2EB",
+                                "#FFCE56"
+                            ], 
+                            borderColor: [
+                                "#90EE90",
+                                "#FF6384",
+                                "#36A2EB",
+                                "#FFCE56"
+                            ], 
+                            data: dataPercentBirthdateUsers
                         }]
                     },
 
