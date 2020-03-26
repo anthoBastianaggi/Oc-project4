@@ -5,7 +5,41 @@
     ob_start(); 
 ?>
 
-<canvas id="myChart"></canvas>
+<div class="section-content dashboard">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 col-md-5 textHeaderDasboard">
+                <div class="text-container">
+                    <h2 class="section-title text-center text-uppercase">Statistique du blog</h2>
+                </div>
+            </div>
+            <div class="col-xl-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">Statistique nombre d'utilisateur</h3>
+                    </div>
+                    <div class="card-body text-center">
+                        <div class="chart-area">
+                            <canvas id="chartCountNumberUsers" class="chart"></canvas>
+                        </div>   
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">Statistique de l'âge (%)</h3>
+                    </div>
+                    <div class="card-body text-center">
+                        <div class="chart-area">
+                            <canvas id="chartPercentBirthdate" class="chart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
  
 <?php 
     // On recupere dans une variable le contenu du tampon 
