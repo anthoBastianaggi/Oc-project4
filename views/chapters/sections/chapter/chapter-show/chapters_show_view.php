@@ -16,12 +16,10 @@
                 <article class="col-lg-12">
                     <div class="card md-3">
                         <div class="blog-thumb">
-                            <a href="https://bit.ly/2LHKl61">
-                                <img src="https://i.ibb.co/HrtN39y/services1.jpg" alt="" />
-                                <div class="meta-info">
-                                    Edité par <span class="author"><?= $showChapter['users_firstname'] ?> <?= $showChapter['users_lastname'] ?></span> le <span class="date"><?= $dateFormatted ?></span>
-                                </div>
-                            </a>
+                            <img src="https://i.ibb.co/HrtN39y/services1.jpg" alt="" />
+                            <div class="meta-info">
+                                Edité par <span class="author"><?= $showChapter['users_firstname'] ?> <?= $showChapter['users_lastname'] ?></span> le <span class="date"><?= $dateFormatted ?></span>
+                            </div>
                         </div>
                         <div class="card-block">
                             <div class="card-block-container">

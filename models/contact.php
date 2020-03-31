@@ -26,4 +26,12 @@ class Contact {
         $reqContact= $db->prepare('INSERT INTO message(firstname, lastname, email, subject, content, sended_at) VALUES(?, ?, ?, ?, ?, NOW())');
         $reqContact->execute(array($firstnameContact,$lastnameConctact, $emailContact, $subject, $content));
     }
+
+    public function infoContact() {
+        global $db;
+
+        $reqContact = $db -> prepare('SELECT address, postal_code, city, fix_number, phone_number, email FROM users WHERE id = 1');
+        $reqContact -> execute();
+        return $reqContact -> fetch();
+    }
 }

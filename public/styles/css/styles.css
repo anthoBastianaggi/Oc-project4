@@ -531,7 +531,7 @@ main .home-content {
       main .home-content #homeChapters .textHeaderHomeChapters p {
         color: black !important; }
     main .home-content #homeChapters article {
-      margin-bottom: 5rem;
+      margin-bottom: 2rem;
       text-align: justify;
       display: inline-flex;
       max-width: 49%;
@@ -589,6 +589,8 @@ main .home-content {
             main .home-content #homeChapters aside .list-group .list-group-container a .list-group-item-heading:hover {
               color: #2B96CC;
               transition: 0.4s; }
+    main .home-content #homeChapters .btn-all-chapters {
+      margin-top: 1.5rem; }
 
 @media (min-width: 767px) and (max-width: 990px) {
   main .home-content #homeChapters .container {
@@ -791,11 +793,9 @@ aside .list-group {
         padding: 15px;
         background-color: white;
         border-radius: 0.25rem 0.25rem 0 0; }
-        .show-chapters .container article .card .blog-thumb a:hover, .show-chapters .container-show-chapters article .card .blog-thumb a:hover {
-          text-decoration: none; }
-        .show-chapters .container article .card .blog-thumb a img, .show-chapters .container-show-chapters article .card .blog-thumb a img {
+        .show-chapters .container article .card .blog-thumb img, .show-chapters .container-show-chapters article .card .blog-thumb img {
           width: 100%; }
-        .show-chapters .container article .card .blog-thumb a .meta-info, .show-chapters .container-show-chapters article .card .blog-thumb a .meta-info {
+        .show-chapters .container article .card .blog-thumb .meta-info, .show-chapters .container-show-chapters article .card .blog-thumb .meta-info {
           position: relative;
           height: 35px;
           margin: -35px 0 0 0;
@@ -1678,6 +1678,8 @@ section .wrapper {
     .block-user .card-user .card-body .author .username {
       font-size: 13px;
       color: #5c6f84; }
+    .block-user .card-user .card-body .author .description {
+      white-space: pre-line; }
     .block-user .card-user .card-body .author .address-container {
       color: #5c6f84;
       display: flex;
@@ -2124,23 +2126,20 @@ section .wrapper {
       .block-edit-chapter-list .card-body .card-body-section-box .item-container .btn-delete:hover {
         background-color: #dc3545; }
 
-.main-panel {
-  margin-bottom: 0 !important; }
-  .main-panel .dashboard .textHeaderDasboard .text-container .section-title {
+.dashboard {
+  padding: 0 !important;
+  height: 100%; }
+  .dashboard .textHeaderDasboard .text-container .section-title {
     margin-bottom: 2rem; }
-  .main-panel .dashboard .card {
+  .dashboard .card {
     margin-bottom: 2rem; }
-    .main-panel .dashboard .card .card-header .card-title {
-      margin-bottom: 0;
-      font-size: 1.5rem;
-      color: #007bff; }
-      .main-panel .dashboard .card .card-header .card-title:hover {
-        color: #2B96CC; }
-    .main-panel .dashboard .card .card-body .chart {
+    .dashboard .card .card-header .card-title {
+      font-size: 1.5rem; }
+    .dashboard .card .card-body .chart {
       vertical-align: middle;
       width: 100% !important;
       margin: 0 auto;
       position: relative;
       display: inline-block; }
-    .main-panel .dashboard .card .card-body canvas {
+    .dashboard .card .card-body canvas {
       height: 100% !important; }

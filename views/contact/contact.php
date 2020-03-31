@@ -34,9 +34,10 @@
                                     </p>
                                     <h3 class="card-title">Contact Moi</h3>
                                     <ul class="list-ico">
-                                        <li class="list-info-contact"><span class="fa fa-map-marker"></span> 14, Place de la Madeleine 75009 PARIS</li>
-                                        <li class="list-info-contact"><span class="fa fa-phone"></span> 01.26.73.50.74</li>
-                                        <li class="list-info-contact"><span class="fa fa-envelope"></span> j.forteroche@gmail.com</li>
+                                        <li class="list-info-contact"><span class="fa fa-map-marker"></span><?= $infoContact['address'] ?> <?= $infoContact['postal_code'] ?> <?= $infoContact['city'] ?></li>
+                                        <li class="list-info-contact"><span class="fa fa-mobile"></span><?= $infoContact['phone_number'] ?></li>
+                                        <li class="list-info-contact"><span class="fa fa-phone"></span><?= $infoContact['fix_number'] ?></li>
+                                        <li class="list-info-contact"><span class="fa fa-envelope"></span><?= $infoContact['email'] ?></li>
                                     </ul>
                                 </div>
                             </div>

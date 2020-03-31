@@ -118,7 +118,7 @@
                         </div>
                     </div>            
                 </aside>
-                <div class="col-lg-12 text-center">
+                <div class="col-lg-12 text-center btn-all-chapters">
                     <a id="btn-getAllChapters" class="btn btn-primary" href="<?= CURRENT_PATH ?>chapters?action=chapters" role="button">Voir plus de chapitres</a>
                 </div>
             </div>

@@ -28,7 +28,7 @@ function deleteComment($page) {
     $showComment = $comment->showComment();
     $deleteComment = $comment->deleteComment();
     Session::getInstance()->setFlash('success', "Le commentaire a bien été supprimé.");
-    header('Location: /sites/projet4/chapters?action=showChapter&id=' .$showComment['ticket_id']); exit;
+    header('Location: /projet4/chapters?action=showChapter&id=' .$showComment['ticket_id']); exit;
 }
 
 function updateComment($page) {
