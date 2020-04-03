@@ -4,6 +4,8 @@ include_once 'models/contact.php';
 
 function contact($page) {
     require 'views/includes/bootstrap.php';
+    $contact = new Contact();
+    $infoContact = $contact->infoContact();
     if(isset($_SESSION['auth'])) {
         if(!empty($_POST) && isset($_POST['btn-contact'])) {
             if(isset($_POST['username'])  && isset($_POST['subject']) && isset($_POST['message'])) {
@@ -15,7 +17,6 @@ function contact($page) {
                         $email = str_secur($_SESSION['auth']->email);
                         $objectMessage = str_secur($_POST['subject']);
                         $message = str_secur($_POST['message']);
-                        $contact = new Contact();
                 
                         $addMessageContactIsConnected = $contact->addMessageContactIsConnected($_SESSION['auth']->id, $objectMessage, $message);
                         $message .= ' - email envoyé par : ' . $username . ' : ' . $email;

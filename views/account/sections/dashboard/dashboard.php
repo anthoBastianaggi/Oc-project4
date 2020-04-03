@@ -5,14 +5,16 @@
     ob_start(); 
 ?>
 
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg " color-on-scroll="500">
+    <div class=" container-fluid  ">
+        <a class="navbar-brand" href="#"> Profil : <?= $_SESSION['auth']->username ?></a>
+    </div>
+</nav>
+<!-- End Navbar -->
 <div class="section-content dashboard">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-12 col-md-5 textHeaderDasboard">
-                <div class="text-container">
-                    <h2 class="section-title text-center text-uppercase">Statistique du blog</h2>
-                </div>
-            </div>
             <div class="col-xl-6">
                 <div class="card">
                     <div class="card-header">

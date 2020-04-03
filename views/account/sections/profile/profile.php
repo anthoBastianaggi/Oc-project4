@@ -24,7 +24,7 @@
                         <div class="author">
                             <h5 class="title"><?= $_SESSION['auth']->firstname ?> <?= $_SESSION['auth']->lastname ?></h5>
                             <p class="username">@<?= $_SESSION['auth']->username ?></p>
-                            <p class="description text-center">Formation Développeur Web Junior chez OpenClassrooms <br> Développeur Front-end chez Qwant Music</p>
+                            <p class="description text-center"><?= $_SESSION['auth']->about ?></p>
                             <div class="address-container">
                                 <i class="fa fa-map-marker"></i>
                                 <p class="address"><?= $_SESSION['auth']->address ?><br><?= $_SESSION['auth']->postal_code ?> <?= $_SESSION['auth']->city ?></p>
@@ -82,7 +82,7 @@
                         <h4 class="card-title">Editer Profil</h4>
                     </div>
                     <div class="card-body">
-                        <form action="<?= CURRENT_PATH ?>profile?action=updateProfile" method="post" role="form">
+                        <form action="<?= CURRENT_PATH ?>profile?action=profile" method="post" role="form">
                             <div class="row">
                                 <div class="col-md-4 item-container">
                                     <div class="form-group">

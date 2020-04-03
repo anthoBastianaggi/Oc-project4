@@ -29,25 +29,19 @@
                 .blog-thumb {
                     padding: 15px;
                     background-color:white;
-                    border-radius: 0.25rem 0.25rem 0 0;
-                    a {
-                        &:hover {
-                            text-decoration: none;
-                        }
-        
-                        img {
-                            width: 100%;
-                        }
-                        .meta-info {
-                            position: relative;
-                            height: 35px;
-                            margin: -35px 0 0 0;
-                            background:rgba(0,0,0,.8);
-                            color:#ccc;
-                            line-height: 35px;
-                            padding: 0 15px;
-                        }
-                    }            
+                    border-radius: 0.25rem 0.25rem 0 0;        
+                    img {
+                        width: 100%;
+                    }
+                    .meta-info {
+                        position: relative;
+                        height: 35px;
+                        margin: -35px 0 0 0;
+                        background:rgba(0,0,0,.8);
+                        color:#ccc;
+                        line-height: 35px;
+                        padding: 0 15px;
+                    }           
                 }
         
                 .card-block {
