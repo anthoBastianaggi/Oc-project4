@@ -1,0 +1,117 @@
+.block-edit-report {
+    .card-body-section-box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 0;
+        .item-container {
+            font-family: "Helvetica", sans-serif;
+            font-size: 16px;
+            font-weight: normal;
+            letter-spacing: normal;
+            width: 100%;
+            border: 1px solid #dee2e6;
+            .box-header {
+                display: flex;
+                justify-content: space-between;
+                border-bottom: 1px solid #dee2e6;
+                .box-header-container {
+                    width: 100%;
+                    text-align: center;
+                    border-right: 1px solid #dee2e6;
+                    &:last-child {
+                        border-right: none;
+                    }
+                    .box-title {
+                        font-family: "Helvetica", sans-serif;
+                        font-size: 16px;
+                        font-weight: normal;
+                        letter-spacing: normal;
+                        line-height: 1.5;
+                        color: #353c52;
+                        margin: 6px auto;
+                    }
+                }
+            }
+
+            .box-body {
+                display: flex;
+                justify-content: space-between;
+                .box-body-container {
+                    width: 100%;
+                    border-right: 1px solid #dee2e6;
+                    padding: 5px 10px;
+                    .box-description {
+                        font-family: "Helvetica", sans-serif;
+                        font-size: 14px;
+                        font-weight: normal;
+                        letter-spacing: normal;
+                        line-height: 32px;
+                        color: #5c6f84;
+                        margin: 0;
+                        height: 100%;
+                    } 
+                }
+                .box-btn-body-container {
+                    width: 100%;
+                    border-right: 1px solid #dee2e6;
+                    padding: 0 10px;
+                    &:last-child {
+                        border-right: none;
+                    }
+                    .box-btn {
+                        display: flex;
+                        font-family: "Helvetica", sans-serif;
+                        font-size: 14px;
+                        font-weight: normal;
+                        letter-spacing: normal;
+                        line-height: 32px;
+                        color: #5c6f84;
+                        margin: 0;
+                        height: 100%;
+                        .btn-container-validate, .btn-container-cancel {
+                            width: 100%;
+                            border-right: 1px solid #dee2e6;
+                            &:last-child {
+                                border-right: none;
+                            }
+                            .btn-validate, .btn-cancel {
+                                font-size: 14px;
+                                font-weight: 400;
+                                letter-spacing: 0;
+                                line-height: 32px;
+                                display: flex;
+                                position: relative;
+                                justify-content: center;
+                                align-items: center;
+                                border-radius: 50px;
+                                overflow: hidden;
+                                cursor: pointer;
+                                color: #5c6f84;
+                                background-color: transparent;
+                                padding: 0;
+                                &:hover {
+                                    box-shadow: none;
+                                    color: #353c52;
+                                }
+                
+                                .icon {
+                                    display: flex;
+                                    align-items: center;
+                                    margin-right: 7px;
+                                }
+                            }
+                        }
+                        .btn-container-validate {
+                            padding: 5px 10px 5px 0;
+                        }
+                        .btn-container-cancel {
+                            padding: 5px 0 5px 10px;
+                        }
+                    }    
+                }
+            }
+        }
+    }
+}

@@ -1764,6 +1764,101 @@ section .wrapper {
   .block-edit-profile .card-body {
     padding: 1.25rem 0.65rem; } }
 
+.block-edit-report .card-body-section-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0; }
+  .block-edit-report .card-body-section-box .item-container {
+    font-family: "Helvetica", sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    letter-spacing: normal;
+    width: 100%;
+    border: 1px solid #dee2e6; }
+    .block-edit-report .card-body-section-box .item-container .box-header {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid #dee2e6; }
+      .block-edit-report .card-body-section-box .item-container .box-header .box-header-container {
+        width: 100%;
+        text-align: center;
+        border-right: 1px solid #dee2e6; }
+        .block-edit-report .card-body-section-box .item-container .box-header .box-header-container:last-child {
+          border-right: none; }
+        .block-edit-report .card-body-section-box .item-container .box-header .box-header-container .box-title {
+          font-family: "Helvetica", sans-serif;
+          font-size: 16px;
+          font-weight: normal;
+          letter-spacing: normal;
+          line-height: 1.5;
+          color: #353c52;
+          margin: 6px auto; }
+    .block-edit-report .card-body-section-box .item-container .box-body {
+      display: flex;
+      justify-content: space-between; }
+      .block-edit-report .card-body-section-box .item-container .box-body .box-body-container {
+        width: 100%;
+        border-right: 1px solid #dee2e6;
+        padding: 5px 10px; }
+        .block-edit-report .card-body-section-box .item-container .box-body .box-body-container .box-description {
+          font-family: "Helvetica", sans-serif;
+          font-size: 14px;
+          font-weight: normal;
+          letter-spacing: normal;
+          line-height: 32px;
+          color: #5c6f84;
+          margin: 0;
+          height: 100%; }
+      .block-edit-report .card-body-section-box .item-container .box-body .box-btn-body-container {
+        width: 100%;
+        border-right: 1px solid #dee2e6;
+        padding: 0 10px; }
+        .block-edit-report .card-body-section-box .item-container .box-body .box-btn-body-container:last-child {
+          border-right: none; }
+        .block-edit-report .card-body-section-box .item-container .box-body .box-btn-body-container .box-btn {
+          display: flex;
+          font-family: "Helvetica", sans-serif;
+          font-size: 14px;
+          font-weight: normal;
+          letter-spacing: normal;
+          line-height: 32px;
+          color: #5c6f84;
+          margin: 0;
+          height: 100%; }
+          .block-edit-report .card-body-section-box .item-container .box-body .box-btn-body-container .box-btn .btn-container-validate, .block-edit-report .card-body-section-box .item-container .box-body .box-btn-body-container .box-btn .btn-container-cancel {
+            width: 100%;
+            border-right: 1px solid #dee2e6; }
+            .block-edit-report .card-body-section-box .item-container .box-body .box-btn-body-container .box-btn .btn-container-validate:last-child, .block-edit-report .card-body-section-box .item-container .box-body .box-btn-body-container .box-btn .btn-container-cancel:last-child {
+              border-right: none; }
+            .block-edit-report .card-body-section-box .item-container .box-body .box-btn-body-container .box-btn .btn-container-validate .btn-validate, .block-edit-report .card-body-section-box .item-container .box-body .box-btn-body-container .box-btn .btn-container-validate .btn-cancel, .block-edit-report .card-body-section-box .item-container .box-body .box-btn-body-container .box-btn .btn-container-cancel .btn-validate, .block-edit-report .card-body-section-box .item-container .box-body .box-btn-body-container .box-btn .btn-container-cancel .btn-cancel {
+              font-size: 14px;
+              font-weight: 400;
+              letter-spacing: 0;
+              line-height: 32px;
+              display: flex;
+              position: relative;
+              justify-content: center;
+              align-items: center;
+              border-radius: 50px;
+              overflow: hidden;
+              cursor: pointer;
+              color: #5c6f84;
+              background-color: transparent;
+              padding: 0; }
+              .block-edit-report .card-body-section-box .item-container .box-body .box-btn-body-container .box-btn .btn-container-validate .btn-validate:hover, .block-edit-report .card-body-section-box .item-container .box-body .box-btn-body-container .box-btn .btn-container-validate .btn-cancel:hover, .block-edit-report .card-body-section-box .item-container .box-body .box-btn-body-container .box-btn .btn-container-cancel .btn-validate:hover, .block-edit-report .card-body-section-box .item-container .box-body .box-btn-body-container .box-btn .btn-container-cancel .btn-cancel:hover {
+                box-shadow: none;
+                color: #353c52; }
+              .block-edit-report .card-body-section-box .item-container .box-body .box-btn-body-container .box-btn .btn-container-validate .btn-validate .icon, .block-edit-report .card-body-section-box .item-container .box-body .box-btn-body-container .box-btn .btn-container-validate .btn-cancel .icon, .block-edit-report .card-body-section-box .item-container .box-body .box-btn-body-container .box-btn .btn-container-cancel .btn-validate .icon, .block-edit-report .card-body-section-box .item-container .box-body .box-btn-body-container .box-btn .btn-container-cancel .btn-cancel .icon {
+                display: flex;
+                align-items: center;
+                margin-right: 7px; }
+          .block-edit-report .card-body-section-box .item-container .box-body .box-btn-body-container .box-btn .btn-container-validate {
+            padding: 5px 10px 5px 0; }
+          .block-edit-report .card-body-section-box .item-container .box-body .box-btn-body-container .box-btn .btn-container-cancel {
+            padding: 5px 0 5px 10px; }
+
 .block-edit-settings .card-body-section-title {
   font-family: "Helvetica", sans-serif;
   font-size: 24px;
