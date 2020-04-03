@@ -24,36 +24,58 @@
                             <div class="card-body-section">
                                 <div class="col-md-12 card-body-section-box">
                                     <div class="item-container">
-                                        <table class="table table-bordered">
-                                            <tr>
-                                                <td scope="col" class="text-center">Publié par</td>
-                                                <td scope="col" class="text-center">Content</td>
-                                                <td scope="col" class="text-center">Chapitre lié</td>
-                                                <td scope="col" class="text-center">Signalé par</td>
-                                                <td scope="col" colspan=2 class="text-center">Validation</td>
-                                            </tr>
-                                            <?php foreach ($allSignaleCommentsValidate as $signaleCommentValidate) { ?>
-                                            <tr>
-                                                <td><?= $signaleCommentValidate['writer'] ?></td>
-                                                <td><?= $signaleCommentValidate['content'] ?></td>
-                                                <td><?= $signaleCommentValidate['chapter'] ?></td>
-                                                <td><?= $signaleCommentValidate['reporter'] ?></td>
-                                                <td>
-                                                    <a href="<?= CURRENT_PATH ?>report-comment?action=validateSignaleComment&id=<?= $signaleCommentValidate['comment_id'] ?>">
-                                                        <i class="fa fa-pencil icon"></i>Valider
-                                                    </a>
-                                                </td>
-                                                <td>  
-                                                    <a href="<?= CURRENT_PATH ?>report-comment?action=deleteSignaleComment&id=<?= $signaleCommentValidate['report_id'] ?>">
-                                                        <i class="fa fa-pencil icon"></i>Annuler
-                                                    </a>
-                                                </td>
-                                            </tr>
-                                            <?php } ?>
-                                        </table>
+                                        <div class="box-header">
+                                            <div class="box-header-container">
+                                                <p class="box-title">Publié par</p>
+                                            </div>
+                                            <div class="box-header-container">
+                                                <p class="box-title">Content</p>
+                                            </div>
+                                            <div class="box-header-container">
+                                                <p class="box-title">Chapitre lié</p>
+                                            </div>
+                                            <div class="box-header-container">
+                                                <p class="box-title">Signalé par</p>
+                                            </div>
+                                            <div class="box-header-container">
+                                                <p class="box-title">Validation</p>
+                                            </div>
+                                        </div>
+                                        <?php foreach ($allSignaleCommentsValidate as $signaleCommentValidate) { ?>
+                                        <div class="box-body">
+                                            <div class="box-body-container">
+                                                <p class="box-description"><?= $signaleCommentValidate['writer'] ?></p>
+                                            </div>
+                                            <div class="box-body-container">
+                                                <p class="box-description"><?= $signaleCommentValidate['content'] ?></p>
+                                            </div>
+                                            <div class="box-body-container">
+                                                <p class="box-description"><?= $signaleCommentValidate['chapter'] ?></p>
+                                            </div>
+                                            <div class="box-body-container">
+                                                <p class="box-description"><?= $signaleCommentValidate['reporter'] ?></p>
+                                            </div>
+                                            <div class="box-btn-body-container ">
+                                                <div class="box-btn">
+                                                    <div class="btn-container-validate">
+                                                        <a href="<?= CURRENT_PATH ?>report-comment?action=validateSignaleComment&id=<?= $signaleCommentValidate['comment_id'] ?>" class="button btn-validate">
+                                                            <i class="fa fa-pencil icon"></i>
+                                                            <span class="validate">Valider</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="btn-container-cancel">
+                                                        <a href="<?= CURRENT_PATH ?>report-comment?action=deleteSignaleComment&id=<?= $signaleCommentValidate['report_id'] ?>" class="button btn-cancel">
+                                                            <i class="fa fa-pencil icon"></i>
+                                                            <span class="cancel">Annuler</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <?php } ?>
                                     </div>
                                 </div>
-                            </div>        
+                            </div>       
                         </div>
                     </div>
                 </div>
