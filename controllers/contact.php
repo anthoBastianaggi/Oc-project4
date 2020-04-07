@@ -1,6 +1,7 @@
 <?php
 
 include_once 'models/contact.php';
+include_once 'services/session.php';
 
 function contact($page) {
     require 'views/includes/bootstrap.php';

@@ -1,4 +1,5 @@
 <?php
+include_once 'services/app.php';
 
 function forget($page) {
     require 'views/includes/bootstrap.php';

@@ -1,4 +1,4 @@
-<?php include_once 'models/class/Session.php' ?>
+<?php include_once 'services/session.php' ?>
 
 <!DOCTYPE html>
 <html lang="fr">

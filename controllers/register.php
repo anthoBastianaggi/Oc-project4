@@ -1,4 +1,5 @@
 <?php
+include_once 'services/app.php';
 
 function register($page) {
     require_once 'views/includes/bootstrap.php'; 
