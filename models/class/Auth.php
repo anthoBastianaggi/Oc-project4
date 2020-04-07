@@ -1,20 +1,8 @@
 <?php
+include_once 'services/auth.php';
+include_once 'services/str.php';
+
 class Auth {
-    private $options = [
-        'restriction_msg' => "Vous n'avez pas le droit d'accéder à cette page."
-    ];
-
-    private $session;
-
-    public function __construct($session, $options = []) {
-        $this->options = array_merge($this->options, $options);
-        $this->session = $session;
-    }
-
-    public function hashPassword($password) {
-        return password_hash($password, PASSWORD_BCRYPT);
-    }
-
     public function register($db, $firstname, $lastname, $birthdate, $username, $password, $email) {
         $password = $this->hashPassword($password);
         $token = Str::random(60);
@@ -42,27 +30,8 @@ class Auth {
         return false;
     }
 
-    public function restrict() {
-        if(!$this->session->read('auth')) {
-            $this->session->setFlash('danger', $this->options['restriction_msg']);
-            header('Location: /projet4/login?action=login');
-            exit();
-        }
-    }
-
-    public function user() {
-        if(!$this->session->read('auth')) {
-            return false;
-        }
-        return $this->session->read('auth');
-    }
-
-    public function connect($user) {
-        $this->session->write('auth', $user);
-    }
-
     public function connectFromCookie($db) {
-        if(isset($_COOKIE['remember']) && !$this->user()){
+        if(isset($_COOKIE['remember']) && !AuthService::user()){
             $remember_token = $_COOKIE['remember'];
             $parts = explode('==', $remember_token);
             $user_id = $parts[0];
@@ -99,11 +68,6 @@ class Auth {
         $remember_token = Str::random(250);
         $db->query('UPDATE users SET remember_token = ? WHERE id= ?', [$remember_token, $user_id]);
         setcookie('remember', $user_id . '==' . $remember_token . sha1($user_id . 'ratonlaveurs'), time() + 60 * 60 * 24 * 7);
-    }
-
-    public function logout() {
-        setcookie('remember', NULL, -1);
-        $this->session->delete('auth');
     }
 
     public function resetPassword($db, $email) {

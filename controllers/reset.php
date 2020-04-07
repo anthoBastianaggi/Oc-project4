@@ -1,4 +1,6 @@
 <?php
+include_once 'services/app.php';
+
 function resetPassword($page) {
     require 'views/includes/bootstrap.php';
     if(isset($_GET['id']) && isset($_GET['token'])){

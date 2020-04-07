@@ -1,8 +1,12 @@
 <?php
 include_once 'models/settings.php';
+include_once 'services/auth.php';
+include_once 'services/app.php';
 
 function settings($page) {
-    include_once 'views/account/sections/settings/'.$page.'.php';
+    if(AuthService::isAuthenticated()) {
+        include_once 'views/account/sections/settings/'.$page.'.php';
+    }
 }
 
 function deleteMyAccount($page) {
