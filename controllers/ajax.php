@@ -1,8 +1,7 @@
 <?php
-include_once 'models/dashboard.php';
+require_once 'views/includes/bootstrap.php'; 
 
 function ajax($page) {
-    require 'views/includes/bootstrap.php';
     $chart = New Dashboard;
     $countUsers2018 = $chart->numberUsers2018();
     $countUsers2019 = $chart->numberUsers2019();

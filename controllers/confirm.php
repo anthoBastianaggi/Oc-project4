@@ -1,8 +1,8 @@
 <?php
+require_once 'views/includes/bootstrap.php'; 
 include_once 'services/app.php';
 
 function confirm($page) {
-    require 'views/includes/bootstrap.php';
     $db = App::getDatabase();
 
     if(App::getAuth()->confirm($db, $_GET['id'], $_GET['token'], Session::getInstance())) {  

@@ -1,5 +1,5 @@
  <!-- Navigation -->
- <nav class="navbar-expand-lg text-uppercase navigation">
+<nav class="navbar-expand-lg text-uppercase navigation">
     <div class="navContainer">
         <a class="js-scroll-trigger linkTitle" href="#">
             <div class="iconBook">

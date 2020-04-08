@@ -1,10 +1,12 @@
 <?php
+require_once 'views/includes/bootstrap.php'; 
+
 class AuthService {
-    private $options = [
+    protected $options = [
         'restriction_msg' => "Vous n'avez pas le droit d'accéder à cette page."
     ];
 
-    private $session;
+    protected $session;
 
     public function __construct($session, $options = []) {
         $this->options = array_merge($this->options, $options);
@@ -49,7 +51,6 @@ class AuthService {
     }
     
     static function is_role_admin() {
-        require 'views/includes/bootstrap.php';
         if(AuthService::isAuthenticated() && $_SESSION['auth']->role_id === "1") {
             return true;
         }

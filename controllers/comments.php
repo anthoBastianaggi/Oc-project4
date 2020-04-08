@@ -1,7 +1,5 @@
 <?php
-
-include_once 'models/chapters.php';
-include_once 'models/comments.php';
+require_once 'views/includes/bootstrap.php'; 
 include_once 'services/auth.php';
 include_once 'services/session.php';
 
@@ -12,7 +10,6 @@ function showComment($page) {
 }
 
 function addComment($page) {
-    require 'views/includes/bootstrap.php';
     if(AuthService::isAuthenticated()) {
         if(!empty($_POST) && isset($_POST['btnAddComment'])) {      
             if(!empty($_POST['commentChapter'])) {
@@ -27,7 +24,6 @@ function addComment($page) {
 }
 
 function deleteComment($page) { 
-    require 'views/includes/bootstrap.php';
     $comment = new Comments();
     $showComment = $comment->showComment();
     $deleteComment = $comment->deleteComment();
@@ -36,7 +32,6 @@ function deleteComment($page) {
 }
 
 function updateComment($page) {
-    require 'views/includes/bootstrap.php';
     if(AuthService::isAuthenticated()) {
         $comment = new Comments();
         $showComment = $comment->showComment();
@@ -50,7 +45,6 @@ function updateComment($page) {
 }
 
 function signaleComment($page) { 
-    require 'views/includes/bootstrap.php';
     $comment = new Comments();
     $showComment = $comment->showComment();
     $signaleComment = $comment->signaleComment($_SESSION['auth']->id, $_GET['id']);

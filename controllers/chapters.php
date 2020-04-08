@@ -1,7 +1,5 @@
 <?php
-
-include_once 'models/chapters.php';
-include_once 'models/comments.php';
+require_once 'views/includes/bootstrap.php'; 
 include_once 'services/auth.php';
 include_once 'services/app.php';
 
@@ -13,7 +11,6 @@ function chapters($page) {
 }
 
 function showChapter($page) {
-    require 'views/includes/bootstrap.php';
     if(AuthService::isAuthenticated()) {
         $chapter = new Chapters();
         $showChapter = $chapter->showChapter();
@@ -44,7 +41,6 @@ function addChapter($page) {
 }
 
 function deleteChapter($page) { 
-    require 'views/includes/bootstrap.php';
     $chapter = new Chapters();
     $deleteChapter = $chapter->deleteChapter();
     Session::getInstance()->setFlash('success', "Le chapitre a bien été supprimé.");

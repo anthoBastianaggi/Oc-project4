@@ -1,10 +1,9 @@
 <?php
-include_once 'models/settings.php';
+require_once 'views/includes/bootstrap.php'; 
 include_once 'services/auth.php';
 include_once 'services/app.php';
 
 function updatePassword($page) {
-    require_once 'views/includes/bootstrap.php'; 
     if(AuthService::isAuthenticated()) {
         if(!empty($_POST)) {
             $auth = App::getAuth();
