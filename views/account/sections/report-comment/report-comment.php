@@ -7,7 +7,7 @@
 
 <nav class="navbar navbar-expand-lg " color-on-scroll="500">
     <div class=" container-fluid  ">
-        <a class="navbar-brand" href="#"> Profil : <?= $_SESSION['auth']->username ?></a>
+        <a class="navbar-brand" href="#"> Profil : <?= $infoProfile['username'] ?></a>
     </div>
 </nav>
 <!-- End Navbar -->
