@@ -2,7 +2,7 @@
 include_once 'services/auth.php';
 include_once 'services/str.php';
 
-class Auth {
+class Auth extends AuthService {
     public function register($db, $firstname, $lastname, $birthdate, $username, $password, $email) {
         $password = $this->hashPassword($password);
         $token = Str::random(60);

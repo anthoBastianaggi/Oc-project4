@@ -1,16 +1,11 @@
 <?php
 include_once 'services/app.php';
-include_once 'services/auth.php';
 
 function login($page) {
     require 'views/includes/bootstrap.php';
     $auth = App::getAuth();
     $db = App::getDatabase();
-   
     $auth->connectFromCookie($db);
-    $logUser = new AuthService();
-    $logUser->user();
-    var_dump($logUser); die;
     if($auth->user()){
         App::redirect('/projet4/profile?action=profile');
     }

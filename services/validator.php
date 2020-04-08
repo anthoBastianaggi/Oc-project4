@@ -1,5 +1,5 @@
 <?php
-class Validator {
+class ValidatorService {
     private $data;
     private $errors = [];
 
@@ -7,7 +7,7 @@ class Validator {
         $this->data = $data;
     }
 
-    private function getField($field) {
+    public function getField($field) {
         if(!isset($this->data[$field])) {
             return null;
         }
