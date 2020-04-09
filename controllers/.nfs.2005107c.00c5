@@ -1,4 +1,0 @@
-<?php
-function reset($page) {
-    include_once 'views/account/sections/log/reset/'.$page.'.php';
-}
