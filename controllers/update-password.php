@@ -1,7 +1,7 @@
 <?php
-require_once 'views/includes/bootstrap.php'; 
+
 include_once 'services/auth.php';
-include_once 'services/app.php';
+
 
 function updatePassword($page) {
     if(AuthService::isAuthenticated()) {
@@ -9,7 +9,7 @@ function updatePassword($page) {
             $auth = App::getAuth();
             $db = App::getDatabase();
             $validator = new Validator($_POST);
-            if($_POST['password'] !== $_SESSION['auth']->password) {
+            if(!password_verify($_POST["password"], $_SESSION['auth']->password)) {
                 Session::getInstance()->setFlash('danger', "Erreur le mot de passe rentré est différent du mot de passe actuel. Veuillez rentrer le bon mot de passe.");
             } else {
                 if(!empty($_POST['new-password'])) {
@@ -28,8 +28,8 @@ function updatePassword($page) {
                 } else {
                     Session::getInstance()->setFlash('danger', "Veuillez remplir les champs nouveau mot de passe et confirmation nouveau mot de passe.");
                 }   
-            } 
+            }
         }
         include_once 'views/account/sections/settings/update-password/'.$page.'.php';
-    }
+    } 
 }

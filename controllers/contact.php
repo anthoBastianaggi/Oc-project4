@@ -1,5 +1,4 @@
 <?php
-require_once 'views/includes/bootstrap.php';
 include_once 'services/session.php';
 
 function contact($page) {
@@ -12,10 +11,10 @@ function contact($page) {
                     if($_POST['username'] !== $_SESSION['auth']->username) {
                         Session::getInstance()->setFlash('danger', "Votre pseudo est différent de celui ou vous êtes connecté. Veuillez entrer le bon pseudo.");
                     } else {
-                        $username = str_secur($_POST['username']);
-                        $email = str_secur($_SESSION['auth']->email);
-                        $objectMessage = str_secur($_POST['subject']);
-                        $message = str_secur($_POST['message']);
+                        $username = Helpers::str_secur($_POST['username']);
+                        $email = Helpers::str_secur($_SESSION['auth']->email);
+                        $objectMessage = Helpers::str_secur($_POST['subject']);
+                        $message = Helpers::str_secur($_POST['message']);
                 
                         $addMessageContactIsConnected = $contact->addMessageContactIsConnected($_SESSION['auth']->id, $objectMessage, $message);
                         $message .= ' - email envoyé par : ' . $username . ' : ' . $email;
@@ -34,11 +33,11 @@ function contact($page) {
         if(!empty($_POST) && isset($_POST['btn-contact'])) {
             if(isset($_POST['name']) && isset($_POST['name-family']) && isset($_POST['email']) && isset($_POST['subject']) && isset($_POST['message'])) {
                 if(!empty($_POST['name']) && !empty($_POST['name-family']) && !empty($_POST['email']) && !empty($_POST['subject']) && !empty($_POST['message'])) {
-                    $firstname = str_secur($_POST['name']);
-                    $lastname = str_secur($_POST['name-family']);
-                    $email = str_secur($_POST['email']);
-                    $objectMessage = str_secur($_POST['subject']);
-                    $message = str_secur($_POST['message']);
+                    $firstname = Helpers::str_secur($_POST['name']);
+                    $lastname = Helpers::str_secur($_POST['name-family']);
+                    $email = Helpers::str_secur($_POST['email']);
+                    $objectMessage = Helpers::str_secur($_POST['subject']);
+                    $message = Helpers::str_secur($_POST['message']);
                     $contact = new Contact();
                     
                     $addMessageContact = $contact->addMessageContact($firstname, $lastname, $email, $objectMessage, $message);

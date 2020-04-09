@@ -1,7 +1,7 @@
 <?php
 class ValidatorService {
-    private $data;
-    private $errors = [];
+    protected $data;
+    protected $errors = [];
 
     public function __construct($data) {
         $this->data = $data;

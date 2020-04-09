@@ -1,5 +1,4 @@
 <?php
-require_once 'views/includes/bootstrap.php';
 include_once 'services/auth.php';
 include_once 'services/session.php';
 

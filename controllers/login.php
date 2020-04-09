@@ -1,6 +1,6 @@
 <?php
-require_once 'views/includes/bootstrap.php'; 
-include_once 'services/app.php';
+
+
 
 function login($page) {
     $auth = App::getAuth();

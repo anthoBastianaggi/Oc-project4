@@ -2,7 +2,7 @@
 include_once 'models/comments.php';
 include_once 'models/profile.php';
 include_once 'services/auth.php';
-include_once 'services/app.php';
+
 
 function reportComment($page) {
     if(AuthService::is_role_admin()) {
@@ -10,6 +10,7 @@ function reportComment($page) {
         $infoProfile = $profile->infoProfile($_SESSION['auth']->id);
         $comment = new Comments();
         $allSignaleCommentsValidate = $comment->getAllSignaleCommentValidate();
+        $role = Auth::roleUser($_SESSION['auth']->role_id);
         include_once 'views/account/sections/report-comment/'.$page.'.php';
     } else {
         App::redirect('/projet4/profile?action=profile');

@@ -18,6 +18,8 @@ html body {
       padding-top: 9.3rem;
       display: grid;
       flex-grow: 1; }
+      html body .layout main .alert {
+        height: 50px; }
       html body .layout main .alert-success {
         z-index: 1; }
       html body .layout main section {
@@ -1193,6 +1195,8 @@ main .update-comments .container {
     width: 100%;
     padding-right: 15px;
     padding-left: 15px; }
+  #infobox-register .alert-danger {
+    height: auto; }
   #infobox-register form {
     border-radius: 5px;
     max-width: 100%;
@@ -1468,7 +1472,7 @@ footer {
   background-color: rgba(0, 0, 0, 0.03);
   border-top: 1px solid rgba(0, 0, 0, 0.125);
   padding: 1rem 0 !important;
-  z-index: -1; }
+  z-index: 0; }
   footer .containerSection #footer {
     line-height: 50px;
     height: 50px; }

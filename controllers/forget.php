@@ -1,6 +1,6 @@
 <?php
-require_once 'views/includes/bootstrap.php'; 
-include_once 'services/app.php';
+
+
 
 function forget($page) {
     if(!empty($_POST) && !empty($_POST['email'])){
