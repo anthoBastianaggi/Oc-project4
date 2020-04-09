@@ -36,8 +36,9 @@ function addChapter($page) {
             }
         }
         include_once 'views/chapters/sections/chapter/chapter-add/'.$page.'_add_view.php';     
-    } 
-    App::redirect('/projet4/chapters?action=chapters');
+    } else {
+        App::redirect('/projet4/chapters?action=chapters');
+    }
 }
 
 function deleteChapter($page) { 
@@ -57,6 +58,7 @@ function updateChapter($page) {
             App::redirect('/projet4/chapters?action=showChapter&id='.$_GET['id']);  exit;
         }
         include_once 'views/chapters/sections/chapter/chapter-update/'.$page.'_update_view.php'; 
+    } else {
+        App::redirect('/projet4/chapters?action=chapters');
     }
-    App::redirect('/projet4/chapters?action=chapters');
 }

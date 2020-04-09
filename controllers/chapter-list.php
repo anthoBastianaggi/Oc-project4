@@ -11,6 +11,7 @@ function chapterList($page) {
         $chapter = new Chapters();
         $allChapters = $chapter->getAllChapters();
         include_once 'views/account/sections/chapter-list/'.$page.'.php';
+    } else {
+        App::redirect('/projet4/profile?action=profile');
     }
-    App::redirect('/projet4/profile?action=profile');
 }
