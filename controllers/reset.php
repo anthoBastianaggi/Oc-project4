@@ -1,6 +1,8 @@
 <?php
+require_once 'views/includes/bootstrap.php'; 
+include_once 'services/app.php';
+
 function resetPassword($page) {
-    require 'views/includes/bootstrap.php';
     if(isset($_GET['id']) && isset($_GET['token'])){
         $auth = App::getAuth();
         $db = App::getDatabase();

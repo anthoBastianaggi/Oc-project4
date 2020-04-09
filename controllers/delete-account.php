@@ -1,5 +1,7 @@
 <?php
-
+include_once 'services/auth.php';
 function deleteAccount($page) {
-    include_once 'views/account/sections/settings/delete-account/'.$page.'.php';
+    if(AuthService::isAuthenticated()) {
+        include_once 'views/account/sections/settings/delete-account/'.$page.'.php';
+    }
 }

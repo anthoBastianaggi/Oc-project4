@@ -1,7 +1,8 @@
 <?php
+require_once 'views/includes/bootstrap.php'; 
+include_once 'services/app.php';
 
 function register($page) {
-    require_once 'views/includes/bootstrap.php'; 
     if(!empty($_POST)) {
         $errors = array();
         $db = App::getDatabase();

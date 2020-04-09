@@ -1,9 +1,8 @@
 <?php
-
-include_once 'models/contact.php';
+require_once 'views/includes/bootstrap.php';
+include_once 'services/session.php';
 
 function contact($page) {
-    require 'views/includes/bootstrap.php';
     $contact = new Contact();
     $infoContact = $contact->infoContact();
     if(isset($_SESSION['auth'])) {
@@ -45,6 +44,7 @@ function contact($page) {
                     $addMessageContact = $contact->addMessageContact($firstname, $lastname, $email, $objectMessage, $message);
                     $message .= ' - email envoyé par : ' . $firstname . ' ' . $lastname . ' : ' . $email;
                     // ENVOYER UN EMAIL
+                    Session::getInstance()->setFlash('success', "Le message a bien été envoyé.");
                     mail('a.bastianaggi@gmail.com', 'On me contacte sur mon site', $message);
                 } else {
                     Session::getInstance()->setFlash('danger', "Vous devez remplir tous les champs !");              
