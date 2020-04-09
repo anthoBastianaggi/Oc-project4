@@ -3,7 +3,7 @@
 // Inclusion des fichiers principaux
 require 'helpers/index.php';
 require 'config/parameters.php';
-require 'views/includes/db.php';
+require 'db.php';
 
 function bootstrap($class) {
     require "services/app.php";
