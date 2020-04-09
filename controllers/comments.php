@@ -2,6 +2,7 @@
 require_once 'views/includes/bootstrap.php'; 
 include_once 'services/auth.php';
 include_once 'services/session.php';
+include_once 'services/app.php';
 
 function showComment($page) {
     $comment = new Comments();
@@ -19,7 +20,7 @@ function addComment($page) {
             }
         }
         Session::getInstance()->setFlash('success', "Le commentaire a bien été ajouté.");
-        header('Location: /projet4/chapters?action=showChapter&id=' .$_GET['id']); 
+        App::redirect('/projet4/chapters?action=showChapter&id='.$_GET['id']);
     }
 }
 
@@ -28,7 +29,7 @@ function deleteComment($page) {
     $showComment = $comment->showComment();
     $deleteComment = $comment->deleteComment();
     Session::getInstance()->setFlash('success', "Le commentaire a bien été supprimé.");
-    header('Location: /projet4/chapters?action=showChapter&id=' .$showComment['ticket_id']); exit;
+    App::redirect('/projet4/chapters?action=showChapter&id=' .$showComment['ticket_id']);  exit;
 }
 
 function updateComment($page) {
@@ -38,7 +39,7 @@ function updateComment($page) {
         if(!empty($_POST) && isset($_POST['btnUpdateComment'])) {
             $updateComment = $comment->updateComment($_POST['contentComment'], $_GET['id']);
             Session::getInstance()->setFlash('success', "Le commentaire a bien été mis à jour.");
-            header('Location: /projet4/chapters?action=showChapter&id=' .$showComment['ticket_id']); exit;
+            App::redirect('/projet4/chapters?action=showChapter&id=' .$showComment['ticket_id']);  exit;
         }
         include_once 'views/chapters/sections/comment/comment-update/'.$page.'_update_view.php';  
     }
@@ -49,5 +50,5 @@ function signaleComment($page) {
     $showComment = $comment->showComment();
     $signaleComment = $comment->signaleComment($_SESSION['auth']->id, $_GET['id']);
     Session::getInstance()->setFlash('success', "Le commentaire a bien été signalé.");
-    header('Location: /projet4/chapters?action=showChapter&id=' .$showComment['ticket_id']);
+    App::redirect('/projet4/chapters?action=showChapter&id=' .$showComment['ticket_id']);
 }

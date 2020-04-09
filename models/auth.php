@@ -64,6 +64,14 @@ class Auth extends AuthService {
         }
     }
 
+    static function roleUser($id) {
+        global $db;
+
+        $reqUserRole = $db->prepare('SELECT label FROM role WHERE id = ?');
+        $reqUserRole->execute(array($id));
+        return $reqUserRole -> fetch();
+    }
+
     public function remember($db, $user_id) {
         $remember_token = Str::random(250);
         $db->query('UPDATE users SET remember_token = ? WHERE id= ?', [$remember_token, $user_id]);

@@ -20,7 +20,7 @@ class AuthService {
     public function restrict() {
         if(!$this->session->read('auth')) {
             $this->session->setFlash('danger', $this->options['restriction_msg']);
-            header('Location: /projet4/login?action=login');
+            App::redirect('/projet4/login?action=login');
             exit();
         }
     }

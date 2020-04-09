@@ -18,11 +18,11 @@ function reportComment($page) {
 function validateSignaleComment($page) {
     $comment = new Comments();
     $valideSignaleComment = $comment->validateSignaleComment();
-    header('Location: /projet4/report-comment?action=reportComment'); 
+    App::redirect('/projet4/report-comment?action=reportComment');
 }
 
 function deleteSignaleComment($page) {
     $comment = new Comments();
     $deleteSignaleComment = $comment->deleteSignaleComment();
-    header('Location: /projet4/report-comment?action=reportComment'); 
+    App::redirect('/projet4/report-comment?action=reportComment');
 }

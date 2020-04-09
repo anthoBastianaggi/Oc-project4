@@ -32,7 +32,7 @@ function addChapter($page) {
                 $chapter = new Chapters();
                 $addChapter = $chapter->addChapter($_POST['titleTicket'], $_POST['contentTicket'], $_SESSION['auth']->id);
                 Session::getInstance()->setFlash('success', "Le chapitre a bien été ajouté.");
-                header('Location: /projet4/chapters?action=chapters'); exit;
+                App::redirect('/projet4/chapters?action=chapters');  exit;
             }
         }
         include_once 'views/chapters/sections/chapter/chapter-add/'.$page.'_add_view.php';     
@@ -44,7 +44,7 @@ function deleteChapter($page) {
     $chapter = new Chapters();
     $deleteChapter = $chapter->deleteChapter();
     Session::getInstance()->setFlash('success', "Le chapitre a bien été supprimé.");
-    header('Location: /projet4/chapters?action=chapters');  
+    App::redirect('/projet4/chapters?action=chapters');
 }
 
 function updateChapter($page) {
@@ -54,7 +54,7 @@ function updateChapter($page) {
         if(!empty($_POST) && isset($_POST['btnUpdateChapter'])) {
             $updateChapter = $chapter->updateChapter($_POST['titleTicket'], $_POST['contentTicket'], $_GET['id']);
             Session::getInstance()->setFlash('success', "Le chapitre a bien été mis à jour.");
-            header('Location: /projet4/chapters?action=showChapter&id='.$_GET['id']); exit;
+            App::redirect('/projet4/chapters?action=showChapter&id='.$_GET['id']);  exit;
         }
         include_once 'views/chapters/sections/chapter/chapter-update/'.$page.'_update_view.php'; 
     }

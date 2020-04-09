@@ -5,14 +5,14 @@
             <div class="sidebar-container">
                 <div class="user-panel">
                     <div class="image">
-                        <img src="http://via.placeholder.com/160x160" class="rounded-circle" alt="User Image">
+                        <img src="http://bootdey.com/img/Content/user_1.jpg" class="rounded-circle" alt="user-image">
                     </div>
                     <ul class="sidebarMenuUser">
                         <li class="sidebarItemUser">
                             <span class="username"><?= $_SESSION['auth']->firstname ?> <?= $_SESSION['auth']->lastname ?></span>
                         </li>
                         <li class="sidebarItemUser">
-                            <span class="role"><?= $_SESSION['auth']->role_label ?></span>
+                            <span class="role"><?= $role['label'] ?></span>
                         </li>
                     </ul>
                 </div>

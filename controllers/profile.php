@@ -7,6 +7,7 @@ function profile($page) {
     if(AuthService::isAuthenticated()) {
         $profile = new Profile();
         $infoProfile = $profile->infoProfile($_SESSION['auth']->id);
+        $role = Auth::roleUser($_SESSION['auth']->role_id);
         if(!empty($_POST) && isset($_POST['btnUpdateProfile'])) {
             $updateProfile = $profile->updateProfile($_POST['username'], $_POST['firstname'], 
             $_POST['lastname'], $_POST['birthdate'], $_POST['fixnumber'], $_POST['phonenumber'], 
