@@ -1,6 +1,6 @@
 <?php
-require_once 'views/includes/bootstrap.php'; 
-include_once 'services/app.php';
+
+
 include_once 'services/auth.php';
 
 function logout($page) {

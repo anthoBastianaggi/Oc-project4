@@ -1,6 +1,6 @@
 <?php
-require_once 'views/includes/bootstrap.php'; 
-include_once 'services/app.php';
+
+
 
 function confirm($page) {
     $db = App::getDatabase();

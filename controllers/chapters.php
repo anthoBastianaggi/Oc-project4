@@ -1,7 +1,7 @@
 <?php
-require_once 'views/includes/bootstrap.php'; 
+
 include_once 'services/auth.php';
-include_once 'services/app.php';
+
 
 function chapters($page) {
     $chapter = new Chapters();
@@ -27,8 +27,8 @@ function addChapter($page) {
     if(AuthService::is_role_admin()) {
         if(!empty($_POST) && isset($_POST['btnAjoutTicket'])) {  
             if(!empty($_POST['titleTicket']) && !empty($_POST['contentTicket'])) {
-                $titleTicket = str_secur($_POST['titleTicket']);
-                $contentTicket = str_secur($_POST['contentTicket']);
+                $titleTicket = Helpers::str_secur($_POST['titleTicket']);
+                $contentTicket = Helpers::str_secur($_POST['contentTicket']);
                 $chapter = new Chapters();
                 $addChapter = $chapter->addChapter($_POST['titleTicket'], $_POST['contentTicket'], $_SESSION['auth']->id);
                 Session::getInstance()->setFlash('success', "Le chapitre a bien été ajouté.");

@@ -1,5 +1,5 @@
 <div class="btnSidebarOpen">
-    <button id="menuBurgerOpen" class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+    <button id="menuBurgerOpen" class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" onclick='displaySidebarOpen(); return false'>
         <i class="fa fa-bars"></i>
     </button> 
 </div>
@@ -8,7 +8,7 @@
     <div class="sidebarOpen">
         <div class="sidebarMenu">
             <div class="sidebarContainer">
-                <button id="menuBurgerClose">
+                <button id="menuBurgerClose" onclick='displaySidebarClose(); return false'>
                 <i class="fa fa-times"></i>
                 </button>
                 <?php if(isset($_SESSION['auth'])): ?>

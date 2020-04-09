@@ -1,8 +1,8 @@
 <?php
-require_once 'views/includes/bootstrap.php'; 
+
 include_once 'services/auth.php';
 include_once 'services/session.php';
-include_once 'services/app.php';
+
 
 function showComment($page) {
     $comment = new Comments();
@@ -14,7 +14,7 @@ function addComment($page) {
     if(AuthService::isAuthenticated()) {
         if(!empty($_POST) && isset($_POST['btnAddComment'])) {      
             if(!empty($_POST['commentChapter'])) {
-                $commentChapter= str_secur($_POST['commentChapter']);
+                $commentChapter= Helpers::str_secur($_POST['commentChapter']);
                 $comment = new Comments();
                 $addComment = $comment->addComment($_GET['id'], $commentChapter,  $_SESSION['auth']->id);
             }

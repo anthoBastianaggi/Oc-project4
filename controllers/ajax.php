@@ -1,5 +1,5 @@
 <?php
-require_once 'views/includes/bootstrap.php'; 
+
 
 function ajax($page) {
     $chart = New Dashboard;

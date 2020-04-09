@@ -1,5 +1,5 @@
 <?php
-require_once 'views/includes/bootstrap.php'; 
+
 
 class AuthService {
     protected $options = [
@@ -13,7 +13,7 @@ class AuthService {
         $this->session = $session;
     }
 
-    public function hashPassword($password) {
+    static function hashPassword($password) {
         return password_hash($password, PASSWORD_BCRYPT);
     }
 

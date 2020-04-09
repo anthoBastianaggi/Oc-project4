@@ -1,12 +1,13 @@
 <?php
-require_once 'views/includes/bootstrap.php'; 
+
 include_once 'services/auth.php';
-include_once 'services/app.php';
+
 
 function settings($page) {
     if(AuthService::isAuthenticated()) {
         $profile = new Profile();
         $infoProfile = $profile->infoProfile($_SESSION['auth']->id);
+        $role = Auth::roleUser($_SESSION['auth']->role_id);
         include_once 'views/account/sections/settings/'.$page.'.php';
     }
 }

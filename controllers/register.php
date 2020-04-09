@@ -1,7 +1,4 @@
 <?php
-require_once 'views/includes/bootstrap.php'; 
-include_once 'services/app.php';
-
 function register($page) {
     if(!empty($_POST)) {
         $errors = array();
@@ -19,7 +16,7 @@ function register($page) {
             $validator->isUniq('email', $db, 'users', "Cet email est déjà utilisé pour un autre compte.");
         }
         $validator->isConfirmed('password', "Vous devez rentrer un mot de passe valide.");
-    
+
         if($validator->isValid()){
             App::getAuth()->register($db, $_POST['firstname'], $_POST['lastname'],$_POST['birthdate'],$_POST['username'],$_POST['password'], $_POST['email']);
             Session::getInstance()->setFlash('success', "Un email de confirmation vous a été envoyé sur votre compte.");
