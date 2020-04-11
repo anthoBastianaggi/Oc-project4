@@ -1,5 +1,4 @@
 <?php
-include_once 'services/auth.php';
 
 function updateEmail($page) {
     if(AuthService::isAuthenticated()) {

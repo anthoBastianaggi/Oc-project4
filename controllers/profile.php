@@ -1,6 +1,4 @@
 <?php
-include_once 'services/auth.php';
-include_once 'services/session.php';
 
 function profile($page) {
     if(AuthService::isAuthenticated()) {

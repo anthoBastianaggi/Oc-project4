@@ -1,7 +1,5 @@
 <?php
 
-
-
 function login($page) {
     $auth = App::getAuth();
     $db = App::getDatabase();

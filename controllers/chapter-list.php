@@ -1,8 +1,4 @@
 <?php
-include_once 'models/chapters.php';
-include_once 'models/profile.php';
-include_once 'services/auth.php';
-
 
 function chapterList($page) {
     if(AuthService::is_role_admin()) {

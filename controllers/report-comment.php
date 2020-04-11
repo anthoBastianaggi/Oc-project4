@@ -1,8 +1,4 @@
 <?php
-include_once 'models/comments.php';
-include_once 'models/profile.php';
-include_once 'services/auth.php';
-
 
 function reportComment($page) {
     if(AuthService::is_role_admin()) {

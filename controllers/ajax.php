@@ -1,6 +1,5 @@
 <?php
 
-
 function ajax($page) {
     $chart = New Dashboard;
     $countUsers2018 = $chart->numberUsers2018();

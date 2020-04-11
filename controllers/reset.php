@@ -1,7 +1,5 @@
 <?php
 
-
-
 function resetPassword($page) {
     if(isset($_GET['id']) && isset($_GET['token'])){
         $errors = array();

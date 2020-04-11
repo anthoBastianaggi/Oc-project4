@@ -1,4 +1,5 @@
 <?php
+
 function register($page) {
     if(!empty($_POST)) {
         $errors = array();

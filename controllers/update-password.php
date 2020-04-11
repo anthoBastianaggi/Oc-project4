@@ -1,8 +1,5 @@
 <?php
 
-include_once 'services/auth.php';
-
-
 function updatePassword($page) {
     if(AuthService::isAuthenticated()) {
         if(!empty($_POST)) {

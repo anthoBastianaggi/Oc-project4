@@ -1,5 +1,4 @@
 <?php
-include_once 'services/session.php';
 
 function contact($page) {
     $contact = new Contact();

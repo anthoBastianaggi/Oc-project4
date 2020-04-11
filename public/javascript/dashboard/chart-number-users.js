@@ -1,8 +1,6 @@
 async function makeit() {
     var labelsNumberUsers = [];
     var dataNumberUsers = [];
-    var labelsPercentBirthdate = [];
-    var dataPercentBirthdateUsers = [];
 
     var dataCountNumberUsers = await get('ajax?action=ajax');
     response = JSON.parse(dataCountNumberUsers);

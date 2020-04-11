@@ -1,5 +1,4 @@
 <?php
-include_once 'services/validator.php';
 
 class Validator extends ValidatorService {
     public function isUniq($field, $db, $table, $errorMsg) {

@@ -34,7 +34,7 @@
                     </div>
                     <div class="card-body text-center">
                         <div class="chart-area">
-                            <canvas id="chartPercentBirthdate" class="chart" onload="chartPercentAge();"></canvas>
+                            <canvas id="chartPercentBirthdate" class="chart"></canvas>
                         </div>
                     </div>
                 </div>

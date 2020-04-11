@@ -6,8 +6,9 @@ require 'config/parameters.php';
 require 'db.php';
 
 function bootstrap($class) {
-    require "services/app.php";
-    if (file_exists("models/$class.php")) require "models/$class.php";
+    $lowerClass = strtolower($class);
+    if (file_exists("services/$lowerClass.php")) require "services/$lowerClass.php";
+    if (file_exists("models/$lowerClass.php")) require "models/$lowerClass.php";
 }
 
 function dispatcher() {

@@ -1,8 +1,4 @@
 <?php
-include_once 'services/database.php';
-include_once 'services/session.php';
-
-if (class_exists('App')) return false;
 
 class App {
     static $db = null;

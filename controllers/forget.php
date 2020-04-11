@@ -1,7 +1,5 @@
 <?php
 
-
-
 function forget($page) {
     if(!empty($_POST) && !empty($_POST['email'])){
         $db = App::getDatabase();

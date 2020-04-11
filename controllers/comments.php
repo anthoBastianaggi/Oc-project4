@@ -1,9 +1,5 @@
 <?php
 
-include_once 'services/auth.php';
-include_once 'services/session.php';
-
-
 function showComment($page) {
     $comment = new Comments();
     $showComment = $comment->showComment();

@@ -1,7 +1,5 @@
 <?php
 
-
-
 function confirm($page) {
     $db = App::getDatabase();
 

@@ -1,7 +1,4 @@
 <?php
-include_once 'models/profile.php';
-include_once 'services/auth.php';
-
 
 function dashboard($page) {
     if(AuthService::is_role_admin()) {

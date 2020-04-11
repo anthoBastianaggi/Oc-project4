@@ -1,8 +1,5 @@
 <?php
 
-
-include_once 'services/auth.php';
-
 function logout($page) {
     App::getAuth()->logout();
     Session::getInstance()->setFlash('success', "Vous êtes maintenant déconnecté");

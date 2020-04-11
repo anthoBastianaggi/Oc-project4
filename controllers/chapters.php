@@ -1,8 +1,5 @@
 <?php
 
-include_once 'services/auth.php';
-
-
 function chapters($page) {
     $chapter = new Chapters();
     $allChapters = $chapter->getAllChapters();

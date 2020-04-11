@@ -1,7 +1,5 @@
 <?php
 
-include_once 'models/chapters.php';
-
 function home($page) {
     $chapter = new Chapters();
     $lastChapters = $chapter->getThreeLastChapters();

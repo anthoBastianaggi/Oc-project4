@@ -1,8 +1,5 @@
 <?php
 
-include_once 'services/auth.php';
-
-
 function settings($page) {
     if(AuthService::isAuthenticated()) {
         $profile = new Profile();
