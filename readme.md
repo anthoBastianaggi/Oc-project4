@@ -31,3 +31,14 @@ Pour la soutenance, vous vous positionnerez comme un développeur présentant pe
    * Créer un site Internet, de sa conception à sa livraison
    * Analyser les données utilisées par le site ou l’application
    * Construire une base de données
+
+## Installation #
+
+Pour installer le projet sur votre machine :
+
+Si vous êtes sur windows veuillez installer l'un des logiciels suivant ( Laragon, WampServer ou Xamp ).
+Si vous êtes sur Mac OS veuillez installer l'un des logiciels suivant ( WampServer ou Xamp ).
+
+Une fois le logiciel installé, téléchargez le projet et collez le dans le dossier www du logiciel que vous avez installé.
+
+Une fois le projet collé, lancé la commande npm run scss afin de pouvoir modifier le styles css du projet.
