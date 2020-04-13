@@ -1,7 +1,7 @@
 <?php $title = "Jean Forteroche - Un billet simple pour l'alaska"; ?>
 
 <?php
-    // Mise en mémoire tampon (rien ne s'affichera)
+    // Buffering (nothing will be displayed)
     ob_start(); 
 ?>
 
@@ -43,7 +43,7 @@
                                     <div class="item-container">
                                         <p class="box-label">Adresse email</p>
                                         <p class="box-title">Changer votre adresse email</p>
-                                        <p class="box-description">Nous vous conseillons d’utiliser un mot de passe sûr que vous n’utilisez nulle part ailleurs.</p>
+                                        <p class="box-description">Vous pouvez changer l'adresse email de votre profil.</p>
                                     </div>
                                     <div class="item-container">
                                         <a href="<?= CURRENT_PATH ?>update-email?action=updateEmail" class="button btn-change">
@@ -88,9 +88,9 @@
 </div>
    
 <?php 
-    // On recupere dans une variable le contenu du tampon 
+    // We recover in a variable the content of the buffer
     $content = ob_get_clean() ;
 
-    // On intégre le template qui utilise la variable $content
+    // We integrate the template which uses the variable $content
     include 'template/template-admin.php'; 
 ?>

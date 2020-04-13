@@ -4,7 +4,7 @@
 //       ERRORS DISPLAY        //
 // --------------------------- //
 
-//!\\ A enlever lors du déploiement
+//!\\ To be removed during deployment
 error_reporting(E_ALL);
 ini_set('display_errors', true);
 
@@ -22,8 +22,8 @@ session_start();
 // --------------------------- //
 
 // Paths
-define("PATH_REQUIRE", substr($_SERVER['SCRIPT_FILENAME'], 0, -9)); // Pour fonctions d'inclusion php
-define("PATH", substr($_SERVER['PHP_SELF'], 0, -9)); // Pour images, fichiers etc (html)
+define("PATH_REQUIRE", substr($_SERVER['SCRIPT_FILENAME'], 0, -9)); // For php inclusion functions
+define("PATH", substr($_SERVER['PHP_SELF'], 0, -9)); // For images, files etc (html)
 define("CURRENT_PATH", Helpers::curPageURL());
 
 // Website informations

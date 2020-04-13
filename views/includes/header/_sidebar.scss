@@ -36,7 +36,7 @@ header {
             position: fixed;
             left: 0;
             opacity: 1;
-            background: -webkit-linear-gradient(top,rgba(108,118,148,.98),rgba(53,60,82,.98));
+            background: linear-gradient(to top,rgba(108,118,148,.98),rgba(53,60,82,.98));
             z-index: 2;
             transition: opacity .5s;
             cursor: pointer;

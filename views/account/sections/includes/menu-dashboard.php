@@ -47,7 +47,7 @@
                         </li>
                         <li> 
                             <a href="<?= CURRENT_PATH ?>report-comment?action=reportComment" class="nav-link">
-                                <i class="fa fa-list"></i> 
+                                <i class="iconify" data-icon="uil-comment-alt-exclamation" data-inline="false"></i>
                                 <span class="nav-label">Commentaires signalés</span>
                             </a> 
                         </li>

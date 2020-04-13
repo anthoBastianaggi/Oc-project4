@@ -1,7 +1,7 @@
 <?php $title = "Jean Forteroche - Un billet simple pour l'alaska"; ?>
 
 <?php
-    // Mise en mémoire tampon (rien ne s'affichera)
+    // Buffering (nothing will be displayed)
     ob_start();
 ?>
 
@@ -51,7 +51,7 @@
                             <div class="form-group">
                                 <div class="inputGroupContainer">
                                     <div class="input-group">
-                                        <label class="label-register" for="">Prénom</label>
+                                        <label class="label-register">Prénom</label>
                                         <span class="icon-case"><i class="fa fa-male"></i></span>                               
                                         <input type="text" name="firstname" maxlength="16"  class="form-control" placeholder="Entrez votre prénom" />
                                     </div>
@@ -60,7 +60,7 @@
                             <div class="form-group">
                                 <div class="inputGroupContainer">
                                     <div class="input-group">
-                                        <label class="label-register" for="">Nom</label>
+                                        <label class="label-register">Nom</label>
                                         <span class="icon-case"><i class="fa fa-user"></i></span>                                                               
                                         <input type="text" name="lastname" maxlength="16" class="form-control" placeholder="Entrez votre nom" />
                                     </div>
@@ -69,7 +69,7 @@
                             <div class="form-group">
                                 <div class="inputGroupContainer">
                                     <div class="input-group">
-                                        <label class="label-register" for="">Date de naissance</label>
+                                        <label class="label-register">Date de naissance</label>
                                         <span class="icon-case"><i class="fa fa-calendar"></i></span>                                                                 
                                         <input type="date" name="birthdate" class="form-control" />
                                     </div>
@@ -78,7 +78,7 @@
                             <div class="form-group">
                                 <div class="inputGroupContainer">
                                     <div class="input-group">
-                                        <label class="label-register" for="">Pseudo</label>
+                                        <label class="label-register">Pseudo</label>
                                         <span class="icon-case"><i class="fa fa-user"></i></span>                                                          
                                         <input type="text" name="username" maxlength="25" class="form-control" placeholder="Entrez votre pseudo" />
                                     </div>
@@ -87,7 +87,7 @@
                             <div class="form-group">
                                 <div class="inputGroupContainer">
                                     <div class="input-group">
-                                        <label class="label-register" for="">Email</label>
+                                        <label class="label-register">Email</label>
                                         <span class="icon-case"><i class="fa fa-envelope-o"></i></span>                                                                 
                                         <input type="email" name="email" class="form-control" placeholder="Entrez votre adresse email"/>
                                     </div>
@@ -96,7 +96,7 @@
                             <div class="form-group">
                                 <div class="inputGroupContainer">
                                     <div class="input-group">
-                                        <label class="label-register" for="">Mot de passe</label>
+                                        <label class="label-register">Mot de passe</label>
                                         <span class="icon-case"><i class="fa fa-lock"></i></span>                                                                 
                                         <input type="password" name="password" minlength="8" maxlength="32" class="form-control" placeholder="Entrez votre mot de passe"/>
                                     </div>
@@ -105,7 +105,7 @@
                             <div class="form-group">
                                 <div class="inputGroupContainer">
                                     <div class="input-group">
-                                        <label class="label-register" for="">Confirmer mot de passe</label>
+                                        <label class="label-register">Confirmer mot de passe</label>
                                         <span class="icon-case"><i class="fa fa-lock"></i></span>                                                         
                                         <input type="password" name="password-confirm" class="form-control" placeholder="Confirmez votre mot de passe"/>
                                     </div>
@@ -124,9 +124,9 @@
 </div>
 
 <?php 
-    // On recupere dans une variable le contenu du tampon 
+    // We recover in a variable the content of the buffer
     $content = ob_get_clean() ;
 
-    // On intégre le template qui utilise la variable $content
+    // We integrate the template which uses the variable $content
     include 'template/template.php'; 
 ?>

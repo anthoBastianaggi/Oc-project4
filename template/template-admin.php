@@ -40,7 +40,7 @@
         <script src='public/javascript/comment/comment.js'></script>
         <script src='public/javascript/main.js'></script>
         <script src='public/javascript/ajax.js'></script>
-        <script src='public/javascript/dashboard/chart-number-users.js'></script>
-        <script src='public/javascript/dashboard/chart-percent-age.js'></script>
+        <script src='public/javascript/dashboard/chart.js'></script>
+        <script src="https://code.iconify.design/1/1.0.5/iconify.min.js"></script>
     </body>
 </html>

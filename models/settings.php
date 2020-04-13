@@ -2,7 +2,7 @@
 
 class Settings {
     /**
-        * Comments constructor.
+        * Settings constructor.
         * @param $id
     */
     function __construct() {
@@ -12,7 +12,7 @@ class Settings {
     public function updateEmail($email, $id) {
         global $db;
 
-        //Requete SQL pour supprimer le commentaire dans la base
+        //SQL request to modify email in the database
         $reqComments= $db->prepare("UPDATE users SET `email` = ? WHERE id = ?");
         $reqComments->execute(array($email, $id));
     }
@@ -20,7 +20,7 @@ class Settings {
     public function updatePassword($password, $id) {
         global $db;
 
-        //Requete SQL pour supprimer le commentaire dans la base
+        //SQL request to modify a password in the database
         $reqComments= $db->prepare("UPDATE users SET `password` = ? WHERE id = ?");
         $reqComments->execute(array($password, $id));
     }
@@ -28,7 +28,7 @@ class Settings {
     public function deleteAccount($id) {
         global $db;
 
-        //Requete SQL pour supprimer le commentaire dans la base
+        //SQL request to delete an account in the database
         $reqComments= $db->prepare("DELETE FROM users WHERE id = ?");
         $reqComments->execute(array($id));
     }

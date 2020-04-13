@@ -1,7 +1,7 @@
 <?php $title = "Jean Forteroche - Un billet simple pour l'alaska"; ?>
 
 <?php
-    // Mise en mémoire tampon (rien ne s'affichera)
+    // Buffering (nothing will be displayed)
     ob_start(); 
 ?>
 
@@ -25,7 +25,7 @@
                             </div>
                             <div class="entry-content">
                                 <div class="blog-thumb">
-                                    <img src="https://i.ibb.co/HrtN39y/services1.jpg" alt="" />
+                                    <img src="https://i.ibb.co/HrtN39y/services1.jpg" alt="img-card-chapters" />
                                 </div>
                                 <div class="meta-info">
                                     Edité par <span class="author"><?= $ticket['users_firstname'] ?> <?= $ticket['users_lastname'] ?></span> le <span class="date"><?= date('d-m-Y', strtotime($ticket['created_at'])) ?></span>
@@ -109,9 +109,9 @@
 </div>
 
 <?php 
-    // On recupere dans une variable le contenu du tampon 
+    // We recover in a variable the content of the buffer
     $content = ob_get_clean() ;
 
-    // On intégre le template qui utilise la variable $content
+    // We integrate the template which uses the variable $content
     include 'template/template.php'; 
 ?>

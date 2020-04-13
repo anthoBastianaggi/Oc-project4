@@ -49,7 +49,6 @@ class Auth extends AuthService{
     }
 
     public function login($db, $username, $password, $remember = false) {
-        //$user = $db->query('SELECT *, role.label AS "role_label" FROM users INNER JOIN role ON users.role_id = role.id WHERE (username = :username OR email = :username) AND confirmed_at IS NOT NULL', ['username' => $username])->fetch();
         $user = $db->query('SELECT * FROM users WHERE (username = :username OR email = :username) AND confirmed_at IS NOT NULL', ['username' => $username])->fetch();
         if(password_verify($password, $user->password)) {
             $this->connect($user);

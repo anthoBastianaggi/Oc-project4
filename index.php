@@ -1,6 +1,6 @@
 <?php
 
-// Inclusion des fichiers principaux
+// Include main files
 require 'helpers/index.php';
 require 'config/parameters.php';
 require 'db.php';
@@ -23,12 +23,12 @@ function dispatcher() {
         $action = trim($_GET['action']);
     }
 
-    // Array contenant toutes les pages
+    // Array containing all pages
     $allPages = scandir('controllers/');
 
-    // vérification de l'existance de la page
+    // Checking the existence of the page
     if(in_array($page[0].'.php', $allPages)) {
-        // Inclusion de la page
+        // Inclusion of the page
         include_once 'controllers/'.$page[0].'.php';
         $action($page[0]);
     } else {
@@ -36,10 +36,10 @@ function dispatcher() {
     }
 }
 
-// On appelle la fonction bootstrap
-// au chargement du site
+// We call the bootstrap function
+// when loading the site
 spl_autoload_register('bootstrap');
 
-// On écoute les routes qui sont appelées à chaque
-// chargement de page
+// We listen to the routes that are called at each
+// page loading
 dispatcher();

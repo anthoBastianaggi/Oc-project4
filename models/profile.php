@@ -2,7 +2,7 @@
 
 class Profile {
     /**
-        * Comments constructor.
+        * Profile constructor.
         * @param $id
     */
     function __construct() {
@@ -10,7 +10,7 @@ class Profile {
     }
     
     /**
-        * Modification du commentaire
+        * SQL request to modify profile in the database
         * @return array
     */
     public function updateProfile($username, $firstname, $lastname, $birthdate, 
@@ -24,6 +24,10 @@ class Profile {
         $fixNumber,$phoneNumber, $address, $city, $country, $postalCode, $about, $id));
     }
 
+    /**
+        * SQL request to retrieve profile information from the database
+        * @return array
+    */
     public function infoProfile($id) {
         global $db;
         

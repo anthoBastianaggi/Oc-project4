@@ -16,7 +16,7 @@
                         <div class="sidebarConnected">
                             <div class="sidebarUserInfo">
                                 <div class="sidebarUserCardImg">
-                                    <img src="http://bootdey.com/img/Content/user_1.jpg" alt="" />
+                                    <img src="http://bootdey.com/img/Content/user_1.jpg" alt="avatar-user" />
                                 </div>
                                 <ul class="sidebarMenuUser">
                                     <li class="sidebarItemUser">

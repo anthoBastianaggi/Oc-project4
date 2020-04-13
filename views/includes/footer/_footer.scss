@@ -29,7 +29,7 @@ footer {
               color: black;
               text-decoration: none !important;
               background-color: transparent;
-              -webkit-text-decoration-skip: objects;
+              text-decoration-skip: objects;
   
               &:hover {
                 color: black;
@@ -38,8 +38,6 @@ footer {
               i {
                 margin-right: 5px;
                 font-size: 25px;
-                -webkit-transition: 0.5s all ease;
-                -moz-transition: 0.5s all ease;
                 transition: 0.5s all ease;
   
                 .d-md-inline-flex {

@@ -11,7 +11,7 @@ class Chapters {
     }
 
     /**
-        * Envoie tous les chapitres
+        * SQL request to retrive the all chapters in the database
         * @return array
     */
     public function getAllChapters() {
@@ -26,7 +26,7 @@ class Chapters {
     }
 
     /**
-        * Envoie les trois derniers chapitres
+        * SQL request to retrive the three chapters in the database
         * @return array
     */
     public function getThreeLastChapters() {
@@ -42,7 +42,7 @@ class Chapters {
     }
 
         /**
-        * Affichage du chapitre
+        * SQL request to show the chapter in the database
         * @return array
     */
     public function showChapter() {
@@ -57,7 +57,7 @@ class Chapters {
     }
 
     /**
-        * Ajout de chapitres
+        * SQL request to add the chapter in the database
         * @return array
     */
     public function addChapter($titleTicket, $contentTicket, $author) {
@@ -68,7 +68,7 @@ class Chapters {
     }
 
     /**
-        * Modification de chapitres
+        * SQL request to edit the chapter in the database
         * @return array
     */
     public function updateChapter($titleTicket, $contentTicket, $id) {
@@ -79,13 +79,12 @@ class Chapters {
     }
 
     /**
-        * Suppression de chapitres
+        * SQL request to delete the chapter in the database
         * @return array
     */
     public function deleteChapter() {
         global $db;
 
-        //Requete SQL pour supprimer le contact dans la base
         $reqTicket= $db->prepare("DELETE FROM ticket WHERE id = :id");
         $reqTicket->execute(array(':id' => $_GET["id"]));
     }

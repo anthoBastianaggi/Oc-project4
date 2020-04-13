@@ -17,7 +17,7 @@ function contact($page) {
                 
                         $addMessageContactIsConnected = $contact->addMessageContactIsConnected($_SESSION['auth']->id, $objectMessage, $message);
                         $message .= ' - email envoyé par : ' . $username . ' : ' . $email;
-                        // ENVOYER UN EMAIL
+                        // SEND AN EMAIL
                         mail('a.bastianaggi@gmail.com', 'On me contacte sur mon site', $message);
                         Session::getInstance()->setFlash('success', "Le message a bien été envoyé.");
                     }
@@ -41,7 +41,7 @@ function contact($page) {
                     
                     $addMessageContact = $contact->addMessageContact($firstname, $lastname, $email, $objectMessage, $message);
                     $message .= ' - email envoyé par : ' . $firstname . ' ' . $lastname . ' : ' . $email;
-                    // ENVOYER UN EMAIL
+                    // SEND AN EMAIL
                     Session::getInstance()->setFlash('success', "Le message a bien été envoyé.");
                     mail('a.bastianaggi@gmail.com', 'On me contacte sur mon site', $message);
                 } else {

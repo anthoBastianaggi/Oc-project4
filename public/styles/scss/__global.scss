@@ -1,4 +1,4 @@
-/* CSS CORPS DE PAGE */
+/* CSS BODY OF PAGE */
 html {
     body {
         min-height: 100vh;
@@ -57,7 +57,7 @@ html {
 }
 
 /*======================================
-//--//-->   STYLES GENERALES
+//--//-->   GENERAL STYLES
 ======================================*/
 
 h1, h2, h3, h4, h5, h6 {
@@ -121,9 +121,6 @@ h1, h2, h3, h4, h5, h6 {
 	padding: .3rem .6rem;
 	text-align: center;
 	vertical-align: middle;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
 	user-select: none;
 	font-size: 1rem;
 	border-radius: .3rem;

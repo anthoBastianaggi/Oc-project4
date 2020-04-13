@@ -1,7 +1,7 @@
 <?php $title = "Jean Forteroche - Un billet simple pour l'alaska"; ?>
 
 <?php
-    // Mise en mémoire tampon (rien ne s'affichera)
+    // Buffering (nothing will be displayed)
     ob_start(); 
 ?>
 
@@ -48,7 +48,7 @@
                                     </h5>
                                 </div>
                                 <div>
-                                    <form action="" method="post" role="form" class="contactForm">
+                                    <form method="post" class="contactForm">
                                         <div id="sendmessage">Your message has been sent. Thank you!</div>
                                         <div id="errormessage"></div>
                                         <div class="row">
@@ -138,9 +138,9 @@
 <!--/ Section Contact-footer End /-->
 
 <?php 
-    // On recupere dans une variable le contenu du tampon 
+    // We recover in a variable the content of the buffer
     $content = ob_get_clean() ;
 
-    // On intégre le template qui utilise la variable $content
+    // We integrate the template which uses the variable $content
     include 'template/template.php'; 
 ?>

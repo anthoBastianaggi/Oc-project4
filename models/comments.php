@@ -10,7 +10,7 @@ class Comments {
     }
     
     /**
-        * Ajout d'un commentaire
+        * SQL request to add the comment reported in the database
         * @return array
     */
     public function addComment($id, $commentChapter, $authorComment) {
@@ -21,7 +21,7 @@ class Comments {
     }
     
     /**
-        * Envoie tous les commentaires
+        * SQL request to retrive the comment in the database
         * @return array
     */
     public function getAllComments($id) {
@@ -35,6 +35,10 @@ class Comments {
         return $reqComments -> fetchAll();
     }
 
+    /**
+        * SQL request to show the comment in the database
+        * @return array
+    */
     public function showComment() {
         global $db;
 
@@ -46,20 +50,19 @@ class Comments {
         return $reqComments -> fetch();
     }
 
-     /**
-        * Suppression du commentaire
+    /**
+        * SQL request to delete the comment in the database
         * @return array
     */
     public function deleteComment() {
         global $db;
 
-        //Requete SQL pour supprimer le commentaire dans la base
         $reqComments= $db->prepare("DELETE FROM comment WHERE id = :id");
         $reqComments->execute(array(':id' => $_GET['id']));
     }
 
     /**
-        * Modification du commentaire
+        * SQL request to edit the comment in the database
         * @return array
     */
     public function updateComment($contentComment, $id) {
@@ -69,8 +72,8 @@ class Comments {
         $reqComments->execute(array($contentComment, $id));
     }
 
-     /**
-        * Ajout d'un commentaire
+    /**
+        * SQL request to signale the comment in the database
         * @return array
     */
     public function signaleComment($usersId, $commentId) {
@@ -80,6 +83,8 @@ class Comments {
         $reqComments->execute(array($usersId, $commentId));
     }
 
+
+    // SQL request to retrive the all comment reported in the database
     public function getAllSignaleCommentValidate() {
         global $db;
 
@@ -96,6 +101,10 @@ class Comments {
             return $reqComments -> fetchAll();
     }
 
+    /**
+        * SQL request to validate the comment reported in the database
+        * @return array
+    */
     public function validateSignaleComment() {
         global $db;
 
@@ -103,10 +112,13 @@ class Comments {
         $reqComments->execute(array(':id' => $_GET['id']));
     }
 
+    /**
+        * SQL request to delete the comment reported in the database
+        * @return array
+    */
     public function deleteSignaleComment() {
         global $db;
 
-        //Requete SQL pour supprimer le commentaire dans la base
         $reqComments= $db->prepare("DELETE FROM report WHERE id = :id");
         $reqComments->execute(array(':id' => $_GET['id']));
     }

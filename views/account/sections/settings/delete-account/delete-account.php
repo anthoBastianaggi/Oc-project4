@@ -1,7 +1,7 @@
 <?php $title = "Jean Forteroche - Un billet simple pour l'alaska"; ?>
 
 <?php
-    // Mise en mémoire tampon (rien ne s'affichera)
+    // Buffering (nothing will be displayed)
     ob_start();
 ?>
 
@@ -42,9 +42,9 @@
 </div>
 
 <?php 
-    // On recupere dans une variable le contenu du tampon 
+    // We recover in a variable the content of the buffer
     $content = ob_get_clean() ;
 
-    // On intégre le template qui utilise la variable $content
+    // We integrate the template which uses the variable $content
     include 'template/template.php'; 
 ?>

@@ -1,4 +1,4 @@
-/* CSS CORPS DE PAGE */
+/* CSS BODY OF PAGE */
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 html body {
   min-height: 100vh;
@@ -38,7 +38,7 @@ html body {
     padding-top: 6.3rem; } }
 
 /*======================================
-//--//-->   STYLES GENERALES
+//--//-->   GENERAL STYLES
 ======================================*/
 h1, h2, h3, h4, h5, h6 {
   color: #1e1e1e; }
@@ -92,9 +92,6 @@ h1, h2, h3, h4, h5, h6 {
   padding: .3rem .6rem;
   text-align: center;
   vertical-align: middle;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   font-size: 1rem;
   border-radius: .3rem;
@@ -301,7 +298,7 @@ header .navigation .navContainer .sidebar {
     position: fixed;
     left: 0;
     opacity: 1;
-    background: -webkit-linear-gradient(top, rgba(108, 118, 148, 0.98), rgba(53, 60, 82, 0.98));
+    background: linear-gradient(to top, rgba(108, 118, 148, 0.98), rgba(53, 60, 82, 0.98));
     z-index: 2;
     transition: opacity .5s;
     cursor: pointer; }
@@ -505,9 +502,7 @@ main .home-content {
       width: 100%;
       height: 100%;
       display: flex;
-      -webkit-box-pack: center;
       justify-content: center;
-      -webkit-box-align: center;
       align-items: center; }
   main .home-content #homeChapters {
     padding-top: 2rem; }
@@ -813,7 +808,7 @@ aside .list-group {
           .show-chapters .container article .card .card-block .card-block-container .headerChapter .card-header, .show-chapters .container-show-chapters article .card .card-block .card-block-container .headerChapter .card-header {
             padding: 7px 1.25rem;
             background-color: rgba(0, 0, 0, 0.03);
-            border-bottom: 1px solidrgba(0, 0, 0, 0.125);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.125);
             border-left: 5px solid #007bff; }
             .show-chapters .container article .card .card-block .card-block-container .headerChapter .card-header a:hover, .show-chapters .container-show-chapters article .card .card-block .card-block-container .headerChapter .card-header a:hover {
               color: #2B96CC;
@@ -1488,14 +1483,12 @@ footer {
           color: black;
           text-decoration: none !important;
           background-color: transparent;
-          -webkit-text-decoration-skip: objects; }
+          text-decoration-skip: objects; }
           footer .containerSection #footer .socialContainer .social li a:hover {
             color: black; }
           footer .containerSection #footer .socialContainer .social li a i {
             margin-right: 5px;
             font-size: 25px;
-            -webkit-transition: 0.5s all ease;
-            -moz-transition: 0.5s all ease;
             transition: 0.5s all ease; }
             footer .containerSection #footer .socialContainer .social li a i .d-md-inline-flex {
               margin-left: 10px; }
@@ -1582,20 +1575,17 @@ section .wrapper {
                 background-color: #555D70; }
               section .wrapper .menu-dashboard aside .sidebar-dashboard .sidebar-container .list-sidebar-container .list-sidebar li .nav-link i {
                 padding-right: 5px; }
+              section .wrapper .menu-dashboard aside .sidebar-dashboard .sidebar-container .list-sidebar-container .list-sidebar li .nav-link .iconify {
+                font-size: 26px;
+                padding-right: 5px; }
               section .wrapper .menu-dashboard aside .sidebar-dashboard .sidebar-container .list-sidebar-container .list-sidebar li .nav-link .nav-label {
                 left: 50px;
                 opacity: 1;
-                -moz-transition: opacity 0.6s 0.2s ease-out;
-                -o-transition: opacity 0.6s 0.2s ease-out;
-                -webkit-transition: opacity 0.6s 0.2s ease-out;
                 transition: opacity 0.6s 0.2s ease-out;
                 position: absolute;
                 transition: all 0.5s  ease-in-out; }
       section .wrapper .menu-dashboard aside .sidebar-collapse {
         width: 65px;
-        -moz-transition: width 0.6s ease-out;
-        -o-transition: width 0.6s ease-out;
-        -webkit-transition: width 0.6s ease-out;
         transition: width 0.6s ease-out;
         transition: all 0.5s  ease-in-out;
         background-color: #353c52;
@@ -1609,9 +1599,6 @@ section .wrapper {
           section .wrapper .menu-dashboard aside .sidebar-collapse .sidebar-container .list-sidebar-container .list-sidebar li .nav-link .nav-label {
             transition: all 0.5s  ease-in-out;
             opacity: 0;
-            -moz-transition: opacity 0.3s ease-out;
-            -o-transition: opacity 0.3s ease-out;
-            -webkit-transition: opacity 0.3s ease-out;
             transition: opacity 0.3s ease-out;
             position: absolute;
             width: 0;
@@ -1653,7 +1640,7 @@ section .wrapper {
         position: fixed;
         left: 0;
         opacity: 1;
-        background: -webkit-linear-gradient(top, rgba(108, 118, 148, 0.98), rgba(53, 60, 82, 0.98));
+        background: linear-gradient(to top, rgba(108, 118, 148, 0.98), rgba(53, 60, 82, 0.98));
         z-index: -1;
         transition: opacity .5s;
         cursor: pointer; }
@@ -1746,7 +1733,6 @@ section .wrapper {
   .contentProfile .block-edit-profile {
     right: 33.5%; }
   .contentProfile .block-user {
-    -ms-flex: 0 0 33.333333%;
     flex: 0 0 33.333333%;
     max-width: 33.333333%;
     left: 66.5%; } }
@@ -1755,7 +1741,6 @@ section .wrapper {
   .contentProfile .block-edit-profile {
     right: 26%; }
   .contentProfile .block-user {
-    -ms-flex: 0 0 26%;
     flex: 0 0 26%;
     max-width: 26%;
     left: 74%; } }
@@ -1867,7 +1852,6 @@ section .wrapper {
   font-family: "Helvetica", sans-serif;
   font-size: 24px;
   font-weight: bold;
-  letter-spacing: -0.8;
   line-height: 1.33;
   margin: 20px auto;
   color: #353c52; }

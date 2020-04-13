@@ -88,13 +88,15 @@ section {
                                         i {
                                             padding-right:5px;
                                         }
+
+                                        .iconify {
+                                            font-size: 26px;
+                                            padding-right: 5px;
+                                        }
                     
                                         .nav-label {
                                             left: 50px;
                                             opacity: 1;
-                                            -moz-transition: opacity 0.6s 0.2s ease-out;
-                                            -o-transition: opacity 0.6s 0.2s ease-out;
-                                            -webkit-transition: opacity 0.6s 0.2s ease-out;
                                             transition: opacity 0.6s 0.2s ease-out;
                                             position: absolute;
                                             transition: all 0.5s  ease-in-out;
@@ -107,9 +109,6 @@ section {
                 }
                 .sidebar-collapse{ 
                     width: 65px;
-                    -moz-transition: width 0.6s ease-out;
-                    -o-transition: width 0.6s ease-out;
-                    -webkit-transition: width 0.6s ease-out;
                     transition: width 0.6s ease-out;
                     transition: all 0.5s  ease-in-out; 
                     background-color: #353c52;
@@ -130,9 +129,6 @@ section {
                                         .nav-label {
                                             transition: all 0.5s  ease-in-out;
                                             opacity: 0;
-                                            -moz-transition: opacity 0.3s ease-out;
-                                            -o-transition: opacity 0.3s ease-out;
-                                            -webkit-transition: opacity 0.3s ease-out;
                                             transition: opacity 0.3s ease-out;
                                             position: absolute;
                                             width: 0;
@@ -199,7 +195,7 @@ section {
                         position: fixed;
                         left: 0;
                         opacity: 1;
-                        background: -webkit-linear-gradient(top,rgba(108,118,148,.98),rgba(53,60,82,.98));
+                        background: linear-gradient(to top,rgba(108,118,148,.98),rgba(53,60,82,.98));
                         z-index: -1;
                         transition: opacity .5s;
                         cursor: pointer;

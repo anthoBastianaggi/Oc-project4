@@ -2,7 +2,7 @@
  
 class Helpers {
     /**
-     * Permet de sécuriser une chaine de caractères
+     * Allows you to secure a character string
      * @param $string
      * @return string
     */
@@ -11,7 +11,7 @@ class Helpers {
     }
 
     /**
-     * Débug plus lisible des différentes variables
+     * More readable debug of the different variables
      * @param $var
     */
     public static function debug($var) {

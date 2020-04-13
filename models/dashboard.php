@@ -2,18 +2,15 @@
 
 class Dashboard {
 
-    /**
-        * Chapters constructor.
-        * @param $id
-    */
+    // Dashboard constructor.
     function __construct() {
         global $db;
     }
 
-        /**
-        * Affichage du chapitre
+    /**
+        * SQL request to retrieve the number users for the year 2018 in the database
         * @return array
-        */
+    */
     public function numberUsers2018() {
         global $db;
 
@@ -23,6 +20,10 @@ class Dashboard {
         return $reqNumberUsers->fetch();
     }
 
+    /**
+        * SQL request to retrieve the number users for the year 2019 in the database
+        * @return array
+    */
     public function numberUsers2019() {
         global $db;
 
@@ -32,6 +33,10 @@ class Dashboard {
         return $reqNumberUsers->fetch();
     }
 
+    /**
+        * SQL request to retrieve the number users for the year 2020 in the database
+        * @return array
+    */
     public function numberUsers2020() {
         global $db;
 
@@ -41,6 +46,10 @@ class Dashboard {
         return $reqNumberUsers->fetch();
     }
 
+     /**
+        * SQL request to retrieve the percentage of users between 0 and 25 years old in the database
+        * @return array
+    */
     public function percentBirthdate1() {
         global $db;
 
@@ -49,6 +58,10 @@ class Dashboard {
         return $reqNumberUsers->fetch();
     }
 
+     /**
+        * SQL request to retrieve the percentage of users between 25 and 50 years old in the database
+        * @return array
+    */
     public function percentBirthdate2() {
         global $db;
 
@@ -57,6 +70,10 @@ class Dashboard {
         return $reqNumberUsers->fetch();
     }
 
+    /**
+        * SQL request to retrieve the percentage of users between 50 and 75 years old in the database
+        * @return array
+    */
     public function percentBirthdate3() {
         global $db;
 
@@ -65,6 +82,10 @@ class Dashboard {
         return $reqNumberUsers->fetch();
     }
 
+    /**
+        * SQL request to retrieve the percentage of users between 75 and 100 years old in the database
+        * @return array
+    */
     public function percentBirthdate4() {
         global $db;
 

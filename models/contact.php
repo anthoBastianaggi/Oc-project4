@@ -1,16 +1,14 @@
 <?php
 
 class Contact {
-    /**
-        * Contact constructor.
-        * @param $id
-    */
+    
+    // Contact constructor.
     function __construct() {
         global $db;
     }
     
     /**
-        * Ajout d'un message de contact
+        * SQL request to add message contact is connected in the database
         * @return array
     */
     public function addMessageContactIsConnected($authorContact, $subject, $content) {
@@ -20,6 +18,10 @@ class Contact {
         $reqContact->execute(array($authorContact, $subject, $content));
     }
 
+    /**
+        * SQL request to add message contact is not connected in the database
+        * @return array
+    */
     public function addMessageContact($firstnameContact, $lastnameConctact, $emailContact, $subject, $content) {
         global $db;
 
@@ -27,6 +29,10 @@ class Contact {
         $reqContact->execute(array($firstnameContact,$lastnameConctact, $emailContact, $subject, $content));
     }
 
+    /**
+        * SQL request to retrive info contact in the database
+        * @return array
+    */
     public function infoContact() {
         global $db;
 
