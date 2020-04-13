@@ -41,4 +41,4 @@ Si vous êtes sur Mac OS veuillez installer l'un des logiciels suivant ( WampSer
 
 Une fois le logiciel installé, téléchargez le projet et collez le dans le dossier www du logiciel que vous avez installé.
 
-Une fois le projet collé, lancé la commande npm run scss afin de pouvoir modifier le styles css du projet.
+Une fois le projet collé, lancé la commande npm run scss afin de pouvoir modifier le styles.css du projet.
