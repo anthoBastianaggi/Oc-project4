@@ -1,10 +1,13 @@
-function display(myDropdown) {
-  var dropdownMenu = document.getElementById(myDropdown).style.display;
+function dropdownMenuHeader() {
+  var btnDropdownMenu = document.querySelector('#dropdownToggle');
 
-  if (dropdownMenu === "block") {
-    document.getElementById(myDropdown).style.display = "none";
-  }
-  else {
-    document.getElementById(myDropdown).style.display = "block";
+  if(btnDropdownMenu !== null) {
+    btnDropdownMenu.onclick = function() {
+      var dropdownMenu = document.querySelector('#myDropdown');
+      dropdownMenu.classList.toggle('dropdownMenuActive');
+    }
+  } else {
+    return false;
   }
 }
+dropdownMenuHeader();

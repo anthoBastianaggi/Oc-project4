@@ -40,7 +40,7 @@
                             </div>         
                             <div class="col-md-12 text-center" id="btn-email">
                                 <button type="submit" class="button button-a btn-update-email">Modifier adresse e-mail</button>
-                                <button type="button" id="btnCancel" class="btn btn-default btn-cancel" onclick="window.location.href='<?= CURRENT_PATH ?>settings?action=settings'">Annuler</button>
+                                <button type="button" id="btnCancelUpdateEmail" class="btn btn-default btn-cancel">Annuler</button>
                             </div>                           
                         </form>
                     </div>

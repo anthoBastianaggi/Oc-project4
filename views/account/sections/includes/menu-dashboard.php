@@ -58,7 +58,7 @@
         </div>
     </aside>
     <div class="btnDashboardMenu">
-        <button id="dashboardMenuSidebar" class="navbar-toggler navbar-toggler-righ" type="button" onclick='displaySidebarDashboard(); return false'>
+        <button id="dashboardMenuSidebar" class="navbar-toggler navbar-toggler-righ" type="button">
             <i class="fa fa-bars"></i>
         </button>
     </div>

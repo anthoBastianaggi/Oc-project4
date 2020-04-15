@@ -2,7 +2,7 @@
     <ul class="navbarRightNavigation">
         <?php if(isset($_SESSION['auth'])): ?>
         <li class="nav-item mx-0 mx-lg-1 dropdown">
-            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"  role="button" aria-haspopup="true" aria-expanded="false" onclick='display("myDropdown"); return false'><?= $_SESSION['auth']->username ?><span class="caret"></span></a>
+            <a href="#" class="nav-link dropdown-toggle" id="dropdownToggle" data-toggle="dropdown"  role="button" aria-haspopup="true" aria-expanded="false"><?= $_SESSION['auth']->username ?><span class="caret"></span></a>
             <div id="myDropdown" class="dropdownMenu">
                 <ul class="dropdown-menu-list">
                     <li class="dropdown-menu-item">

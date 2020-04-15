@@ -39,6 +39,7 @@
         <script src='public/javascript/header/header.js'></script>
         <script src='public/javascript/comment/comment.js'></script>
         <script src='public/javascript/main.js'></script>
+        <script src='public/javascript/main-admin.js'></script>
         <script src='public/javascript/ajax.js'></script>
         <script src='public/javascript/dashboard/chart.js'></script>
         <script src="https://code.iconify.design/1/1.0.5/iconify.min.js"></script>

@@ -50,7 +50,7 @@
                             </div>                 
                             <div class="col-md-12 text-center" id="btn-password">
                                 <button type="submit" class="button button-a btn-update-password">Modifier mot de passe</button>
-                                <button type="button" id="btnCancel" class="btn btn-default btn-cancel" onclick="window.location.href='<?= CURRENT_PATH ?>settings?action=settings'">Annuler</button>
+                                <button type="button" id="btnCancelUpdatePassword" class="btn btn-default btn-cancel">Annuler</button>
                             </div>                           
                         </form>
                     </div>

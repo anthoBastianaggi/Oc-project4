@@ -30,8 +30,8 @@
                     <div class="card-footer">
                         <div class="btn-body-card">
                             <div class="btn-card">
-                                <button type="submit" name="btnDeleteAccount" id="btnDeleteAccount" class="button button-a" onclick="window.location.href='<?= CURRENT_PATH ?>settings?action=deleteMyAccount'">Supprimer mon compte</button>
-                                <button type="button" id="btnCancel" class="btn btn-default" onclick="window.location.href='<?= CURRENT_PATH ?>settings?action=settings'">Annuler</button>
+                                <button type="submit" name="btnDeleteAccount" id="btnDeleteAccount" class="button button-a">Supprimer mon compte</button>
+                                <button type="button" id="btnCancelDeleteAccount" class="btn btn-default">Annuler</button>
                             </div>
                         </div>
                     </div>  

@@ -270,6 +270,8 @@ header .navigation .navContainer .navbarRight {
             color: black;
             padding: 0.5rem 1rem;
             text-decoration: none; }
+    header .navigation .navContainer .navbarRight .navbarRightNavigation .dropdownMenuActive {
+      display: block; }
 
 @media (max-width: 834px) {
   header .navigation .navContainer .navbarRight {
@@ -872,9 +874,9 @@ aside .list-group {
     #infobox-update-chapter .boxContainer #btnUpdate {
       padding: .4rem 1.5rem;
       margin-right: 15px; }
-    #infobox-update-chapter .boxContainer #btnCancel {
+    #infobox-update-chapter .boxContainer #btnCancelUpdateChapter {
       padding: .4rem 1.5rem; }
-      #infobox-update-chapter .boxContainer #btnCancel:hover {
+      #infobox-update-chapter .boxContainer #btnCancelUpdateChapter:hover {
         transition: all 500ms ease;
         box-shadow: 0 0 0 4px #f9f9f9; }
 
@@ -908,9 +910,9 @@ aside .list-group {
     #infobox-add-chapter .boxContainer #btnAdd {
       padding: .4rem 1.5rem;
       margin-right: 15px; }
-    #infobox-add-chapter .boxContainer #btnCancel {
+    #infobox-add-chapter .boxContainer #btnCancelAddChapter {
       padding: .4rem 1.5rem; }
-      #infobox-add-chapter .boxContainer #btnCancel:hover {
+      #infobox-add-chapter .boxContainer #btnCancelAddChapter:hover {
         transition: all 500ms ease;
         box-shadow: 0 0 0 4px #f9f9f9; }
 
@@ -1945,7 +1947,7 @@ section .wrapper {
         color: red; }
   .container-delete-account #infobox-delete-account .btn-card {
     text-align: right; }
-    .container-delete-account #infobox-delete-account .btn-card #btnCancel {
+    .container-delete-account #infobox-delete-account .btn-card #btnCancelDeleteAccount {
       padding: .3rem .6rem; }
     .container-delete-account #infobox-delete-account .btn-card #btnDeleteAccount {
       margin-right: 10px; }
@@ -1956,7 +1958,7 @@ section .wrapper {
     .container-delete-account #infobox-delete-account .btn-card #btnDeleteAccount {
       display: block;
       margin: auto; }
-    .container-delete-account #infobox-delete-account .btn-card #btnCancel {
+    .container-delete-account #infobox-delete-account .btn-card #btnCancelDeleteAccount {
       display: block;
       margin: 10px auto auto; } }
 

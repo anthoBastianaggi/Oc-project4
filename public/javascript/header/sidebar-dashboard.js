@@ -1,10 +1,11 @@
 function displaySidebarDashboard() {
+    var btnDashboardMenuSidebar = document.querySelector('#dashboardMenuSidebar');
     var sidebarDashboard = document.querySelector('.sidebar-dashboard');
     var wrapper = document.querySelector('.wrapper');
     var sidebarMenuDashboard = document.querySelector('.menu-dashboard');
     var overlayDashboard = document.querySelector('.overlay-dashboard');
 
-    document.querySelector('#dashboardMenuSidebar').onclick = function() {
+    btnDashboardMenuSidebar.onclick = function() {
         sidebarDashboard.classList.toggle('sidebar-collapse');
         wrapper.classList.toggle('active');
         sidebarMenuDashboard.classList.toggle('active');
@@ -18,3 +19,4 @@ function displaySidebarDashboard() {
         overlayDashboard.classList.remove('active');
     }
 }
+displaySidebarDashboard();

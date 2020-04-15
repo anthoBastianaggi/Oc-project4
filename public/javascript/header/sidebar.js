@@ -12,6 +12,7 @@ function displaySidebarOpen() {
     overlay.classList.remove('active');
   }
 }
+displaySidebarOpen();
 
 function displaySidebarClose() {
   document.querySelector('#menuBurgerClose').onclick = function() {
@@ -19,17 +20,22 @@ function displaySidebarClose() {
     overlay.classList.remove('active');
   }
 }
+displaySidebarClose();
 
 function displayMenuSidebar() {
-  var dropdownMenu = document.querySelector('#sidebarDropdownMenu');
-  var dropdownMenuList = window.getComputedStyle(dropdownMenu, null).getPropertyValue("display");
-  var iconChevron =  document.querySelector('#iconChevron');
-  if (dropdownMenuList === "block") {
-    document.querySelector('#sidebarDropdownMenu').style.display = "none";
-    iconChevron.classList.add('active');
-  }
-  else {
-    document.querySelector('#sidebarDropdownMenu').style.display = "block";
-    iconChevron.classList.remove('active');
+  var btnDropdownMenu = document.querySelector('#dropdownMenuSidebar');
+  btnDropdownMenu.onclick = function() {
+    var dropdownMenu = document.querySelector('#sidebarDropdownMenu');
+    var dropdownMenuList = window.getComputedStyle(dropdownMenu, null).getPropertyValue("display");
+    var iconChevron =  document.querySelector('#iconChevron');
+    if (dropdownMenuList === "block") {
+      document.querySelector('#sidebarDropdownMenu').style.display = "none";
+      iconChevron.classList.add('active');
+    }
+    else {
+      document.querySelector('#sidebarDropdownMenu').style.display = "block";
+      iconChevron.classList.remove('active');
+    }
   }
 }
+displayMenuSidebar();

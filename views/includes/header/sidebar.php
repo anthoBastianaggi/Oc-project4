@@ -1,5 +1,5 @@
 <div class="btnSidebarOpen">
-    <button id="menuBurgerOpen" class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" onclick='displaySidebarOpen(); return false'>
+    <button id="menuBurgerOpen" class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <i class="fa fa-bars"></i>
     </button> 
 </div>
@@ -8,7 +8,7 @@
     <div class="sidebarOpen">
         <div class="sidebarMenu">
             <div class="sidebarContainer">
-                <button id="menuBurgerClose" onclick='displaySidebarClose(); return false'>
+                <button id="menuBurgerClose">
                 <i class="fa fa-times"></i>
                 </button>
                 <?php if(isset($_SESSION['auth'])): ?>
@@ -28,18 +28,18 @@
                                 </ul>
                             </div>
                             <div class="btnSidebarProfileContainer">
-                                <button class="btnProfile" onclick="window.location.href='<?= CURRENT_PATH ?>profile?action=profile'">
+                                <button class="btnProfile">
                                     <i class="fa fa-user"></i>
                                     <span>Profil</span>
                                 </button>
                                 <div class="separator"></div>
-                                <button class="btnSettings"  onclick="window.location.href='<?= CURRENT_PATH ?>settings?action=settings'" >
+                                <button class="btnSettings">
                                     <i class="fa fa-cog"></i>
                                     <span>Paramètres</span>
                                 </button>
                             </div>
                             <div class="btnLogOutContainer">
-                                <button class="btnLogOut" onclick="window.location.href='<?= CURRENT_PATH ?>logout?action=logout'">
+                                <button class="btnLogOut">
                                     <i class="fa fa-sign-out"></i>
                                     <span>Déconnexion</span>
                                 </button>
@@ -85,7 +85,7 @@
                     <div class="sidebarContentContainer">
                         <div class="sidebarMenuContainer">
                             <div class="btnDropdownMenu">
-                                <button id="dropdownMenuSidebar" onclick='displayMenuSidebar(); return false'>
+                                <button id="dropdownMenuSidebar">
                                     <span>Menu</span>
                                     <i class="fa fa-chevron-down" id="iconChevron"></i>
                                 </button>
