@@ -119,7 +119,11 @@
                                     <div class="post-heading">
                                         <div class="pull-left image">
                                             <p class="comment-author">
+                                            <?php if($comment['avatar'] === NULL): ?>
                                                 <img src="http://bootdey.com/img/Content/user_1.jpg" class="img-circle avatar" alt="user profile image">
+                                            <?php else: ?>
+                                                <img src="<?= $comment['avatar'] ?>" class="img-circle avatar" alt="user profile image">
+                                            <?php endif; ?>
                                                 <span class="says">Commenté par</span>
                                                 <span class="comment-author-name"><?= $comment['username'] ?></span>
                                             </p>    

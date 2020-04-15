@@ -16,7 +16,11 @@
                         <div class="sidebarConnected">
                             <div class="sidebarUserInfo">
                                 <div class="sidebarUserCardImg">
+                                <?php if($_SESSION['auth']->avatar === NULL): ?>
                                     <img src="http://bootdey.com/img/Content/user_1.jpg" alt="avatar-user" />
+                                <?php else: ?>
+                                    <img src="<?= $_SESSION['auth']->avatar ?>" alt="avatar-user" />
+                                <?php endif; ?>
                                 </div>
                                 <ul class="sidebarMenuUser">
                                     <li class="sidebarItemUser">

@@ -32,7 +32,7 @@ class Profile {
         global $db;
         
         $reqProfile= $db->prepare('SELECT `username`, `firstname`, `lastname`, `birthdate`, `email`, `fix_number`, `phone_number`, 
-        `address`, `city`, `country`, `postal_code`, `about` FROM users WHERE id = ?');
+        `address`, `city`, `country`, `postal_code`, `avatar`, `about` FROM users WHERE id = ?');
         $reqProfile -> execute(array($id));
         return $reqProfile -> fetch();
     }

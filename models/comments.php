@@ -29,7 +29,7 @@ class Comments {
 
         $reqComments = $db -> prepare( 
         'SELECT comment.validate AS "validate", comment.id AS "id", comment.content AS "content", 
-        comment.created_at AS "created", users.username AS "username" FROM comment 
+        comment.created_at AS "created", users.username AS "username", users.avatar AS "avatar" FROM comment 
         INNER JOIN users ON comment.users_id = users.id WHERE ticket_id = ?');
         $reqComments -> execute(array($id));
         return $reqComments -> fetchAll();

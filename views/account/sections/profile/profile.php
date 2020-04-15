@@ -18,7 +18,7 @@
             <div class="col-lg-12 block-user">
                 <div class="card card-user">
                     <div class="card-image">
-                        <img src="http://bootdey.com/img/Content/user_1.jpg" alt="card-user-image">
+                        <img src="<?= $infoProfile['avatar'] ?>" alt="card-user-image">
                     </div>
                     <div class="card-body">
                         <div class="author">

@@ -5,6 +5,12 @@ function profile($page) {
         $profile = new Profile();
         $infoProfile = $profile->infoProfile($_SESSION['auth']->id);
         $role = Auth::roleUser($_SESSION['auth']->role_id);
+        if($infoProfile['avatar'] === null) {
+            $infoProfile['avatar'] = "http://bootdey.com/img/Content/user_1.jpg";
+        } else {
+            $infoProfile['avatar'];
+        }
+        
         if(!empty($_POST) && isset($_POST['btnUpdateProfile'])) {
             $updateProfile = $profile->updateProfile($_POST['username'], $_POST['firstname'], 
             $_POST['lastname'], $_POST['birthdate'], $_POST['fixnumber'], $_POST['phonenumber'], 

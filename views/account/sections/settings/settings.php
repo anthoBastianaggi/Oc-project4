@@ -30,10 +30,10 @@
                                         <p class="box-description">Change l'avatar de votre profil.</p>
                                     </div>
                                     <div class="item-container">
-                                    <button type="submit" class="button btn-change">
-                                        <i class="fa fa-edit icon"></i>
-                                        <span class="change">Changer</span>
-                                    </button>
+                                        <a href="<?= CURRENT_PATH ?>update-avatar?action=updateAvatar" class="button btn-change">
+                                            <i class="fa fa-edit icon"></i>
+                                            <span class="change">Changer</span>
+                                        </a>
                                     </div>
                                 </div>
                             </div>

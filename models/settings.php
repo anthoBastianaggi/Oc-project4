@@ -32,4 +32,12 @@ class Settings {
         $reqComments= $db->prepare("DELETE FROM users WHERE id = ?");
         $reqComments->execute(array($id));
     }
+
+    public function updateAvatar($avatar, $id) {
+        global $db;
+
+        //SQL request to update avatar in the database
+        $req= $db->prepare("UPDATE users SET avatar = ? WHERE id = ?");
+        $req->execute(array($avatar, $id));
+    } 
 }

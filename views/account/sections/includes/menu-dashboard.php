@@ -5,7 +5,7 @@
             <div class="sidebar-container">
                 <div class="user-panel">
                     <div class="image">
-                        <img src="http://bootdey.com/img/Content/user_1.jpg" class="rounded-circle" alt="user-image">
+                        <img src="<?= $infoProfile['avatar'] ?>" class="rounded-circle" alt="user-image">
                     </div>
                     <ul class="sidebarMenuUser">
                         <li class="sidebarItemUser">
